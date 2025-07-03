@@ -44,3 +44,12 @@ class CleanupError(DatabaseServiceError):
     Exception raised for errors during cleanup operations
     """
     pass
+
+class DatabaseOperationError(Exception):
+    """Custom exception for database operation failures."""
+    pass
+
+
+class DatabaseConfigurationError(Exception):
+    """Custom exception for database configuration issues."""
+    pass

@@ -1,5 +1,11 @@
 from .vpn import VpnConnectionError, TunnelblickRecoveryError, VpnRequiredError
-from .database import DatabaseServiceError, DatabaseServiceInitializationError, DatabaseConnectionError, DatabaseQueryError, CompetitionDataError, URLParsingError, CleanupError
+from .database import (
+    DatabaseServiceError, 
+    DatabaseServiceInitializationError, 
+    DatabaseConnectionError, 
+    DatabaseQueryError, 
+    CompetitionDataError, 
+    URLParsingError, CleanupError, DatabaseOperationError, DatabaseConfigurationError)
 from .security import IPSecurityViolationError, IPDetectionError, RotationTimeoutError, EmailConfigError, EmailSendingError
 
 __all__ = [
@@ -17,5 +23,7 @@ __all__ = [
     'IPDetectionError',
     'RotationTimeoutError',
     'EmailConfigError',
-    'EmailSendingError'
+    'EmailSendingError',
+    'DatabaseOperationError',
+    'DatabaseConfigurationError'
 ]

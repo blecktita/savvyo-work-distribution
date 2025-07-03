@@ -1,4 +1,4 @@
-from vpn_controls.vpn_manger import main  # or whatever your main function is
+from database.database_check import main
 
 if __name__ == "__main__":
     main()
