@@ -7,6 +7,7 @@ from .database import (
     CompetitionDataError, 
     URLParsingError, CleanupError, DatabaseOperationError, DatabaseConfigurationError)
 from .security import IPSecurityViolationError, IPDetectionError, RotationTimeoutError, EmailConfigError, EmailSendingError
+from .extractor import ParsingError
 
 __all__ = [
     'VpnConnectionError',
@@ -25,5 +26,6 @@ __all__ = [
     'EmailConfigError',
     'EmailSendingError',
     'DatabaseOperationError',
-    'DatabaseConfigurationError'
+    'DatabaseConfigurationError',
+    'ParsingError'
 ]
