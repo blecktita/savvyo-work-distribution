@@ -5,7 +5,6 @@ Provides reusable extraction functionality for all data types.
 """
 
 import re
-from typing import Optional
 from bs4 import Tag
 
 from .extraction_config import ExtractionConfig

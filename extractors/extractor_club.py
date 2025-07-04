@@ -22,14 +22,16 @@ class ClubDataExtractor(BaseDataExtractor):
     """
     
     def __init__(self):
-        """Initialize club extractor with URL parser."""
+        """
+        Initialize club extractor with URL parser
+        """
         super().__init__()
         self.url_parser = URLParser()
     
     def extract_club_info(
         self, 
         cell: Tag, 
-        season_year: str = None
+        season_year: str = ""
     ) -> Optional[Dict[str, str]]:
         """
         Extract club name, URL, ID, and code from table cell.
@@ -139,7 +141,9 @@ class ClubRowExtractor(BaseDataExtractor):
     """
     
     def __init__(self):
-        """Initialize the club row extractor."""
+        """
+        Initialize the club row extractor
+        """
         super().__init__()
         self.club_extractor = ClubDataExtractor()
         self.column_mapping = ColumnMapping()

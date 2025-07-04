@@ -7,7 +7,8 @@ from .database import (
     CompetitionDataError, 
     URLParsingError, CleanupError, DatabaseOperationError, DatabaseConfigurationError)
 from .security import IPSecurityViolationError, IPDetectionError, RotationTimeoutError, EmailConfigError, EmailSendingError
-from .extractor import ParsingError
+from .extractor import CompetitionScrapingError, NavigationError
+from .parsers import ParsingError, TableNotFoundError,InsufficientDataError
 
 __all__ = [
     'VpnConnectionError',
@@ -27,5 +28,9 @@ __all__ = [
     'EmailSendingError',
     'DatabaseOperationError',
     'DatabaseConfigurationError',
-    'ParsingError'
+    'CompetitionScrapingError',
+    'TableNotFoundError',
+    'InsufficientDataError',
+    'ParsingError',
+    'NavigationError'
 ]
