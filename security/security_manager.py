@@ -3,14 +3,14 @@
 Main IP Security Manager - orchestrates all security components.
 """
 
-from typing import Optional, Callable, Dict
+from typing import Optional, Callable, Dict, List
 import time
 import threading
 
 from .ip_detector import IPDetector
 from .rotation_monitor import RotationMonitor
 from .alert_system import AlertSystem
-from .models import SecurityThreatLevel
+from .models import SecurityThreatLevel, SecurityAlert
 from exceptions import IPSecurityViolationError
 from configurations import EnvironmentVariables, ScraperConfig, get_config
 from typing import TYPE_CHECKING
@@ -215,6 +215,9 @@ class IPSecurityManager:
             "rotation_in_progress": self._rotation_in_progress,
             "monitoring_active": monitor_status.get("monitoring_active", False)
         }
+
+    def get_recent_alerts(self) -> List[SecurityAlert]:
+        return self.alert_system.get_recent_alerts(hours=self.security_config.security_alerts_timeframe_hours)
     
     def _calculate_success_rate(self) -> float:
         total_rotations = len(self.rotation_monitor.rotation_history)

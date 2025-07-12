@@ -15,7 +15,7 @@ class IpSecurityConfig:
     vpn_config: VpnConfig
     rotation_check_interval: int = 90
     max_time_per_ip: int = 240
-    
+    security_alerts_timeframe_hours: int = 1
     @property
     def max_requests_per_ip(self) -> int:
         """
@@ -38,7 +38,8 @@ class IpSecurityConfig:
         return cls(
             vpn_config=vpn_config,
             rotation_check_interval=90,
-            max_time_per_ip=240
+            max_time_per_ip=240,
+            security_alerts_timeframe_hours=1
         )
     
     def __post_init__(self):

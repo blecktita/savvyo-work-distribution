@@ -63,8 +63,8 @@ class ClubTableParser(BaseParser):
             return pd.DataFrame(data) if data else pd.DataFrame()
             
         except Exception as e:
-            error_msg = f"Failed to parse club table: {e}"
-            raise ParsingError(error_msg)
+            print(f"   ❌ Parser exception for season {season_id}: {str(e)}")
+            return pd.DataFrame()
     
     def parse_season_options(self, soup: BeautifulSoup) -> List[Dict[str, str]]:
         """

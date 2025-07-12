@@ -1,20 +1,21 @@
-from .database_check import PostgreSQLDiscoverer
-from .database_manager import DatabaseManager, CompetitionRepository, TeamRepository
-from .database_orchestrator import ClubDatabaseManager, CompetitionDatabaseManager
-from .database_models import Competition, Team, WorkTask, ProgressTracker, TaskStatus
-from .database_factory import create_database_service
+from .database_check import DatabaseDiscoverer
+from .core.database_manager import DatabaseManager
+from .repositories.competition_repository import CompetitionRepository
+from .repositories.team_repository import TeamRepository
+from .orchestrators.team_orchestrator import TeamDataOrchestrator
+from .orchestrators.competition_orchestrator import CompetitionDataOrchestrator
+from .database_models import Competition, Team, TaskStatus
+from .factory.database_factory import create_database_service
 
 __all__ = [
-    'PostgreSQLDiscoverer',
+    'DatabaseDiscoverer',
     'DatabaseManager',
     'CompetitionRepository',
     'TeamRepository',
-    'ClubDatabaseManager',
-    'CompetitionDatabaseManager',
+    'TeamDataOrchestrator',
+    'CompetitionDataOrchestrator',
     'Competition',
     'Team',
-    'WorkTask',
-    'ProgressTracker',
     'TaskStatus',
     'create_database_service'
 ]

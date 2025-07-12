@@ -1,7 +1,7 @@
 # vpn_controls/vpn_manger.py
 
 import time
-from typing import Optional, Dict
+from typing import Optional, Dict, List
 import threading
 from datetime import datetime, timezone
 
@@ -9,7 +9,7 @@ from configurations import get_config
 from vpn_controls import RequestThrottler
 from exceptions import VpnRequiredError, VpnConnectionError, IPSecurityViolationError
 from security import IPSecurityManager
-
+from security.models import SecurityAlert
 from logger import VpnHandlerLogger
 
 
@@ -20,11 +20,17 @@ class VpnProtectionHandler:
     def __init__(self,
                  config,
                  logger_name: str = "VpnHandler",
-                 environment: str = "development",
                  env_file_path: Optional[str] = None):
-        
-        self.config = get_config(environment)
-        self.environment = environment
+
+        # Use the passed config if provided, otherwise get config for environment
+        if config is not None:
+            self.config = config
+            self.environment = getattr(config, '_environment', 'development')  # ← Use config's environment (production, development, testing)
+        else:
+            self.config = get_config('development')
+            self.environment = 'development'
+
+        #***> Initialize VPN manager <***
         self.vpn_manager: Optional[RequestThrottler] = None
         self.vpn_protection_active: bool = False
         self.vpn_rotating = False
@@ -425,6 +431,11 @@ class VpnProtectionHandler:
             self._last_health_log = now
         
         return is_active
+    
+    @property
+    def security_alerts(self) -> List[SecurityAlert]:
+        """Get security alerts with enhanced logging context"""
+        return self.ip_security.get_recent_alerts()
 
     @property
     def security_status(self) -> str:

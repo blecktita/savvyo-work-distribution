@@ -61,31 +61,44 @@ class ClubDataExtractor(BaseDataExtractor):
                 return None
             
             # Ensure string types and make URL absolute
-            name = str(name)
-            url = str(url)
+            name = str(name).strip()
+            url = str(url).strip()
+
+            if not name or not url:
+                return None
+
             absolute_url = self.make_absolute_url(url)
             
             # Extract club components from URL
-            club_id = self.url_parser.extract_club_id_from_url(absolute_url)
-            club_code = self.url_parser.extract_club_code_from_url(absolute_url)
+            try:
+                club_id = self.url_parser.extract_club_id_from_url(absolute_url)
+                club_code = self.url_parser.extract_club_code_from_url(absolute_url)
+            except Exception as e:
+                print(f"   ⚠️ URL parsing failed for {absolute_url}: {str(e)}")
+                # Use fallback values
+                club_id = "unknown"
+                club_code = "unknown"
             
             # Fix season in URL if provided
             if season_year:
-                absolute_url = self.url_parser.fix_season_in_url(
-                    absolute_url, str(season_year)
-                )
+                try:
+                    absolute_url = self.url_parser.fix_season_in_url(
+                        absolute_url, str(season_year)
+                    )
+                except Exception as e:
+                    print(f"   ⚠️ Season URL fix failed: {str(e)}")
+                    # Continue with original URL
             
             return {
                 'name': name,
                 'url': absolute_url,
                 'id': str(club_id),
-                'code': club_code
+                'code': str(club_code)
             }
             
         except Exception as error:
-            raise ParsingError(
-                self.config.ERROR_MESSAGES['club_extraction'].format(error)
-            )
+            print(f"   ⚠️ Club extraction failed: {str(error)}")
+            return None
     
     def extract_season_options(self, soup: BeautifulSoup) -> List[Dict[str, str]]:
         """
@@ -103,34 +116,54 @@ class ClubDataExtractor(BaseDataExtractor):
         try:
             seasons = []
             
-            # Find the season select dropdown
+            # Find the season select dropdown with error handling
             season_select = soup.find('select', {'name': 'saison_id'})
             if not season_select:
+                print("   ⚠️ No season select dropdown found")
                 return seasons
             
-            # Extract all option elements
-            options = season_select.find_all('option')
+            # Extract all option elements safely
+            try:
+                options = season_select.find_all('option')
+                if not options:
+                    print("   ⚠️ No option elements found in season select")
+                    return seasons
+            except Exception as e:
+                print(f"   ⚠️ Failed to find options: {str(e)}")
+                return seasons
             
             for option in options:
                 if not isinstance(option, Tag):
                     continue
                 
-                year = str(option.get('value', '')).strip()
-                season_id = str(option.get_text(strip=True))
-                
-                if year and season_id:
-                    seasons.append({
-                        'year': year,
-                        'season_id': season_id
-                    })
+                try:
+                    # Safely extract year and season_id
+                    year_value = option.get('value')
+                    if not year_value:
+                        continue
+                        
+                    season_text = option.get_text(strip=True)
+                    if not season_text:
+                        continue
+                    
+                    year = str(year_value).strip()
+                    season_id = str(season_text).strip()
+                    
+                    if year and season_id:
+                        seasons.append({
+                            'year': year,
+                            'season_id': season_id
+                        })
+                        
+                except Exception as e:
+                    print(f"   ⚠️ Failed to extract option data: {str(e)}")
+                    continue
             
             return seasons
             
         except Exception as error:
-            raise ParsingError(
-                self.config.ERROR_MESSAGES['season_extraction'].format(error)
-            )
-
+            print(f"   ❌ Season extraction failed: {str(error)}")
+            return []
 
 class ClubRowExtractor(BaseDataExtractor):
     """
@@ -167,17 +200,23 @@ class ClubRowExtractor(BaseDataExtractor):
         Returns:
             Dictionary with club data or None if extraction fails
         """
-        if not isinstance(cells, list) or not all(
-            isinstance(cell, Tag) for cell in cells
-        ):
+        if not isinstance(cells, list) or not cells:
+            return None
+            
+        # Check if all cells are valid Tags
+        if not all(isinstance(cell, Tag) for cell in cells):
             return None
         
         # Validate minimum cell count
-        self.validate_cell_count(
-            cells, 
-            self.config.COLUMN_REQUIREMENTS['club_minimum'], 
-            "club row"
-        )
+        try:
+            self.validate_cell_count(
+                cells, 
+                self.config.COLUMN_REQUIREMENTS['club_minimum'], 
+                "club row"
+            )
+        except Exception as e:
+            print(f"   ⚠️ Cell count validation failed: {str(e)}")
+            return None
         
         # Ensure string parameters
         season_year = str(season_year) if season_year else ""
@@ -188,11 +227,23 @@ class ClubRowExtractor(BaseDataExtractor):
             # Extract club info from first available cells
             club_info = self._find_club_info_in_cells(cells, season_year)
             if not club_info:
+                print(f"   ⚠️ No club info found in row for season {season_id}")
                 return None
             
-            # Extract additional data using column mapping
-            mapping = self.column_mapping.get_club_mapping()
-            extracted_data = self._extract_club_statistics(cells, mapping)
+            # Extract additional data using column mapping with error handling
+            try:
+                mapping = self.column_mapping.get_club_mapping()
+                extracted_data = self._extract_club_statistics(cells, mapping)
+            except Exception as e:
+                print(f"   ⚠️ Statistics extraction failed: {str(e)}")
+                # Use default values if statistics extraction fails
+                extracted_data = {
+                    'squad_size': 0,
+                    'average_age_of_players': 0.0,
+                    'number_of_foreign_players': 0,
+                    'average_market_value': 0.0,
+                    'total_market_value': 0.0
+                }
             
             # Combine all data
             return {
@@ -207,9 +258,8 @@ class ClubRowExtractor(BaseDataExtractor):
             }
             
         except Exception as error:
-            raise ParsingError(
-                self.config.ERROR_MESSAGES['row_extraction'].format(error)
-            )
+            print(f"   ❌ Row extraction failed for season {season_id}: {str(error)}")
+            return None
     
     def _find_club_info_in_cells(
         self, 
@@ -251,33 +301,56 @@ class ClubRowExtractor(BaseDataExtractor):
         Returns:
             Dictionary with extracted statistics
         """
-        # Extract basic statistics
-        squad_size = self.extract_number(cells[mapping['squad_size']])
-        average_age = self.extract_float(cells[mapping['average_age']])
-        foreign_players = self.extract_number(cells[mapping['foreign_players']])
-        
-        # Handle optional market value columns
-        avg_market_value = 0.0
-        total_market_value = 0.0
-        
-        # Extract average market value if column exists
-        if (len(cells) > mapping['avg_market_value'] and 
-            mapping['avg_market_value'] < len(cells)):
-            avg_market_value = self.extract_market_value(
-                cells[mapping['avg_market_value']]
-            )
-        
-        # Extract total market value if column exists
-        if (len(cells) > mapping['total_market_value'] and 
-            mapping['total_market_value'] < len(cells)):
-            total_market_value = self.extract_market_value(
-                cells[mapping['total_market_value']]
-            )
-        
-        return {
-            'squad_size': int(squad_size),
-            'average_age_of_players': float(average_age),
-            'number_of_foreign_players': int(foreign_players),
-            'average_market_value': float(avg_market_value),
-            'total_market_value': float(total_market_value)
-        }
+        try:
+            # Safely extract basic statistics with bounds checking
+            squad_size = 0
+            average_age = 0.0
+            foreign_players = 0
+            
+            if len(cells) > mapping.get('squad_size', 999):
+                squad_size = self.extract_number(cells[mapping['squad_size']])
+                
+            if len(cells) > mapping.get('average_age', 999):
+                average_age = self.extract_float(cells[mapping['average_age']])
+                
+            if len(cells) > mapping.get('foreign_players', 999):
+                foreign_players = self.extract_number(cells[mapping['foreign_players']])
+            
+            # Handle optional market value columns with bounds checking
+            avg_market_value = 0.0
+            total_market_value = 0.0
+            
+            # Extract average market value if column exists and is in bounds
+            avg_mv_col = mapping.get('avg_market_value', 999)
+            if avg_mv_col < len(cells):
+                try:
+                    avg_market_value = self.extract_market_value(cells[avg_mv_col])
+                except Exception:
+                    avg_market_value = 0.0
+            
+            # Extract total market value if column exists and is in bounds
+            total_mv_col = mapping.get('total_market_value', 999)
+            if total_mv_col < len(cells):
+                try:
+                    total_market_value = self.extract_market_value(cells[total_mv_col])
+                except Exception:
+                    total_market_value = 0.0
+            
+            return {
+                'squad_size': int(squad_size),
+                'average_age_of_players': float(average_age),
+                'number_of_foreign_players': int(foreign_players),
+                'average_market_value': float(avg_market_value),
+                'total_market_value': float(total_market_value)
+            }
+            
+        except Exception as e:
+            print(f"   ⚠️ Statistics extraction error: {str(e)}")
+            # Return default values on any error
+            return {
+                'squad_size': 0,
+                'average_age_of_players': 0.0,
+                'number_of_foreign_players': 0,
+                'average_market_value': 0.0,
+                'total_market_value': 0.0
+            }

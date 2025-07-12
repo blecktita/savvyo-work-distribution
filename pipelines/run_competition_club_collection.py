@@ -1,4 +1,4 @@
-# core/scrapers/runner_scraper.py
+# pipelines/run_competition_club_collection.py
 """
 Main competition scraper API interface.
 """
@@ -11,11 +11,10 @@ from configurations import (
     EnvironmentVariables, 
     ConfigFactory
 )
-from .scraping_orchestrator import (
+from .princpal_orchestrator import (
     CompetitionOrchestrator,
     ClubOrchestrator
 )
-from exceptions import VpnRequiredError
 
 
 class ScrapingConstants:
@@ -294,7 +293,7 @@ def scrape_competitions(
     environment: str = "development",
     max_pages: Optional[int] = None,
     use_vpn: bool = True
-) -> pd.DataFrame:
+    ) -> pd.DataFrame:
     """
     Convenience function to scrape competitions with STRICT VPN enforcement.
     
@@ -327,7 +326,7 @@ def scrape_competitions_safe_mode(
     entry_url: str,
     environment: str = "development",
     max_pages: Optional[int] = None
-) -> pd.DataFrame:
+    ) -> pd.DataFrame:
     """
     Convenience function to scrape competitions WITHOUT VPN protection.
     
@@ -353,7 +352,7 @@ def scrape_club_data(
     driver,
     environment: str = "development",
     use_vpn: bool = True
-) -> pd.DataFrame:
+    ) -> pd.DataFrame:
     """
     Convenience function to scrape club data with VPN enforcement.
 

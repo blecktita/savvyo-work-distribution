@@ -1,40 +1,46 @@
-# core/scrapers/competition_orchestrator.py
+# pipelines/principal_orchestrator/competition_orchestrator.py
 """
 Competition-specific orchestrator for scraping operations.
 Handles competition data extraction while maintaining original logic.
 """
 
-import time
 from typing import Optional
 import pandas as pd
 from bs4 import BeautifulSoup
 
 from .base_orchestrator import BaseOrchestrator
-from .orchestrator_config import OrchestratorConfig
-from .html_parser import CompetitionTableParser
-from .database_manager import DatabaseManager
-from .exceptions import VpnRequiredError, DatabaseOperationError
-from utils.configurations import ScraperConfig
+from extractors import CompetitionTableParser
+from database import create_database_service
+from exceptions import VpnRequiredError, DatabaseOperationError, DatabaseServiceError
+from configurations.settings_orchestrator import ScraperConfig
+from configurations.factory import get_config
 
 
 class CompetitionOrchestrator(BaseOrchestrator):
     """
     Orchestrates the complete competition scraping process.
-    Maintains exact original logic flow for competition data extraction.
     """
 
-    def __init__(self, config: Optional[ScraperConfig] = None):
+    def __init__(self, config: Optional[ScraperConfig] = None, environment: str = "development"):
         """
         Initialize competition scraping orchestrator.
 
         Args:
-            config: Scraper configuration (uses development if None)
+            config: Scraper configuration (uses environment default if None)
+            environment: Environment name (development, testing, production)
  
         Raises:
             VpnRequiredError: If VPN is required but not available
             ConfigurationError: If configuration is invalid
         """
+        # Load config based on environment if not provided
+        if config is None:
+            config = get_config(environment)
+        
         super().__init__(config)
+        
+        # Store environment for later use
+        self.environment = environment
         
         #***> Initialize competition-specific components <***
         self._setup_competition_components()
@@ -43,25 +49,39 @@ class CompetitionOrchestrator(BaseOrchestrator):
         """
         Initialize components specific to competition scraping.
         """
-        #***> Initialize database manager if enabled <***
-        self.database_manager = None
+        #***> Initialize database service if enabled <***
+        self.database_service = None
         if self.config.save_to_database:
-            self._initialize_database_manager()
+            self._initialize_database_service()
 
-    def _initialize_database_manager(self) -> None:
+    def _initialize_database_service(self) -> None:
         """
-        Initialize database manager with error handling.
+        Initialize database service with error handling using new factory.
         """
         try:
             environment = self._get_environment_setting()
-            self.database_manager = DatabaseManager(environment)
-        except DatabaseOperationError as error:
+            self.database_service = create_database_service(environment)
+            
+            # Initialize the service (creates tables if needed)
+            self.database_service.initialize()
+            
+        except (DatabaseServiceError, DatabaseOperationError) as error:
             self._handle_database_initialization_error(error)
+
+    def _get_environment_setting(self) -> str:
+        """
+        Get environment setting for database service.
+        
+        Returns:
+            Environment string for database initialization
+        """
+        if hasattr(self.config, '_environment') and self.config._environment:
+            return self.config._environment
+        return self.environment
 
     def scrape_all_pages(self, driver, entry_url: str) -> pd.DataFrame:
         """
         Scrape all pages of competition data with VPN enforcement.
-        Maintains the exact original logic flow.
         
         Args:
             driver: Selenium WebDriver instance
@@ -73,7 +93,6 @@ class CompetitionOrchestrator(BaseOrchestrator):
         Raises:
             VpnRequiredError: If VPN protection fails
         """
-        start_time = time.time()
 
         #***> Initialize parser and ensure VPN protection <***
         self.parser = CompetitionTableParser(entry_url)
@@ -81,7 +100,7 @@ class CompetitionOrchestrator(BaseOrchestrator):
         
         #***> Navigate to starting URL with VPN timing <***
         driver.get(entry_url)
-        self.vpn_handler.handle_request_timing("starting to navigate ...")
+        self.vpn_handler.handle_request_timing("starting to navigate ...") # this line calls on mandatory delay
         
         #***> Initialize collection variables <***
         all_data = []
@@ -150,7 +169,7 @@ class CompetitionOrchestrator(BaseOrchestrator):
 
     def _handle_database_save(self, final_df: pd.DataFrame) -> bool:
         """
-        Handle database save operation.
+        Handle database save operation using new service interface.
         
         Args:
             final_df: Final scraped data
@@ -158,30 +177,23 @@ class CompetitionOrchestrator(BaseOrchestrator):
         Returns:
             True if saved to database successfully
         """
-        if final_df.empty or not self.database_manager:
+        if final_df.empty or not self.database_service:
             return False
         
         try:
-            return self.database_manager.save_competitions(final_df)
-        except DatabaseOperationError:
+            return self.database_service.add_competitions_bulk(final_df)
+        except (DatabaseServiceError, DatabaseOperationError):
             return False
 
-    def save_to_csv(
-            self, 
-            data: pd.DataFrame, 
-            filename: Optional[str] = None
-        ) -> str:
+    def _handle_database_initialization_error(self, error: Exception) -> None:
         """
-        Save scraped data to CSV file.
+        Handle database initialization errors.
         
         Args:
-            data: DataFrame with competition data
-            filename: Optional custom filename
-            
-        Returns:
-            Path to saved CSV file
+            error: Database operation error
         """
-        return self.file_manager.save_to_csv(data, filename)
+        print(f"Warning: Database initialization failed in {self.environment} environment: {error}")
+        # Don't raise - allow scraper to continue without database
 
     def cleanup(self) -> None:
         """
@@ -189,8 +201,8 @@ class CompetitionOrchestrator(BaseOrchestrator):
         """
         try:
             #***> Cleanup database service <***
-            if self.database_manager:
-                self.database_manager.cleanup()
+            if self.database_service:
+                self.database_service.cleanup()
             
             #***> Cleanup VPN connections <***
             self.vpn_handler.cleanup()
@@ -206,5 +218,39 @@ class CompetitionOrchestrator(BaseOrchestrator):
         Returns:
             True if database is available
         """
-        return (self.database_manager is not None and
-                self.database_manager.is_available)
+        return (self.database_service is not None and
+                self._check_database_health())
+
+    def _check_database_health(self) -> bool:
+        """
+        Check database health through the service.
+        
+        Returns:
+            True if database is healthy
+        """
+        try:
+            if not self.database_service:
+                return False
+                
+            # Use the database manager's health check
+            return self.database_service.db_manager.health_check()
+        except Exception:
+            return False
+
+    def get_database_info(self) -> dict:
+        """
+        Get database connection information for monitoring.
+        
+        Returns:
+            Dictionary with database information
+        """
+        if not self.database_service:
+            return {"status": "not_initialized"}
+            
+        try:
+            info = self.database_service.db_manager.get_connection_info()
+            info["service_environment"] = self.environment
+            info["service_available"] = self.database_available
+            return info
+        except Exception as error:
+            return {"status": "error", "error": str(error)}
