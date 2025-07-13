@@ -234,14 +234,14 @@ class ScrapingService:
 
 
 def _execute_scraping_workflow(
-    scraper_class,
-    scraper_method: str,
-    environment: str,
-    use_vpn: bool,
-    driver=None,
-    entry_url: Optional[str] = None,
-    max_pages: Optional[int] = None
-) -> pd.DataFrame:
+        scraper_class,
+        scraper_method: str,
+        environment: str,
+        use_vpn: bool,
+        driver=None,
+        entry_url: Optional[str] = None,
+        max_pages: Optional[int] = None
+    ) -> pd.DataFrame:
     """
     Execute common scraping workflow with consistent error handling.
     

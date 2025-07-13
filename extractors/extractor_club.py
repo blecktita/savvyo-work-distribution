@@ -207,6 +207,8 @@ class ClubRowExtractor(BaseDataExtractor):
         if not all(isinstance(cell, Tag) for cell in cells):
             return None
         
+        cell_count = len(cells)
+
         # Validate minimum cell count
         try:
             self.validate_cell_count(
@@ -232,7 +234,7 @@ class ClubRowExtractor(BaseDataExtractor):
             
             # Extract additional data using column mapping with error handling
             try:
-                mapping = self.column_mapping.get_club_mapping()
+                mapping = self.column_mapping.get_club_mapping_safe(cell_count)
                 extracted_data = self._extract_club_statistics(cells, mapping)
             except Exception as e:
                 print(f"   ⚠️ Statistics extraction failed: {str(e)}")

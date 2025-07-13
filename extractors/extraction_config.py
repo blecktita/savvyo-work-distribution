@@ -43,7 +43,9 @@ class ExtractionConfig:
         'europa_jugend': 8,
         'europa': 11,
         'other_regions': 9,
-        'club_minimum': 5
+        'club_minimum': 2,
+        'club_with_market_values': 7,
+        'club_basic': 5
     }
     
     # Default Values
@@ -128,3 +130,28 @@ class ColumnMapping:
             'avg_market_value': 5,
             'total_market_value': 6
         }
+
+    @staticmethod
+    def get_club_mapping_safe(cell_count: int) -> Dict[str, int]:
+        """
+        SAFE VERSION: Get column mapping that adapts to available columns.
+        This is the new bulletproof version for production use.
+        """
+        mapping = {
+            'club_info_start': 0,
+            'club_info_end': 1,
+        }
+        
+        # Only add mappings for columns that actually exist
+        if cell_count >= 3:
+            mapping['squad_size'] = 2
+        if cell_count >= 4:
+            mapping['average_age'] = 3
+        if cell_count >= 5:
+            mapping['foreign_players'] = 4
+        if cell_count >= 6:
+            mapping['avg_market_value'] = 5
+        if cell_count >= 7:
+            mapping['total_market_value'] = 6
+        
+        return mapping

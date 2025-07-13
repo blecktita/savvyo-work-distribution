@@ -41,6 +41,7 @@ class ClubOrchestrator(BaseOrchestrator):
             VpnRequiredError: If VPN is required but not available
             ConfigurationError: If configuration is invalid
         """
+        self._skip_base_vpn_handler = True
         super().__init__(config)
         
         #***> Set environment file path with default <***
@@ -541,7 +542,8 @@ class ClubOrchestrator(BaseOrchestrator):
                         print(f"✅ Continuing despite exceptions: {decision.reason}")
                     
                     continue
-
+            
+            self._check_and_mark_competition_complete(competition_id)
             print(f"   ✅ Finished processing {competition_id}")
             return pd.DataFrame()
             
@@ -558,7 +560,8 @@ class ClubOrchestrator(BaseOrchestrator):
         seasons: List[Dict[str, str]]
         ) -> None:
         """
-        NEW: Mark old seasons as failed to prevent retrying.
+        NEW: Mark old seasons as completed (not failed) to prevent retrying.
+        These seasons are unavailable due to data cutoff, not processing errors.
         """
         if not cutoff_year:
             return
@@ -566,22 +569,79 @@ class ClubOrchestrator(BaseOrchestrator):
         try:
             cutoff_year_int = int(cutoff_year)
             
-            for season in seasons:
-                try:
-                    season_year_int = int(season['year'])
-                    if season_year_int < cutoff_year_int:
-                        # Mark as failed with smart termination message
-                        self.monitor_progress.mark_season_failed(
-                            competition_id, 
-                            season['season_id'],
-                            f"Smart termination: Data unavailable before {cutoff_year}"
-                        )
-                        print(f"   ⏭️ Skipped {season['season_id']} (before cutoff)")
-                except (ValueError, KeyError):
-                    continue
-                    
+            # Use database transaction to mark seasons as completed
+            with self.monitor_progress.db_service.transaction() as session:
+                for season in seasons:
+                    try:
+                        season_year_int = int(season['year'])
+                        if season_year_int < cutoff_year_int:
+                            # Update season status to COMPLETED with explanatory message
+                            session.execute(text("""
+                                UPDATE season_progress 
+                                SET status = :status, 
+                                    completed_at = :now,
+                                    clubs_saved = 0,
+                                    error_message = :message
+                                WHERE competition_id = :comp_id 
+                                AND season_id = :season_id
+                            """), {
+                                "status": TaskStatus.COMPLETED.value,
+                                "now": datetime.now(),
+                                "message": f"Smart termination: Data unavailable before {cutoff_year}",
+                                "comp_id": competition_id,
+                                "season_id": season['season_id']
+                            })
+                            
+                            print(f"   ✅ Marked {season['season_id']} as completed (data unavailable before {cutoff_year})")
+                            
+                    except (ValueError, KeyError):
+                        continue
+                
+                session.commit()
+                        
         except (ValueError, KeyError):
             pass
+        except Exception as e:
+            print(f"   ⚠️ Error marking old seasons as unavailable: {str(e)}")
+        # Don't raise - this is cleanup, not critical
+
+    def _check_and_mark_competition_complete(self, competition_id: str) -> None:
+        """
+        Check if a competition has no pending seasons left and mark it as completed.
+        Should be called after smart termination marks old seasons as unavailable.
+        """
+        try:
+            with self.monitor_progress.db_service.transaction() as session:
+                # Check if any seasons are still pending
+                pending_check = session.execute(text("""
+                    SELECT COUNT(*) FROM season_progress 
+                    WHERE competition_id = :comp_id 
+                    AND status = :pending_status
+                """), {
+                    "comp_id": competition_id,
+                    "pending_status": TaskStatus.PENDING.value
+                })
+                
+                pending_count = pending_check.fetchone()[0]
+                
+                if pending_count == 0:
+                    # No pending seasons left - mark competition as completed
+                    session.execute(text("""
+                        UPDATE competition_progress 
+                        SET status = :status, 
+                            completed_at = :now
+                        WHERE competition_id = :comp_id
+                    """), {
+                        "status": TaskStatus.COMPLETED.value,
+                        "now": datetime.now(),
+                        "comp_id": competition_id
+                    })
+                    
+                    session.commit()
+                    print(f"   🎉 Competition {competition_id} marked as completed (no pending seasons)")
+                    
+        except Exception as e:
+            print(f"   ⚠️ Error checking competition completion: {str(e)}")
 
     def get_smart_termination_summary(self) -> Dict:
         """

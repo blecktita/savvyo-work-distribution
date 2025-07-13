@@ -11,6 +11,7 @@ from exceptions import VpnRequiredError, VpnConnectionError, IPSecurityViolation
 from security import IPSecurityManager
 from security.models import SecurityAlert
 from logger import VpnHandlerLogger
+import traceback
 
 
 class VpnProtectionHandler:
@@ -189,7 +190,7 @@ class VpnProtectionHandler:
     def _apply_request_delays(self, operation: str) -> None:
         """Apply request delays with timing logging"""
         if self.vpn_manager and self.vpn_protection_active:
-            delay = getattr(self.config, "mandatory_delay", 0)
+            delay = getattr(self.config.vpn, "mandatory_delay", 0)
             delay_type = "mandatory"
         else:
             delay = getattr(self.config, "request_delay", 0)

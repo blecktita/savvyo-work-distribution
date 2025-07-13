@@ -56,7 +56,8 @@ class BaseOrchestrator(ABC):
         Initialize base components common to all orchestrators.
         """
         #***> Initialize VPN protection handler <***
-        self.vpn_handler = VpnProtectionHandler(self.config)
+        if not hasattr(self, '_skip_base_vpn_handler'):
+            self.vpn_handler = VpnProtectionHandler(self.config)
         
         #***> Initialize navigation manager <***
         self.navigator = NavigationManager()
