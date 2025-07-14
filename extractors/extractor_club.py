@@ -210,15 +210,13 @@ class ClubRowExtractor(BaseDataExtractor):
         cell_count = len(cells)
 
         # Validate minimum cell count
-        try:
-            self.validate_cell_count(
-                cells, 
-                self.config.COLUMN_REQUIREMENTS['club_minimum'], 
-                "club row"
-            )
-        except Exception as e:
-            print(f"   ⚠️ Cell count validation failed: {str(e)}")
+        min_required = 2  # We only need 2 columns minimum for club extraction
+        if cell_count < min_required:
+            print(f"   ❌ Need at least {min_required} columns for club info, got {cell_count}")
             return None
+
+        print(f"   ✅ Validation passed: {cell_count} columns available (minimum: {min_required})")
+
         
         # Ensure string parameters
         season_year = str(season_year) if season_year else ""

@@ -6,9 +6,43 @@ import subprocess
 import signal
 import sys
 import atexit
+import logging
+
+# ✅ APPROACH 1: Set VPN logging level IMMEDIATELY at import time
+logging.getLogger("VpnHandler_file").setLevel(logging.ERROR)
+logging.getLogger("urllib3").setLevel(logging.WARNING)
+logging.getLogger("selenium").setLevel(logging.WARNING)
+
 from pipelines.run_competition_club_collection import scrape_club_data
 from selenium import webdriver
 
+def setup_production_logging():
+    """Setup clean logging for production runs - Enhanced version"""
+    
+    # Multiple approaches to ensure VPN noise is suppressed
+    vpn_logger = logging.getLogger("VpnHandler_file")
+    vpn_logger.setLevel(logging.ERROR)
+    vpn_logger.propagate = False  # ✅ NEW: Prevent propagation to parent loggers
+    
+    # Clear any existing handlers and add a quiet one
+    if vpn_logger.handlers:
+        vpn_logger.handlers.clear()
+    
+    # Create a null handler to completely suppress output
+    null_handler = logging.NullHandler()
+    vpn_logger.addHandler(null_handler)
+    
+    # Also try to get the root VpnHandler logger
+    for logger_name in ["VpnHandler", "VpnHandler_file", "VpnHandlerLogger"]:
+        logger = logging.getLogger(logger_name)
+        logger.setLevel(logging.ERROR)
+        logger.propagate = False
+    
+    # Reduce other noisy loggers
+    logging.getLogger("urllib3").setLevel(logging.WARNING)
+    logging.getLogger("selenium").setLevel(logging.WARNING)
+    
+    print("🔧 Enhanced production logging configured - VPN noise should be eliminated")
 
 class MacOSSleepPrevention:
     """
@@ -90,7 +124,6 @@ class MacOSSleepPrevention:
         """
         self.stop_prevention()
 
-
 def check_system_info():
     """
     Display system information for debugging
@@ -113,15 +146,20 @@ def check_system_info():
             else:
                 print("   ℹ️ Intel architecture")
         
-        print()  # Empty line for readability
+        print()
         
     except Exception as e:
         print(f"⚠️ Could not get system info: {e}")
 
-
 if __name__ == "__main__":
-    # Start sleep prevention
+    # ✅ Multiple approaches to suppress VPN logs
+    setup_production_logging()
+    
+    # ✅ Also try to suppress after imports
+    logging.getLogger("VpnHandler_file").setLevel(logging.CRITICAL)
+    
+    print("🚀 Starting scraper with enhanced log suppression...")
+    
     with MacOSSleepPrevention():
-        # YOUR ORIGINAL CODE - UNCHANGED
         driver = webdriver.Chrome()
         scrape_club_data(driver=driver, environment="production", use_vpn=True)

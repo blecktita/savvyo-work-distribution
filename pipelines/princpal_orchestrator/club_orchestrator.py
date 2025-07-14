@@ -281,7 +281,7 @@ class ClubOrchestrator(BaseOrchestrator):
 
             # Process competitions one at a time
             processed_count = 0
-            max_competitions_per_session = 3
+            max_competitions_per_session = 100
             
             for competition in available_competitions:
                 if processed_count >= max_competitions_per_session:
@@ -735,6 +735,12 @@ class ClubOrchestrator(BaseOrchestrator):
             #***> Parse club data <***
             self.vpn_handler.handle_request_timing("page load delay...")
             soup = BeautifulSoup(driver.page_source, "html.parser")
+            print(f"   🔍 DEBUG: Page title: {soup.title.string if soup.title else 'No title'}")
+            print(f"   🔍 DEBUG: Page contains 'Club' text: {'Club' in soup.get_text()}")
+
+            tables = soup.find_all('table', class_='items')
+            print(f"   🔍 DEBUG: Found {len(tables)} tables with class 'items'")
+
             club_data = self.parser.parse_club_table(
                 soup, season_year, season_id, competition_id
             )

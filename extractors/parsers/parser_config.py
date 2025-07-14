@@ -26,7 +26,7 @@ class ParserConfig:
     }
     
     # Club table specific requirements
-    CLUB_TABLE_MIN_COLUMNS = 7
+    CLUB_TABLE_MIN_COLUMNS = 2
     
     # Table search patterns for club tables
     CLUB_TABLE_SELECTORS = [
