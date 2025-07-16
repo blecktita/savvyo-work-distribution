@@ -1,0 +1,33 @@
+{
+  # Global options
+  email aeduarte700@gmail.com
+}
+
+savvyo.duckdns.org {
+  # Let Caddy handle SSL automatically (no empty tls block needed)
+  
+  # Reverse proxy to your API
+  reverse_proxy database_api:5000 {
+    health_uri /health
+    health_interval 10s
+    health_timeout 3s
+  }
+
+  # Security headers
+  header {
+    # HSTS
+    Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+    # Prevent clickjacking
+    X-Frame-Options "DENY"
+    # XSS protection
+    X-Content-Type-Options "nosniff"
+    # Referrer policy
+    Referrer-Policy "strict-origin-when-cross-origin"
+  }
+
+  # Logging for security monitoring
+  log {
+    output file /var/log/caddy/access.log
+    format json
+  }
+}

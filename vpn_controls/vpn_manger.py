@@ -4,14 +4,13 @@ import time
 from typing import Optional, Dict, List
 import threading
 from datetime import datetime, timezone
-
+import requests
 from configurations import get_config
 from vpn_controls import RequestThrottler
 from exceptions import VpnRequiredError, VpnConnectionError, IPSecurityViolationError
 from security import IPSecurityManager
 from security.models import SecurityAlert
 from logger import VpnHandlerLogger
-import traceback
 
 
 class VpnProtectionHandler:
@@ -236,6 +235,7 @@ class VpnProtectionHandler:
             
             if rotation_success:
                 new_ip = self.ip_security.current_ip
+                self._update_duckdns_ip(new_ip)
                 self.logger.vpn_rotation_completed(
                     duration_seconds=duration,
                     new_ip=new_ip,
@@ -285,6 +285,42 @@ class VpnProtectionHandler:
             )
             raise VpnConnectionError(f"VPN rotation failed: {e}")
     
+    def _update_duckdns_ip(self, new_ip: str) -> None:
+        """Update DuckDNS with new IP after rotation"""
+        try:
+            # Your DuckDNS details
+            domain = "savvyo"  # Your chosen subdomain
+            token = "ac7179dc-2ea8-4779-b331-e602bd13c8f2"
+            
+            url = f"https://www.duckdns.org/update?domains={domain}&token={token}&ip={new_ip}"
+            
+            response = requests.get(url, timeout=10)
+            
+            if response.text.strip() == "OK":
+                self.logger.custom_event(
+                    event_type="duckdns_update_success",
+                    level="INFO",
+                    message="DuckDNS updated successfully",
+                    new_ip=new_ip,
+                    domain=f"{domain}.duckdns.org"
+                )
+            else:
+                self.logger.custom_event(
+                    event_type="duckdns_update_failed",
+                    level="ERROR",
+                    message=f"DuckDNS update failed: {response.text}",
+                    new_ip=new_ip
+                )
+                
+        except Exception as e:
+            self.logger.custom_event(
+                event_type="duckdns_update_error",
+                level="ERROR",
+                message=f"DuckDNS update error: {str(e)}",
+                new_ip=new_ip
+            )
+
+
     def get_vpn_statistics(self) -> Dict:
         """Get VPN statistics with logging"""
         if not (self.vpn_manager and self.vpn_protection_active):

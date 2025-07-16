@@ -1,30 +1,32 @@
 FROM python:3.11-slim-bookworm
 
-# Set working directory
-WORKDIR /app
-COPY requirements.txt .
-# Install system dependencies
-RUN apt-get update && apt-get install -y gcc libpq-dev curl \
-    && pip install --no-cache-dir -r requirements.txt \
-    && apt-get purge -y --auto-remove gcc libpq-dev \
-    && rm -rf /var/lib/apt/lists/*
+# 1. Create a non-root user early
+RUN useradd --create-home --shell /bin/bash --uid 1000 apiuser
 
-# Copy requirements and install Python dependencies
+# 2. Set working directory (owned by apiuser)
+WORKDIR /home/apiuser/app
+RUN chown apiuser:apiuser ./
 
-RUN pip install --no-cache-dir -r requirements.txt
+# 3. Copy and install dependencies
+#   - Copy only requirements.txt first (cacheable layer)
+#   - Install system packages + Python packages
+COPY --chown=apiuser:apiuser requirements.txt .
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends gcc libpq-dev curl \
+ && pip install --no-cache-dir -r requirements.txt \
+ && apt-get purge -y --auto-remove gcc libpq-dev \
+ && rm -rf /var/lib/apt/lists/*
 
-# Copy application code
-COPY app.py .
-# Create non-root user
-RUN useradd -m -u 1000 apiuser && chown -R apiuser:apiuser /app
+# 4. Copy application code
+COPY --chown=apiuser:apiuser app.py .
+
+# 5. Switch to non-root
 USER apiuser
 
-# Expose port
+# 6. Expose and healthcheck
 EXPOSE 5000
-
-# Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
-    CMD curl -f http://localhost:5000/health || exit 1
+  CMD curl -f http://localhost:5000/health || exit 1
 
-# Run the application
+# 7. Launch with Gunicorn
 CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "4", "app:app"]
