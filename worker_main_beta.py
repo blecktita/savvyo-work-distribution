@@ -59,12 +59,15 @@ class DistributedWorker:
             config._environment = self.environment
             config.use_vpn = True
             
+            # CRITICAL FIX: Disable database operations for workers
+            config.save_to_database = False
+            
             # Create orchestrator with in-memory tracker
             orchestrator = ClubOrchestrator(
                 config=config,
                 progress_tracker=progress_tracker  # Pass our custom tracker
             )
-            
+            orchestrator._initialize_components()
             try:
                 # Use the existing method but for specific competition
                 competition_data = {
