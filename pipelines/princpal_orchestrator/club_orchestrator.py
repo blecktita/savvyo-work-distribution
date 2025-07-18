@@ -30,7 +30,7 @@ class ClubOrchestrator(BaseOrchestrator):
 
     def __init__(self, config: Optional[ScraperConfig] = None,
                  env_file_path: Optional[str] = None,
-                 progress_tracker: Optional[object] = None):
+                 progress_tracker= None):
         """
         Initialize club scraping orchestrator.
 
@@ -102,12 +102,14 @@ class ClubOrchestrator(BaseOrchestrator):
             self._handle_database_initialization_error(error)
 
     def get_non_cup_competitions(self) -> List[Dict[str, str]]:
-        """
-        Get non-cup competitions from database.
-
-        Returns:
-            List of competition dictionaries with id and url
-        """
+        """Get non-cup competitions from database."""
+        
+        # NEW: Check for custom tracker FIRST (before any initialization)
+        if self._custom_progress_tracker:
+            # Worker mode - don't need database competitions
+            return []
+        
+        # Only initialize components if we actually need database access
         if not self._components_initialized:
             self._initialize_components()
             

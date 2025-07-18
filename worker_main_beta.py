@@ -1,4 +1,4 @@
-# worker_main.py
+# worker_main_beta.py
 """
 Worker machine main script - now uses existing ClubOrchestrator logic.
 """

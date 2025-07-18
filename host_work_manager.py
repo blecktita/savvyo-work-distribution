@@ -43,6 +43,8 @@ class HostWorkManager:
             config = ConfigFactory.development()
         
         config._environment = environment
+        # DISABLE VPN FOR HOST OPERATIONS
+        config.use_vpn = False
         self.club_orchestrator = ClubOrchestrator(config=config)
         
         print(f"🏠 Host work manager initialized for {environment}")
@@ -150,31 +152,36 @@ class HostWorkManager:
             return []
     
     def process_completed_work(self) -> int:
-        """
-        Process completed work from workers.
-        
-        Returns:
-            Number of completed work items processed
-        """
-        print("🔄 Processing completed work...")
-        
-        completed_work_items = self.github_bridge.get_completed_work()
-        processed_count = 0
-        
-        for work_result in completed_work_items:
-            try:
-                self._process_single_work_result(work_result)
-                self.github_bridge.archive_processed_work(work_result)
-                processed_count += 1
+        """Process completed work with better error reporting."""
+        try:
+            print("🔄 Processing completed work...")
+            completed_work_items = self.github_bridge.get_completed_work()
+            processed_count = 0
+            processing_errors = 0
+            
+            for work_result in completed_work_items:
+                try:
+                    self._process_single_work_result(work_result)
+                    self.github_bridge.archive_processed_work(work_result)
+                    processed_count += 1
+                    
+                except Exception as e:
+                    processing_errors += 1
+                    work_id = work_result.get('work_id', 'unknown')
+                    print(f"❌ Error processing work {work_id}: {e}")
+                    continue
+            
+            if processed_count > 0:
+                print(f"✅ Processed {processed_count} completed work items")
+            
+            if processing_errors > 0:
+                print(f"⚠️ {processing_errors} processing errors")
                 
-            except Exception as e:
-                print(f"❌ Error processing work {work_result.get('work_id', 'unknown')}: {e}")
-                continue
-        
-        if processed_count > 0:
-            print(f"✅ Processed {processed_count} completed work items")
-        
-        return processed_count
+            return processed_count
+            
+        except Exception as e:
+            print(f"💥 CRITICAL ERROR in completed work processing: {e}")
+            raise
     
     def _process_single_work_result(self, work_result: Dict):
         """Process a single completed work result."""
@@ -259,53 +266,222 @@ class HostWorkManager:
         return retried_count
     
     def monitor_work_status(self):
-        """Print current work status."""
-        github_status = self.github_bridge.get_work_status()
-        progress_summary = self.progress_monitor.get_progress_summary()
-        
-        print("\n📊 WORK STATUS:")
-        print(f"Available work orders: {github_status['available']}")
-        print(f"Claimed work orders: {github_status['claimed']}") 
-        print(f"Completed work orders: {github_status['completed']}")
-        print(f"Failed work orders: {github_status['failed']}")
-        print(f"Active workers: {progress_summary['active_workers']}")
-        print(f"Total clubs saved: {progress_summary['total_clubs_saved']}")
+        """Monitor status with error handling."""
+        try:
+            github_status = self.github_bridge.get_work_status()
+            progress_summary = self.progress_monitor.get_progress_summary()
+            
+            print(f"\n📊 STATUS: {github_status['available']} available | "
+                  f"{github_status['claimed']} claimed | {github_status['completed']} completed | "
+                  f"{github_status['failed']} failed | {progress_summary['total_clubs_saved']} clubs saved")
+                  
+        except Exception as e:
+            print(f"⚠️ Error getting work status: {e}")
+            # Try to get partial status
+            try:
+                github_status = self.github_bridge.get_work_status()
+                print(f"📊 Partial status: {github_status}")
+            except:
+                print("📊 Status unavailable")
     
     def run_host_cycle(self, max_cycles: int = 100):
         """
-        Run host machine cycle - create work orders and process results.
-        
-        Args:
-            max_cycles: Maximum number of cycles to run
+        Run host machine cycle with enhanced error visibility.
         """
         print(f"🚀 Starting host work cycle (max {max_cycles} cycles)")
         
-        for cycle in range(max_cycles):
-            print(f"\n🔄 Host cycle {cycle + 1}/{max_cycles}")
-            
-            # Create new work orders
-            new_orders = self.create_work_orders()
-            
-            # Process completed work
-            processed = self.process_completed_work()
-
-            _ = self.process_failed_work()
-            
-            # Show status
-            self.monitor_work_status()
-            
-            # If no new work and nothing to process, we're done
-            if new_orders == 0 and processed == 0:
-                github_status = self.github_bridge.get_work_status()
-                if github_status['claimed'] == 0:  # No active work
-                    print("🎉 All work completed!")
-                    break
-            
-            # Wait before next cycle
-            print("⏱️ Waiting 30 seconds before next cycle...")
-            time.sleep(30)
+        # Error tracking
+        error_log = []
+        total_new_orders = 0
+        total_processed = 0
+        last_status_time = 0
         
-        print("🏁 Host work cycle finished")
+        for cycle in range(max_cycles):
+            cycle_start = time.time()
+            cycle_errors = []
+            
+            try:
+                # Show cycle progress
+                if cycle < 5 or cycle % 10 == 0:
+                    print(f"\n🔄 Host cycle {cycle + 1}/{max_cycles}")
+                elif cycle % 5 == 0:
+                    print(".", end="", flush=True)
+                
+                # Create new work orders with error tracking
+                try:
+                    if cycle < 3:
+                        new_orders = self.create_work_orders()
+                    else:
+                        print("📋 Checking for new work...", end="", flush=True)
+                        new_orders = self._create_work_orders_quiet()
+                        if new_orders > 0:
+                            print(f" ✅ Created {new_orders} new orders")
+                        else:
+                            print(" (no new work)")
+                    
+                    total_new_orders += new_orders
+                    
+                except Exception as e:
+                    error_msg = f"Work order creation failed: {str(e)}"
+                    cycle_errors.append(error_msg)
+                    print(f"\n🚨 ERROR in work order creation: {e}")
+                    new_orders = 0
+                
+                # Process completed work with error tracking
+                try:
+                    processed = self.process_completed_work()
+                    total_processed += processed
+                except Exception as e:
+                    error_msg = f"Completed work processing failed: {str(e)}"
+                    cycle_errors.append(error_msg)
+                    print(f"\n🚨 ERROR processing completed work: {e}")
+                    processed = 0
+                
+                # Process failed work with error tracking
+                try:
+                    retried = self.process_failed_work()
+                except Exception as e:
+                    error_msg = f"Failed work processing failed: {str(e)}"
+                    cycle_errors.append(error_msg)
+                    print(f"\n🚨 ERROR processing failed work: {e}")
+                    retried = 0
+                
+                # Monitor work status with error tracking
+                try:
+                    current_time = time.time()
+                    if (cycle < 3 or cycle % 10 == 0 or 
+                        new_orders > 0 or processed > 0 or retried > 0 or
+                        current_time - last_status_time > 300):
+                        
+                        self.monitor_work_status()
+                        last_status_time = current_time
+                        
+                        if cycle > 0:
+                            print(f"📈 Session: {total_new_orders} created, {total_processed} completed")
+                            
+                        # Show recent errors if any
+                        if error_log:
+                            recent_errors = error_log[-3:]  # Last 3 errors
+                            print(f"⚠️ Recent errors ({len(error_log)} total):")
+                            for i, err in enumerate(recent_errors, 1):
+                                print(f"   {i}. {err}")
+                                
+                except Exception as e:
+                    error_msg = f"Status monitoring failed: {str(e)}"
+                    cycle_errors.append(error_msg)
+                    print(f"\n🚨 ERROR in status monitoring: {e}")
+                
+                # Add cycle errors to log
+                if cycle_errors:
+                    error_log.extend(cycle_errors)
+                    print(f"\n⚠️ Cycle {cycle + 1} had {len(cycle_errors)} error(s)")
+                
+                # Check for completion
+                if new_orders == 0 and processed == 0 and retried == 0:
+                    try:
+                        github_status = self.github_bridge.get_work_status()
+                        if github_status['claimed'] == 0 and github_status['available'] == 0:
+                            print("🎉 All work completed!")
+                            break
+                        elif cycle > 20:
+                            print(f"💤 No activity - waiting 2 minutes before cycle {cycle + 2}...")
+                            time.sleep(120)
+                            continue
+                    except Exception as e:
+                        print(f"🚨 ERROR checking completion status: {e}")
+                
+                # Wait between cycles
+                if new_orders > 0 or processed > 0:
+                    wait_time = 30
+                else:
+                    wait_time = 60
+                
+                cycle_duration = time.time() - cycle_start
+                if cycle_duration < wait_time:
+                    remaining_wait = wait_time - cycle_duration
+                    if cycle < 3 or remaining_wait > 30:
+                        print(f"⏱️ Waiting {remaining_wait:.0f}s before next cycle...")
+                    time.sleep(remaining_wait)
+                    
+            except Exception as e:
+                # Catch-all for unexpected cycle errors
+                error_msg = f"Cycle {cycle + 1} crashed: {str(e)}"
+                error_log.append(error_msg)
+                print(f"\n💥 CRITICAL ERROR in cycle {cycle + 1}: {e}")
+                print("🔄 Attempting to continue...")
+                time.sleep(30)  # Brief pause before retry
+        
+        # Final summary with error report
+        print(f"\n🏁 Host work cycle finished")
+        print(f"📊 Final summary: {total_new_orders} orders created, {total_processed} completed")
+        
+        if error_log:
+            print(f"\n⚠️ ERROR SUMMARY ({len(error_log)} total errors):")
+            for i, error in enumerate(error_log[-10:], 1):  # Show last 10 errors
+                print(f"   {i}. {error}")
+            print(f"\n💡 Consider investigating if errors persist or increase")
+        else:
+            print("✅ No errors encountered during execution")
+    
+    def _create_work_orders_quiet(self) -> int:
+        """Quiet version with better error handling."""
+        try:
+            # Pull latest state
+            self.github_bridge._git_pull()
+            
+            # Build existing work set
+            existing_work = set()
+            for folder_name in ['available', 'claimed', 'completed', 'failed']:
+                folder_path = self.github_bridge.folders[folder_name]
+                for work_file in folder_path.glob('comp_*.json'):
+                    try:
+                        with open(work_file, 'r') as f:
+                            work_data = json.load(f)
+                            competition_id = work_data.get('competition_id')
+                            if competition_id:
+                                existing_work.add(competition_id)
+                    except Exception as e:
+                        print(f"\n⚠️ Error reading work file {work_file}: {e}")
+                        continue
+            
+            # Get competitions
+            competitions = self.club_orchestrator.get_non_cup_competitions()
+            competitions = self.club_orchestrator._filter_excluded_competitions(competitions)
+            
+            work_orders_created = 0
+            creation_errors = 0
+            
+            for competition in competitions:
+                competition_id = competition['competition_id']
+                
+                # Skip if already exists or completed
+                if (competition_id in existing_work or 
+                    self.progress_monitor.is_competition_completed(competition_id)):
+                    continue
+                
+                try:
+                    completed_seasons = self._get_completed_seasons(competition_id)
+                    work_id = self.github_bridge.create_competition_work_order(
+                        competition, completed_seasons
+                    )
+                    existing_work.add(competition_id)
+                    work_orders_created += 1
+                    print(f"\n📋 Created: {work_id} for {competition_id}")
+                    
+                except Exception as e:
+                    creation_errors += 1
+                    print(f"\n❌ Failed creating work order for {competition_id}: {e}")
+                    # Continue with other competitions
+                    continue
+            
+            if creation_errors > 0:
+                print(f"\n⚠️ {creation_errors} work order creation errors")
+                
+            return work_orders_created
+            
+        except Exception as e:
+            print(f"\n💥 CRITICAL ERROR in work order creation: {e}")
+            raise  # Re-raise to be caught by caller
     
     def cleanup(self):
         """Cleanup resources."""
