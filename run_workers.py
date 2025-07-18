@@ -67,7 +67,7 @@ class SingleWorkerRunner:
         """Start the single worker process with VPN control."""
         try:
             cmd = [
-                'uv run --active', 'worker_main.py',
+                'python', 'worker_main.py',
                 '--repo-url', self.repo_url,
                 '--environment', self.environment,
                 '--max-work', str(self.max_work)

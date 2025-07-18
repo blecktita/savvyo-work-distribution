@@ -4,7 +4,7 @@ Host Machine Runner - Orchestrates the complete host workflow.
 Prevents sleep + runs host manager + optional local workers.
 """
 
-# python run_host.py --repo-url https://github.com/blecktita/savvyo-work-distribution.git --local-workers 1 --hours 8
+# uv run --active run_host.py --repo-url https://github.com/blecktita/savvyo-work-distribution.git --local-workers 1 --hours 8
 
 import subprocess
 import time
@@ -68,7 +68,7 @@ class HostWorkflowRunner:
         """Start the host work manager."""
         try:
             cmd = [
-                'uv run --active', 'host_work_manager.py',
+                'python', 'host_work_manager.py',
                 '--repo-url', self.repo_url,
                 '--environment', self.environment,
                 '--max-cycles', str(self.max_cycles)
@@ -95,7 +95,7 @@ class HostWorkflowRunner:
         for i in range(self.local_workers):
             try:
                 cmd = [
-                    'uv run --active', 'worker_main.py',
+                    'python', 'worker_main.py',
                     '--repo-url', self.repo_url,
                     '--environment', self.environment,
                     '--max-work', '1000'  # Higher limit for local workers
