@@ -208,8 +208,8 @@ class GitHubWorkBridge:
             except Exception as e:
                 print(f"⚠️ Error archiving work: {e}")
     
-    # WORKER MACHINE METHODS - ATOMIC VERSION
-    
+   
+   # WORKER MACHINE METHODS - ATOMIC VERSION
     def claim_available_work(self, worker_id: str) -> Optional[Dict]:
         """
         Atomically claim work using file creation to prevent race conditions.

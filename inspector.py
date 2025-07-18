@@ -11,7 +11,7 @@ import argparse
 from typing import Dict, List
 
 # Import your existing database components
-from .factory import create_database_service
+from database.factory.database_factory import create_database_service
 
 
 class DatabaseInspector:

@@ -9,7 +9,7 @@ import uuid
 import socket
 import os
 import pandas as pd
-from typing import Dict, List, Optional
+from typing import Dict, List
 from datetime import datetime
 from selenium import webdriver
 
@@ -86,9 +86,9 @@ class DistributedWorker:
         competition_url = work_order['competition_url']
         completed_seasons = work_order.get('completed_seasons', [])
         
-        print(f"🎯 Processing competition {competition_id}")
-        print(f"🔗 URL: {competition_url}")
-        print(f"⏭️ Skipping {len(completed_seasons)} completed seasons")
+        #print(f"🎯 Processing competition {competition_id}")
+        #print(f"🔗 URL: {competition_url}")
+        #print(f"⏭️ Skipping {len(completed_seasons)} completed seasons")
         
         try:
             # Ensure VPN protection

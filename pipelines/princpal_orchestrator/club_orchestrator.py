@@ -29,7 +29,8 @@ class ClubOrchestrator(BaseOrchestrator):
     """
 
     def __init__(self, config: Optional[ScraperConfig] = None,
-                 env_file_path: Optional[str] = None):
+                 env_file_path: Optional[str] = None,
+                 progress_tracker: Optional[object] = None):
         """
         Initialize club scraping orchestrator.
 
@@ -49,6 +50,8 @@ class ClubOrchestrator(BaseOrchestrator):
 
         #***> Initialize scraping control flag <***
         self.should_continue_scraping = True
+
+        self._custom_progress_tracker = progress_tracker
 
         #***> Initialize components flag to prevent recursion <***
         self._components_initialized = False
@@ -79,7 +82,10 @@ class ClubOrchestrator(BaseOrchestrator):
                 self._initialize_club_database_manager()
             
             #***> Initialize progress tracker <***
-            self.monitor_progress = create_work_tracker("production")
+            if self._custom_progress_tracker:
+                self.monitor_progress = self._custom_progress_tracker
+            else:
+                self.monitor_progress = create_work_tracker("production")
             self._components_initialized = True
             
         except Exception as error:

@@ -50,51 +50,89 @@ class HostWorkManager:
     def create_work_orders(self) -> int:
         """
         Create work orders for pending competitions.
+        FIXED: Proper deduplication to prevent duplicate work orders.
         
         Returns:
             Number of work orders created
         """
         print("📋 Creating work orders...")
 
+        # CRITICAL: Pull latest state from GitHub first
+        self.github_bridge._git_pull()
+        
+        # Build comprehensive set of existing work (competition_ids that already have work orders)
         existing_work = set()
-        for folder in ['available', 'claimed', 'completed']:
-            folder_path = self.github_bridge.folders[folder]
-            for work_file in folder_path.glob('comp_*.json'):
+        
+        print("🔍 Checking for existing work orders...")
+        
+        for folder_name in ['available', 'claimed', 'completed', 'failed']:
+            folder_path = self.github_bridge.folders[folder_name]
+            work_files = list(folder_path.glob('comp_*.json'))
+            
+            for work_file in work_files:
                 try:
                     with open(work_file, 'r') as f:
                         work_data = json.load(f)
-                        existing_work.add(work_data['competition_id'])
-                except:
+                        competition_id = work_data.get('competition_id')
+                        if competition_id:
+                            existing_work.add(competition_id)
+                            #print(f"  ✅ Found existing work for: {competition_id}")
+                except Exception as e:
+                    print(f"  ⚠️ Error reading {work_file}: {e}")
                     continue
         
-        # Get competitions that need work
+        print(f"📊 Total existing work orders: {len(existing_work)}")
+        
+        # Get all competitions that need work
+        print("🔍 Getting competitions from database...")
         competitions = self.club_orchestrator.get_non_cup_competitions()
         competitions = self.club_orchestrator._filter_excluded_competitions(competitions)
+        print(f"📊 Total competitions from database: {len(competitions)}")
         
         work_orders_created = 0
+        skipped_existing = 0
+        skipped_completed = 0
         
         for competition in competitions:
             competition_id = competition['competition_id']
-
+            
+            # Skip if work order already exists
             if competition_id in existing_work:
+                skipped_existing += 1
+                #print(f"⏭️ Skipping {competition_id} - work order already exists")
                 continue
             
-            # Skip if competition is already completed
+            # Skip if competition is already completed in database
             if self.progress_monitor.is_competition_completed(competition_id):
+                skipped_completed += 1
+                #print(f"⏭️ Skipping {competition_id} - already completed in database")
                 continue
             
             # Get completed seasons to include in work order
             completed_seasons = self._get_completed_seasons(competition_id)
             
             # Create work order
-            work_id = self.github_bridge.create_competition_work_order(
-                competition, completed_seasons
-            )
-            
-            work_orders_created += 1
-            print(f"📋 Created work order {work_id} for {competition_id}")
+            try:
+                work_id = self.github_bridge.create_competition_work_order(
+                    competition, completed_seasons
+                )
+                
+                # Add to existing_work set to prevent duplicates in this batch
+                existing_work.add(competition_id)
+                
+                work_orders_created += 1
+                print(f"📋 Created work order {work_id} for {competition_id}")
+                
+            except Exception as e:
+                print(f"❌ Failed to create work order for {competition_id}: {e}")
+                continue
         
-        print(f"✅ Created {work_orders_created} work orders")
+        print("\n📊 WORK ORDER CREATION SUMMARY:")
+        print(f"✅ Created: {work_orders_created} new work orders")
+        print(f"⏭️ Skipped (existing): {skipped_existing}")
+        print(f"⏭️ Skipped (completed): {skipped_completed}")
+        print(f"📊 Total processed: {len(competitions)}")
+        
         return work_orders_created
     
     def _get_completed_seasons(self, competition_id: str) -> List[str]:
@@ -162,9 +200,9 @@ class HostWorkManager:
                     competition_id, season_id, clubs_saved
                 )
                 
-                print(f"✅ Marked season {season_id} complete ({clubs_saved} clubs)")
+                #print(f"✅ Marked season {season_id} complete ({clubs_saved} clubs)")
         
-        print(f"✅ Finished processing {work_id}")
+        #print(f"✅ Finished processing {work_id}")
     
     def _save_club_data(self, club_df: pd.DataFrame):
         """Save club data to database."""

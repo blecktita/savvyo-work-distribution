@@ -156,8 +156,6 @@ class GitHubWorkBridge:
         
         # Commit and push
         self._git_add_commit_push(f"Create work order: {work_id}")
-        
-        print(f"📋 Created work order: {work_id} for {competition['competition_id']}")
         return work_id
     
     def get_completed_work(self) -> List[Dict]:
