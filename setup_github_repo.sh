@@ -4,7 +4,7 @@
 
 set -e
 
-REPO_NAME="scraping-work"
+REPO_NAME="savvyo-work-distribution"
 REPO_URL=""
 
 echo "🚀 Setting up GitHub repository for distributed scraping..."

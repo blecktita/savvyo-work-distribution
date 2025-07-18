@@ -7,7 +7,8 @@ Run this on the machine with PostgreSQL database.
 import time
 import pandas as pd
 from typing import List, Dict
-from datetime import datetime
+import json
+import os
 
 from coordination.github_bridge import GitHubWorkBridge
 from coordination.coordinator import create_work_tracker
@@ -31,7 +32,18 @@ class HostWorkManager:
         self.environment = environment
         self.github_bridge = GitHubWorkBridge(repo_url=repo_url)
         self.progress_monitor = create_work_tracker(environment)
-        self.club_orchestrator = ClubOrchestrator(environment=environment)
+        
+        # Fix: Use correct ClubOrchestrator initialization
+        from configurations import ConfigFactory
+        if environment == "production":
+            config = ConfigFactory.production()
+        elif environment == "testing":
+            config = ConfigFactory.testing()
+        else:
+            config = ConfigFactory.development()
+        
+        config._environment = environment
+        self.club_orchestrator = ClubOrchestrator(config=config)
         
         print(f"🏠 Host work manager initialized for {environment}")
     
@@ -43,6 +55,17 @@ class HostWorkManager:
             Number of work orders created
         """
         print("📋 Creating work orders...")
+
+        existing_work = set()
+        for folder in ['available', 'claimed', 'completed']:
+            folder_path = self.github_bridge.folders[folder]
+            for work_file in folder_path.glob('comp_*.json'):
+                try:
+                    with open(work_file, 'r') as f:
+                        work_data = json.load(f)
+                        existing_work.add(work_data['competition_id'])
+                except:
+                    continue
         
         # Get competitions that need work
         competitions = self.club_orchestrator.get_non_cup_competitions()
@@ -52,6 +75,9 @@ class HostWorkManager:
         
         for competition in competitions:
             competition_id = competition['competition_id']
+
+            if competition_id in existing_work:
+                continue
             
             # Skip if competition is already completed
             if self.progress_monitor.is_competition_completed(competition_id):
@@ -150,6 +176,49 @@ class HostWorkManager:
         except Exception as e:
             print(f"❌ Error saving club data: {e}")
             return False
+
+    def _mark_permanently_failed(self, failed_work):
+        """Mark competition as permanently failed in database."""
+        competition_id = failed_work['competition_id']
+        error_message = failed_work['error_message']
+        
+        # Mark in progress tracker as failed
+        try:
+            # Use existing progress tracker to mark as failed
+            with self.progress_monitor.db_service.transaction() as session:
+                from sqlalchemy import text
+                session.execute(text("""
+                    UPDATE competition_progress 
+                    SET status = 'failed', error_message = :error
+                    WHERE competition_id = :comp_id
+                """), {"comp_id": competition_id, "error": f"Permanent failure: {error_message}"})
+                session.commit()
+            
+            print(f"❌ Permanently failed: {competition_id} - {error_message}")
+            
+            # Remove from failed folder
+            if '_file_path' in failed_work:
+                os.remove(failed_work['_file_path'])
+                
+        except Exception as e:
+            print(f"⚠️ Error marking permanent failure: {e}")
+
+    def process_failed_work(self) -> int:
+        """Process failed work for retry or permanent failure marking."""
+        failed_work_items = self.github_bridge.get_failed_work()
+        retried_count = 0
+        
+        for failed_work in failed_work_items:
+            retry_count = failed_work.get('retry_count', 0)
+            
+            if retry_count < 3:  # Max 3 retries
+                self.github_bridge.retry_failed_work(failed_work)
+                retried_count += 1
+                print(f"🔄 Retrying failed work: {failed_work['work_id']} (attempt {retry_count + 1})")
+            else:
+                self._mark_permanently_failed(failed_work)
+        
+        return retried_count
     
     def monitor_work_status(self):
         """Print current work status."""
@@ -181,6 +250,8 @@ class HostWorkManager:
             
             # Process completed work
             processed = self.process_completed_work()
+
+            _ = self.process_failed_work()
             
             # Show status
             self.monitor_work_status()
@@ -213,7 +284,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Host Work Manager")
     parser.add_argument("--repo-url", help="GitHub repository URL")
     parser.add_argument("--environment", default="production", help="Database environment")
-    parser.add_argument("--max-cycles", type=int, default=100, help="Maximum cycles to run")
+    parser.add_argument("--max-cycles", type=int, default=1500, help="Maximum cycles to run")
     
     args = parser.parse_args()
     

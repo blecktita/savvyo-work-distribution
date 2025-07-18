@@ -8,11 +8,10 @@ import os
 import json
 import uuid
 import subprocess
-import time
 from typing import List, Dict, Optional
 from datetime import datetime
 from pathlib import Path
-
+import time
 
 class GitHubWorkBridge:
     """
@@ -64,20 +63,67 @@ class GitHubWorkBridge:
             folder.mkdir(parents=True, exist_ok=True)
     
     def _git_add_commit_push(self, message: str):
-        """Add, commit and push changes."""
-        try:
-            subprocess.run(['git', 'add', '.'], cwd=self.repo_path, check=True)
-            subprocess.run(['git', 'commit', '-m', message], cwd=self.repo_path, check=True)
-            subprocess.run(['git', 'push'], cwd=self.repo_path, check=False)
-        except subprocess.CalledProcessError:
-            pass  # Ignore commit failures (nothing to commit, etc.)
+        """Add, commit and push changes with atomic operations and retries."""
+        max_attempts = 5
+        base_delay = 2
+        
+        for attempt in range(1, max_attempts + 1):
+            try:
+                # Step 1: Add changes
+                subprocess.run(['git', 'add', '.'], cwd=self.repo_path, check=True)
+                
+                # Step 2: Commit (might fail if nothing to commit)
+                try:
+                    subprocess.run(['git', 'commit', '-m', message], cwd=self.repo_path, check=True)
+                except subprocess.CalledProcessError as e:
+                    if "nothing to commit" in str(e):
+                        print(f"Nothing to commit for: {message}")
+                        return  # Success - nothing needed committing
+                    else:
+                        raise  # Real error, re-raise
+                
+                # Step 3: Fetch latest changes
+                subprocess.run(['git', 'fetch', 'origin', 'main'], cwd=self.repo_path, check=True)
+                
+                # Step 4: Check if we're behind
+                result = subprocess.run(['git', 'merge-base', '--is-ancestor', 'origin/main', 'HEAD'], 
+                                    cwd=self.repo_path, capture_output=True)
+                
+                if result.returncode != 0:  # We're behind, need to pull
+                    print(f"Behind remote, pulling changes... (attempt {attempt})")
+                    subprocess.run(['git', 'pull', '--no-edit', 'origin', 'main'], cwd=self.repo_path, check=True)
+                
+                # Step 5: Try to push
+                subprocess.run(['git', 'push', 'origin', 'main'], cwd=self.repo_path, check=True)
+                
+                print(f"✅ Successfully pushed: {message} (attempt {attempt})")
+                return  # Success!
+                
+            except subprocess.CalledProcessError as e:
+                print(f"❌ Git operation failed on attempt {attempt}: {e}")
+                
+                if attempt < max_attempts:
+                    delay = base_delay * attempt
+                    print(f"⏳ Retrying in {delay} seconds...")
+                    time.sleep(delay)
+                else:
+                    print(f"🚨 All {max_attempts} attempts failed for: {message}")
+                    # Don't raise - log and continue to prevent worker crashes
+                    return  # Ignore commit failures (nothing to commit, etc.)
     
     def _git_pull(self):
-        """Pull latest changes."""
-        try:
-            subprocess.run(['git', 'pull'], cwd=self.repo_path, check=False)
-        except:
-            pass
+        """Pull latest changes with retry logic."""
+        max_attempts = 3
+        
+        for attempt in range(1, max_attempts + 1):
+            try:
+                subprocess.run(['git', 'pull', '--no-edit', 'origin', 'main'], cwd=self.repo_path, check=True)
+                return
+            except subprocess.CalledProcessError:
+                if attempt < max_attempts:
+                    time.sleep(attempt * 2)
+                else:
+                    print(f"⚠️ Failed to pull after {max_attempts} attempts")
     
     # HOST MACHINE METHODS
     
@@ -266,3 +312,38 @@ class GitHubWorkBridge:
             status[name] = len(list(folder.glob('*.json')))
         
         return status
+    
+    def get_failed_work(self) -> List[Dict]:
+        """Get all failed work for processing (HOST MACHINE)."""
+        self._git_pull()
+        
+        failed_work = []
+        for work_file in self.folders['failed'].glob('*.json'):
+            try:
+                with open(work_file, 'r') as f:
+                    work_result = json.load(f)
+                    work_result['_file_path'] = work_file
+                    failed_work.append(work_result)
+            except Exception as e:
+                print(f"⚠️ Error reading {work_file}: {e}")
+        
+        return failed_work
+
+    def retry_failed_work(self, failed_work: Dict):
+        """Move failed work back to available for retry."""
+        # Remove retry_count for the new work order
+        work_order = {k: v for k, v in failed_work.items() 
+                    if k not in ['failed_at', 'error_message', '_file_path']}
+        work_order['status'] = 'available'
+        work_order['retry_count'] = failed_work.get('retry_count', 0) + 1
+        
+        # Create new available work
+        work_file = self.folders['available'] / f"{work_order['work_id']}.json"
+        with open(work_file, 'w') as f:
+            json.dump(work_order, f, indent=2)
+        
+        # Remove from failed
+        if '_file_path' in failed_work:
+            os.remove(failed_work['_file_path'])
+        
+        self._git_add_commit_push(f"Retry failed work: {work_order['work_id']}")
