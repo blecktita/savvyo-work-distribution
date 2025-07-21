@@ -285,10 +285,46 @@ class HostWorkManager:
                 self.progress_monitor.mark_season_completed(
                     competition_id, season_id, clubs_saved
                 )
-                
-                #print(f"✅ Marked season {season_id} complete ({clubs_saved} clubs)")
         
-        #print(f"✅ Finished processing {work_id}")
+        self._mark_competition_completed(competition_id)
+        print(f"✅ Finished processing {work_id}")
+    
+    def _mark_competition_completed(self, competition_id: str):
+        """Simple: Mark competition as completed after processing work."""
+        try:
+            with self.progress_monitor.db_service.transaction() as session:
+                from sqlalchemy import text
+                
+                # Get competition URL
+                url_result = session.execute(text("""
+                    SELECT competition_url FROM competitions 
+                    WHERE competition_id = :comp_id
+                """), {"comp_id": competition_id})
+                
+                url_row = url_result.fetchone()
+                comp_url = url_row[0] if url_row else f"PROCESSED_{competition_id}"
+                
+                # Upsert competition as completed
+                if self.progress_monitor.db_type == 'PostgreSQL':
+                    session.execute(text("""
+                        INSERT INTO competition_progress 
+                        (competition_id, competition_url, status, completed_at)
+                        VALUES (:comp_id, :url, 'completed', NOW())
+                        ON CONFLICT (competition_id) DO UPDATE SET
+                            status = 'completed', completed_at = NOW()
+                    """), {"comp_id": competition_id, "url": comp_url})
+                else:  # SQLite
+                    session.execute(text("""
+                        INSERT OR REPLACE INTO competition_progress 
+                        (competition_id, competition_url, status, completed_at)
+                        VALUES (:comp_id, :url, 'completed', datetime('now'))
+                    """), {"comp_id": competition_id, "url": comp_url})
+                
+                session.commit()
+                print(f"🏆 Marked {competition_id} as completed")
+                
+        except Exception as e:
+            print(f"⚠️ Error marking competition complete: {e}")
     
     def _save_club_data(self, club_df: pd.DataFrame):
         """Save club data to database."""
