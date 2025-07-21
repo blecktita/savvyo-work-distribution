@@ -131,10 +131,7 @@ class GitHubWorkBridge:
     def _update_archive_index(self, work_result: Dict, archive_type: str):
         """
         Update the archive index with new work entry.
-        
-        Args:
-            work_result: Work result data
-            archive_type: 'completed' or 'failed'
+        ROBUST: Handles any data type issues.
         """
         try:
             # Load current index
@@ -148,16 +145,27 @@ class GitHubWorkBridge:
             # Update daily summary
             today = datetime.now().strftime('%Y-%m-%d')
             if today not in index['daily_summaries']:
-                index['daily_summaries'][today] = {'completed': 0, 'failed': 0, 'competitions': set()}
+                index['daily_summaries'][today] = {'completed': 0, 'failed': 0, 'competitions': []}
             
             index['daily_summaries'][today][archive_type] += 1
-            index['daily_summaries'][today]['competitions'].add(work_result.get('competition_id', 'unknown'))
             
-            # Convert set to list for JSON serialization
-            index['daily_summaries'][today]['competitions'] = list(index['daily_summaries'][today]['competitions'])
+            # ROBUST: Handle competitions field regardless of type
+            competitions_today = index['daily_summaries'][today]['competitions']
+            comp_id = work_result.get('competition_id', 'unknown')
+            
+            # Convert to list if it's not already
+            if not isinstance(competitions_today, list):
+                if hasattr(competitions_today, '__iter__') and not isinstance(competitions_today, str):
+                    competitions_today = list(competitions_today)
+                else:
+                    competitions_today = []
+                index['daily_summaries'][today]['competitions'] = competitions_today
+            
+            # Add competition if not already present
+            if comp_id not in competitions_today:
+                competitions_today.append(comp_id)
             
             # Update competition summary
-            comp_id = work_result.get('competition_id', 'unknown')
             if comp_id not in index['competition_summaries']:
                 index['competition_summaries'][comp_id] = {'completed': 0, 'failed': 0, 'last_processed': None}
             
@@ -170,6 +178,21 @@ class GitHubWorkBridge:
                 
         except Exception as e:
             print(f"⚠️ Error updating archive index: {e}")
+            print(f"   Error type: {type(e).__name__}")
+            print(f"   Work result keys: {list(work_result.keys()) if work_result else 'None'}")
+            
+            # Try to continue without crashing
+            try:
+                # Minimal update - just increment counter
+                with open(self.archive_index_file, 'r') as f:
+                    index = json.load(f)
+                index['total_archived'] = index.get('total_archived', 0) + 1
+                index['last_updated'] = datetime.now().isoformat()
+                with open(self.archive_index_file, 'w') as f:
+                    json.dump(index, f, indent=2)
+                print("   ✅ Minimal archive index update successful")
+            except Exception as fallback_error:
+                print(f"   ❌ Fallback update also failed: {fallback_error}")
     
     def _calculate_file_size_mb(self, file_path: Path) -> float:
         """Calculate file size in MB."""
