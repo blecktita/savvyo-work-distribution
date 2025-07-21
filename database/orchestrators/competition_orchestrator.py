@@ -20,7 +20,8 @@ class CompetitionDataOrchestrator:
         '__index_level_0__', 
         'index', 
         '_metadata',
-        'dataframe_info'
+        'dataframe_info',
+        'source_season_id'
     ]
     
     #***> Default values for numeric fields <***

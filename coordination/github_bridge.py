@@ -9,6 +9,7 @@ import os
 import json
 import uuid
 import subprocess
+import gzip
 from typing import List, Dict, Optional
 from datetime import datetime
 from pathlib import Path
@@ -19,33 +20,69 @@ class GitHubWorkBridge:
     Handles work distribution through GitHub repository.
     """
     
-    def __init__(self, repo_path: str = "./scraping-work", repo_url: str = None):
+    def __init__(self, repo_path: str = "./scraping-work",
+                 repo_url: str = None,
+                 archive_path: str = "./work_archive"):
         """
         Initialize GitHub bridge.
         
         Args:
             repo_path: Local path to git repository
             repo_url: GitHub repository URL (for cloning)
+            archive_path: Path for compressed backup storage
         """
         self.repo_path = Path(repo_path)
         self.repo_url = repo_url
+        self.archive_path = Path(archive_path)
         
         # Create folder structure
         self.folders = {
             'available': self.repo_path / 'available_competitions',
-            'claims': self.repo_path / 'claim_attempts',  # NEW: Atomic claims folder
+            'claims': self.repo_path / 'claim_attempts',
             'claimed': self.repo_path / 'claimed_competitions', 
             'completed': self.repo_path / 'completed_competitions',
             'failed': self.repo_path / 'failed_competitions'
         }
+
+        # Archive structure
+        self.archive_folders = {
+            'completed': self.archive_path / 'completed',
+            'failed': self.archive_path / 'failed', 
+            'metadata': self.archive_path / 'metadata'
+        }
+        
         
         self._setup_repository()
         self._create_folder_structure()
+        self._setup_archive_structure()
         
         print(f"🌐 GitHub bridge initialized: {self.repo_path}")
+        print(f"📦 Archive location: {self.archive_path}")
+    
+    def _setup_archive_structure(self):
+        """
+        Setup archive folder structure
+        """
+        for folder in self.archive_folders.values():
+            folder.mkdir(parents=True, exist_ok=True)
+        
+        # Create archive index if it doesn't exist
+        self.archive_index_file = self.archive_folders['metadata'] / 'archive_index.json'
+        if not self.archive_index_file.exists():
+            initial_index = {
+                'created_at': datetime.now().isoformat(),
+                'total_archived': 0,
+                'daily_summaries': {},
+                'competition_summaries': {},
+                'last_updated': datetime.now().isoformat()
+            }
+            with open(self.archive_index_file, 'w') as f:
+                json.dump(initial_index, f, indent=2)
     
     def _setup_repository(self):
-        """Setup git repository."""
+        """
+        Setup git repository
+        """
         if not self.repo_path.exists():
             if self.repo_url:
                 subprocess.run(['git', 'clone', self.repo_url, str(self.repo_path)], check=True)
@@ -63,6 +100,374 @@ class GitHubWorkBridge:
         """Create necessary folders."""
         for folder in self.folders.values():
             folder.mkdir(parents=True, exist_ok=True)
+        
+    def _compress_json_data(self, data: Dict, compression_level: int = 6) -> bytes:
+        """
+        Compress JSON data using gzip.
+        
+        Args:
+            data: Dictionary to compress
+            compression_level: Compression level (1-9, higher = better compression)
+            
+        Returns:
+            Compressed bytes
+        """
+        json_str = json.dumps(data, separators=(',', ':'))
+        return gzip.compress(json_str.encode('utf-8'), compresslevel=compression_level)
+    
+    def _decompress_json_data(self, compressed_data: bytes) -> Dict:
+        """
+        Decompress JSON data from gzip.
+        
+        Args:
+            compressed_data: Compressed bytes
+            
+        Returns:
+            Decompressed dictionary
+        """
+        json_str = gzip.decompress(compressed_data).decode('utf-8')
+        return json.loads(json_str)
+    
+    def _update_archive_index(self, work_result: Dict, archive_type: str):
+        """
+        Update the archive index with new work entry.
+        
+        Args:
+            work_result: Work result data
+            archive_type: 'completed' or 'failed'
+        """
+        try:
+            # Load current index
+            with open(self.archive_index_file, 'r') as f:
+                index = json.load(f)
+            
+            # Update counters
+            index['total_archived'] += 1
+            index['last_updated'] = datetime.now().isoformat()
+            
+            # Update daily summary
+            today = datetime.now().strftime('%Y-%m-%d')
+            if today not in index['daily_summaries']:
+                index['daily_summaries'][today] = {'completed': 0, 'failed': 0, 'competitions': set()}
+            
+            index['daily_summaries'][today][archive_type] += 1
+            index['daily_summaries'][today]['competitions'].add(work_result.get('competition_id', 'unknown'))
+            
+            # Convert set to list for JSON serialization
+            index['daily_summaries'][today]['competitions'] = list(index['daily_summaries'][today]['competitions'])
+            
+            # Update competition summary
+            comp_id = work_result.get('competition_id', 'unknown')
+            if comp_id not in index['competition_summaries']:
+                index['competition_summaries'][comp_id] = {'completed': 0, 'failed': 0, 'last_processed': None}
+            
+            index['competition_summaries'][comp_id][archive_type] += 1
+            index['competition_summaries'][comp_id]['last_processed'] = datetime.now().isoformat()
+            
+            # Save updated index
+            with open(self.archive_index_file, 'w') as f:
+                json.dump(index, f, indent=2)
+                
+        except Exception as e:
+            print(f"⚠️ Error updating archive index: {e}")
+    
+    def _calculate_file_size_mb(self, file_path: Path) -> float:
+        """Calculate file size in MB."""
+        try:
+            return file_path.stat().st_size / (1024 * 1024)
+        except:
+            return 0.0
+    
+    def archive_processed_work(self, work_result: Dict):
+        """
+        Archive processed work with compression instead of deleting.
+        Enhanced with proper JSON serialization.
+        """
+        work_id = work_result.get('work_id', 'unknown')
+        competition_id = work_result.get('competition_id', 'unknown')
+        
+        try:
+            # Clean work_result for JSON serialization
+            clean_work_result = self._clean_for_json(work_result.copy())
+            
+            # Determine archive type and prepare data
+            if clean_work_result.get('status') == 'failed':
+                archive_type = 'failed'
+                archive_folder = self.archive_folders['failed']
+            else:
+                archive_type = 'completed'
+                archive_folder = self.archive_folders['completed']
+            
+            # Create date-based subfolder
+            today = datetime.now().strftime('%Y-%m-%d')
+            daily_folder = archive_folder / today
+            daily_folder.mkdir(exist_ok=True)
+            
+            # Prepare archive entry with metadata
+            archive_entry = {
+                'archived_at': datetime.now().isoformat(),
+                'archive_type': archive_type,
+                'original_size_estimate': len(json.dumps(clean_work_result, default=str)),
+                'work_data': clean_work_result
+            }
+            
+            # Remove file path info from archive (this was causing the PosixPath issue)
+            if '_file_path' in archive_entry['work_data']:
+                del archive_entry['work_data']['_file_path']
+            
+            # Compress and save
+            compressed_data = self._compress_json_data(archive_entry)
+            archive_file = daily_folder / f"{work_id}.json.gz"
+            
+            with open(archive_file, 'wb') as f:
+                f.write(compressed_data)
+            
+            # Calculate compression stats
+            original_size = archive_entry['original_size_estimate']
+            compressed_size = len(compressed_data)
+            compression_ratio = (1 - compressed_size / original_size) * 100 if original_size > 0 else 0
+            
+            # Update archive index
+            self._update_archive_index(clean_work_result, archive_type)
+            
+            # Remove original file
+            if '_file_path' in work_result and Path(work_result['_file_path']).exists():
+                os.remove(work_result['_file_path'])
+            
+            # Commit removal to git
+            self._git_add_commit_push(f"Archive processed work: {work_id} (attempt 1)")
+            
+            print(f"📦 Archived: {work_id} ({competition_id})")
+            print(f"   💾 Size: {original_size:,} → {compressed_size:,} bytes ({compression_ratio:.1f}% savings)")
+            print(f"   📁 Location: {archive_file}")
+            
+        except Exception as e:
+            print(f"❌ Error archiving work {work_id}: {e}")
+            print(f"   🔍 Error details: {type(e).__name__}: {str(e)}")
+            
+            # Fallback to original deletion behavior
+            if '_file_path' in work_result:
+                try:
+                    os.remove(work_result['_file_path'])
+                    self._git_add_commit_push(f"Archive processed work: {work_id} (fallback deletion)")
+                    print(f"⚠️ Fallback: Deleted {work_id} after archive failure")
+                except Exception as delete_error:
+                    print(f"🚨 Critical: Could not delete or archive {work_id}: {delete_error}")
+    
+    def _clean_for_json(self, data):
+        """
+        Clean data structure for JSON serialization.
+        Converts non-JSON-serializable objects to strings.
+        
+        Args:
+            data: Data structure to clean (dict, list, or any object)
+            
+        Returns:
+            JSON-serializable version of the data
+        """
+        if isinstance(data, dict):
+            return {key: self._clean_for_json(value) for key, value in data.items()}
+        elif isinstance(data, list):
+            return [self._clean_for_json(item) for item in data]
+        elif isinstance(data, Path):
+            return str(data)
+        elif isinstance(data, datetime):
+            return data.isoformat()
+        elif hasattr(data, 'isoformat'):  # Handle other datetime-like objects
+            return data.isoformat()
+        elif hasattr(data, '__dict__'):  # Handle custom objects
+            return str(data)
+        elif callable(data):  # Handle functions
+            return str(data)
+        else:
+            return data
+
+    def get_archive_statistics(self) -> Dict:
+        """
+        Get statistics about archived work.
+        
+        Returns:
+            Dictionary with archive statistics
+        """
+        try:
+            with open(self.archive_index_file, 'r') as f:
+                index = json.load(f)
+            
+            # Calculate total archive size
+            total_size_mb = 0
+            file_count = 0
+            
+            for archive_folder in [self.archive_folders['completed'], self.archive_folders['failed']]:
+                for file_path in archive_folder.rglob('*.json.gz'):
+                    total_size_mb += self._calculate_file_size_mb(file_path)
+                    file_count += 1
+            
+            stats = {
+                'total_archived': index.get('total_archived', 0),
+                'total_size_mb': round(total_size_mb, 2),
+                'file_count': file_count,
+                'average_file_size_kb': round((total_size_mb * 1024) / file_count, 2) if file_count > 0 else 0,
+                'recent_activity': dict(list(index.get('daily_summaries', {}).items())[-7:]),  # Last 7 days
+                'top_competitions': dict(sorted(
+                    index.get('competition_summaries', {}).items(),
+                    key=lambda x: x[1].get('completed', 0) + x[1].get('failed', 0),
+                    reverse=True
+                )[:10])  # Top 10 by volume
+            }
+            
+            return stats
+            
+        except Exception as e:
+            print(f"⚠️ Error getting archive statistics: {e}")
+            return {'error': str(e)}
+    
+    def retrieve_archived_work(self, work_id: str = None, competition_id: str = None, 
+                              date: str = None, limit: int = 100) -> List[Dict]:
+        """
+        Retrieve archived work based on filters.
+        
+        Args:
+            work_id: Specific work ID to retrieve
+            competition_id: Filter by competition ID
+            date: Filter by date (YYYY-MM-DD format)
+            limit: Maximum number of results
+            
+        Returns:
+            List of matching archived work entries
+        """
+        results = []
+        processed = 0
+        
+        try:
+            # Search through archive folders
+            search_folders = []
+            if date:
+                # Search specific date
+                for archive_type in ['completed', 'failed']:
+                    date_folder = self.archive_folders[archive_type] / date
+                    if date_folder.exists():
+                        search_folders.append(date_folder)
+            else:
+                # Search all dates
+                for archive_type in ['completed', 'failed']:
+                    search_folders.extend(self.archive_folders[archive_type].iterdir())
+            
+            for folder in search_folders:
+                if not folder.is_dir():
+                    continue
+                    
+                for archive_file in folder.glob('*.json.gz'):
+                    if processed >= limit:
+                        break
+                        
+                    try:
+                        # Check work_id filter before decompressing
+                        if work_id and not archive_file.stem.replace('.json', '').startswith(work_id):
+                            continue
+                        
+                        # Decompress and load
+                        with open(archive_file, 'rb') as f:
+                            compressed_data = f.read()
+                        
+                        archive_entry = self._decompress_json_data(compressed_data)
+                        work_data = archive_entry.get('work_data', {})
+                        
+                        # Apply filters
+                        if competition_id and work_data.get('competition_id') != competition_id:
+                            continue
+                        
+                        # Add archive metadata
+                        work_data['_archive_info'] = {
+                            'archived_at': archive_entry.get('archived_at'),
+                            'archive_type': archive_entry.get('archive_type'),
+                            'archive_file': str(archive_file),
+                            'file_size_mb': self._calculate_file_size_mb(archive_file)
+                        }
+                        
+                        results.append(work_data)
+                        processed += 1
+                        
+                    except Exception as e:
+                        print(f"⚠️ Error reading archive file {archive_file}: {e}")
+                        continue
+                
+                if processed >= limit:
+                    break
+            
+            return results
+            
+        except Exception as e:
+            print(f"❌ Error retrieving archived work: {e}")
+            return []
+    
+    def cleanup_old_archives(self, days_to_keep: int = 90) -> Dict:
+        """
+        Clean up archive files older than specified days.
+        
+        Args:
+            days_to_keep: Number of days of archives to keep
+            
+        Returns:
+            Cleanup statistics
+        """
+        cutoff_date = datetime.now().timestamp() - (days_to_keep * 24 * 60 * 60)
+        
+        stats = {
+            'files_removed': 0,
+            'size_freed_mb': 0,
+            'folders_cleaned': 0,
+            'errors': []
+        }
+        
+        try:
+            for archive_type in ['completed', 'failed']:
+                archive_folder = self.archive_folders[archive_type]
+                
+                for date_folder in archive_folder.iterdir():
+                    if not date_folder.is_dir():
+                        continue
+                    
+                    # Check if folder is old enough to clean
+                    try:
+                        folder_date = datetime.strptime(date_folder.name, '%Y-%m-%d').timestamp()
+                        if folder_date >= cutoff_date:
+                            continue  # Keep this folder
+                    except ValueError:
+                        continue  # Skip non-date folders
+                    
+                    # Clean up old files in this folder
+                    files_in_folder = 0
+                    for archive_file in date_folder.glob('*.json.gz'):
+                        try:
+                            file_size = self._calculate_file_size_mb(archive_file)
+                            archive_file.unlink()
+                            stats['files_removed'] += 1
+                            stats['size_freed_mb'] += file_size
+                            files_in_folder += 1
+                        except Exception as e:
+                            stats['errors'].append(f"Could not remove {archive_file}: {e}")
+                    
+                    # Remove empty folder
+                    try:
+                        if files_in_folder > 0:
+                            date_folder.rmdir()
+                            stats['folders_cleaned'] += 1
+                    except OSError:
+                        pass  # Folder not empty or other issue
+            
+            stats['size_freed_mb'] = round(stats['size_freed_mb'], 2)
+            
+            print(f"🧹 Archive cleanup completed:")
+            print(f"   📁 Removed {stats['files_removed']} files in {stats['folders_cleaned']} folders")
+            print(f"   💾 Freed {stats['size_freed_mb']} MB")
+            if stats['errors']:
+                print(f"   ⚠️ {len(stats['errors'])} errors occurred")
+            
+            return stats
+            
+        except Exception as e:
+            stats['errors'].append(f"Cleanup failed: {e}")
+            return stats
     
     def _git_add_commit_push(self, message: str, max_retries: int = 5) -> bool:
         """Add, commit, and push with improved conflict resolution."""
@@ -140,6 +545,7 @@ class GitHubWorkBridge:
                 else:
                     print(f"⚠️ Failed to pull after {max_attempts} attempts")
     
+
     # HOST MACHINE METHODS
     
     def create_competition_work_order(self, competition: Dict, completed_seasons: List[str] = None) -> str:
@@ -196,20 +602,9 @@ class GitHubWorkBridge:
         
         return completed_work
     
-    def archive_processed_work(self, work_result: Dict):
-        """
-        Remove processed work file (HOST MACHINE).
-        """
-        if '_file_path' in work_result:
-            try:
-                os.remove(work_result['_file_path'])
-                self._git_add_commit_push(f"Archive processed work: {work_result.get('work_id', 'unknown')}")
-                print(f"🗄️ Archived: {work_result.get('work_id', 'unknown')}")
-            except Exception as e:
-                print(f"⚠️ Error archiving work: {e}")
-    
-   
+
    # WORKER MACHINE METHODS - ATOMIC VERSION
+
     def claim_available_work(self, worker_id: str) -> Optional[Dict]:
         """
         Atomically claim work using file creation to prevent race conditions.

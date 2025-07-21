@@ -92,16 +92,22 @@ class TeamDataOrchestrator:
                     existing = self._get_existing_club_record(club_data)
                     
                     if existing:
+                        print(f"🔄 Updating club {club_data['club_id']} / {club_data['season_year']}")
                         self._update_existing_club(club_data, existing)
                         duplicate_count += 1
                     else:
+                        print(f"✚ Inserting club {club_data['club_id']} / {club_data['season_year']}")
                         self._add_new_club(club_data)
                         success_count += 1
                         
-                except Exception:
+                except Exception as e:
+                    print(f"❌ Error details: {type(e).__name__}: {e}")
+                    print(f"❌ Club data: {club_data}")
+                    import traceback
+                    print(traceback.format_exc())
                     error_count += 1
                     continue
-            
+            print(f"✅ save_clubs: success {success_count}, duplicates {duplicate_count}, errors {error_count}")
             return (success_count + duplicate_count) > 0
             
         except Exception as e:
@@ -212,14 +218,18 @@ class TeamDataOrchestrator:
             )
 
     def _add_new_club(self, club_data: Dict[str, Any]) -> None:
-        """
-        Add new club record to database.
-        
-        Args:
-            club_data: Club data to add
-        """
+        """Add new club record to database."""
         if self.db_service is not None:
-            self.db_service.add_team(club_data)
+            try:
+                result = self.db_service.add_team(club_data)
+                # Don't access Team object attributes - just confirm success
+                if result:
+                    print(f"✅ Added team: {club_data['club_id']} / {club_data['season_year']}")
+                else:
+                    print(f"❌ Failed to add team: {club_data['club_id']}")
+            except Exception as e:
+                print(f"❌ Error adding team {club_data['club_id']}: {e}")
+                raise
 
     def cleanup(self) -> None:
         """

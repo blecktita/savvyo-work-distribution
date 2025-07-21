@@ -21,7 +21,8 @@ class HostWorkManager:
     Manages work distribution and result processing on host machine.
     """
     
-    def __init__(self, environment: str = "production", repo_url: str = None):
+    def __init__(self, environment: str = "production", repo_url: str = None, 
+             archive_path: str = None):
         """
         Initialize host work manager.
         
@@ -30,7 +31,12 @@ class HostWorkManager:
             repo_url: GitHub repository URL
         """
         self.environment = environment
-        self.github_bridge = GitHubWorkBridge(repo_url=repo_url)
+
+        if archive_path is None:
+            archive_path = f"./work_archive_{environment}"
+
+        self.github_bridge = GitHubWorkBridge(repo_url=repo_url,
+                                             archive_path=archive_path)
         self.progress_monitor = create_work_tracker(environment)
         
         # Fix: Use correct ClubOrchestrator initialization
@@ -48,6 +54,79 @@ class HostWorkManager:
         self.club_orchestrator = ClubOrchestrator(config=config)
         
         print(f"🏠 Host work manager initialized for {environment}")
+    
+    def get_archive_statistics(self) -> Dict:
+        """Get comprehensive archive statistics."""
+        try:
+            stats = self.github_bridge.get_archive_statistics()
+            
+            print("📊 ARCHIVE STATISTICS")
+            print("=" * 25)
+            print(f"Total archived: {stats.get('total_archived', 0):,} items")
+            print(f"Archive size: {stats.get('total_size_mb', 0):.2f} MB")
+            print(f"Files: {stats.get('file_count', 0):,}")
+            print(f"Avg file size: {stats.get('average_file_size_kb', 0):.2f} KB")
+            
+            return stats
+        except Exception as e:
+            print(f"⚠️ Error getting archive stats: {e}")
+            return {}
+    
+    def search_archived_work(self, competition_id: str = None, 
+                           date: str = None, limit: int = 50) -> List[Dict]:
+        """Search archived work results."""
+        try:
+            results = self.github_bridge.retrieve_archived_work(
+                competition_id=competition_id,
+                date=date,
+                limit=limit
+            )
+            
+            print(f"🔍 Found {len(results)} archived work items")
+            for result in results[:5]:  # Show first 5
+                work_id = result.get('work_id', 'unknown')
+                comp_id = result.get('competition_id', 'unknown')
+                status = result.get('status', 'unknown')
+                print(f"   📄 {work_id} ({comp_id}) - {status}")
+            
+            if len(results) > 5:
+                print(f"   ... and {len(results) - 5} more")
+            
+            return results
+        except Exception as e:
+            print(f"⚠️ Error searching archives: {e}")
+            return []
+    
+    def cleanup_old_archives(self, days_to_keep: int = 90):
+        """Clean up old archive files."""
+        try:
+            print(f"🧹 Cleaning up archives older than {days_to_keep} days...")
+            result = self.github_bridge.cleanup_old_archives(days_to_keep)
+            
+            print(f"✅ Cleanup completed:")
+            print(f"   📁 Removed: {result['files_removed']} files")
+            print(f"   💾 Freed: {result['size_freed_mb']:.2f} MB")
+            print(f"   🗂️ Cleaned: {result['folders_cleaned']} folders")
+            
+            if result['errors']:
+                print(f"   ⚠️ {len(result['errors'])} errors occurred")
+            
+            return result
+        except Exception as e:
+            print(f"⚠️ Error during cleanup: {e}")
+            return {'files_removed': 0, 'size_freed_mb': 0, 'folders_cleaned': 0, 'errors': [str(e)]}
+    
+    def run_archive_maintenance(self):
+        """Run routine archive maintenance."""
+        print("🛠️ Running archive maintenance...")
+        
+        # Show current stats
+        self.get_archive_statistics()
+        
+        # Clean up archives older than 90 days (configurable)
+        self.cleanup_old_archives(days_to_keep=90)
+        
+        print("✅ Archive maintenance completed")
     
     def create_work_orders(self) -> int:
         """
@@ -69,7 +148,7 @@ class HostWorkManager:
         
         for folder_name in ['available', 'claimed', 'completed', 'failed']:
             folder_path = self.github_bridge.folders[folder_name]
-            work_files = list(folder_path.glob('comp_*.json'))
+            work_files = list(folder_path.glob('*.json'))
             
             for work_file in work_files:
                 try:
@@ -286,15 +365,27 @@ class HostWorkManager:
     
     def run_host_cycle(self, max_cycles: int = 100):
         """
-        Run host machine cycle with enhanced error visibility.
+        Run host machine cycle with enhanced error visibility and archive management.
         """
         print(f"🚀 Starting host work cycle (max {max_cycles} cycles)")
+        
+        # 🆕 ARCHIVE: Show initial archive status
+        try:
+            if hasattr(self.github_bridge, 'get_archive_statistics'):
+                stats = self.github_bridge.get_archive_statistics()
+                total_archived = stats.get('total_archived', 0)
+                archive_size_mb = stats.get('total_size_mb', 0)
+                if total_archived > 0:
+                    print(f"📦 Archive status: {total_archived:,} items ({archive_size_mb:.1f} MB)")
+        except Exception as e:
+            print(f"⚠️ Could not get initial archive stats: {e}")
         
         # Error tracking
         error_log = []
         total_new_orders = 0
         total_processed = 0
         last_status_time = 0
+        last_archive_maintenance = 0  # 🆕 Track last archive maintenance
         
         for cycle in range(max_cycles):
             cycle_start = time.time()
@@ -331,6 +422,21 @@ class HostWorkManager:
                 try:
                     processed = self.process_completed_work()
                     total_processed += processed
+                    
+                    # 🆕 ARCHIVE: Show archive info when work is processed
+                    if processed > 0 and hasattr(self.github_bridge, 'get_archive_statistics'):
+                        try:
+                            stats = self.github_bridge.get_archive_statistics()
+                            recent_activity = stats.get('recent_activity', {})
+                            today = time.strftime('%Y-%m-%d')
+                            if today in recent_activity:
+                                today_stats = recent_activity[today]
+                                completed_today = today_stats.get('completed', 0)
+                                failed_today = today_stats.get('failed', 0)
+                                print(f"📦 Today's archive: {completed_today} completed, {failed_today} failed")
+                        except:
+                            pass  # Don't let archive stats break the flow
+                            
                 except Exception as e:
                     error_msg = f"Completed work processing failed: {str(e)}"
                     cycle_errors.append(error_msg)
@@ -346,9 +452,38 @@ class HostWorkManager:
                     print(f"\n🚨 ERROR processing failed work: {e}")
                     retried = 0
                 
+                # 🆕 ARCHIVE: Periodic archive maintenance (every 25 cycles or 2 hours)
+                current_time = time.time()
+                time_since_maintenance = current_time - last_archive_maintenance
+                
+                if (cycle > 0 and cycle % 25 == 0) or time_since_maintenance > 7200:  # 2 hours
+                    try:
+                        print("\n🛠️ Running periodic archive maintenance...")
+                        
+                        # Get current stats
+                        if hasattr(self, 'get_archive_statistics'):
+                            stats = self.get_archive_statistics()
+                            
+                            # Only clean up if we have a significant archive
+                            total_archived = stats.get('total_archived', 0)
+                            if total_archived > 100:
+                                print(f"🧹 Archive has {total_archived:,} items, running cleanup...")
+                                cleanup_result = self.cleanup_old_archives(days_to_keep=90)
+                                
+                                if cleanup_result['files_removed'] > 0:
+                                    print(f"✅ Freed {cleanup_result['size_freed_mb']:.1f} MB")
+                            else:
+                                print(f"📦 Archive has {total_archived} items (no cleanup needed)")
+                        
+                        last_archive_maintenance = current_time
+                        
+                    except Exception as e:
+                        error_msg = f"Archive maintenance failed: {str(e)}"
+                        cycle_errors.append(error_msg)
+                        print(f"⚠️ Archive maintenance error: {e}")
+                
                 # Monitor work status with error tracking
                 try:
-                    current_time = time.time()
                     if (cycle < 3 or cycle % 10 == 0 or 
                         new_orders > 0 or processed > 0 or retried > 0 or
                         current_time - last_status_time > 300):
@@ -411,9 +546,22 @@ class HostWorkManager:
                 print("🔄 Attempting to continue...")
                 time.sleep(30)  # Brief pause before retry
         
-        # Final summary with error report
+        # 🆕 ARCHIVE: Final summary with archive statistics
         print(f"\n🏁 Host work cycle finished")
         print(f"📊 Final summary: {total_new_orders} orders created, {total_processed} completed")
+        
+        # Show final archive statistics
+        try:
+            if hasattr(self, 'get_archive_statistics'):
+                print("\n📦 Final archive statistics:")
+                final_stats = self.get_archive_statistics()
+            elif hasattr(self.github_bridge, 'get_archive_statistics'):
+                print("\n📦 Final archive statistics:")
+                stats = self.github_bridge.get_archive_statistics()
+                print(f"   Total archived: {stats.get('total_archived', 0):,} items")
+                print(f"   Archive size: {stats.get('total_size_mb', 0):.2f} MB")
+        except Exception as e:
+            print(f"⚠️ Could not get final archive stats: {e}")
         
         if error_log:
             print(f"\n⚠️ ERROR SUMMARY ({len(error_log)} total errors):")
@@ -491,23 +639,44 @@ class HostWorkManager:
             self.club_orchestrator.cleanup()
 
 
-if __name__ == "__main__":
-    # Example usage
+def main():
+    """Enhanced main function with archive management options."""
     import argparse
     
-    parser = argparse.ArgumentParser(description="Host Work Manager")
+    parser = argparse.ArgumentParser(description="Host Work Manager with Archive Support")
     parser.add_argument("--repo-url", help="GitHub repository URL")
     parser.add_argument("--environment", default="production", help="Database environment")
     parser.add_argument("--max-cycles", type=int, default=1500, help="Maximum cycles to run")
+    parser.add_argument("--archive-path", help="Custom archive path")
+    
+    # Archive management options
+    parser.add_argument("--archive-stats", action="store_true", help="Show archive statistics and exit")
+    parser.add_argument("--archive-cleanup", type=int, help="Clean up archives older than N days and exit")
+    parser.add_argument("--archive-search", help="Search archives by competition_id and exit")
     
     args = parser.parse_args()
     
     try:
         manager = HostWorkManager(
             environment=args.environment,
-            repo_url=args.repo_url
+            repo_url=args.repo_url,
+            archive_path=args.archive_path
         )
         
+        # Handle archive management commands
+        if args.archive_stats:
+            manager.get_archive_statistics()
+            return
+        
+        if args.archive_cleanup:
+            manager.cleanup_old_archives(days_to_keep=args.archive_cleanup)
+            return
+            
+        if args.archive_search:
+            manager.search_archived_work(competition_id=args.archive_search)
+            return
+        
+        # Run normal cycle
         manager.run_host_cycle(args.max_cycles)
         
     except KeyboardInterrupt:
@@ -517,3 +686,7 @@ if __name__ == "__main__":
     finally:
         if 'manager' in locals():
             manager.cleanup()
+
+
+if __name__ == "__main__":
+    main()
