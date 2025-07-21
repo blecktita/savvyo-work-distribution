@@ -37,8 +37,7 @@ class DistributedWorker:
     def process_work_order(self, work_order: Dict, driver) -> Dict:
         """
         Process work order using existing scrape_club_data API.
-        
-        This is the key change - we now use your proven API!
+        FIXED: Now properly collects club data.
         """
         competition_id = work_order['competition_id']
         
@@ -48,7 +47,7 @@ class DistributedWorker:
             # Create in-memory progress tracker for this work order
             progress_tracker = InMemoryProgressTracker(work_order)
             
-            # Get config
+            # Get config (your existing code)
             if self.environment == "production":
                 config = ConfigFactory.production()
             elif self.environment == "testing":
@@ -58,16 +57,15 @@ class DistributedWorker:
             
             config._environment = self.environment
             config.use_vpn = True
-            
-            # CRITICAL FIX: Disable database operations for workers
-            config.save_to_database = False
+            config.save_to_database = False  # Critical fix
             
             # Create orchestrator with in-memory tracker
             orchestrator = ClubOrchestrator(
                 config=config,
-                progress_tracker=progress_tracker  # Pass our custom tracker
+                progress_tracker=progress_tracker
             )
             orchestrator._initialize_components()
+            
             try:
                 # Use the existing method but for specific competition
                 competition_data = {
@@ -75,25 +73,19 @@ class DistributedWorker:
                     'competition_url': work_order['competition_url']
                 }
                 
-                # Call existing scraping method
+                # Call existing scraping method (this populates the progress_tracker)
                 result_df = orchestrator._scrape_competition_club_data(driver, competition_data)
                 
-                # Extract results from progress tracker
+                # NEW: Get the actual collected data from the progress tracker
                 processed_seasons = progress_tracker.get_processed_seasons()
-                
-                # Convert DataFrame to records
-                if not result_df.empty:
-                    club_data = result_df.to_dict('records')
-                    total_clubs = len(club_data)
-                else:
-                    club_data = []
-                    total_clubs = 0
+                all_club_data = progress_tracker.get_all_club_data()
+                total_clubs = len(all_club_data)
                 
                 print(f"✅ Completed {competition_id}: {total_clubs} clubs, {len(processed_seasons)} seasons")
                 
                 return {
                     'seasons_processed': processed_seasons,
-                    'club_data': club_data,
+                    'club_data': all_club_data,  # Now contains actual data!
                     'total_clubs_scraped': total_clubs,
                     'execution_time_seconds': (datetime.now() - datetime.fromisoformat(work_order['created_at'])).total_seconds()
                 }

@@ -11,7 +11,9 @@ from exceptions import VpnRequiredError, VpnConnectionError, IPSecurityViolation
 from security import IPSecurityManager
 from security.models import SecurityAlert
 from logger import VpnHandlerLogger
+import logging
 
+logging.getLogger('VpnHandler_file').setLevel(logging.ERROR)
 
 class VpnProtectionHandler:
     """

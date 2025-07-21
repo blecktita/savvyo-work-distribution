@@ -676,7 +676,6 @@ class ProgressMonitor:
         print("✅ Reset %d seasons for competition %s", count, competition_id)
         return count
 
-
 class DatabaseProgressTracker:
     """
     Wrapper around existing ProgressMonitor for host machines.
@@ -722,6 +721,7 @@ class InMemoryProgressTracker:
         # Status tracking
         self.competition_status = 'pending'
         self.seasons_discovered_count = 0
+        self.all_club_data = []
         
         print(f"📝 In-memory tracker initialized for {self.competition_id}")
         print(f"   Worker: {self.worker_id}")
@@ -806,39 +806,6 @@ class InMemoryProgressTracker:
         
         self.current_season_status[season_id] = 'in_progress'
         print(f"📅 Started season: {season_id}")
-    
-    def mark_season_completed(self, competition_id: str, season_id: str, clubs_saved: int = 0):
-        """
-        Mark season as completed and track results.
-        
-        Args:
-            competition_id: Competition identifier
-            season_id: Season identifier
-            clubs_saved: Number of clubs scraped
-        """
-        if competition_id != self.competition_id:
-            return
-        
-        self.current_season_status[season_id] = 'completed'
-        
-        # Find the season details
-        season_details = None
-        for season in self.discovered_seasons:
-            if season.get('season_id', season.get('year', '')) == season_id:
-                season_details = season
-                break
-        
-        # Add to processed seasons list
-        processed_season = {
-            'season_id': season_id,
-            'season_year': season_details.get('year', season_details.get('season_year', season_id)) if season_details else season_id,
-            'clubs_scraped': clubs_saved,
-            'status': 'completed',
-            'completed_at': datetime.now().isoformat()
-        }
-        
-        self.processed_seasons.append(processed_season)
-        print(f"✅ Completed season {season_id}: {clubs_saved} clubs")
     
     def mark_season_failed(self, competition_id: str, season_id: str, error_message: str):
         """
@@ -959,13 +926,77 @@ class InMemoryProgressTracker:
         """
         return self.processed_seasons.copy()
     
-    def get_progress_summary(self) -> Dict:
+    def cleanup(self):
+        """Cleanup resources (no-op for in-memory tracker)."""
+        pass
+
+    def store_season_club_data(self, season_id: str, club_data_df):
         """
-        Get progress summary for this work order.
+        Store club data for a season.
+        
+        Args:
+            season_id: Season identifier
+            club_data_df: DataFrame with club data
+        """
+        if not club_data_df.empty:
+            # Convert DataFrame to records and store
+            season_clubs = club_data_df.to_dict('records')
+            
+            # Add season_id to each club record
+            for club in season_clubs:
+                club['source_season_id'] = season_id
+            
+            self.all_club_data.extend(season_clubs)
+            
+            print(f"💾 Stored {len(season_clubs)} clubs for season {season_id}")
+            return len(season_clubs)
+        else:
+            print(f"📭 No club data for season {season_id}")
+            return 0
+    
+    def get_all_club_data(self) -> List[Dict]:
+        """
+        Get all collected club data.
         
         Returns:
-            Dictionary with progress information
+            List of all club records
         """
+        return self.all_club_data.copy()
+    
+    def mark_season_completed(self, competition_id: str, season_id: str, clubs_saved: int = 0):
+        """
+        Enhanced version that properly tracks club data.
+        """
+        if competition_id != self.competition_id:
+            return
+        
+        self.current_season_status[season_id] = 'completed'
+        
+        # Find the season details
+        season_details = None
+        for season in self.discovered_seasons:
+            if season.get('season_id', season.get('year', '')) == season_id:
+                season_details = season
+                break
+        
+        # Use the ACTUAL number of clubs we stored, not the parameter
+        actual_clubs_count = len([club for club in self.all_club_data 
+                                 if club.get('source_season_id') == season_id])
+        
+        # Add to processed seasons list
+        processed_season = {
+            'season_id': season_id,
+            'season_year': season_details.get('year', season_details.get('season_year', season_id)) if season_details else season_id,
+            'clubs_scraped': actual_clubs_count,  # Use actual count
+            'status': 'completed',
+            'completed_at': datetime.now().isoformat()
+        }
+        
+        self.processed_seasons.append(processed_season)
+        print(f"✅ Completed season {season_id}: {actual_clubs_count} clubs")
+        
+    def get_progress_summary(self) -> Dict:
+        """Enhanced progress summary with actual club count."""
         total_seasons = len(self.discovered_seasons)
         completed_count = len([s for s in self.processed_seasons if s['status'] == 'completed'])
         failed_count = len([s for s in self.processed_seasons if s['status'] == 'failed'])
@@ -977,13 +1008,9 @@ class InMemoryProgressTracker:
             'seasons_completed': completed_count,
             'seasons_failed': failed_count,
             'seasons_skipped': len(self.completed_seasons),
-            'total_clubs_scraped': sum(s.get('clubs_scraped', 0) for s in self.processed_seasons),
+            'total_clubs_scraped': len(self.all_club_data),  # Actual club count
             'worker_id': self.worker_id
         }
-    
-    def cleanup(self):
-        """Cleanup resources (no-op for in-memory tracker)."""
-        pass
 
 #***> Simple factory function <***
 def create_work_tracker(environment: str = "production") -> ProgressMonitor:

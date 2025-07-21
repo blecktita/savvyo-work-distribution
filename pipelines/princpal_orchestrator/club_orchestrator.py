@@ -754,9 +754,13 @@ class ClubOrchestrator(BaseOrchestrator):
             )
 
             #***> Save data if available <***
-            clubs_saved = self._save_club_data(
-                club_data, competition_id, season_id
-            )
+            #***> Save data if available <***
+            if hasattr(self.monitor_progress, 'store_season_club_data'):
+                # Worker mode - store in memory
+                clubs_saved = self.monitor_progress.store_season_club_data(season_id, club_data)
+            else:
+                # Host mode - save to database
+                clubs_saved = self._save_club_data(club_data, competition_id, season_id)
             
             #***> Mark season as completed <***
             self.monitor_progress.mark_season_completed(
