@@ -5,13 +5,14 @@ If data exists in teams table, mark it as completed in progress tables.
 """
 
 import argparse
-from datetime import datetime
 from sqlalchemy import text
 from coordination.coordinator import create_work_tracker
 
 
 class DirectProgressSync:
-    """Sync progress tables with actual teams data."""
+    """
+    Sync progress tables with actual teams data
+    """
     
     def __init__(self, environment: str = "production"):
         self.environment = environment
@@ -51,7 +52,7 @@ class DirectProgressSync:
                 LIMIT 10
             """))
             
-            print(f"\n📈 COMPETITION_PROGRESS TABLE (latest 10):")
+            print("\n📈 COMPETITION_PROGRESS TABLE (latest 10):")
             comp_progress_rows = comp_progress_result.fetchall()
             if comp_progress_rows:
                 for row in comp_progress_rows:
@@ -71,7 +72,7 @@ class DirectProgressSync:
                 LIMIT 10
             """))
             
-            print(f"\n📅 SEASON_PROGRESS TABLE (top 10):")
+            print("\n📅 SEASON_PROGRESS TABLE (top 10):")
             season_progress_rows = season_progress_result.fetchall()
             if season_progress_rows:
                 for row in season_progress_rows:
@@ -127,7 +128,7 @@ class DirectProgressSync:
                 if comp_progress is None:
                     # Need to add competition_progress record
                     stats['competitions_to_add'] += 1
-                    print(f"   ➕ Would ADD competition_progress record")
+                    print("   ➕ Would ADD competition_progress record")
                     
                     if not dry_run:
                         # Use actual competition_url from competitions table, or fallback
@@ -216,16 +217,16 @@ class DirectProgressSync:
             
             if not dry_run:
                 session.commit()
-                print(f"\n✅ SYNC COMPLETED")
+                print("\n✅ SYNC COMPLETED")
             
-        print(f"\n📊 SUMMARY:")
+        print("\n📊 SUMMARY:")
         print(f"   Competitions to add: {stats['competitions_to_add']}")
         print(f"   Competitions to update: {stats['competitions_to_update']}")
         print(f"   Seasons to add: {stats['seasons_to_add']}")
         print(f"   Seasons to update: {stats['seasons_to_update']}")
         
         if dry_run:
-            print(f"\n💡 Run with --execute to actually make these changes")
+            print("\n💡 Run with --execute to actually make these changes")
         
         return stats
     
