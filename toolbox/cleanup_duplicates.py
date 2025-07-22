@@ -22,7 +22,7 @@ def cleanup_duplicate_work_orders(repo_path="./scraping-work"):
     competitions = defaultdict(list)
     
     # Scan available_competitions folder
-    available_folder = repo_path / "available_competitions"
+    available_folder = repo_path / "available_work"
     
     if not available_folder.exists():
         print("❌ Available competitions folder not found!")

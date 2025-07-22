@@ -37,11 +37,11 @@ class GitHubWorkBridge:
         
         # Create folder structure
         self.folders = {
-            'available': self.repo_path / 'available_competitions',
-            'claims': self.repo_path / 'claim_attempts',
-            'claimed': self.repo_path / 'claimed_competitions', 
-            'completed': self.repo_path / 'completed_competitions',
-            'failed': self.repo_path / 'failed_competitions'
+            'available': self.repo_path / 'available_work',
+            'claims': self.repo_path / 'work_queue',
+            'claimed': self.repo_path / 'active_work', 
+            'completed': self.repo_path / 'completed_work',
+            'failed': self.repo_path / 'retry_queue'
         }
 
         # Archive structure
