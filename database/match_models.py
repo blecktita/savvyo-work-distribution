@@ -81,10 +81,7 @@ class Match(Base):
         String(255), nullable=True,
         doc="Competition name as extracted"
     )
-    competition_id = Column(
-        String(100), nullable=True,
-        doc="Competition ID from source - links to your Competition model"
-    )
+    competition_id = Column(String(50), ForeignKey('competitions.competition_id'), nullable=True)
     competition_logo = Column(
         Text, nullable=True,
         doc="Competition logo URL"
@@ -241,10 +238,10 @@ class Match(Base):
     )
 
     # Relationships
-    goals = relationship("Goal", back_populates="match", lazy="dynamic")
-    cards = relationship("Card", back_populates="match", lazy="dynamic")
-    substitutions = relationship("Substitution", back_populates="match", lazy="dynamic")
-    lineups = relationship("MatchLineup", back_populates="match", lazy="dynamic")
+    goals = relationship("Goal", back_populates="match", lazy="selectin")
+    cards = relationship("Card", back_populates="match", lazy="selectin")
+    substitutions = relationship("Substitution", back_populates="match", lazy="selectin")
+    lineups = relationship("MatchLineup", back_populates="match", lazy="selectin")
 
     def __repr__(self) -> str:
         return (

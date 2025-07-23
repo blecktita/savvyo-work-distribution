@@ -14,7 +14,8 @@ from ..core.database_manager import DatabaseManager
 from ..repositories.competition_repository import CompetitionRepository
 from ..repositories.team_repository import TeamRepository
 from database.database_models import Competition, Team
-
+from ..repositories.match_repository import MatchRepository, PlayerRepository, MatchdayInfoRepository
+from database.match_models import Match, Player, MatchdayInfo
 
 class DatabaseService:
     """
@@ -36,6 +37,9 @@ class DatabaseService:
         )
         self.competition_repo = CompetitionRepository(self.db_manager)
         self.team_repo = TeamRepository(self.db_manager)
+        self.match_repo = MatchRepository(self.db_manager)
+        self.player_repo = PlayerRepository(self.db_manager)
+        self.matchday_repo = MatchdayInfoRepository(self.db_manager)
         self._initialized = False
 
     def initialize(self, create_tables: bool = True) -> None:
@@ -277,6 +281,161 @@ class DatabaseService:
             competition_id,
             update_data
         )
+    
+    #***> NEW: Match Operations <***
+    def add_match(self, match_data: Dict[str, Any]) -> Match:
+        """Add a new match."""
+        return self._execute_operation(
+            "add_match", 
+            self.match_repo.create, 
+            match_data
+        )
+
+    def get_match(self, match_id: str) -> Optional[Match]:
+        """Get match by ID."""
+        return self._execute_operation(
+            "get_match", 
+            self.match_repo.get_by_id, 
+            match_id
+        )
+
+    def get_match_with_details(self, match_id: str) -> Optional[Match]:
+        """Get match with all related data."""
+        return self._execute_operation(
+            "get_match_with_details",
+            self.match_repo.get_match_with_details,
+            match_id
+        )
+
+    def get_matches_by_competition(
+        self, competition_id: str, season: str
+    ) -> List[Match]:
+        """Get matches by competition and season."""
+        return self._execute_operation(
+            "get_matches_by_competition",
+            self.match_repo.get_by_competition_and_season,
+            competition_id,
+            season
+        )
+
+    def get_matches_by_matchday(
+        self, competition_id: str, season: str, matchday: int
+    ) -> List[Match]:
+        """Get matches by specific matchday."""
+        return self._execute_operation(
+            "get_matches_by_matchday",
+            self.match_repo.get_by_matchday,
+            competition_id,
+            season,
+            matchday
+        )
+
+    def update_match(
+        self, match_id: str, update_data: Dict[str, Any]
+    ) -> Optional[Match]:
+        """Update match."""
+        return self._execute_operation(
+            "update_match",
+            self.match_repo.update,
+            match_id,
+            update_data
+        )
+
+    def delete_match(self, match_id: str, soft_delete: bool = True) -> bool:
+        """Delete match."""
+        return self._execute_operation(
+            "delete_match",
+            self.match_repo.delete,
+            match_id,
+            soft_delete
+        )
+
+    #***> NEW: Player Operations <***
+    def add_player(self, player_data: Dict[str, Any]) -> Player:
+        """Add a new player."""
+        return self._execute_operation(
+            "add_player",
+            self.player_repo.create,
+            player_data
+        )
+
+    def get_player(self, player_id: str) -> Optional[Player]:
+        """Get player by ID."""
+        return self._execute_operation(
+            "get_player",
+            self.player_repo.get_by_id,
+            player_id
+        )
+
+    def update_player(
+        self, player_id: str, update_data: Dict[str, Any]
+    ) -> Optional[Player]:
+        """Update player."""
+        return self._execute_operation(
+            "update_player",
+            self.player_repo.update,
+            player_id,
+            update_data
+        )
+
+    def delete_player(self, player_id: str, soft_delete: bool = True) -> bool:
+        """Delete player."""
+        return self._execute_operation(
+            "delete_player",
+            self.player_repo.delete,
+            player_id,
+            soft_delete
+        )
+
+    #***> NEW: Matchday Info Operations <***
+    def add_matchday_info(self, matchday_data: Dict[str, Any]) -> MatchdayInfo:
+        """Add new matchday info."""
+        return self._execute_operation(
+            "add_matchday_info",
+            self.matchday_repo.create,
+            matchday_data
+        )
+
+    def get_matchday_info(self, matchday_id: int) -> Optional[MatchdayInfo]:
+        """Get matchday info by ID."""
+        return self._execute_operation(
+            "get_matchday_info",
+            self.matchday_repo.get_by_id,
+            matchday_id
+        )
+
+    def get_matchday_info_by_details(
+        self, competition_id: str, season: str, matchday_number: int
+    ) -> Optional[MatchdayInfo]:
+        """Get matchday info by competition, season, and matchday number."""
+        return self._execute_operation(
+            "get_matchday_info_by_details",
+            self.matchday_repo.get_by_competition_season_matchday,
+            competition_id,
+            season,
+            matchday_number
+        )
+
+    def update_matchday_info(
+        self, matchday_id: int, update_data: Dict[str, Any]
+    ) -> Optional[MatchdayInfo]:
+        """Update matchday info."""
+        return self._execute_operation(
+            "update_matchday_info",
+            self.matchday_repo.update,
+            matchday_id,
+            update_data
+        )
+
+    def delete_matchday_info(self, matchday_id: int, soft_delete: bool = True) -> bool:
+        """Delete matchday info."""
+        return self._execute_operation(
+            "delete_matchday_info",
+            self.matchday_repo.delete,
+            matchday_id,
+            soft_delete
+        )
+
 
     #***> Bulk Competition Operations <***
     def add_competitions_bulk(self, competitions_data: pd.DataFrame) -> bool:
@@ -456,4 +615,64 @@ class DatabaseService:
         except Exception as error:
             raise DatabaseServiceError(
                 "Could not generate competition summary"
+            ) from error
+
+    #***> NEW: Match Analytics <***
+    def get_match_summary(
+        self, competition_id: str, season: str
+    ) -> Dict[str, Any]:
+        """
+        Get match summary statistics for a competition/season.
+        """
+        if not self._initialized:
+            self.initialize()
+
+        try:
+            matches = self.get_matches_by_competition(competition_id, season)
+            
+            if not matches:
+                return {"error": f"No matches found for competition {competition_id}, season {season}"}
+
+            total_matches = len(matches)
+            total_goals = sum(
+                (match.home_final_score or 0) + (match.away_final_score or 0) 
+                for match in matches
+            )
+            completed_matches = sum(
+                1 for match in matches 
+                if match.home_final_score is not None and match.away_final_score is not None
+            )
+            
+            summary = {
+                "competition_id": competition_id,
+                "season": season,
+                "total_matches": total_matches,
+                "completed_matches": completed_matches,
+                "pending_matches": total_matches - completed_matches,
+                "total_goals": total_goals,
+                "average_goals_per_match": total_goals / completed_matches if completed_matches > 0 else 0,
+                "home_wins": sum(
+                    1 for match in matches 
+                    if (match.home_final_score or 0) > (match.away_final_score or 0)
+                ),
+                "away_wins": sum(
+                    1 for match in matches 
+                    if (match.away_final_score or 0) > (match.home_final_score or 0)
+                ),
+                "draws": sum(
+                    1 for match in matches 
+                    if (match.home_final_score or 0) == (match.away_final_score or 0)
+                    and match.home_final_score is not None
+                ),
+                "unique_venues": len(set(match.venue for match in matches if match.venue)),
+                "total_attendance": sum(
+                    match.attendance or 0 for match in matches if match.attendance
+                ),
+            }
+            
+            return summary
+
+        except Exception as error:
+            raise DatabaseServiceError(
+                "Could not generate match summary"
             ) from error

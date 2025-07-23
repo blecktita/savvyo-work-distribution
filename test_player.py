@@ -24,6 +24,8 @@ from pathlib import Path
 from dataclasses import dataclass, asdict
 from contextlib import contextmanager
 from enum import Enum
+from dataclasses import asdict
+from .database import Match, Player, MatchLineup, Goal, Card, Substitution, MatchdayInfo
 
 # Web scraping imports
 import requests
@@ -1937,7 +1939,7 @@ class CleanMatchExtractor:
 # =============================================================================
 
 class ScrapingWorker:
-    """Worker that processes jobs from the queue - UPDATED with integrated database storage"""
+    """Worker that processes jobs from the queue - FIXED VERSION"""
     
     def __init__(self, worker_id: str, config: Config):
         self.worker_id = worker_id
@@ -1953,107 +1955,39 @@ class ScrapingWorker:
         self.matchday_extractor = MatchdayExtractor()
         self.match_extractor = CleanMatchExtractor()
         
-        # NEW: Initialize match data orchestrator for database operations
-        try:
-            from database.orchestrators.match_orchestrator import MatchDataOrchestrator
-            self.match_orchestrator = MatchDataOrchestrator(environment="production")
-            self.logger.info("Match database orchestrator initialized successfully")
-        except Exception as e:
-            self.logger.warning(f"Failed to initialize match orchestrator: {e}")
-            self.match_orchestrator = None
-        
         self.running = False
     
-    def process_matchday_job(self, job: Dict):
-        """Process a matchday scraping job - UPDATED with database storage"""
-        metadata = job.get('metadata', {})
-        season = metadata.get('season', 'unknown')
-        matchday = metadata.get('matchday', 0)
+    def start(self):
+        """Start the worker process"""
+        self.running = True
+        self.logger.info(f"Worker {self.worker_id} starting...")
         
-        # Extract matchday data using FIXED extractor (unchanged)
-        matchday_data = self.matchday_extractor.extract_from_transfermarkt_url(
-            job['target_url'], matchday, season
-        )
-        
-        # Save to file system (unchanged)
-        file_path = self.storage.save_matchday_data(season, matchday, matchday_data)
-        
-        # NEW: Save to database using orchestrator
-        if self.match_orchestrator and self.match_orchestrator.is_available:
+        while self.running:
             try:
-                db_success = self.match_orchestrator.save_matchday_container(matchday_data)
-                if db_success:
-                    self.logger.info(f"Successfully saved matchday {matchday} to database")
-                else:
-                    self.logger.warning(f"Failed to save matchday {matchday} to database")
+                # Get next job from queue
+                job_id = self.queue.dequeue_job()
+                
+                if not job_id:
+                    time.sleep(5)  # No jobs available
+                    continue
+                
+                # FIXED: Add retry logic for database fetch
+                job = self._get_job_with_retry(job_id)
+                
+                if not job:
+                    self.logger.warning(f"Job {job_id} not found after retries - skipping")
+                    continue
+                
+                # Process the job
+                self.process_job(job)
+                
+            except KeyboardInterrupt:
+                self.logger.info(f"Worker {self.worker_id} stopping...")
+                self.running = False
+                break
             except Exception as e:
-                self.logger.error(f"Database save error for matchday {matchday}: {e}")
-        else:
-            self.logger.warning("Match orchestrator not available - skipping database save")
-        
-        # Create match detail jobs (unchanged)
-        match_job_count = 0
-        if matchday_data.matches:
-            match_job_count = self.create_match_jobs_atomic(job, matchday_data.matches)
-            self.logger.info(f"Created {match_job_count} match detail jobs")
-        else:
-            self.logger.warning("No matches found in matchday data")
-        
-        # Save extraction record to job tracking database (unchanged)
-        self.db.save_extraction(
-            job_id=str(job['job_id']),
-            match_id=f"matchday_{matchday}",
-            matchday=matchday,
-            season=season,
-            competition=matchday_data.matchday_info.get('competition', ''),
-            data=asdict(matchday_data),
-            file_path=file_path,
-            quality_score=self.calculate_matchday_quality(matchday_data),
-            duration_ms=1000
-        )
-    
-    def process_match_job(self, job: Dict):
-        """Process a match detail scraping job - UPDATED with database storage"""
-        metadata = job.get('metadata', {})
-        
-        # Ensure full URL
-        url = job['target_url']
-        if not url.startswith('http'):
-            url = f"https://www.transfermarkt.com{url}"
-        
-        # Extract match data using FIXED extractor (unchanged)
-        match_data = self.match_extractor.extract_from_url(url)
-        
-        # Save to file system (unchanged)
-        match_id = match_data.match_info.match_id
-        season = metadata.get('season', 'unknown')
-        file_path = self.storage.save_match_data(match_id, season, match_data)
-        
-        # NEW: Save to database using orchestrator
-        if self.match_orchestrator and self.match_orchestrator.is_available:
-            try:
-                db_success = self.match_orchestrator.save_match_detail(match_data)
-                if db_success:
-                    self.logger.info(f"Successfully saved match {match_id} to database")
-                else:
-                    self.logger.warning(f"Failed to save match {match_id} to database")
-            except Exception as e:
-                self.logger.error(f"Database save error for match {match_id}: {e}")
-        else:
-            self.logger.warning("Match orchestrator not available - skipping database save")
-        
-        # Save extraction record to job tracking database (unchanged)
-        self.db.save_extraction(
-            job_id=str(job['job_id']),
-            match_id=match_id,
-            matchday=metadata.get('matchday', 0),
-            season=season,
-            competition=match_data.match_info.competition_name,
-            data=asdict(match_data),
-            file_path=file_path,
-            quality_score=self.calculate_match_quality(match_data),
-            duration_ms=1000
-        )
+                self.logger.error(f"Worker error: {str(e)}")
+                time.sleep(10)
     
     def _get_job_with_retry(self, job_id: str, max_attempts: int = 5) -> Optional[Dict]:
         """Get job from database with retry logic to handle timing issues"""
@@ -2080,6 +2014,79 @@ class ScrapingWorker:
                     time.sleep(1)
         
         return None
+    
+    def process_job(self, job: Dict):
+        """Process a single job"""
+        job_id = str(job['job_id'])
+        job_type = JobType(job['job_type'])
+        
+        self.logger.info(f"Processing job {job_id} ({job_type.value})")
+        
+        # Mark job as running
+        self.db.update_job_status(job_id, JobStatus.RUNNING, self.worker_id)
+        
+        start_time = time.time()
+        
+        try:
+            if job_type == JobType.MATCHDAY_SCRAPE:
+                self.process_matchday_job(job)
+            elif job_type == JobType.MATCH_DETAIL_SCRAPE:
+                self.process_match_job(job)
+            
+            # Mark job as completed
+            self.db.update_job_status(job_id, JobStatus.COMPLETED)
+            
+            duration_ms = int((time.time() - start_time) * 1000)
+            self.logger.info(f"Job {job_id} completed in {duration_ms}ms")
+            
+        except Exception as e:
+            error_msg = str(e)
+            self.logger.error(f"Job {job_id} failed: {error_msg}")
+            
+            # Handle retries
+            if job['retry_count'] < job['max_retries']:
+                self.db.update_job_status(job_id, JobStatus.RETRYING, error=error_msg)
+                # Re-queue with delay
+                self.queue.enqueue_job(job_id, job['priority'])
+                self.logger.info(f"Job {job_id} scheduled for retry")
+            else:
+                self.db.update_job_status(job_id, JobStatus.FAILED, error=error_msg)
+                self.logger.error(f"Job {job_id} failed permanently")
+    
+    def process_matchday_job(self, job: Dict):
+        """Process a matchday scraping job"""
+        metadata = job.get('metadata', {})
+        season = metadata.get('season', 'unknown')
+        matchday = metadata.get('matchday', 0)
+        
+        # Extract matchday data using FIXED extractor
+        matchday_data = self.matchday_extractor.extract_from_transfermarkt_url(
+            job['target_url'], matchday, season
+        )
+        
+        # Save matchday data
+        file_path = self.storage.save_matchday_data(season, matchday, matchday_data)
+        
+        # FIXED: Create match detail jobs with proper transaction handling
+        match_job_count = 0
+        if matchday_data.matches:
+            match_job_count = self.create_match_jobs_atomic(job, matchday_data.matches)
+            self.logger.info(f"Created {match_job_count} match detail jobs")
+        else:
+            self.logger.warning("No matches found in matchday data")
+        
+        # Save extraction record
+        self.db.save_extraction(
+            job_id=str(job['job_id']),
+            match_id=f"matchday_{matchday}",
+            matchday=matchday,
+            season=season,
+            competition=matchday_data.matchday_info.get('competition', ''),
+            data=asdict(matchday_data),
+            file_path=file_path,
+            quality_score=self.calculate_matchday_quality(matchday_data),
+            duration_ms=1000
+        )
     
     def create_match_jobs_atomic(self, parent_job: Dict, matches: List[MatchContextual]) -> int:
         """Create match detail jobs atomically to prevent race conditions"""
@@ -2134,75 +2141,35 @@ class ScrapingWorker:
         
         return created_count
     
-    def start(self):
-        """Start the worker process"""
-        self.running = True
-        self.logger.info(f"Worker {self.worker_id} starting...")
+    def process_match_job(self, job: Dict):
+        """Process a match detail scraping job"""
+        metadata = job.get('metadata', {})
         
-        while self.running:
-            try:
-                # Get next job from queue
-                job_id = self.queue.dequeue_job()
-                
-                if not job_id:
-                    time.sleep(5)  # No jobs available
-                    continue
-                
-                # Get job with retry logic
-                job = self._get_job_with_retry(job_id)
-                
-                if not job:
-                    self.logger.warning(f"Job {job_id} not found after retries - skipping")
-                    continue
-                
-                # Process the job
-                self.process_job(job)
-                
-            except KeyboardInterrupt:
-                self.logger.info(f"Worker {self.worker_id} stopping...")
-                self.running = False
-                break
-            except Exception as e:
-                self.logger.error(f"Worker error: {str(e)}")
-                time.sleep(10)
-    
-    def process_job(self, job: Dict):
-        """Process a single job"""
-        job_id = str(job['job_id'])
-        job_type = JobType(job['job_type'])
+        # Ensure full URL
+        url = job['target_url']
+        if not url.startswith('http'):
+            url = f"https://www.transfermarkt.com{url}"
         
-        self.logger.info(f"Processing job {job_id} ({job_type.value})")
+        # Extract match data using FIXED extractor
+        match_data = self.match_extractor.extract_from_url(url)
         
-        # Mark job as running
-        self.db.update_job_status(job_id, JobStatus.RUNNING, self.worker_id)
+        # Save match data
+        match_id = match_data.match_info.match_id
+        season = metadata.get('season', 'unknown')
+        file_path = self.storage.save_match_data(match_id, season, match_data)
         
-        start_time = time.time()
-        
-        try:
-            if job_type == JobType.MATCHDAY_SCRAPE:
-                self.process_matchday_job(job)
-            elif job_type == JobType.MATCH_DETAIL_SCRAPE:
-                self.process_match_job(job)
-            
-            # Mark job as completed
-            self.db.update_job_status(job_id, JobStatus.COMPLETED)
-            
-            duration_ms = int((time.time() - start_time) * 1000)
-            self.logger.info(f"Job {job_id} completed in {duration_ms}ms")
-            
-        except Exception as e:
-            error_msg = str(e)
-            self.logger.error(f"Job {job_id} failed: {error_msg}")
-            
-            # Handle retries
-            if job['retry_count'] < job['max_retries']:
-                self.db.update_job_status(job_id, JobStatus.RETRYING, error=error_msg)
-                # Re-queue with delay
-                self.queue.enqueue_job(job_id, job['priority'])
-                self.logger.info(f"Job {job_id} scheduled for retry")
-            else:
-                self.db.update_job_status(job_id, JobStatus.FAILED, error=error_msg)
-                self.logger.error(f"Job {job_id} failed permanently")
+        # Save extraction record
+        self.db.save_extraction(
+            job_id=str(job['job_id']),
+            match_id=match_id,
+            matchday=metadata.get('matchday', 0),
+            season=season,
+            competition=match_data.match_info.competition_name,
+            data=asdict(match_data),
+            file_path=file_path,
+            quality_score=self.calculate_match_quality(match_data),
+            duration_ms=1000
+        )
     
     def calculate_matchday_quality(self, data: MatchdayContainer) -> float:
         """Calculate matchday data quality score"""
@@ -2233,6 +2200,7 @@ class ScrapingWorker:
             score -= 10
         
         return max(score, 0.0)
+
 
 # =============================================================================
 # FIXED JOB SCHEDULER (with correct URL building)

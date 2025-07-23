@@ -198,7 +198,7 @@ class TeamDataOrchestrator:
         self, 
         club_data: Dict[str, Any], 
         existing: Any
-    ) -> None:
+        ) -> None:
         """
         Update existing club record in database.
         
