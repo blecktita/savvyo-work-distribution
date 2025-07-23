@@ -75,6 +75,8 @@ class MatchRepository(BaseRepository):
                     joinedload(Match.substitutions),
                     joinedload(Match.lineups)
                 ).filter(Match.match_id == match_id).first()
+                if match:
+                    session.expunge(match)
                 return match
         except SQLAlchemyError as error:
             raise DatabaseOperationError(

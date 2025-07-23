@@ -309,6 +309,8 @@ class MatchLineup(Base):
         String(10), nullable=False,
         doc="'home' or 'away'"
     )
+
+    team_id = Column(String(50), nullable=False)
     
     # Lineup details
     lineup_type = Column(

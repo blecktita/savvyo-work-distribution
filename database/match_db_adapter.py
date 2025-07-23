@@ -194,12 +194,15 @@ class MatchDataConverter:
     def _create_players_and_lineups(
         self, 
         match_detail: MatchDetail
-    ) -> tuple[List[Player], List[MatchLineup]]:
+        ) -> tuple[List[Player], List[MatchLineup]]:
         """
         Create Player and MatchLineup records from match detail.
         """
         players = []
         lineups = []
+
+        home_team_id = match_detail.home_team.team_id
+        away_team_id = match_detail.away_team.team_id
         
         # Process home team starting lineup
         for player_data in match_detail.home_lineup:
@@ -210,6 +213,7 @@ class MatchDataConverter:
                 match_id=match_detail.match_info.match_id,
                 player_id=player.player_id,
                 team_side='home',
+                team_id = home_team_id,
                 lineup_type='starting',
                 shirt_number=player_data.shirt_number,
                 position=player_data.position,
@@ -226,6 +230,7 @@ class MatchDataConverter:
                 match_id=match_detail.match_info.match_id,
                 player_id=player.player_id,
                 team_side='home',
+                team_id = home_team_id,
                 lineup_type='substitute',
                 shirt_number=player_data.shirt_number,
                 position=player_data.position,
@@ -242,6 +247,7 @@ class MatchDataConverter:
                 match_id=match_detail.match_info.match_id,
                 player_id=player.player_id,
                 team_side='away',
+                team_id = away_team_id,
                 lineup_type='starting',
                 shirt_number=player_data.shirt_number,
                 position=player_data.position,
@@ -258,6 +264,7 @@ class MatchDataConverter:
                 match_id=match_detail.match_info.match_id,
                 player_id=player.player_id,
                 team_side='away',
+                team_id = away_team_id,
                 lineup_type='substitute',
                 shirt_number=player_data.shirt_number,
                 position=player_data.position,

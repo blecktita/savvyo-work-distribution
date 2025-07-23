@@ -100,9 +100,9 @@ class MatchDataOrchestrator:
             success = self.match_service.add_matchday_info(matchday_data)
             
             if success:
-                print(f"✅ Successfully saved matchday data")
+                print("✅ Successfully saved matchday data")
             else:
-                print(f"❌ Failed to save matchday data")
+                print("❌ Failed to save matchday data")
             
             return success
             
