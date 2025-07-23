@@ -673,7 +673,7 @@ class GitHubWorkBridge:
                 json.dump(claim_data, f, indent=2)
             
             # Try to push the claim atomically
-            commit_msg = f"Attempt claim: {work_id} by {worker_id}"
+            commit_msg = f"Attempt claim: {work_id} by {worker_id} (attempt 1)"
             
             if self._git_add_commit_push(commit_msg):
                 # SUCCESS! Now verify we won the race
@@ -708,7 +708,7 @@ class GitHubWorkBridge:
                                 other_claim.unlink(missing_ok=True)
                             
                             # Commit the final state
-                            final_msg = f"Claim work: {work_id} by {worker_id}"
+                            final_msg = f"Claim work: {work_id} by {worker_id} (attempt 1)"
                             if self._git_add_commit_push(final_msg):
                                 print(f"✅ Claimed work: {work_id} for {work_order.get('competition_id', 'UNKNOWN')}")
                                 return claim_data
@@ -719,7 +719,14 @@ class GitHubWorkBridge:
                             # We lost the race, clean up our claim
                             print(f"❌ {worker_id} lost claim race for {work_id}")
                             claim_file.unlink(missing_ok=True)
-                            self._git_add_commit_push(f"Clean up failed claim: {work_id} by {worker_id}")
+                            self._cleanup_abandoned_work(work_id, work_file)
+                            self._git_add_commit_push(f"Clean up failed claim: {work_id} by {worker_id} (attempt 1)")
+                    else:
+                        print(f"⚠️ No claim files found for {work_id} after claiming")
+                        # Work might have been cleaned up, remove stale work file if it exists
+                        if work_file.exists():
+                            self._cleanup_abandoned_work(work_id, work_file)
+                            self._git_add_commit_push(f"Clean up stale work: {work_id} (attempt 1)")
                 else:
                     print(f"⚠️ Claim file disappeared for {work_id}")
             else:
@@ -734,6 +741,93 @@ class GitHubWorkBridge:
                 claim_file.unlink(missing_ok=True)
         
         return None
+    
+    def _cleanup_abandoned_work(self, work_id: str, work_file: Path):
+        """
+        Check if work was abandoned and handle cleanup safely.
+        Moves suspicious work to retry queue instead of deleting.
+        
+        Args:
+            work_id: ID of the work item
+            work_file: Path to work file in available folder
+            
+        Returns:
+            True if cleanup was performed, False otherwise
+        """
+        try:
+            # Wait for winner to complete their operations
+            time.sleep(2)
+            
+            # Re-check current state
+            self._git_pull()
+            
+            # Check if work is still in available but there are no active claims
+            if work_file.exists():
+                claim_files = list(self.folders['claims'].glob(f"{work_id}_*.json"))
+                
+                # Check if work exists in other folders (claimed, completed, failed)
+                work_found_elsewhere = False
+                
+                for folder_name in ['claimed', 'completed', 'failed']:
+                    folder = self.folders[folder_name]
+                    for check_file in folder.glob('*.json'):
+                        try:
+                            with open(check_file, 'r') as f:
+                                data = json.load(f)
+                                if data.get('work_id') == work_id:
+                                    work_found_elsewhere = True
+                                    break
+                        except:
+                            continue
+                    if work_found_elsewhere:
+                        break
+                
+                if claim_files:
+                    # Active claims exist, don't cleanup
+                    print(f"✅ Work {work_id} has active claims - NOT cleaning up")
+                    return False
+                elif work_found_elsewhere:
+                    # Work successfully processed, safe to remove from available
+                    print(f"✅ Work {work_id} found elsewhere - removing from available")
+                    work_file.unlink(missing_ok=True)
+                    return True
+                else:
+                    # Work appears abandoned - move to retry queue for safety
+                    print(f"⚠️ Work {work_id} appears abandoned - moving to retry queue")
+                    
+                    try:
+                        # Load work data
+                        with open(work_file, 'r') as f:
+                            work_data = json.load(f)
+                        
+                        # Add retry info
+                        work_data['status'] = 'failed'
+                        work_data['error_message'] = 'Abandoned during claim race - auto-retry'
+                        work_data['failed_at'] = datetime.now().isoformat()
+                        work_data['retry_count'] = work_data.get('retry_count', 0) + 1
+                        
+                        # Move to retry queue
+                        retry_file = self.folders['failed'] / f"abandoned_{work_id}_{int(time.time())}.json"
+                        with open(retry_file, 'w') as f:
+                            json.dump(work_data, f, indent=2)
+                        
+                        # Remove from available
+                        work_file.unlink(missing_ok=True)
+                        
+                        print(f"📝 Moved {work_id} to retry queue for later processing")
+                        return True
+                        
+                    except Exception as move_error:
+                        print(f"⚠️ Failed to move {work_id} to retry queue: {move_error}")
+                        # Fallback: just remove from available to break the loop
+                        work_file.unlink(missing_ok=True)
+                        return True
+            
+            return False
+            
+        except Exception as e:
+            print(f"⚠️ Error during cleanup check for {work_id}: {e}")
+            return False
     
     def submit_completed_work(self, work_order: Dict, results: Dict):
         """

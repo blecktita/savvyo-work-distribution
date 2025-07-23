@@ -1,4 +1,4 @@
-# worker_main_beta.py
+# wms_worker_processor.py
 """
 Worker machine main script - now uses existing ClubOrchestrator logic.
 """
@@ -169,69 +169,192 @@ class DistributedWorker:
         print("🛑 Shutting down worker...")
         self.sleep_preventer.stop_prevention()
     
-    def run_worker_cycle(self, max_work_orders: int = 50):
-        """
-        Run worker cycle
-        """
-        print(f"🚀 Starting worker cycle (max {max_work_orders} work orders)")
-
-        # Setup signal handlers
-        self._setup_signal_handlers()
-        
-        processed_count = 0
-        driver = None
-
-        with self.sleep_preventer:
-            try:
-                # Initialize webdriver
-                driver = webdriver.Chrome()
-                print("🌐 WebDriver initialized")
+def run_worker_cycle(self, max_work_orders: int = 50, 
+                    max_consecutive_failures: int = 20,
+                    max_idle_hours: float = 2.0):
+    """
+    Run worker cycle with comprehensive auto-stop mechanisms.
+    
+    Args:
+        max_work_orders: Maximum work orders to process before stopping
+        max_consecutive_failures: Stop after this many consecutive failures (default: 20)
+        max_idle_hours: Stop after this many hours with no successful work (default: 2.0)
+    """
+    print("🚀 Starting worker cycle")
+    print(f"   📋 Max work orders: {max_work_orders}")
+    print("   🛑 Auto-stop conditions:")
+    print(f"      • After {max_consecutive_failures} consecutive failures")
+    print(f"      • After {max_idle_hours} hours with no successful work")
+    
+    # Setup signal handlers
+    self._setup_signal_handlers()
+    
+    processed_count = 0
+    driver = None
+    consecutive_failures = 0
+    base_wait_time = 30
+    start_time = time.time()
+    last_success_time = time.time()  # Track when we last successfully processed work
+    
+    with self.sleep_preventer:
+        try:
+            # Initialize webdriver
+            driver = webdriver.Chrome()
+            print("🌐 WebDriver initialized")
+            
+            while processed_count < max_work_orders:
+                print(f"\n🔍 Looking for work... ({processed_count}/{max_work_orders} completed)")
                 
-                while processed_count < max_work_orders:
-                    print(f"\n🔍 Looking for work... ({processed_count}/{max_work_orders} completed)")
-                    
-                    # Try to claim work
-                    work_order = self.github_bridge.claim_available_work(self.worker_id)
-                    
-                    if not work_order:
-                        print("😴 No work available, waiting 30 seconds...")
-                        if processed_count % 10 == 0:  # Every 10th iteration
-                            print(f"💾 System check - Worker still active, sleep prevention: {self.sleep_preventer.is_active}")
-                        time.sleep(30)
-                        continue
-                    
-                    print(f"✅ Claimed work: {work_order['work_id']}")
-                    
-                    try:
-                        # Process the work order using existing logic
-                        results = self.process_work_order(work_order, driver)
-                        
-                        # Submit completed work
-                        self.github_bridge.submit_completed_work(work_order, results)
-                        
-                        processed_count += 1
-                        print(f"🎉 Completed work: {work_order['work_id']}")
-                        
-                    except Exception as e:
-                        # Submit failed work
-                        error_msg = f"Processing error: {str(e)}"
-                        self.github_bridge.submit_failed_work(work_order, error_msg)
-                        print(f"❌ Failed work: {work_order['work_id']} - {error_msg}")
-                        continue
-                    
-                    # Brief pause between work orders
-                    time.sleep(10)
+                # Check BOTH auto-stop conditions BEFORE attempting work
+                idle_hours = (time.time() - last_success_time) / 3600
                 
-                print(f"🏁 Worker cycle completed: {processed_count} work orders processed")
+                if consecutive_failures >= max_consecutive_failures:
+                    elapsed_hours = (time.time() - start_time) / 3600
+                    print(f"\n🛑 STOPPING: Reached {max_consecutive_failures} consecutive failures")
+                    print(f"   ⏱️ Total runtime: {elapsed_hours:.1f} hours")
+                    print(f"   ⏳ Time since last success: {idle_hours:.1f} hours")
+                    print(f"   📊 Work completed: {processed_count}")
+                    print("   💡 Reason: Consecutive failure limit reached")
+                    break
+                    
+                elif idle_hours >= max_idle_hours:
+                    elapsed_hours = (time.time() - start_time) / 3600
+                    print(f"\n🛑 STOPPING: {idle_hours:.1f} hours with no successful work")
+                    print(f"   ⏱️ Total runtime: {elapsed_hours:.1f} hours")
+                    print(f"   📊 Work completed: {processed_count}")
+                    print(f"   🔄 Consecutive failures: {consecutive_failures}")
+                    print("   💡 Reason: Idle time limit reached")
+                    break
                 
-            except KeyboardInterrupt:
-                print("\n⏹️ Worker interrupted by user")
-            except Exception as e:
-                print(f"❌ Worker error: {e}")
-            finally:
-                if driver:
-                    driver.quit()
-                    print("🌐 WebDriver closed")
+                # Try to claim work
+                work_order = self.github_bridge.claim_available_work(self.worker_id)
+                
+                if not work_order:
+                    consecutive_failures += 1
+                    
+                    # Calculate wait time with exponential backoff
+                    wait_time = min(base_wait_time * (1.5 ** min(consecutive_failures - 1, 5)), 300)
+                    
+                    # Enhanced logging with both progress indicators
+                    remaining_failure_attempts = max_consecutive_failures - consecutive_failures
+                    remaining_idle_time = max_idle_hours - idle_hours
+                    
+                    print(f"😴 No work available, waiting {wait_time:.1f} seconds...")
+                    print(f"   📊 Consecutive failures: {consecutive_failures}/{max_consecutive_failures} ({remaining_failure_attempts} left)")
+                    print(f"   ⏳ Idle time: {idle_hours:.1f}h/{max_idle_hours}h ({remaining_idle_time:.1f}h left)")
+                    
+                    # Determine which limit will be hit first
+                    if remaining_failure_attempts <= 3:
+                        print("   ⚠️ Approaching failure limit!")
+                    elif remaining_idle_time <= 0.5:  # 30 minutes
+                        print("   ⚠️ Approaching idle time limit!")
+                    
+                    # System health checks every 5 failures
+                    if consecutive_failures % 5 == 0:
+                        elapsed_hours = (time.time() - start_time) / 3600
+                        print(f"   💾 System check - Runtime: {elapsed_hours:.1f}h, Sleep prevention: {self.sleep_preventer.is_active}")
+                        
+                        # Optional: Check repository status
+                        try:
+                            work_status = self.github_bridge.get_work_status()
+                            total_available = sum(work_status.values())
+                            print(f"   📋 Queue status: {total_available} total items - {work_status}")
+                            
+                            if total_available == 0:
+                                print("   💡 No work in any queue - consider stopping manually if this persists")
+                        except Exception as e:
+                            print(f"   ⚠️ Could not check queue status: {e}")
+                    
+                    time.sleep(wait_time)
+                    continue
+                
+                # SUCCESS! Reset both counters
+                consecutive_failures = 0
+                last_success_time = time.time()  # Update success timestamp
+                print(f"✅ Claimed work: {work_order['work_id']}")
+                
+                try:
+                    # Process the work order
+                    results = self.process_work_order(work_order, driver)
+                    
+                    # Submit completed work
+                    self.github_bridge.submit_completed_work(work_order, results)
+                    
+                    processed_count += 1
+                    elapsed_hours = (time.time() - start_time) / 3600
+                    rate = processed_count / elapsed_hours if elapsed_hours > 0 else 0
+                    
+                    print(f"🎉 Completed work: {work_order['work_id']}")
+                    print(f"   📈 Progress: {processed_count}/{max_work_orders} ({rate:.1f} jobs/hour)")
+                    print("   ✨ Consecutive failures reset to 0")
+                    
+                except Exception as e:
+                    # Submit failed work (this doesn't count as "no work available")
+                    error_msg = f"Processing error: {str(e)}"
+                    self.github_bridge.submit_failed_work(work_order, error_msg)
+                    print(f"❌ Failed work: {work_order['work_id']} - {error_msg}")
+                    print("   💡 Note: Processing failures don't count toward consecutive failure limit")
+                    continue
+                
+                # Brief pause between work orders
+                time.sleep(10)
+            
+            # Final comprehensive summary
+            elapsed_hours = (time.time() - start_time) / 3600
+            idle_hours_final = (time.time() - last_success_time) / 3600
+            rate = processed_count / elapsed_hours if elapsed_hours > 0 else 0
+            
+            print("\n" + "="*60)
+            
+            if processed_count >= max_work_orders:
+                print("🏁 Worker cycle completed successfully!")
+                print(f"   🎯 Reached target: {max_work_orders} work orders")
+            else:
+                print("🛑 Worker cycle stopped early")
+                if consecutive_failures >= max_consecutive_failures:
+                    print(f"   📉 Reason: Consecutive failure limit ({max_consecutive_failures}) reached")
+                elif idle_hours_final >= max_idle_hours:
+                    print(f"   ⏳ Reason: Idle time limit ({max_idle_hours}h) reached")
+            
+            print("\n📊 Final Statistics:")
+            print(f"   • Work completed: {processed_count}")
+            print(f"   • Total runtime: {elapsed_hours:.1f} hours")
+            print(f"   • Time since last success: {idle_hours_final:.1f} hours")
+            print(f"   • Average completion rate: {rate:.1f} jobs/hour")
+            print(f"   • Final consecutive failures: {consecutive_failures}")
+            
+            # Efficiency analysis
+            if processed_count > 0:
+                efficiency = (processed_count / max_work_orders) * 100
+                print(f"   • Efficiency: {efficiency:.1f}% of target completed")
+            
+            # Recommendations for next run
+            print("\n💡 Recommendations:")
+            if consecutive_failures >= max_consecutive_failures:
+                print("   • Check if more work has been added to the queue")
+                print("   • Consider increasing max_consecutive_failures if work is expected")
+                print("   • Verify network connectivity and repository access")
+            elif idle_hours_final >= max_idle_hours:
+                print("   • Consider increasing max_idle_hours if work comes in batches")
+                print("   • Check queue status before restarting")
+            elif processed_count >= max_work_orders:
+                print("   • Worker completed successfully - can restart for more work")
+            
+            print("="*60)
+            
+        except KeyboardInterrupt:
+            elapsed_hours = (time.time() - start_time) / 3600
+            print(f"\n⏹️ Worker interrupted by user after {elapsed_hours:.1f} hours")
+            print(f"📊 Work completed before interruption: {processed_count}")
+        except Exception as e:
+            elapsed_hours = (time.time() - start_time) / 3600
+            print(f"❌ Worker error after {elapsed_hours:.1f} hours: {e}")
+            print(f"📊 Work completed before error: {processed_count}")
+        finally:
+            if driver:
+                driver.quit()
+                print("🌐 WebDriver closed")
+            print("💤 Sleep prevention deactivated")
 
 
 if __name__ == "__main__":

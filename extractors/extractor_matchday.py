@@ -15,7 +15,7 @@ class MatchdayExtractor:
         """
         super().__init__()
 
-    
-    _extract_matchinfo(self, url: str, matchday: int = None, season: str = None):
+    def _extract_matchinfo(self, url: str, matchday: int = None, season: str = None):
+        self.logger.info(f"Extracting matchday {matchday} data from {url}")
 
 
