@@ -1,4 +1,4 @@
-# orchestrators/princpal_orchestrator/__init__.py
+# pipelines/princpal_orchestrator/__init__.py
 """
 Orchestrator module initialization.
 Exports main orchestrator classes and utilities.

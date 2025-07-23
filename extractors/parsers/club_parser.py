@@ -9,7 +9,6 @@ import pandas as pd
 from bs4 import BeautifulSoup, Tag
 
 from .base_parser import BaseParser
-from exceptions import ParsingError
 from extractors.extractor_club import ClubRowExtractor, ClubDataExtractor
 
 

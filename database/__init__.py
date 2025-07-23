@@ -6,6 +6,7 @@ from .orchestrators.team_orchestrator import TeamDataOrchestrator
 from .orchestrators.competition_orchestrator import CompetitionDataOrchestrator
 from .database_models import Competition, Team, TaskStatus
 from .factory.database_factory import create_database_service
+from .match_models import Player, Match, MatchLineup, Goal, Card, Substitution, MatchdayInfo
 
 __all__ = [
     'DatabaseDiscoverer',
@@ -17,5 +18,12 @@ __all__ = [
     'Competition',
     'Team',
     'TaskStatus',
-    'create_database_service'
+    'create_database_service',
+    'Player',
+    'Match',
+    'MatchLineup',
+    'Goal',
+    'Card',
+    'Substitution',
+    'MatchdayInfo'
 ]

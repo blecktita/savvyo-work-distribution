@@ -673,7 +673,7 @@ class ClubOrchestrator(BaseOrchestrator):
         self, 
         driver, 
         competition_url: str, 
-        competition_id: str
+        competition_id: Optional[str] = None
       ) -> List[Dict[str, str]]:
         """
         Discover seasons for a competition.
@@ -681,7 +681,8 @@ class ClubOrchestrator(BaseOrchestrator):
         Args:
             driver: Selenium WebDriver instance
             competition_url: Competition URL
-            competition_id: Competition identifier
+            competition_id: Competition identifier (optional)
+                          If provided, will mark seasons as discovered in progress tracking
             
         Returns:
             List of discovered seasons
@@ -695,7 +696,8 @@ class ClubOrchestrator(BaseOrchestrator):
         soup = BeautifulSoup(driver.page_source, "html.parser")
         seasons = self.parser.parse_season_options(soup)
 
-        if seasons:
+        # Only update progress tracking if competition_id is provided
+        if seasons and competition_id:
             self.monitor_progress.mark_seasons_discovered(
                 competition_id, seasons
             )
