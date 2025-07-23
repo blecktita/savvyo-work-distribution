@@ -365,6 +365,12 @@ if __name__ == "__main__":
     parser.add_argument("--environment", default="production", help="Configuration environment")
     parser.add_argument("--max-work", type=int, default=50, help="Maximum work orders to process")
     
+    # NEW: Add parameters for the enhanced auto-stop functionality
+    parser.add_argument("--max-failures", type=int, default=20, 
+                       help="Stop after this many consecutive failures (default: 20)")
+    parser.add_argument("--max-idle-hours", type=float, default=2.0, 
+                       help="Stop after this many hours with no successful work (default: 2.0)")
+    
     args = parser.parse_args()
     
     try:
@@ -373,11 +379,18 @@ if __name__ == "__main__":
             environment=args.environment
         )
         
-        worker.run_worker_cycle(args.max_work)
+        # Enhanced call with all parameters
+        worker.run_worker_cycle(
+            max_work_orders=args.max_work,
+            max_consecutive_failures=args.max_failures,
+            max_idle_hours=args.max_idle_hours
+        )
         
     except KeyboardInterrupt:
         print("\n⏹️ Interrupted by user")
     except Exception as e:
         print(f"❌ Error: {e}")
+        import traceback
+        traceback.print_exc()  # Show full error details for debugging
     finally:
         print("👋 Worker shutdown complete")
