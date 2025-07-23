@@ -631,6 +631,7 @@ class GitHubWorkBridge:
     def claim_available_work(self, worker_id: str) -> Optional[Dict]:
         """
         Atomically claim work using file creation to prevent race conditions.
+        FIXED: Uses timestamp-based sorting and cleans up stale claims.
         
         Args:
             worker_id: Unique identifier for this worker
@@ -649,6 +650,9 @@ class GitHubWorkBridge:
         # Try to claim the first available work item
         work_file = available_files[0]
         work_id = work_file.stem
+        
+        # FIRST: Clean up any stale claims for this work item
+        self._cleanup_stale_claims(work_id)
         
         # Create unique claim file name with worker and high-precision timestamp
         claim_id = f"{worker_id}_{int(time.time() * 1000)}_{uuid.uuid4().hex[:8]}"
@@ -685,8 +689,25 @@ class GitHubWorkBridge:
                     claim_files = list(self.folders['claims'].glob(f"{work_id}_*.json"))
                     
                     if claim_files:
-                        # Sort by filename (which includes timestamp)
-                        claim_files.sort(key=lambda x: x.name)
+                        # Sort by TIMESTAMP extracted from filename
+                        def extract_timestamp(file_path):
+                            try:
+                                parts = file_path.stem.split('_')
+                                for part in parts:
+                                    if part.isdigit() and len(part) >= 10:
+                                        return int(part)
+                                return 0
+                            except:
+                                return 0
+                        
+                        claim_files.sort(key=extract_timestamp)
+                        
+                        # Debug logging to help verify the fix
+                        print(f"🔍 DEBUG: Found {len(claim_files)} claim files for {work_id}")
+                        print(f"🔍 DEBUG: Timestamps: {[extract_timestamp(f) for f in claim_files]}")
+                        print(f"🔍 DEBUG: Our timestamp: {extract_timestamp(claim_file)}")
+                        print(f"🔍 DEBUG: Winner: {claim_files[0].name}")
+                        print(f"🔍 DEBUG: Our file: {claim_file.name}")
                         
                         if claim_files[0] == claim_file:
                             # WE WON! Move to claimed folder and remove from available
@@ -717,13 +738,20 @@ class GitHubWorkBridge:
                                 return claim_data
                         else:
                             # We lost the race, clean up our claim
+                            winner_file = claim_files[0]
+                            winner_timestamp = extract_timestamp(winner_file)
+                            our_timestamp = extract_timestamp(claim_file)
+                            
                             print(f"❌ {worker_id} lost claim race for {work_id}")
+                            print(f"   🏆 Winner timestamp: {winner_timestamp}")
+                            print(f"   ⏰ Our timestamp: {our_timestamp}")
+                            print(f"   ⏱️ Lost by: {our_timestamp - winner_timestamp}ms")
+                            
                             claim_file.unlink(missing_ok=True)
                             self._cleanup_abandoned_work(work_id, work_file)
                             self._git_add_commit_push(f"Clean up failed claim: {work_id} by {worker_id} (attempt 1)")
                     else:
                         print(f"⚠️ No claim files found for {work_id} after claiming")
-                        # Work might have been cleaned up, remove stale work file if it exists
                         if work_file.exists():
                             self._cleanup_abandoned_work(work_id, work_file)
                             self._git_add_commit_push(f"Clean up stale work: {work_id} (attempt 1)")
@@ -741,6 +769,59 @@ class GitHubWorkBridge:
                 claim_file.unlink(missing_ok=True)
         
         return None
+
+    def _cleanup_stale_claims(self, work_id: str, max_age_minutes: int = 30):
+        """
+        Clean up stale claims that are older than max_age_minutes.
+        
+        Args:
+            work_id: Work ID to clean claims for
+            max_age_minutes: Claims older than this are considered stale
+        """
+        try:
+            current_time = int(time.time() * 1000)
+            cutoff_time = current_time - (max_age_minutes * 60 * 1000)
+            
+            claim_files = list(self.folders['claims'].glob(f"{work_id}_*.json"))
+            stale_claims = []
+            
+            for claim_file in claim_files:
+                try:
+                    # Extract timestamp from filename
+                    parts = claim_file.stem.split('_')
+                    claim_timestamp = None
+                    
+                    for part in parts:
+                        if part.isdigit() and len(part) >= 10:
+                            claim_timestamp = int(part)
+                            break
+                    
+                    if claim_timestamp and claim_timestamp < cutoff_time:
+                        age_minutes = (current_time - claim_timestamp) / (60 * 1000)
+                        stale_claims.append((claim_file, age_minutes))
+                
+                except Exception as e:
+                    print(f"⚠️ Error checking claim file {claim_file}: {e}")
+                    # If we can't parse it, consider it stale
+                    stale_claims.append((claim_file, 999))
+            
+            if stale_claims:
+                print(f"🧹 Found {len(stale_claims)} stale claims for {work_id}")
+                
+                for claim_file, age_minutes in stale_claims:
+                    try:
+                        claim_file.unlink()
+                        print(f"   🗑️ Removed stale claim: {claim_file.name} (age: {age_minutes:.1f} minutes)")
+                    except Exception as e:
+                        print(f"   ⚠️ Failed to remove {claim_file.name}: {e}")
+                
+                # Commit cleanup
+                if stale_claims:
+                    self._git_add_commit_push(f"Clean up {len(stale_claims)} stale claims for {work_id}")
+                    print(f"✅ Cleaned up {len(stale_claims)} stale claims for {work_id}")
+            
+        except Exception as e:
+            print(f"⚠️ Error during stale claim cleanup for {work_id}: {e}")
     
     def _cleanup_abandoned_work(self, work_id: str, work_file: Path):
         """
