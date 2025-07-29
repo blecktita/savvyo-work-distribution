@@ -13,15 +13,16 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.exc import SQLAlchemyError
 
 from database.base import Base
-from database.match_models_updated import (
+from extractors.extractor_matchday import MatchdayExtractor, CleanMatchExtractor
+
+from database.schemas import (
+    Competition as StdCompetition,
+    m_competition as ScrapedCompetition,
+    m_team as  Team,
+    Player,
+    Referee,
     Matchday,
     MatchdaySummary,
-    Team,
-    Player,
-    Competition as ScrapedCompetition,
-    Referee,
-    Match,
-    CommunityPrediction,
     LeagueTableEntry,
     TopScorer,
     MatchTeam,
@@ -29,9 +30,10 @@ from database.match_models_updated import (
     Substitution,
     Goal,
     Card,
+    CommunityPrediction,
+    Match
 )
-from database.database_models import Competition as StdCompetition
-from extractors.extractor_matchday import MatchdayExtractor, CleanMatchExtractor
+
 
 # ————————————————————————————————————————————————————————————
 # 0) Helpers & config
