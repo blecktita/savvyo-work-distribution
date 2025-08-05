@@ -1,0 +1,139 @@
+{
+  "session_info": {
+    "worker_id": "worker_ASEs-MacBook-Pro.local_42360_82535550",
+    "hostname": "ASEs-MacBook-Pro.local",
+    "start_time": "2025-08-05T11:19:16.681364",
+    "export_time": "2025-08-05T11:23:45.480128",
+    "config": {
+      "repo_url": "https://github.com/blecktita/savvyo-work-distribution.git",
+      "environment": "production",
+      "worker_profile": "standard",
+      "max_work_orders": 10,
+      "max_consecutive_failures": 15,
+      "max_idle_hours": 2.0,
+      "work_claim_interval": 30.0,
+      "refresh_rate": 2.0,
+      "max_activity_history": 150,
+      "show_debug": false,
+      "auto_start": true,
+      "log_dir": "logs/match/worker",
+      "config_dir": "configurations",
+      "temp_dir": "temp_match_data",
+      "enable_sleep_prevention": true,
+      "selenium_timeout": 30,
+      "vpn_enabled": true,
+      "alert_thresholds": {
+        "consecutive_failures": 10,
+        "processing_time_minutes": 30,
+        "idle_time_hours": 1.5,
+        "memory_usage_mb": 2000
+      }
+    }
+  },
+  "statistics": {
+    "session_start": "2025-08-05 11:19:16.681364",
+    "total_work_orders": 0,
+    "successful_completions": 0,
+    "failed_attempts": 0,
+    "total_matches_processed": 0,
+    "total_matchdays_processed": 0,
+    "current_idle_time": 0.07092835416666667,
+    "longest_processing_time": 0.0,
+    "average_processing_time": 0.0,
+    "uptime_hours": 0.0
+  },
+  "work_history": [],
+  "recent_activities": [
+    {
+      "timestamp": "2025-08-05T11:19:16.681767",
+      "level": "success",
+      "message": "Worker GUI initialized",
+      "work_id": null
+    },
+    {
+      "timestamp": "2025-08-05T11:19:16.681872",
+      "level": "info",
+      "message": "Auto-started worker thread",
+      "work_id": null
+    },
+    {
+      "timestamp": "2025-08-05T11:19:17.621843",
+      "level": "success",
+      "message": "Worker initialized successfully",
+      "work_id": null
+    },
+    {
+      "timestamp": "2025-08-05T11:19:17.622061",
+      "level": "info",
+      "message": "Looking for available work...",
+      "work_id": null
+    },
+    {
+      "timestamp": "2025-08-05T11:19:18.512043",
+      "level": "info",
+      "message": "No work available, waiting 30.0s",
+      "work_id": null
+    },
+    {
+      "timestamp": "2025-08-05T11:19:48.516845",
+      "level": "info",
+      "message": "Looking for available work...",
+      "work_id": null
+    },
+    {
+      "timestamp": "2025-08-05T11:19:49.460120",
+      "level": "info",
+      "message": "No work available, waiting 45.0s",
+      "work_id": null
+    },
+    {
+      "timestamp": "2025-08-05T11:20:34.464753",
+      "level": "info",
+      "message": "Looking for available work...",
+      "work_id": null
+    },
+    {
+      "timestamp": "2025-08-05T11:20:35.423390",
+      "level": "info",
+      "message": "No work available, waiting 67.5s",
+      "work_id": null
+    },
+    {
+      "timestamp": "2025-08-05T11:21:42.927453",
+      "level": "info",
+      "message": "Looking for available work...",
+      "work_id": null
+    },
+    {
+      "timestamp": "2025-08-05T11:21:43.860962",
+      "level": "info",
+      "message": "No work available, waiting 101.2s",
+      "work_id": null
+    },
+    {
+      "timestamp": "2025-08-05T11:23:25.114443",
+      "level": "info",
+      "message": "Looking for available work...",
+      "work_id": null
+    },
+    {
+      "timestamp": "2025-08-05T11:23:26.084262",
+      "level": "info",
+      "message": "No work available, waiting 151.9s",
+      "work_id": null
+    },
+    {
+      "timestamp": "2025-08-05T11:23:33.142622",
+      "level": "warning",
+      "message": "Initiating graceful shutdown...",
+      "work_id": null
+    },
+    {
+      "timestamp": "2025-08-05T11:23:33.146765",
+      "level": "success",
+      "message": "Session data exported to worker_session_worker_ASEs-MacBook-Pro.local_42360_82535550_20250805_112333.json",
+      "work_id": null
+    }
+  ],
+  "current_work": null
+}
