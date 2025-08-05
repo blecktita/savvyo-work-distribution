@@ -1,0 +1,25 @@
+{
+  "repo_url": "",
+  "environment": "production",
+  "worker_profile": "24x7",
+  "max_work_orders": 100,
+  "max_consecutive_failures": 30,
+  "max_idle_hours": 8.0,
+  "work_claim_interval": 30.0,
+  "refresh_rate": 1.0,
+  "max_activity_history": 150,
+  "show_debug": false,
+  "auto_start": true,
+  "log_dir": "logs/match/worker",
+  "config_dir": "configurations",
+  "temp_dir": "temp_match_data",
+  "enable_sleep_prevention": true,
+  "selenium_timeout": 30,
+  "vpn_enabled": true,
+  "alert_thresholds": {
+    "consecutive_failures": 10,
+    "processing_time_minutes": 30,
+    "idle_time_hours": 1.5,
+    "memory_usage_mb": 2000
+  }
+}

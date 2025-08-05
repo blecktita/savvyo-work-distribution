@@ -2,8 +2,8 @@
 
 # Import Competition and Team FIRST to establish the relationship
 from .competition_schema import Competition
+from .team_schema import Team  # Move this right after Competition
 
-# THEN import match_schema models
 from .match_schema import (
     Card,
     CommunityPrediction,
@@ -24,9 +24,7 @@ from .match_schema import (
 from .match_schema import TeamInMatch as m_team
 from .match_schema import TeamSide, TopScorer
 
-# Finally import progress schema
 from .progress_schema import CompetitionProgress, SeasonProgress, TaskStatus
-from .team_schema import Team
 
 __all__ = [
     "Competition",

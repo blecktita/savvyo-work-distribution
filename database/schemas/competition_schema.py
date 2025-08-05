@@ -12,6 +12,7 @@ from sqlalchemy.sql import func
 from database.base import Base
 
 
+
 class Competition(Base):
     """
     Competition model with relevant metadata.
