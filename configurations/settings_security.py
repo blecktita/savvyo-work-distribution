@@ -4,7 +4,9 @@ Security and IP management configuration.
 """
 
 from dataclasses import dataclass
+
 from .settings_vpn import VpnConfig
+
 
 @dataclass
 class IpSecurityConfig:
@@ -12,26 +14,28 @@ class IpSecurityConfig:
     Configuration for IP security settings.
     Inherits key values from VPN configuration.
     """
+
     vpn_config: VpnConfig
     rotation_check_interval: int = 90
     max_time_per_ip: int = 240
     security_alerts_timeframe_hours: int = 1
+
     @property
     def max_requests_per_ip(self) -> int:
         """
         Max requests per IP - inherited from VPN requests_per_rotation
         """
         return self.vpn_config.requests_per_rotation
-    
-    @property 
+
+    @property
     def wait_time(self) -> int:
         """
         Wait time - derived from VPN mandatory_delay
         """
         return int(self.vpn_config.mandatory_delay)
-    
+
     @classmethod
-    def from_vpn_config(cls, vpn_config: VpnConfig) -> 'IpSecurityConfig':
+    def from_vpn_config(cls, vpn_config: VpnConfig) -> "IpSecurityConfig":
         """
         Create security config from VPN configuration
         """
@@ -39,9 +43,9 @@ class IpSecurityConfig:
             vpn_config=vpn_config,
             rotation_check_interval=90,
             max_time_per_ip=240,
-            security_alerts_timeframe_hours=1
+            security_alerts_timeframe_hours=1,
         )
-    
+
     def __post_init__(self):
         """
         Post-initialization validation

@@ -2,13 +2,16 @@
 """
 Team-specific repository implementation.
 """
-from typing import Dict, Any, List, Optional
+
+from typing import Any, Dict, List, Optional
+
 from sqlalchemy.exc import SQLAlchemyError
 
-from .base_repository import BaseRepository
-from ..core.database_manager import DatabaseManager
-from database.database_models import Team
+from database.schemas import Team
 from exceptions import DatabaseOperationError
+
+from ..core.database_manager import DatabaseManager
+from .base_repository import BaseRepository
 
 
 class TeamRepository(BaseRepository):
@@ -44,29 +47,22 @@ class TeamRepository(BaseRepository):
 
         try:
             with self.db_manager.get_session() as session:
-                team = session.query(Team).filter(
-                    Team.club_id == club_id
-                ).first()
+                team = session.query(Team).filter(Team.club_id == club_id).first()
                 return team
         except SQLAlchemyError as error:
-            raise DatabaseOperationError(
-                f"Database error retrieving team: {error}"
-            )
+            raise DatabaseOperationError(f"Database error retrieving team: {error}")
 
     def get_by_composite_key(
-        self,
-        club_id: str,
-        season_year: str,
-        competition_id: str
+        self, club_id: str, season_year: str, competition_id: str
     ) -> Optional[Team]:
         """
         Get team by composite primary key.
-        
+
         Args:
             club_id: Club identifier
             season_year: Season year
             competition_id: Competition identifier
-            
+
         Returns:
             Team object or None if not found
         """
@@ -77,19 +73,20 @@ class TeamRepository(BaseRepository):
 
         try:
             with self.db_manager.get_session() as session:
-                team = session.query(Team).filter(
-                    Team.club_id == club_id,
-                    Team.season_year == season_year,
-                    Team.competition_id == competition_id
-                ).first()
+                team = (
+                    session.query(Team)
+                    .filter(
+                        Team.club_id == club_id,
+                        Team.season_year == season_year,
+                        Team.competition_id == competition_id,
+                    )
+                    .first()
+                )
                 return team
         except SQLAlchemyError as error:
-            raise DatabaseOperationError(
-                f"Database error retrieving team: {error}"
-            )
+            raise DatabaseOperationError(f"Database error retrieving team: {error}")
 
-    def update(self, club_id: str, 
-               update_data: Dict[str, Any]) -> Optional[Team]:
+    def update(self, club_id: str, update_data: Dict[str, Any]) -> Optional[Team]:
         """
         Update team record by club ID.
 
@@ -112,14 +109,12 @@ class TeamRepository(BaseRepository):
 
         try:
             with self.db_manager.get_session() as session:
-                team = session.query(Team).filter(
-                    Team.club_id == club_id
-                ).first()
+                team = session.query(Team).filter(Team.club_id == club_id).first()
 
                 if not team:
                     return None
 
-                #***> Update fields <***
+                # ***> Update fields <***
                 for key, value in update_data.items():
                     if hasattr(team, key):
                         setattr(team, key, value)
@@ -128,26 +123,24 @@ class TeamRepository(BaseRepository):
                 session.refresh(team)
                 return team
         except SQLAlchemyError as error:
-            raise DatabaseOperationError(
-                f"Database error updating team: {error}"
-            )
+            raise DatabaseOperationError(f"Database error updating team: {error}")
 
     def update_by_composite_key(
         self,
         club_id: str,
-        season_year: str, 
+        season_year: str,
         competition_id: str,
-        update_data: Dict[str, Any]
+        update_data: Dict[str, Any],
     ) -> Optional[Team]:
         """
         Update team by composite primary key.
-        
+
         Args:
             club_id: Club identifier
             season_year: Season year
             competition_id: Competition identifier
             update_data: Data to update
-            
+
         Returns:
             Updated team object or None if not found
         """
@@ -158,21 +151,25 @@ class TeamRepository(BaseRepository):
 
         try:
             with self.db_manager.get_session() as session:
-                team = session.query(Team).filter(
-                    Team.club_id == club_id,
-                    Team.season_year == season_year,
-                    Team.competition_id == competition_id
-                ).first()
+                team = (
+                    session.query(Team)
+                    .filter(
+                        Team.club_id == club_id,
+                        Team.season_year == season_year,
+                        Team.competition_id == competition_id,
+                    )
+                    .first()
+                )
 
                 if not team:
                     return None
 
-                #***> Update fields (exclude primary key fields) <***
-                excluded_fields = {'club_id', 'season_year', 'competition_id'}
-                
+                # ***> Update fields (exclude primary key fields) <***
+                excluded_fields = {"club_id", "season_year", "competition_id"}
+
                 for key, value in update_data.items():
                     if key in excluded_fields:
-                        continue  
+                        continue
                     if hasattr(team, key):
                         setattr(team, key, value)
 
@@ -180,9 +177,7 @@ class TeamRepository(BaseRepository):
                 session.refresh(team)
                 return team
         except SQLAlchemyError as error:
-            raise DatabaseOperationError(
-                f"Database error updating team: {error}"
-            )
+            raise DatabaseOperationError(f"Database error updating team: {error}")
 
     def delete(self, club_id: str, soft_delete: bool = True) -> bool:
         """
@@ -204,9 +199,7 @@ class TeamRepository(BaseRepository):
 
         try:
             with self.db_manager.get_session() as session:
-                team = session.query(Team).filter(
-                    Team.club_id == club_id
-                ).first()
+                team = session.query(Team).filter(Team.club_id == club_id).first()
 
                 if not team:
                     return False
@@ -218,12 +211,11 @@ class TeamRepository(BaseRepository):
 
                 return True
         except SQLAlchemyError as error:
-            raise DatabaseOperationError(
-                f"Database error deleting team: {error}"
-            )
+            raise DatabaseOperationError(f"Database error deleting team: {error}")
 
-    def get_by_competition(self, competition_id: str, 
-                          season_id: Optional[str] = None) -> List[Team]:
+    def get_by_competition(
+        self, competition_id: str, season_id: Optional[str] = None
+    ) -> List[Team]:
         """
         Get teams by competition and optionally by season.
 
@@ -244,13 +236,12 @@ class TeamRepository(BaseRepository):
         try:
             with self.db_manager.get_session() as session:
                 query = session.query(Team).filter(
-                    Team.competition_id == competition_id,
-                    Team.is_active
+                    Team.competition_id == competition_id, Team.is_active
                 )
-                
+
                 if season_id:
                     query = query.filter(Team.season_id == season_id)
-                
+
                 teams = query.all()
                 return teams
         except SQLAlchemyError as error:

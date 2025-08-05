@@ -4,14 +4,14 @@ Base orchestrator class with common functionality.
 Provides shared methods and initialization logic.
 """
 
-from typing import Optional
 from abc import ABC, abstractmethod
+from typing import Optional
 
-from configurations import ScraperConfig, ConfigFactory
+from configurations import ConfigFactory, ScraperConfig
+from exceptions import ConfigurationError
+from extractors.navigation.navigation_manager import NavigationManager
 from pipelines.princpal_orchestrator.orchestrator_config import OrchestratorConfig
 from vpn_controls import VpnProtectionHandler
-from extractors.navigation.navigation_manager import NavigationManager
-from exceptions import ConfigurationError
 
 
 class BaseOrchestrator(ABC):
@@ -26,23 +26,23 @@ class BaseOrchestrator(ABC):
 
         Args:
             config: Scraper configuration (uses development if None)
-            
+
         Raises:
             ConfigurationError: If configuration is invalid
         """
-        #***> Initialize configuration using factory pattern <***
+        # ***> Initialize configuration using factory pattern <***
         self.config = config or ConfigFactory.development()
-        
-        #***> Validate configuration before proceeding <***
+
+        # ***> Validate configuration before proceeding <***
         self._validate_configuration()
-        
-        #***> Set up core components <***
+
+        # ***> Set up core components <***
         self._setup_base_components()
 
     def _validate_configuration(self) -> None:
         """
         Validate the provided configuration.
-        
+
         Raises:
             ConfigurationError: If configuration is invalid
         """
@@ -55,35 +55,32 @@ class BaseOrchestrator(ABC):
         """
         Initialize base components common to all orchestrators.
         """
-        #***> Initialize VPN protection handler <***
-        if not hasattr(self, '_skip_base_vpn_handler'):
+        # ***> Initialize VPN protection handler <***
+        if not hasattr(self, "_skip_base_vpn_handler"):
             self.vpn_handler = VpnProtectionHandler(self.config)
-        
-        #***> Initialize navigation manager <***
+
+        # ***> Initialize navigation manager <***
         self.navigator = NavigationManager()
-        
 
     def _get_environment_setting(self) -> str:
         """
         Get environment setting from config with fallback.
-        
+
         Returns:
             Environment string for database configuration
         """
         return getattr(
-            self.config,
-            '_environment',
-            OrchestratorConfig.DEFAULT_DB_ENVIRONMENT
+            self.config, "_environment", OrchestratorConfig.DEFAULT_DB_ENVIRONMENT
         )
 
     def _handle_database_initialization_error(self, error: Exception) -> None:
         """
         Handle database initialization failures gracefully.
-        
+
         Args:
             error: The database initialization error
         """
-        #***> Database initialization failed, continue without DB <***
+        # ***> Database initialization failed, continue without DB <***
         pass
 
     @abstractmethod
@@ -97,7 +94,7 @@ class BaseOrchestrator(ABC):
     def vpn_protection_active(self) -> bool:
         """
         Check if VPN protection is currently active.
-        
+
         Returns:
             True if VPN protection is active
         """
@@ -108,7 +105,7 @@ class BaseOrchestrator(ABC):
     def database_available(self) -> bool:
         """
         Check if database is available. Must be implemented by subclasses.
-        
+
         Returns:
             True if database is available
         """

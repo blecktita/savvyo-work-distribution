@@ -1,37 +1,47 @@
-from .vpn import VpnConnectionError, TunnelblickRecoveryError, VpnRequiredError
 from .database import (
-    DatabaseServiceError, 
-    DatabaseServiceInitializationError, 
-    DatabaseConnectionError, 
-    DatabaseQueryError, 
-    CompetitionDataError, 
-    URLParsingError, CleanupError, DatabaseOperationError, DatabaseConfigurationError)
-from .security import IPSecurityViolationError, IPDetectionError, RotationTimeoutError, EmailConfigError, EmailSendingError
-from .extractor import CompetitionScrapingError, NavigationError, ConfigurationError
-from .parsers import ParsingError, TableNotFoundError,InsufficientDataError
+    CleanupError,
+    CompetitionDataError,
+    DatabaseConfigurationError,
+    DatabaseConnectionError,
+    DatabaseOperationError,
+    DatabaseQueryError,
+    DatabaseServiceError,
+    DatabaseServiceInitializationError,
+    URLParsingError,
+)
+from .extractor import CompetitionScrapingError, ConfigurationError, NavigationError
+from .parsers import InsufficientDataError, ParsingError, TableNotFoundError
+from .security import (
+    EmailConfigError,
+    EmailSendingError,
+    IPDetectionError,
+    IPSecurityViolationError,
+    RotationTimeoutError,
+)
+from .vpn import TunnelblickRecoveryError, VpnConnectionError, VpnRequiredError
 
 __all__ = [
-    'VpnConnectionError',
-    'TunnelblickRecoveryError',
-    'DatabaseServiceError',
-    'DatabaseServiceInitializationError',
-    'DatabaseConnectionError',
-    'DatabaseQueryError',
-    'CompetitionDataError',
-    'URLParsingError',
-    'CleanupError',
-    'VpnRequiredError',
-    'IPSecurityViolationError',
-    'IPDetectionError',
-    'RotationTimeoutError',
-    'EmailConfigError',
-    'EmailSendingError',
-    'DatabaseOperationError',
-    'DatabaseConfigurationError',
-    'CompetitionScrapingError',
-    'TableNotFoundError',
-    'InsufficientDataError',
-    'ParsingError',
-    'NavigationError',
-    'ConfigurationError'
+    "VpnConnectionError",
+    "TunnelblickRecoveryError",
+    "DatabaseServiceError",
+    "DatabaseServiceInitializationError",
+    "DatabaseConnectionError",
+    "DatabaseQueryError",
+    "CompetitionDataError",
+    "URLParsingError",
+    "CleanupError",
+    "VpnRequiredError",
+    "IPSecurityViolationError",
+    "IPDetectionError",
+    "RotationTimeoutError",
+    "EmailConfigError",
+    "EmailSendingError",
+    "DatabaseOperationError",
+    "DatabaseConfigurationError",
+    "CompetitionScrapingError",
+    "TableNotFoundError",
+    "InsufficientDataError",
+    "ParsingError",
+    "NavigationError",
+    "ConfigurationError",
 ]

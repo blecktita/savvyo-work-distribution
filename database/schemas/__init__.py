@@ -1,51 +1,53 @@
+# database/schemas/__init__.py
+
+# Import Competition and Team FIRST to establish the relationship
+from .competition_schema import Competition
+
+# THEN import match_schema models
 from .match_schema import (
-    TeamSide,
-    Competition as m_competition,
-    LeagueTableEntry,
-    Team as m_team,
-    Lineup,
-    TopScorer,
-    CommunityPrediction,
-    MatchTeam,
-    Substitution,
-    Goal,
     Card,
-    Player,
-    Referee,
+    CommunityPrediction,
+    Goal,
+    LeagueTableEntry,
+    Lineup,
+    Match,
+)
+from .match_schema import MatchCompetition as m_competition
+from .match_schema import (
     Matchday,
     MatchdaySummary,
-    Match
+    MatchTeam,
+    Player,
+    Referee,
+    Substitution,
 )
+from .match_schema import TeamInMatch as m_team
+from .match_schema import TeamSide, TopScorer
 
-from .competition_schema import competition
+# Finally import progress schema
+from .progress_schema import CompetitionProgress, SeasonProgress, TaskStatus
 from .team_schema import Team
-from .progression_schema import (
-    TaskStatus,
-    CompetitionProgress,
-    SeasonProgress
-)
-
 
 __all__ = [
-    'competition',
-    'Team',
-    'TaskStatus',
-    'CompetitionProgress',
-    'SeasonProgress',
-    'Match',
-    'Matchday',
-    'MatchdaySummary',
-    'Referee',
-    'Player',
-    'Card',
-    'Goal',
-    'Substitution',
-    'MatchTeam',
-    'CommunityPrediction',
-    'TopScorer',
-    'Lineup',
-    'LeagueTableEntry',
-    'm_competition',
-    'm_team',
-    'TeamSide'
+    "Competition",
+    "Team",
+    "TaskStatus",
+    "CompetitionProgress",
+    "SeasonProgress",
+    "Match",
+    "Matchday",
+    "MatchdaySummary",
+    "Referee",
+    "Player",
+    "Card",
+    "Goal",
+    "Substitution",
+    "MatchTeam",
+    "CommunityPrediction",
+    "TopScorer",
+    "Lineup",
+    "LeagueTableEntry",
+    "m_competition",
+    "m_team",
+    "TeamSide",
 ]

@@ -2,22 +2,27 @@
 """
 Core database management and connection handling
 """
+
 from contextlib import contextmanager
-from typing import Dict, Any
 from pathlib import Path
+from typing import Any, Dict
 
-from sqlalchemy import create_engine, text, event
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy import create_engine, event, text
 from sqlalchemy.exc import (
-    SQLAlchemyError, IntegrityError, OperationalError, 
-    DisconnectionError, TimeoutError
+    DisconnectionError,
+    IntegrityError,
+    OperationalError,
+    SQLAlchemyError,
+    TimeoutError,
 )
+from sqlalchemy.orm import sessionmaker
 
+from database.base import Base
 from exceptions import (
-    DatabaseConfigurationError, DatabaseConnectionError, 
-    DatabaseOperationError
+    DatabaseConfigurationError,
+    DatabaseConnectionError,
+    DatabaseOperationError,
 )
-from database.database_models import Base
 
 
 class DatabaseManager:
@@ -39,9 +44,7 @@ class DatabaseManager:
             DatabaseConnectionError: If connection cannot be established
         """
         if not database_url or not isinstance(database_url, str):
-            raise DatabaseConfigurationError(
-                "Database URL must be a non-empty string"
-            )
+            raise DatabaseConfigurationError("Database URL must be a non-empty string")
 
         self.database_url = database_url
         self.echo = echo
@@ -57,15 +60,15 @@ class DatabaseManager:
     def _detect_database_type(self) -> str:
         """
         Detect the database type from the URL
-        
+
         Returns:
             Database type string ('sqlite', 'postgresql', etc)
         """
-        supported_schemes = ('sqlite', 'postgresql', 'mysql', 'oracle')
+        supported_schemes = ("sqlite", "postgresql", "mysql", "oracle")
         for scheme in supported_schemes:
             if self.database_url.startswith(scheme):
                 return scheme
-        return 'unknown'
+        return "unknown"
 
     def _initialize_database(self) -> None:
         """
@@ -76,40 +79,34 @@ class DatabaseManager:
             DatabaseConfigurationError: If database configuration is invalid
         """
         try:
-            #***> Validate database URL format <***
-            supported_schemes = ('sqlite', 'postgresql', 'mysql', 'oracle')
+            # ***> Validate database URL format <***
+            supported_schemes = ("sqlite", "postgresql", "mysql", "oracle")
             if not self.database_url.startswith(supported_schemes):
                 raise DatabaseConfigurationError(
                     f"Unsupported database type in URL: {self.database_url}"
                 )
 
-            #***> Create engine with database-specific settings <***
-            if self.db_type == 'sqlite':
+            # ***> Create engine with database-specific settings <***
+            if self.db_type == "sqlite":
                 self.engine = self._create_sqlite_engine()
-            elif self.db_type == 'postgresql':
+            elif self.db_type == "postgresql":
                 self.engine = self._create_postgresql_engine()
             else:
                 self.engine = self._create_generic_engine()
 
-            #***> Test connection <***
+            # ***> Test connection <***
             with self.engine.connect() as conn:
                 conn.execute(text("SELECT 1"))
 
-            #***> Create session factory <***
+            # ***> Create session factory <***
             self.SessionLocal = sessionmaker(
-                autocommit=False,
-                autoflush=False,
-                bind=self.engine
+                autocommit=False, autoflush=False, bind=self.engine
             )
 
         except OperationalError as error:
-            raise DatabaseConnectionError(
-                f"Failed to connect to database: {error}"
-            )
+            raise DatabaseConnectionError(f"Failed to connect to database: {error}")
         except SQLAlchemyError as error:
-            raise DatabaseConnectionError(
-                f"Database configuration error: {error}"
-            )
+            raise DatabaseConnectionError(f"Database configuration error: {error}")
         except Exception as error:
             raise DatabaseConnectionError(
                 f"Unexpected database initialization error: {error}"
@@ -124,10 +121,10 @@ class DatabaseManager:
             echo=self.echo,
             connect_args={"check_same_thread": False},
             pool_pre_ping=True,
-            pool_recycle=300
+            pool_recycle=300,
         )
-        
-        #***> Enable foreign key constraints for SQLite <***
+
+        # ***> Enable foreign key constraints for SQLite <***
         @event.listens_for(engine, "connect")
         def set_sqlite_pragma(dbapi_connection, connection_record):
             cursor = dbapi_connection.cursor()
@@ -135,7 +132,7 @@ class DatabaseManager:
             cursor.execute("PRAGMA journal_mode=WAL")
             cursor.execute("PRAGMA synchronous=NORMAL")
             cursor.close()
-        
+
         return engine
 
     def _create_postgresql_engine(self):
@@ -149,7 +146,7 @@ class DatabaseManager:
             pool_recycle=3600,
             pool_size=20,
             max_overflow=30,
-            pool_timeout=30
+            pool_timeout=30,
         )
 
     def _create_generic_engine(self):
@@ -157,10 +154,7 @@ class DatabaseManager:
         Create generic engine for other database types
         """
         return create_engine(
-            self.database_url,
-            echo=self.echo,
-            pool_pre_ping=True,
-            pool_recycle=3600
+            self.database_url, echo=self.echo, pool_pre_ping=True, pool_recycle=3600
         )
 
     @contextmanager
@@ -169,7 +163,7 @@ class DatabaseManager:
         Context manager for database sessions with automatic cleanup
 
         Yields:
-            Session: SQLAlchemy session object 
+            Session: SQLAlchemy session object
 
         Raises:
             DatabaseConnectionError: If session cannot be created
@@ -207,9 +201,7 @@ class DatabaseManager:
         except SQLAlchemyError as error:
             if session:
                 session.rollback()
-            raise DatabaseOperationError(
-                f"Database session error: {error}"
-            ) from error
+            raise DatabaseOperationError(f"Database session error: {error}") from error
         except Exception as error:
             if session:
                 session.rollback()
@@ -223,27 +215,26 @@ class DatabaseManager:
     def create_tables(self) -> None:
         """
         Create all tables defined in the models
-        
+
         Raises:
             DatabaseOperationError: If table creation fails
             DatabaseConnectionError: If database connection is lost
         """
         try:
-            #***> Ensure directory exists for SQLite databases <***
-            if (self.database_url.startswith('sqlite') and 
-                not self.database_url.endswith(':memory:')):
+            # ***> Ensure directory exists for SQLite databases <***
+            if self.database_url.startswith(
+                "sqlite"
+            ) and not self.database_url.endswith(":memory:"):
                 self._ensure_sqlite_directory()
-            
-            #***> Create all tables <***
+
+            # ***> Create all tables <***
             Base.metadata.create_all(bind=self.engine)
         except OperationalError as error:
             raise DatabaseConnectionError(
                 f"Database connection lost during table creation: {error}"
             ) from error
         except SQLAlchemyError as error:
-            raise DatabaseOperationError(
-                f"Failed to create tables: {error}"
-            ) from error
+            raise DatabaseOperationError(f"Failed to create tables: {error}") from error
         except Exception as error:
             raise DatabaseOperationError(
                 f"Unexpected table creation error: {error}"
@@ -253,7 +244,7 @@ class DatabaseManager:
         """
         Ensure directory exists for SQLite database file
         """
-        db_path = self.database_url.replace('sqlite:///', '')
+        db_path = self.database_url.replace("sqlite:///", "")
         db_dir = Path(db_path).parent
         db_dir.mkdir(parents=True, exist_ok=True)
 
@@ -262,7 +253,7 @@ class DatabaseManager:
         Check if database connection is healthy
 
         Returns:
-            True if connection is healthy, False otherwise 
+            True if connection is healthy, False otherwise
         """
         try:
             with self.get_session() as session:
@@ -279,27 +270,29 @@ class DatabaseManager:
             Connection information dictionary
         """
         try:
-            #***> Safely extract database URL without credentials <***
+            # ***> Safely extract database URL without credentials <***
             safe_url = self.database_url
-            if '@' in safe_url:
-                safe_url = safe_url.split('@')[-1]
+            if "@" in safe_url:
+                safe_url = safe_url.split("@")[-1]
 
             info = {
                 "database_type": self.db_type,
                 "database_url": safe_url,
                 "engine_echo": self.echo,
-                "is_connected": self.health_check()
+                "is_connected": self.health_check(),
             }
 
             if self.engine:
                 pool_size = self._get_pool_size_safely()
                 checked_out = self._get_checked_out_safely()
-                        
-                info.update({
-                    "pool_size": pool_size,
-                    "checked_out_connections": checked_out,
-                    "pool_class": self.engine.pool.__class__.__name__
-                })
+
+                info.update(
+                    {
+                        "pool_size": pool_size,
+                        "checked_out_connections": checked_out,
+                        "pool_class": self.engine.pool.__class__.__name__,
+                    }
+                )
 
             return info
 
@@ -310,23 +303,26 @@ class DatabaseManager:
         """
         Safely get pool size information
         """
-        pool_size = 'N/A'
+        pool_size = "N/A"
         if self.engine is not None:
-            size_attr = getattr(self.engine.pool, 'size', None)
+            size_attr = getattr(self.engine.pool, "size", None)
             if size_attr is not None:
                 pool_size = size_attr() if callable(size_attr) else size_attr
             else:
-                pool_size = 'Unknown'
+                pool_size = "Unknown"
         return str(pool_size)
 
     def _get_checked_out_safely(self) -> str:
         """
         Safely get checked out connections count
         """
-        checked_out = 'N/A'
+        checked_out = "N/A"
         if self.engine is not None:
-            checked_out_attr = getattr(self.engine.pool, 'checkedout', None)
+            checked_out_attr = getattr(self.engine.pool, "checkedout", None)
             if checked_out_attr is not None:
-                checked_out = (checked_out_attr() if callable(checked_out_attr) 
-                             else checked_out_attr)
+                checked_out = (
+                    checked_out_attr()
+                    if callable(checked_out_attr)
+                    else checked_out_attr
+                )
         return str(checked_out)

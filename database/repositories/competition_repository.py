@@ -2,14 +2,17 @@
 """
 Competition-specific repository implementation.
 """
-from typing import Dict, Any, List, Optional
-from sqlalchemy.exc import SQLAlchemyError
-from sqlalchemy import select
 
-from .base_repository import BaseRepository
-from ..core.database_manager import DatabaseManager
-from database.database_models import Competition
+from typing import Any, Dict, List, Optional
+
+from sqlalchemy import select
+from sqlalchemy.exc import SQLAlchemyError
+
+from database.schemas import Competition
 from exceptions import DatabaseOperationError
+
+from ..core.database_manager import DatabaseManager
+from .base_repository import BaseRepository
 
 
 class CompetitionRepository(BaseRepository):
@@ -45,17 +48,20 @@ class CompetitionRepository(BaseRepository):
 
         try:
             with self.db_manager.get_session() as session:
-                competition = session.query(Competition).filter(
-                    Competition.competition_id == competition_id
-                ).first()
+                competition = (
+                    session.query(Competition)
+                    .filter(Competition.competition_id == competition_id)
+                    .first()
+                )
                 return competition
         except SQLAlchemyError as error:
             raise DatabaseOperationError(
                 f"Database error retrieving competition: {error}"
             )
 
-    def update(self, competition_id: str, 
-               update_data: Dict[str, Any]) -> Optional[Competition]:
+    def update(
+        self, competition_id: str, update_data: Dict[str, Any]
+    ) -> Optional[Competition]:
         """
         Update competition record.
 
@@ -78,14 +84,16 @@ class CompetitionRepository(BaseRepository):
 
         try:
             with self.db_manager.get_session() as session:
-                competition = session.query(Competition).filter(
-                    Competition.competition_id == competition_id
-                ).first()
+                competition = (
+                    session.query(Competition)
+                    .filter(Competition.competition_id == competition_id)
+                    .first()
+                )
 
                 if not competition:
                     return None
 
-                #***> Update fields <***
+                # ***> Update fields <***
                 for key, value in update_data.items():
                     if hasattr(competition, key):
                         setattr(competition, key, value)
@@ -118,9 +126,11 @@ class CompetitionRepository(BaseRepository):
 
         try:
             with self.db_manager.get_session() as session:
-                competition = session.query(Competition).filter(
-                    Competition.competition_id == competition_id
-                ).first()
+                competition = (
+                    session.query(Competition)
+                    .filter(Competition.competition_id == competition_id)
+                    .first()
+                )
 
                 if not competition:
                     return False
@@ -155,10 +165,14 @@ class CompetitionRepository(BaseRepository):
 
         try:
             with self.db_manager.get_session() as session:
-                competitions = session.query(Competition).filter(
-                    Competition.competition_name.like(f"%{name_pattern}%"),
-                    Competition.is_active
-                ).all()
+                competitions = (
+                    session.query(Competition)
+                    .filter(
+                        Competition.competition_name.like(f"%{name_pattern}%"),
+                        Competition.is_active,
+                    )
+                    .all()
+                )
                 return competitions
         except SQLAlchemyError as error:
             raise DatabaseOperationError(
@@ -184,10 +198,14 @@ class CompetitionRepository(BaseRepository):
 
         try:
             with self.db_manager.get_session() as session:
-                competitions = session.query(Competition).filter(
-                    Competition.competition_type == competition_type,
-                    Competition.is_active
-                ).all()
+                competitions = (
+                    session.query(Competition)
+                    .filter(
+                        Competition.competition_type == competition_type,
+                        Competition.is_active,
+                    )
+                    .all()
+                )
                 return competitions
         except SQLAlchemyError as error:
             raise DatabaseOperationError(
@@ -206,11 +224,11 @@ class CompetitionRepository(BaseRepository):
         """
         try:
             with self.db_manager.get_session() as session:
-                #***> Query competitions where tier does not contain "cup" <***
+                # ***> Query competitions where tier does not contain "cup" <***
                 stmt = select(
                     Competition.competition_id, Competition.competition_url
                 ).where(~Competition.tier.ilike("%cup%"))
-                
+
                 result = session.execute(stmt)
                 competitions = [
                     {

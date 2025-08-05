@@ -3,18 +3,20 @@
 Base repository pattern implementation.
 Provides common CRUD operations that can be extended by specific repositories.
 """
-from abc import ABC, abstractmethod
-from typing import Dict, Any, List, Optional, Type, TypeVar, Generic
-from sqlalchemy.exc import SQLAlchemyError, IntegrityError, InvalidRequestError
 
+from abc import ABC, abstractmethod
+from typing import Any, Dict, Generic, List, Optional, Type, TypeVar
+
+from sqlalchemy.exc import IntegrityError, InvalidRequestError, SQLAlchemyError
+
+from database.base import Base
 from database.core.database_manager import DatabaseManager
 from exceptions import DatabaseOperationError
-from database.database_models import Base
 
-T = TypeVar('T', bound=Base)
+T = TypeVar("T", bound=Base)
+
 
 class BaseRepository(ABC, Generic[T]):
-    
     """
     Abstract base repository providing common database operations.
     """
@@ -32,7 +34,7 @@ class BaseRepository(ABC, Generic[T]):
         """
         if not isinstance(db_manager, DatabaseManager):
             raise ValueError("db_manager must be a DatabaseManager instance")
-        
+
         if not issubclass(model_class, Base):
             raise ValueError("model_class must be a SQLAlchemy model")
 
@@ -70,9 +72,7 @@ class BaseRepository(ABC, Generic[T]):
         except InvalidRequestError as error:
             raise ValueError(f"Invalid entity data: {error}")
         except SQLAlchemyError as error:
-            raise DatabaseOperationError(
-                f"Database error creating entity: {error}"
-            )
+            raise DatabaseOperationError(f"Database error creating entity: {error}")
 
     @abstractmethod
     def get_by_id(self, entity_id: str) -> Optional[T]:
@@ -97,15 +97,13 @@ class BaseRepository(ABC, Generic[T]):
         try:
             with self.db_manager.get_session() as session:
                 query = session.query(self.model_class)
-                if active_only and hasattr(self.model_class, 'is_active'):
+                if active_only and hasattr(self.model_class, "is_active"):
                     query = query.filter(self.model_class.is_active)
-                
+
                 entities = query.all()
                 return entities
         except SQLAlchemyError as error:
-            raise DatabaseOperationError(
-                f"Database error retrieving entities: {error}"
-            )
+            raise DatabaseOperationError(f"Database error retrieving entities: {error}")
 
     @abstractmethod
     def update(self, entity_id: str, update_data: Dict[str, Any]) -> Optional[T]:

@@ -3,6 +3,7 @@
 Constants for logging operations
 """
 
+
 # HTML parsing constants
 class HTMLConstants:
     """
@@ -57,8 +58,8 @@ class ScrapingConstants:
     # Market value multipliers
     MARKET_VALUE_MULTIPLIERS = {
         "bn": 1000,  # Billion to million
-        "m": 1,      # Million stays as is
-        "k": 0.001   # Thousand to million
+        "m": 1,  # Million stays as is
+        "k": 0.001,  # Thousand to million
     }
 
 
@@ -68,13 +69,10 @@ class DatabaseConstants:
     """
 
     # Metadata fields to remove before database save
-    METADATA_FIELDS = [
-        "page_number",
-        "scraped_at"
-    ]
+    METADATA_FIELDS = ["page_number", "scraped_at"]
 
     # Numeric field defaults
-    NUMERIC_DEFAULTS = {
+    NUMERIC_DEFAULTS: dict[str, float] = {
         "number_of_clubs": 0,
         "number_of_players": 0,
         "percentage_of_foreign_players": 0.0,
@@ -82,7 +80,7 @@ class DatabaseConstants:
         "goals_per_match": 0.0,
         "percentage_game_ratio_of_foreign_players": 0.0,
         "average_market_value": 0.0,
-        "total_market_value": 0.0
+        "total_market_value": 0.0,
     }
 
     # String field defaults
@@ -93,7 +91,7 @@ class DatabaseConstants:
         "competition_name": "",
         "competition_url": "",
         "competition_code": "",
-        "competition_id": ""
+        "competition_id": "",
     }
 
 
@@ -124,5 +122,5 @@ class LoggingConstants:
         "avg_time_per_page",
         "vpn_protection",
         "requests_made",
-        "requests_per_rotation"
+        "requests_per_rotation",
     ]
