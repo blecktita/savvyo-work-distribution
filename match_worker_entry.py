@@ -157,6 +157,10 @@ class MatchWorkerGUI:
         self.config = config
         self.console = Console()
 
+        # Generate worker ID FIRST (before logging setup)
+        hostname = socket.gethostname()
+        self.worker_id = f"worker_{hostname}_{os.getpid()}_{uuid.uuid4().hex[:8]}"
+
         # Worker components
         self.worker: Optional[MatchDistributedWorker] = None
         self.worker_thread: Optional[threading.Thread] = None
@@ -179,15 +183,11 @@ class MatchWorkerGUI:
         self.layout = Layout()
         self.live: Optional[Live] = None
 
-        # Setup
+        # Setup (now worker_id is available)
         self._setup_directories()
         self._setup_logging()
         self._setup_signal_handlers()
         self._setup_layout()
-
-        # Generate worker ID
-        hostname = socket.gethostname()
-        self.worker_id = f"worker_{hostname}_{os.getpid()}_{uuid.uuid4().hex[:8]}"
 
         self.log_activity("Worker GUI initialized", LogLevel.SUCCESS)
 
