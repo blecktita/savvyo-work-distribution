@@ -133,8 +133,11 @@
   ],
   "created_at": "2025-08-14T13:48:12Z",
   "created_by": "recovery_system",
-  "status": "claimed",
+  "status": "failed",
   "claimed_by": "match_ASEs-MacBook-Pro.local_29843_110d0d32",
   "claimed_at": "2025-08-14T16:07:34.782499",
-  "claim_id": "match_ASEs-MacBook-Pro.local_29843_110d0d32_1755176854782_8e5f016a"
+  "claim_id": "match_ASEs-MacBook-Pro.local_29843_110d0d32_1755176854782_8e5f016a",
+  "started_at": "2025-08-14T13:07:39.101985+00:00",
+  "failed_at": "2025-08-14T16:07:39.103544",
+  "error_message": "Processing error: Can't instantiate abstract class MatchOrchestrator without an implementation for abstract method 'database_available'"
 }
