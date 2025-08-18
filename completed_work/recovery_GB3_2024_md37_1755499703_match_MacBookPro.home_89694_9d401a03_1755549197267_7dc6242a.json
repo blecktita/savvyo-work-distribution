@@ -1,0 +1,82 @@
+{
+  "work_id": "recovery_GB3_2024_md37_1755499703",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_GB3_2024_1755102131",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-18T09:48:23Z",
+  "competition_id": "GB3",
+  "competition_code": "league-one",
+  "competition_name": "League One",
+  "season_year": "2024",
+  "team_count": 24,
+  "expected_matchdays": 46,
+  "recovery_matchday_number": 37,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4383397"
+  ],
+  "priority": 330,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_GB3_2024_1755102131"
+  },
+  "matchdays_data": [],
+  "created_at": "2025-08-18T09:48:23Z",
+  "created_by": "recovery_system",
+  "status": "completed",
+  "claimed_by": "match_MacBookPro.home_89694_9d401a03",
+  "claimed_at": "2025-08-18T23:33:17.267974",
+  "claim_id": "match_MacBookPro.home_89694_9d401a03_1755549197267_7dc6242a",
+  "started_at": "2025-08-18T20:33:22.014392+00:00",
+  "completed_at": "2025-08-18T20:33:22.598205+00:00",
+  "total_matchdays": 0,
+  "total_matches": 0,
+  "execution_time_seconds": 38699.597363,
+  "execution_time_minutes": 644.99,
+  "execution_time_hours": 10.75,
+  "processing_time_seconds": 0.5841666245833039,
+  "processing_time_minutes": 0.01,
+  "processing_time_hours": 0.0,
+  "queue_wait_seconds": 38699.013219,
+  "was_recovery_work": true,
+  "recovery_success": false,
+  "recovered_match_targets": [
+    "4383397"
+  ],
+  "requeue_template": {
+    "work_id": "requeue_recovery_GB3_2024_md37_1755499703_1",
+    "work_type": "match_data",
+    "version": "2.0",
+    "competition_id": "GB3",
+    "competition_code": "league-one",
+    "competition_name": "League One",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_GB3_2024_1755102131",
+    "recovery_reason": "missing_team_data",
+    "recovery_created_at": "2025-08-18T20:33:22.598221+00:00",
+    "recovery_matchday_number": 37,
+    "specific_match_targets": [
+      "4383397"
+    ],
+    "team_count": 24,
+    "expected_matchdays": 46,
+    "priority": 320,
+    "processing_hints": {
+      "is_recovery": true,
+      "focus_on_team_data": true,
+      "preserve_existing_data": true,
+      "original_work_id": "match_GB3_2024_1755102131",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-18T20:33:22.598228+00:00",
+    "created_by": "requeue_adapter"
+  }
+}
