@@ -1,0 +1,82 @@
+{
+  "work_id": "recovery_OLB1_2024_md8_1755500515",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_OLB1_2024_1755102327",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-18T10:01:55Z",
+  "competition_id": "OLB1",
+  "competition_code": "bayernliga-nord",
+  "competition_name": "Bayernliga Nord",
+  "season_year": "2024",
+  "team_count": 17,
+  "expected_matchdays": 32,
+  "recovery_matchday_number": 8,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4387290"
+  ],
+  "priority": 320,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_OLB1_2024_1755102327"
+  },
+  "matchdays_data": [],
+  "created_at": "2025-08-18T10:01:55Z",
+  "created_by": "recovery_system",
+  "status": "completed",
+  "claimed_by": "match_MacBookPro.home_35783_a89635de",
+  "claimed_at": "2025-08-19T19:14:15.787225",
+  "claim_id": "match_MacBookPro.home_35783_a89635de_1755620055787_7a313224",
+  "started_at": "2025-08-19T16:14:20.616857+00:00",
+  "completed_at": "2025-08-19T16:14:20.627167+00:00",
+  "total_matchdays": 0,
+  "total_matches": 0,
+  "execution_time_seconds": 108745.626146,
+  "execution_time_minutes": 1812.43,
+  "execution_time_hours": 30.21,
+  "processing_time_seconds": 0.010491833090782166,
+  "processing_time_minutes": 0.0,
+  "processing_time_hours": 0.0,
+  "queue_wait_seconds": 108745.616857,
+  "was_recovery_work": true,
+  "recovery_success": false,
+  "recovered_match_targets": [
+    "4387290"
+  ],
+  "requeue_template": {
+    "work_id": "requeue_recovery_OLB1_2024_md8_1755500515_1",
+    "work_type": "match_data",
+    "version": "2.0",
+    "competition_id": "OLB1",
+    "competition_code": "bayernliga-nord",
+    "competition_name": "Bayernliga Nord",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_OLB1_2024_1755102327",
+    "recovery_reason": "missing_team_data",
+    "recovery_created_at": "2025-08-19T16:14:20.627195+00:00",
+    "recovery_matchday_number": 8,
+    "specific_match_targets": [
+      "4387290"
+    ],
+    "team_count": 17,
+    "expected_matchdays": 32,
+    "priority": 310,
+    "processing_hints": {
+      "is_recovery": true,
+      "focus_on_team_data": true,
+      "preserve_existing_data": true,
+      "original_work_id": "match_OLB1_2024_1755102327",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-19T16:14:20.627204+00:00",
+    "created_by": "requeue_adapter"
+  }
+}
