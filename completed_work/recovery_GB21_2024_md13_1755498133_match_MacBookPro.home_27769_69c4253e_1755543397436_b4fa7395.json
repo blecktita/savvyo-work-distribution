@@ -1,0 +1,82 @@
+{
+  "work_id": "recovery_GB21_2024_md13_1755498133",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_GB21_2024_1755102124",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-18T09:22:13Z",
+  "competition_id": "GB21",
+  "competition_code": "premier-league-2",
+  "competition_name": "Premier League 2",
+  "season_year": "2024",
+  "team_count": 28,
+  "expected_matchdays": 54,
+  "recovery_matchday_number": 13,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4536808"
+  ],
+  "priority": 330,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_GB21_2024_1755102124"
+  },
+  "matchdays_data": [],
+  "created_at": "2025-08-18T09:22:13Z",
+  "created_by": "recovery_system",
+  "status": "completed",
+  "claimed_by": "match_MacBookPro.home_27769_69c4253e",
+  "claimed_at": "2025-08-18T21:56:37.436232",
+  "claim_id": "match_MacBookPro.home_27769_69c4253e_1755543397436_b4fa7395",
+  "started_at": "2025-08-18T18:56:42.445301+00:00",
+  "completed_at": "2025-08-18T18:56:43.108572+00:00",
+  "total_matchdays": 0,
+  "total_matches": 0,
+  "execution_time_seconds": 34470.107579,
+  "execution_time_minutes": 574.5,
+  "execution_time_hours": 9.58,
+  "processing_time_seconds": 0.6634406251832843,
+  "processing_time_minutes": 0.01,
+  "processing_time_hours": 0.0,
+  "queue_wait_seconds": 34469.444141,
+  "was_recovery_work": true,
+  "recovery_success": false,
+  "recovered_match_targets": [
+    "4536808"
+  ],
+  "requeue_template": {
+    "work_id": "requeue_recovery_GB21_2024_md13_1755498133_1",
+    "work_type": "match_data",
+    "version": "2.0",
+    "competition_id": "GB21",
+    "competition_code": "premier-league-2",
+    "competition_name": "Premier League 2",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_GB21_2024_1755102124",
+    "recovery_reason": "missing_team_data",
+    "recovery_created_at": "2025-08-18T18:56:43.108609+00:00",
+    "recovery_matchday_number": 13,
+    "specific_match_targets": [
+      "4536808"
+    ],
+    "team_count": 28,
+    "expected_matchdays": 54,
+    "priority": 320,
+    "processing_hints": {
+      "is_recovery": true,
+      "focus_on_team_data": true,
+      "preserve_existing_data": true,
+      "original_work_id": "match_GB21_2024_1755102124",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-18T18:56:43.108618+00:00",
+    "created_by": "requeue_adapter"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "work_id": "recovery_FI4L_2024_md11_1755498925",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_FI4L_2024_1755102120",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-18T09:35:25Z",
+  "competition_id": "FI4L",
+  "competition_code": "kolmonen-itainen",
+  "competition_name": "Kolmonen Itäinen",
+  "season_year": "2024",
+  "team_count": 28,
+  "expected_matchdays": 54,
+  "recovery_matchday_number": 11,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4522195"
+  ],
+  "priority": 330,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_FI4L_2024_1755102120"
+  },
+  "matchdays_data": [],
+  "created_at": "2025-08-18T09:35:25Z",
+  "created_by": "recovery_system",
+  "status": "completed",
+  "claimed_by": "match_MacBookPro.home_89694_9d401a03",
+  "claimed_at": "2025-08-19T01:33:07.415216",
+  "claim_id": "match_MacBookPro.home_89694_9d401a03_1755556387415_09596f03",
+  "started_at": "2025-08-18T22:33:12.047360+00:00",
+  "completed_at": "2025-08-18T22:33:12.773561+00:00",
+  "total_matchdays": 0,
+  "total_matches": 0,
+  "execution_time_seconds": 46667.772484,
+  "execution_time_minutes": 777.8,
+  "execution_time_hours": 12.96,
+  "processing_time_seconds": 0.7264424171298742,
+  "processing_time_minutes": 0.01,
+  "processing_time_hours": 0.0,
+  "queue_wait_seconds": 46667.046053,
+  "was_recovery_work": true,
+  "recovery_success": false,
+  "recovered_match_targets": [
+    "4522195"
+  ],
+  "requeue_template": {
+    "work_id": "requeue_recovery_FI4L_2024_md11_1755498925_1",
+    "work_type": "match_data",
+    "version": "2.0",
+    "competition_id": "FI4L",
+    "competition_code": "kolmonen-itainen",
+    "competition_name": "Kolmonen Itäinen",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_FI4L_2024_1755102120",
+    "recovery_reason": "missing_team_data",
+    "recovery_created_at": "2025-08-18T22:33:12.773588+00:00",
+    "recovery_matchday_number": 11,
+    "specific_match_targets": [
+      "4522195"
+    ],
+    "team_count": 28,
+    "expected_matchdays": 54,
+    "priority": 320,
+    "processing_hints": {
+      "is_recovery": true,
+      "focus_on_team_data": true,
+      "preserve_existing_data": true,
+      "original_work_id": "match_FI4L_2024_1755102120",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-18T22:33:12.773599+00:00",
+    "created_by": "requeue_adapter"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "work_id": "recovery_JAP2_2024_md16_1755497952",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_JAP2_2024_1755102155",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-18T09:19:12Z",
+  "competition_id": "JAP2",
+  "competition_code": "j2-league",
+  "competition_name": "J2 League",
+  "season_year": "2024",
+  "team_count": 20,
+  "expected_matchdays": 38,
+  "recovery_matchday_number": 16,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4521712"
+  ],
+  "priority": 330,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_JAP2_2024_1755102155"
+  },
+  "matchdays_data": [],
+  "created_at": "2025-08-18T09:19:12Z",
+  "created_by": "recovery_system",
+  "status": "completed",
+  "claimed_by": "match_MacBookPro.home_89694_9d401a03",
+  "claimed_at": "2025-08-19T00:37:52.959925",
+  "claim_id": "match_MacBookPro.home_89694_9d401a03_1755553072959_20779aaa",
+  "started_at": "2025-08-18T21:37:57.908461+00:00",
+  "completed_at": "2025-08-18T21:37:59.524591+00:00",
+  "total_matchdays": 0,
+  "total_matches": 0,
+  "execution_time_seconds": 44327.523524,
+  "execution_time_minutes": 738.79,
+  "execution_time_hours": 12.31,
+  "processing_time_seconds": 1.6164105832576752,
+  "processing_time_minutes": 0.03,
+  "processing_time_hours": 0.0,
+  "queue_wait_seconds": 44325.907167,
+  "was_recovery_work": true,
+  "recovery_success": false,
+  "recovered_match_targets": [
+    "4521712"
+  ],
+  "requeue_template": {
+    "work_id": "requeue_recovery_JAP2_2024_md16_1755497952_1",
+    "work_type": "match_data",
+    "version": "2.0",
+    "competition_id": "JAP2",
+    "competition_code": "j2-league",
+    "competition_name": "J2 League",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_JAP2_2024_1755102155",
+    "recovery_reason": "missing_team_data",
+    "recovery_created_at": "2025-08-18T21:37:59.524619+00:00",
+    "recovery_matchday_number": 16,
+    "specific_match_targets": [
+      "4521712"
+    ],
+    "team_count": 20,
+    "expected_matchdays": 38,
+    "priority": 320,
+    "processing_hints": {
+      "is_recovery": true,
+      "focus_on_team_data": true,
+      "preserve_existing_data": true,
+      "original_work_id": "match_JAP2_2024_1755102155",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-18T21:37:59.524627+00:00",
+    "created_by": "requeue_adapter"
+  }
+}

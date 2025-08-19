@@ -1,0 +1,82 @@
+{
+  "work_id": "recovery_CZ3C_2024_md16_1755500697",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_CZ3C_2024_1755102105",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-18T10:04:57Z",
+  "competition_id": "CZ3C",
+  "competition_code": "ceska-fotbalova-liga",
+  "competition_name": "CFL",
+  "season_year": "2024",
+  "team_count": 34,
+  "expected_matchdays": 66,
+  "recovery_matchday_number": 16,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4371984"
+  ],
+  "priority": 330,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_CZ3C_2024_1755102105"
+  },
+  "matchdays_data": [],
+  "created_at": "2025-08-18T10:04:57Z",
+  "created_by": "recovery_system",
+  "status": "completed",
+  "claimed_by": "match_MacBookPro.home_89694_9d401a03",
+  "claimed_at": "2025-08-19T01:34:20.082272",
+  "claim_id": "match_MacBookPro.home_89694_9d401a03_1755556460082_3cd42967",
+  "started_at": "2025-08-18T22:34:24.852994+00:00",
+  "completed_at": "2025-08-18T22:34:25.435790+00:00",
+  "total_matchdays": 0,
+  "total_matches": 0,
+  "execution_time_seconds": 44968.434625,
+  "execution_time_minutes": 749.47,
+  "execution_time_hours": 12.49,
+  "processing_time_seconds": 0.5829728753305972,
+  "processing_time_minutes": 0.01,
+  "processing_time_hours": 0.0,
+  "queue_wait_seconds": 44967.851661,
+  "was_recovery_work": true,
+  "recovery_success": false,
+  "recovered_match_targets": [
+    "4371984"
+  ],
+  "requeue_template": {
+    "work_id": "requeue_recovery_CZ3C_2024_md16_1755500697_1",
+    "work_type": "match_data",
+    "version": "2.0",
+    "competition_id": "CZ3C",
+    "competition_code": "ceska-fotbalova-liga",
+    "competition_name": "CFL",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_CZ3C_2024_1755102105",
+    "recovery_reason": "missing_team_data",
+    "recovery_created_at": "2025-08-18T22:34:25.435821+00:00",
+    "recovery_matchday_number": 16,
+    "specific_match_targets": [
+      "4371984"
+    ],
+    "team_count": 34,
+    "expected_matchdays": 66,
+    "priority": 320,
+    "processing_hints": {
+      "is_recovery": true,
+      "focus_on_team_data": true,
+      "preserve_existing_data": true,
+      "original_work_id": "match_CZ3C_2024_1755102105",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-18T22:34:25.435833+00:00",
+    "created_by": "requeue_adapter"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "work_id": "recovery_ARG1_2024_md3_1755499869",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_ARG1_2024_1755102111",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-18T09:51:09Z",
+  "competition_id": "ARG1",
+  "competition_code": "torneo-apertura",
+  "competition_name": "Torneo Apertura",
+  "season_year": "2024",
+  "team_count": 30,
+  "expected_matchdays": 58,
+  "recovery_matchday_number": 3,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4529329"
+  ],
+  "priority": 330,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_ARG1_2024_1755102111"
+  },
+  "matchdays_data": [
+    {
+      "matchday_info": {
+        "number": 3,
+        "season": "2024",
+        "competition": "Torneo Apertura",
+        "source_url": "https://www.transfermarkt.com/torneo-apertura/spieltag/wettbewerb/ARG1/saison_id/2024/spieltag/3",
+        "total_matches": 15
+      },
+      "matches": [
+        {
+          "match_info": {
+            "match_id": "4529329",
+            "competition_name": "Torneo Apertura",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4529329",
+            "day_of_week": "Monday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        }
+      ],
+      "league_table": {},
+      "top_scorers": [],
+      "summary": {
+        "recovery_context": true,
+        "original_work_id": "match_ARG1_2024_1755102111",
+        "recovery_reason": "missing_team_data"
+      }
+    }
+  ],
+  "created_at": "2025-08-18T09:51:09Z",
+  "created_by": "recovery_system",
+  "status": "claimed",
+  "claimed_by": "match_MacBookPro.home_89694_9d401a03",
+  "claimed_at": "2025-08-18T22:41:11.168188",
+  "claim_id": "match_MacBookPro.home_89694_9d401a03_1755546071168_6cfd72e4"
+}

@@ -1,0 +1,82 @@
+{
+  "work_id": "recovery_2DVB_2024_md19_1755500112",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_2DVB_2024_1755102094",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-18T09:55:12Z",
+  "competition_id": "2DVB",
+  "competition_code": "2-division-b",
+  "competition_name": "2. Division B",
+  "season_year": "2024",
+  "team_count": 57,
+  "expected_matchdays": 112,
+  "recovery_matchday_number": 19,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4649914"
+  ],
+  "priority": 330,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_2DVB_2024_1755102094"
+  },
+  "matchdays_data": [],
+  "created_at": "2025-08-18T09:55:12Z",
+  "created_by": "recovery_system",
+  "status": "completed",
+  "claimed_by": "match_MacBookPro.home_89694_9d401a03",
+  "claimed_at": "2025-08-19T01:34:56.317087",
+  "claim_id": "match_MacBookPro.home_89694_9d401a03_1755556496317_a2367183",
+  "started_at": "2025-08-18T22:35:00.899720+00:00",
+  "completed_at": "2025-08-18T22:35:01.495741+00:00",
+  "total_matchdays": 0,
+  "total_matches": 0,
+  "execution_time_seconds": 45589.493739,
+  "execution_time_minutes": 759.82,
+  "execution_time_hours": 12.66,
+  "processing_time_seconds": 0.5952958343550563,
+  "processing_time_minutes": 0.01,
+  "processing_time_hours": 0.0,
+  "queue_wait_seconds": 45588.89845,
+  "was_recovery_work": true,
+  "recovery_success": false,
+  "recovered_match_targets": [
+    "4649914"
+  ],
+  "requeue_template": {
+    "work_id": "requeue_recovery_2DVB_2024_md19_1755500112_1",
+    "work_type": "match_data",
+    "version": "2.0",
+    "competition_id": "2DVB",
+    "competition_code": "2-division-b",
+    "competition_name": "2. Division B",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_2DVB_2024_1755102094",
+    "recovery_reason": "missing_team_data",
+    "recovery_created_at": "2025-08-18T22:35:01.495809+00:00",
+    "recovery_matchday_number": 19,
+    "specific_match_targets": [
+      "4649914"
+    ],
+    "team_count": 57,
+    "expected_matchdays": 112,
+    "priority": 320,
+    "processing_hints": {
+      "is_recovery": true,
+      "focus_on_team_data": true,
+      "preserve_existing_data": true,
+      "original_work_id": "match_2DVB_2024_1755102094",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-18T22:35:01.495825+00:00",
+    "created_by": "requeue_adapter"
+  }
+}

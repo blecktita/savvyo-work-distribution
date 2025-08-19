@@ -1,0 +1,3446 @@
+{
+  "work_id": "recovery_TR2_2024_md36_1755498848",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_TR2_2024_1755102181",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-18T09:34:08Z",
+  "competition_id": "TR2",
+  "competition_code": "1-lig",
+  "competition_name": "1.Lig",
+  "season_year": "2024",
+  "team_count": 20,
+  "expected_matchdays": 38,
+  "recovery_matchday_number": 36,
+  "recovery_matches_count": 4,
+  "specific_match_targets": [
+    "4420264",
+    "4420265",
+    "4420266",
+    "4420267"
+  ],
+  "priority": 330,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_TR2_2024_1755102181"
+  },
+  "matchdays_data": [
+    {
+      "matchday_info": {
+        "number": 36,
+        "season": "2024",
+        "competition": "1.Lig",
+        "source_url": "https://www.transfermarkt.com/1-lig/spieltag/wettbewerb/TR2/saison_id/2024/spieltag/36",
+        "total_matches": 10
+      },
+      "matches": [
+        {
+          "match_info": {
+            "match_id": "4420264",
+            "competition_name": "1.Lig",
+            "season": "2024",
+            "date": "2025-04-27",
+            "time": "3:00",
+            "venue": "Yeni Sakarya Atatürk Stadyumu",
+            "attendance": 3328,
+            "referee": "Oğuzhan Aksu",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4420264",
+            "day_of_week": "Sunday"
+          },
+          "home_team": {
+            "team_id": "2463",
+            "name": "Sakaryaspor",
+            "formation": "4-2-3-1",
+            "manager": "İrfan Buz"
+          },
+          "away_team": {
+            "team_id": "39722",
+            "name": "Erzurumspor FK",
+            "formation": "3-4-2-1",
+            "manager": "Hakan Kutlu"
+          },
+          "score": {
+            "home_final": 1,
+            "away_final": 0,
+            "home_ht": 0,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "157848",
+                "name": "Szumski",
+                "shirt_number": 29,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/157848-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "351718",
+                "name": "Çapar",
+                "shirt_number": 12,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/351718-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "60577",
+                "name": "N'Koulou",
+                "shirt_number": 33,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/60577-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "65906",
+                "name": "Uzun",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/65906-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "569391",
+                "name": "Simon",
+                "shirt_number": 95,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/569391-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "114058",
+                "name": "Altıparmak",
+                "shirt_number": 36,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/114058-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "637669",
+                "name": "Demir",
+                "shirt_number": 14,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/637669-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "573111",
+                "name": "Mamadou",
+                "shirt_number": 66,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/573111-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "241380",
+                "name": "Çoban",
+                "shirt_number": 94,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/241380-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "388326",
+                "name": "Kabov",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/388326-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "203711",
+                "name": "Ertürk",
+                "shirt_number": 22,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/203711-1755536780.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "330824",
+                "name": "Dadakdeniz",
+                "shirt_number": 16,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/330824-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "170239",
+                "name": "Ovacıklı",
+                "shirt_number": 53,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/170239-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "98113",
+                "name": "Akbaş",
+                "shirt_number": 2,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/98113-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "76176",
+                "name": "Yumlu",
+                "shirt_number": 22,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/76176-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "330277",
+                "name": "Giorbelidze",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/330277-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "386126",
+                "name": "Azubuike",
+                "shirt_number": 25,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/386126-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "510241",
+                "name": "Teklic",
+                "shirt_number": 91,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/510241-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "620107",
+                "name": "Özhan",
+                "shirt_number": 20,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/620107-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "99003",
+                "name": "Roshi",
+                "shirt_number": 21,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/99003-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "809132",
+                "name": "Sylla",
+                "shirt_number": 29,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/809132-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "136212",
+                "name": "Tozlu",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/136212-1755536780.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "1209259",
+                "name": "Yunus Emre Tekoğul",
+                "shirt_number": 90,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1209259-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "1354920",
+                "name": "Yavuz Selim Tantan",
+                "shirt_number": 93,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1354920-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "667428",
+                "name": "Batuhan Çakır",
+                "shirt_number": 34,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/667428-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "880259",
+                "name": "Engin Can Aksoy",
+                "shirt_number": 17,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/880259-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "352657",
+                "name": "Alparslan Demir",
+                "shirt_number": 99,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/352657-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "468244",
+                "name": "Rayane Aabid",
+                "shirt_number": 10,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/468244-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "315753",
+                "name": "Emircan Altıntaş",
+                "shirt_number": 7,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/315753-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "827427",
+                "name": "Temel Çakmak",
+                "shirt_number": 61,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/827427-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "50774",
+                "name": "Ömer Şişmanoğlu",
+                "shirt_number": 77,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/50774-1755536780.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "213990",
+                "name": "Göktuğ Bakırbaş",
+                "shirt_number": 1,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/213990-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "419375",
+                "name": "Gökhan Akkan",
+                "shirt_number": 4,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/419375-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "872080",
+                "name": "Yakup Kırtay",
+                "shirt_number": 3,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/872080-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "459621",
+                "name": "Salih Sarıkaya",
+                "shirt_number": 17,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/459621-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "237481",
+                "name": "Batuhan Artarslan",
+                "shirt_number": 5,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/237481-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "242575",
+                "name": "Mehmet Taş",
+                "shirt_number": 6,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/242575-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "321705",
+                "name": "Sefa Akgün",
+                "shirt_number": 8,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/321705-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "345604",
+                "name": "Toni Tasev",
+                "shirt_number": 88,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/345604-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "1054212",
+                "name": "İlkan Sever",
+                "shirt_number": 7,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1054212-1755536780.jpg?lm=1"
+              },
+              {
+                "player_id": "161060",
+                "name": "Streli Mamba",
+                "shirt_number": 11,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/161060-1755536780.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 52,
+                "extra_time": null,
+                "player": {
+                  "player_id": "637669",
+                  "name": "Emre Demir",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/637669-1755536780.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "114058",
+                  "name": "Burak Altıparmak",
+                  "shirt_number": 36,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/114058-1755536780.jpg?lm=1"
+                },
+                "goal_type": "Left-footed shot",
+                "assist_type": "Pass",
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 9,
+                "season_assist_number": 3
+              }
+            ],
+            "cards": [
+              {
+                "minute": 20,
+                "extra_time": null,
+                "player": {
+                  "player_id": "569391",
+                  "name": "Nsana Simon",
+                  "shirt_number": 95,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/569391-1755536780.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 9
+              },
+              {
+                "minute": 45,
+                "extra_time": null,
+                "player": {
+                  "player_id": "872080",
+                  "name": "Yakup Kırtay",
+                  "shirt_number": 3,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/872080-1755536780.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 3
+              },
+              {
+                "minute": 54,
+                "extra_time": null,
+                "player": {
+                  "player_id": "98113",
+                  "name": "Mustafa Akbaş",
+                  "shirt_number": 2,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/98113-1755536780.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Dissent",
+                "team_side": "away",
+                "season_card_number": 4
+              },
+              {
+                "minute": 55,
+                "extra_time": null,
+                "player": {
+                  "player_id": "203711",
+                  "name": "Muhammed Ertürk",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/203711-1755536780.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 2
+              },
+              {
+                "minute": 72,
+                "extra_time": null,
+                "player": {
+                  "player_id": "241380",
+                  "name": "Burak Çoban",
+                  "shirt_number": 94,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/241380-1755536780.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 6
+              },
+              {
+                "minute": 75,
+                "extra_time": null,
+                "player": {
+                  "player_id": "114058",
+                  "name": "Burak Altıparmak",
+                  "shirt_number": 36,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/114058-1755536780.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Dissent",
+                "team_side": "home",
+                "season_card_number": 3
+              },
+              {
+                "minute": 90,
+                "extra_time": 5,
+                "player": {
+                  "player_id": "351718",
+                  "name": "Oğuzhan Çapar",
+                  "shirt_number": 12,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/351718-1755536780.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 4
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 18,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "620107",
+                  "name": "Furkan Özhan",
+                  "shirt_number": 20,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/620107-1755536780.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "872080",
+                  "name": "Yakup Kırtay",
+                  "shirt_number": 3,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/872080-1755536780.jpg?lm=1"
+                },
+                "reason": "Injury",
+                "team_side": "away"
+              },
+              {
+                "minute": 56,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "388326",
+                  "name": "Atanas Kabov",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/388326-1755536780.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "468244",
+                  "name": "Rayane Aabid",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/468244-1755536780.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 57,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "872080",
+                  "name": "Yakup Kırtay",
+                  "shirt_number": 3,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/872080-1755536780.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "161060",
+                  "name": "Streli Mamba",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/161060-1755536780.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 66,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "203711",
+                  "name": "Muhammed Ertürk",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/203711-1755536780.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "315753",
+                  "name": "Emircan Altıntaş",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/315753-1755536780.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 74,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "637669",
+                  "name": "Emre Demir",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/637669-1755536780.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "50774",
+                  "name": "Ömer Şişmanoğlu",
+                  "shirt_number": 77,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/50774-1755536780.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 84,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "241380",
+                  "name": "Burak Çoban",
+                  "shirt_number": 94,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/241380-1755536780.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "667428",
+                  "name": "Batuhan Çakır",
+                  "shirt_number": 34,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/667428-1755536780.jpg?lm=1"
+                },
+                "reason": "Injury",
+                "team_side": "home"
+              },
+              {
+                "minute": 88,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "170239",
+                  "name": "Orhan Ovacıklı",
+                  "shirt_number": 53,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/170239-1755536780.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1054212",
+                  "name": "İlkan Sever",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1054212-1755536780.jpg?lm=1"
+                },
+                "reason": "Injury",
+                "team_side": "away"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4420265",
+            "competition_name": "1.Lig",
+            "season": "2024",
+            "date": "2025-04-27",
+            "time": "3:00",
+            "venue": "11 Nisan Stadyumu",
+            "attendance": null,
+            "referee": "Gürcan Hasova",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4420265",
+            "day_of_week": "Sunday"
+          },
+          "home_team": {
+            "team_id": "6630",
+            "name": "Sanliurfaspor",
+            "formation": "3-1-4-2",
+            "manager": "Erkan Sözeri"
+          },
+          "away_team": {
+            "team_id": "48913",
+            "name": "Manisa FK",
+            "formation": "4-2-3-1",
+            "manager": "Taner Taşkın"
+          },
+          "score": {
+            "home_final": 1,
+            "away_final": 3,
+            "home_ht": 0,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "796259",
+                "name": "Sünger",
+                "shirt_number": 20,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/796259-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "198722",
+                "name": "Muscat",
+                "shirt_number": 22,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/198722-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "390637",
+                "name": "Eren",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/390637-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "388188",
+                "name": "Çelebi",
+                "shirt_number": 30,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/388188-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "462981",
+                "name": "Giritlioğlu",
+                "shirt_number": 96,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/462981-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "197402",
+                "name": "Çamoğlu",
+                "shirt_number": 2,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/197402-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "285634",
+                "name": "Acar",
+                "shirt_number": 26,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/285634-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "622069",
+                "name": "Erçelik",
+                "shirt_number": 23,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/622069-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "62038",
+                "name": "Akabueze",
+                "shirt_number": 12,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/62038-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "113052",
+                "name": "Kappel",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/113052-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "1309324",
+                "name": "Ogundu",
+                "shirt_number": 32,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1309324-1755536793.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "137610",
+                "name": "Uysal",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/137610-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "866714",
+                "name": "Göçmen",
+                "shirt_number": 50,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/866714-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "110660",
+                "name": "Arslanagic",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/110660-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "875116",
+                "name": "Erdem",
+                "shirt_number": 19,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/875116-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "639002",
+                "name": "Talum",
+                "shirt_number": 2,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/639002-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "1098311",
+                "name": "Cissokho",
+                "shirt_number": 25,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1098311-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "170650",
+                "name": "Gürbulak",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/170650-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "620137",
+                "name": "Yurdakul",
+                "shirt_number": 53,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/620137-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "240497",
+                "name": "Fofana",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/240497-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "331708",
+                "name": "Osuji",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/331708-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "221567",
+                "name": "Minchev",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/221567-1755536793.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "631601",
+                "name": "Enes Kalyoncu",
+                "shirt_number": 13,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/631601-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "749087",
+                "name": "Erzhan Tokotaev",
+                "shirt_number": 35,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/749087-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "860256",
+                "name": "Philip Awuku",
+                "shirt_number": 3,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/860256-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "647805",
+                "name": "Nafican Yardımcı",
+                "shirt_number": 19,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/647805-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "612082",
+                "name": "Seyit Gazanfer",
+                "shirt_number": 21,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/612082-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "603003",
+                "name": "Amar Begic",
+                "shirt_number": 82,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/603003-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "592360",
+                "name": "Safa Kınalı",
+                "shirt_number": 7,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/592360-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "667501",
+                "name": "Jack Karadoğan",
+                "shirt_number": 17,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/667501-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "853535",
+                "name": "Bouly Junior Sambou",
+                "shirt_number": 25,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/853535-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "154819",
+                "name": "Kwasi Wriedt",
+                "shirt_number": 10,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/154819-1755536793.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "697148",
+                "name": "Eren Karataş",
+                "shirt_number": 35,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/697148-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "580972",
+                "name": "Samet Karabatak",
+                "shirt_number": 31,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/580972-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "1168218",
+                "name": "Ensar Akgün",
+                "shirt_number": 54,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1168218-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "702007",
+                "name": "Birkan Yılmaz",
+                "shirt_number": 29,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/702007-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "123527",
+                "name": "Kaan Kanak",
+                "shirt_number": 26,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/123527-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "921821",
+                "name": "Oktay Gürdal",
+                "shirt_number": 41,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/921821-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "1070396",
+                "name": "Kazım Kahya",
+                "shirt_number": 18,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1070396-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "246309",
+                "name": "Dani Ramírez",
+                "shirt_number": 10,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/246309-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "914251",
+                "name": "Efe Taylan Altunkara",
+                "shirt_number": 70,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/914251-1755536793.jpg?lm=1"
+              },
+              {
+                "player_id": "362746",
+                "name": "Muhammed Kiprit",
+                "shirt_number": 23,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/362746-1755536793.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 47,
+                "extra_time": null,
+                "player": {
+                  "player_id": "170650",
+                  "name": "Oğuz Gürbulak",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/170650-1755536793.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "240497",
+                  "name": "Moryké Fofana",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/240497-1755536793.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Pass",
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  1
+                ],
+                "season_goal_number": 6,
+                "season_assist_number": 6
+              },
+              {
+                "minute": 51,
+                "extra_time": null,
+                "player": {
+                  "player_id": "331708",
+                  "name": "Bede Osuji",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/331708-1755536793.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "240497",
+                  "name": "Moryké Fofana",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/240497-1755536793.jpg?lm=1"
+                },
+                "goal_type": "Left-footed shot",
+                "assist_type": "Pass",
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  2
+                ],
+                "season_goal_number": 4,
+                "season_assist_number": 7
+              },
+              {
+                "minute": 61,
+                "extra_time": null,
+                "player": {
+                  "player_id": "853535",
+                  "name": "Bouly Junior Sambou",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/853535-1755536793.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "462981",
+                  "name": "Çağrı Giritlioğlu",
+                  "shirt_number": 96,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/462981-1755536793.jpg?lm=1"
+                },
+                "goal_type": "Header",
+                "assist_type": "Pass",
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  2
+                ],
+                "season_goal_number": 2,
+                "season_assist_number": 1
+              },
+              {
+                "minute": 90,
+                "extra_time": 6,
+                "player": {
+                  "player_id": "246309",
+                  "name": "Dani Ramírez",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/246309-1755536793.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "362746",
+                  "name": "Muhammed Kiprit",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/362746-1755536793.jpg?lm=1"
+                },
+                "goal_type": "Left-footed shot",
+                "assist_type": "Pass",
+                "team_side": "away",
+                "score_after": [
+                  1,
+                  3
+                ],
+                "season_goal_number": 6,
+                "season_assist_number": 7
+              }
+            ],
+            "cards": [
+              {
+                "minute": 40,
+                "extra_time": null,
+                "player": {
+                  "player_id": "285634",
+                  "name": "Hasan Acar",
+                  "shirt_number": 26,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/285634-1755536793.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 7
+              },
+              {
+                "minute": 71,
+                "extra_time": null,
+                "player": {
+                  "player_id": "170650",
+                  "name": "Oğuz Gürbulak",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/170650-1755536793.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Dissent",
+                "team_side": "away",
+                "season_card_number": 8
+              },
+              {
+                "minute": 73,
+                "extra_time": null,
+                "player": {
+                  "player_id": "198722",
+                  "name": "Zach Muscat",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/198722-1755536793.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 4
+              },
+              {
+                "minute": 80,
+                "extra_time": null,
+                "player": {
+                  "player_id": "620137",
+                  "name": "Kadir Kaan Yurdakul",
+                  "shirt_number": 53,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/620137-1755536793.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 5
+              },
+              {
+                "minute": 84,
+                "extra_time": null,
+                "player": {
+                  "player_id": "240497",
+                  "name": "Moryké Fofana",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/240497-1755536793.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 2
+              },
+              {
+                "minute": 89,
+                "extra_time": null,
+                "player": {
+                  "player_id": "137610",
+                  "name": "Alperen Uysal",
+                  "shirt_number": 1,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/137610-1755536793.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Time wasting",
+                "team_side": "away",
+                "season_card_number": 2
+              },
+              {
+                "minute": 90,
+                "extra_time": 3,
+                "player": {
+                  "player_id": "246309",
+                  "name": "Dani Ramírez",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/246309-1755536793.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 4
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 61,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "390637",
+                  "name": "Fatih Eren",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/390637-1755536793.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "154819",
+                  "name": "Kwasi Wriedt",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/154819-1755536793.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 61,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "113052",
+                  "name": "Leandro Kappel",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/113052-1755536793.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "853535",
+                  "name": "Bouly Junior Sambou",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/853535-1755536793.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 71,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "170650",
+                  "name": "Oğuz Gürbulak",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/170650-1755536793.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1168218",
+                  "name": "Ensar Akgün",
+                  "shirt_number": 54,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1168218-1755536793.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 77,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "221567",
+                  "name": "Georgi Minchev",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/221567-1755536793.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "246309",
+                  "name": "Dani Ramírez",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/246309-1755536793.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 78,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "285634",
+                  "name": "Hasan Acar",
+                  "shirt_number": 26,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/285634-1755536793.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "603003",
+                  "name": "Amar Begic",
+                  "shirt_number": 82,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/603003-1755536793.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 87,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1309324",
+                  "name": "Uchenna Ogundu",
+                  "shirt_number": 32,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1309324-1755536793.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "860256",
+                  "name": "Philip Awuku",
+                  "shirt_number": 3,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/860256-1755536793.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 90,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "240497",
+                  "name": "Moryké Fofana",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/240497-1755536793.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "362746",
+                  "name": "Muhammed Kiprit",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/362746-1755536793.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 90,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "331708",
+                  "name": "Bede Osuji",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/331708-1755536793.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "123527",
+                  "name": "Kaan Kanak",
+                  "shirt_number": 26,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/123527-1755536793.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4420266",
+            "competition_name": "1.Lig",
+            "season": "2024",
+            "date": "2025-04-27",
+            "time": "3:00",
+            "venue": "Ümraniye Belediyesi Şehir Stadyumu",
+            "attendance": 776,
+            "referee": "Burak Olcar",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4420266",
+            "day_of_week": "Sunday"
+          },
+          "home_team": {
+            "team_id": "24245",
+            "name": "Ümraniyespor",
+            "formation": "3-4-3",
+            "manager": "Bülent Bölükbaşı"
+          },
+          "away_team": {
+            "team_id": "12382",
+            "name": "Amed SK",
+            "formation": "4-3-3 Attacking",
+            "manager": "Servet Çetin"
+          },
+          "score": {
+            "home_final": 3,
+            "away_final": 0,
+            "home_ht": 1,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "209576",
+                "name": "Topaloğlu",
+                "shirt_number": 35,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/209576-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "278553",
+                "name": "Cavaré",
+                "shirt_number": 97,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/278553-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "133829",
+                "name": "Glumac",
+                "shirt_number": 44,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/133829-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "393243",
+                "name": "Öksüz",
+                "shirt_number": 53,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/393243-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "342176",
+                "name": "Yıldırım",
+                "shirt_number": 70,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/342176-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "361266",
+                "name": "Babacan",
+                "shirt_number": 20,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/361266-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "283391",
+                "name": "Hoti",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/283391-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "347508",
+                "name": "Bardhi",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/347508-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "375380",
+                "name": "Benny",
+                "shirt_number": 77,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/375380-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "85000",
+                "name": "Soukou",
+                "shirt_number": 27,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/85000-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "993407",
+                "name": "Yıldırım",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/993407-1755536805.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "291548",
+                "name": "Kardeşler",
+                "shirt_number": 31,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/291548-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "381689",
+                "name": "Yeşil",
+                "shirt_number": 21,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/381689-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "248383",
+                "name": "Gezer",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/248383-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "117586",
+                "name": "Bayram",
+                "shirt_number": 19,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/117586-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "292545",
+                "name": "Uçar",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/292545-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "244285",
+                "name": "Kurt",
+                "shirt_number": 18,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/244285-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "262608",
+                "name": "Traoré",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/262608-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "315209",
+                "name": "Orhan",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/315209-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "236537",
+                "name": "Andrade",
+                "shirt_number": 99,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/236537-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "600842",
+                "name": "Moreno",
+                "shirt_number": 27,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/600842-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "864368",
+                "name": "Ceylan",
+                "shirt_number": 23,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/864368-1755536805.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "251070",
+                "name": "Übeyd Adıyaman",
+                "shirt_number": 1,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/251070-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "708721",
+                "name": "Mustafa Eser",
+                "shirt_number": 4,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/708721-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "930315",
+                "name": "Furkan Apaydın",
+                "shirt_number": 23,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/930315-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "645932",
+                "name": "Emre Kaplan",
+                "shirt_number": 75,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/645932-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "942940",
+                "name": "Ali Turap Bülbül",
+                "shirt_number": 81,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/942940-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "1017774",
+                "name": "Yusuf Sertkaya",
+                "shirt_number": 16,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1017774-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "207855",
+                "name": "Serkan Göksu",
+                "shirt_number": 8,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/207855-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "383223",
+                "name": "Barış Ekincier",
+                "shirt_number": 22,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/383223-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "234787",
+                "name": "Lucas João",
+                "shirt_number": 93,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/234787-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "875249",
+                "name": "Batuhan Çelik",
+                "shirt_number": 19,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/875249-1755536805.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "338055",
+                "name": "Veysel Sapan",
+                "shirt_number": 96,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/338055-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "208071",
+                "name": "Veli Çetin",
+                "shirt_number": 4,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/208071-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "374882",
+                "name": "Alberk Koç",
+                "shirt_number": 35,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/374882-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "279446",
+                "name": "Batuhan Tur",
+                "shirt_number": 24,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/279446-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "170767",
+                "name": "André Poko",
+                "shirt_number": 71,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/170767-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "879963",
+                "name": "Yohan Cassubie",
+                "shirt_number": 6,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/879963-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "410832",
+                "name": "Oktay Aydın",
+                "shirt_number": 65,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/410832-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "314942",
+                "name": "Bruno Lourenço",
+                "shirt_number": 8,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/314942-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "331514",
+                "name": "Bobby Adekanye",
+                "shirt_number": 20,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/331514-1755536805.jpg?lm=1"
+              },
+              {
+                "player_id": "928758",
+                "name": "Charly Keita",
+                "shirt_number": 25,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/928758-1755536805.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 40,
+                "extra_time": null,
+                "player": {
+                  "player_id": "375380",
+                  "name": "Benny",
+                  "shirt_number": 77,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/375380-1755536805.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "342176",
+                  "name": "Oğuz Yıldırım",
+                  "shirt_number": 70,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/342176-1755536805.jpg?lm=1"
+                },
+                "goal_type": "Left-footed shot",
+                "assist_type": "Pass",
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 6,
+                "season_assist_number": 4
+              },
+              {
+                "minute": 52,
+                "extra_time": null,
+                "player": {
+                  "player_id": "393243",
+                  "name": "Burak Öksüz",
+                  "shirt_number": 53,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/393243-1755536805.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "375380",
+                  "name": "Benny",
+                  "shirt_number": 77,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/375380-1755536805.jpg?lm=1"
+                },
+                "goal_type": "Header",
+                "assist_type": "Corner",
+                "team_side": "home",
+                "score_after": [
+                  2,
+                  0
+                ],
+                "season_goal_number": 3,
+                "season_assist_number": 10
+              },
+              {
+                "minute": 58,
+                "extra_time": null,
+                "player": {
+                  "player_id": "283391",
+                  "name": "Engjell Hoti",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/283391-1755536805.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "993407",
+                  "name": "Poyraz Yıldırım",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/993407-1755536805.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Pass",
+                "team_side": "home",
+                "score_after": [
+                  3,
+                  0
+                ],
+                "season_goal_number": 3,
+                "season_assist_number": 2
+              }
+            ],
+            "cards": [
+              {
+                "minute": 21,
+                "extra_time": null,
+                "player": {
+                  "player_id": "283391",
+                  "name": "Engjell Hoti",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/283391-1755536805.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 7
+              },
+              {
+                "minute": 26,
+                "extra_time": null,
+                "player": {
+                  "player_id": "347508",
+                  "name": "Jurgen Bardhi",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/347508-1755536805.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 6
+              },
+              {
+                "minute": 35,
+                "extra_time": null,
+                "player": {
+                  "player_id": "315209",
+                  "name": "Çekdar Orhan",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/315209-1755536805.jpg?lm=1"
+                },
+                "card_type": "red",
+                "reason": "Serious foul",
+                "team_side": "away",
+                "season_card_number": null
+              },
+              {
+                "minute": 82,
+                "extra_time": null,
+                "player": {
+                  "player_id": "292545",
+                  "name": "Murat Uçar",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/292545-1755536805.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Dissent",
+                "team_side": "away",
+                "season_card_number": 11
+              },
+              {
+                "minute": 90,
+                "extra_time": 2,
+                "player": {
+                  "player_id": "393243",
+                  "name": "Burak Öksüz",
+                  "shirt_number": 53,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/393243-1755536805.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 8
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "864368",
+                  "name": "Yılmaz Ceylan",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/864368-1755536805.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "928758",
+                  "name": "Charly Keita",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/928758-1755536805.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 56,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "244285",
+                  "name": "Sinan Kurt",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/244285-1755536805.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "879963",
+                  "name": "Yohan Cassubie",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/879963-1755536805.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 57,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "236537",
+                  "name": "Fernando Andrade",
+                  "shirt_number": 99,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/236537-1755536805.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "331514",
+                  "name": "Bobby Adekanye",
+                  "shirt_number": 20,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/331514-1755536805.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 69,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "117586",
+                  "name": "Ömer Bayram",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/117586-1755536805.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "410832",
+                  "name": "Oktay Aydın",
+                  "shirt_number": 65,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/410832-1755536805.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 69,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "262608",
+                  "name": "Adama Traoré",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/262608-1755536805.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "170767",
+                  "name": "André Poko",
+                  "shirt_number": 71,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/170767-1755536805.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 77,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "283391",
+                  "name": "Engjell Hoti",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/283391-1755536805.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "207855",
+                  "name": "Serkan Göksu",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/207855-1755536805.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 77,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "347508",
+                  "name": "Jurgen Bardhi",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/347508-1755536805.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "645932",
+                  "name": "Emre Kaplan",
+                  "shirt_number": 75,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/645932-1755536805.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 90,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "85000",
+                  "name": "Cebio Soukou",
+                  "shirt_number": 27,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/85000-1755536805.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "875249",
+                  "name": "Batuhan Çelik",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/875249-1755536805.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4420267",
+            "competition_name": "1.Lig",
+            "season": "2024",
+            "date": "2025-04-27",
+            "time": "3:00",
+            "venue": "Eryaman Stadyumu",
+            "attendance": 11572,
+            "referee": "Alpaslan Şen",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4420267",
+            "day_of_week": "Sunday"
+          },
+          "home_team": {
+            "team_id": "868",
+            "name": "MKE Ankaragücü",
+            "formation": "4-3-3 Attacking",
+            "manager": "Mustafa Kaplan"
+          },
+          "away_team": {
+            "team_id": "37951",
+            "name": "Corum FK",
+            "formation": "4-3-3 Attacking",
+            "manager": "Tuncay Şanlı"
+          },
+          "score": {
+            "home_final": 1,
+            "away_final": 0,
+            "home_ht": 0,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "1073439",
+                "name": "Cihan",
+                "shirt_number": 91,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1073439-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "54177",
+                "name": "Tekdemir",
+                "shirt_number": 21,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/54177-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "85867",
+                "name": "Schulz",
+                "shirt_number": 26,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/85867-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "338226",
+                "name": "Bilazer",
+                "shirt_number": 77,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/338226-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "330806",
+                "name": "Çokçalış",
+                "shirt_number": 16,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/330806-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "293661",
+                "name": "Çelik",
+                "shirt_number": 88,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/293661-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "483495",
+                "name": "Güneren",
+                "shirt_number": 23,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/483495-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "323589",
+                "name": "Dálcio",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/323589-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "530157",
+                "name": "Türkmen",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/530157-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "457782",
+                "name": "Owusu",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/457782-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "250573",
+                "name": "Rotariu",
+                "shirt_number": 22,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/250573-1755536817.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "270486",
+                "name": "Akınay",
+                "shirt_number": 27,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/270486-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "164912",
+                "name": "Landre",
+                "shirt_number": 3,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/164912-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "81663",
+                "name": "Touré",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/81663-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "165711",
+                "name": "Kaş",
+                "shirt_number": 39,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/165711-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "477929",
+                "name": "Kalafat",
+                "shirt_number": 22,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/477929-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "251812",
+                "name": "Diniyev",
+                "shirt_number": 19,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/251812-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "94037",
+                "name": "Yazgan",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/94037-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "213852",
+                "name": "Cangöz",
+                "shirt_number": 92,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/213852-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "605194",
+                "name": "Karadağ",
+                "shirt_number": 99,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/605194-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "127169",
+                "name": "Geraldo",
+                "shirt_number": 29,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/127169-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "555719",
+                "name": "Akman",
+                "shirt_number": 18,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/555719-1755536817.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "1069936",
+                "name": "Fatih Demir",
+                "shirt_number": 28,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1069936-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "215525",
+                "name": "Diogo Coelho",
+                "shirt_number": 5,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/215525-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "1198888",
+                "name": "Arda Doğan",
+                "shirt_number": 92,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1198888-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "291760",
+                "name": "İbrahim Pehlivan",
+                "shirt_number": 3,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/291760-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "1197995",
+                "name": "Miraç Şimşek",
+                "shirt_number": 90,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1197995-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "184444",
+                "name": "Yusuf Gültekin",
+                "shirt_number": 40,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/184444-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "1208399",
+                "name": "Hasan Nazarli",
+                "shirt_number": 35,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1208399-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "529548",
+                "name": "Michal Rakoczy",
+                "shirt_number": 10,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/529548-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "291124",
+                "name": "Gaëtan Laura",
+                "shirt_number": 94,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/291124-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "263267",
+                "name": "Riad Bajic",
+                "shirt_number": 9,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/263267-1755536817.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "340880",
+                "name": "Ahmet Kıvanç",
+                "shirt_number": 1,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/340880-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "930056",
+                "name": "Kadir Seven",
+                "shirt_number": 25,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/930056-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "111063",
+                "name": "Atila Turan",
+                "shirt_number": 89,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/111063-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "863131",
+                "name": "Eren Tunalı",
+                "shirt_number": 2,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/863131-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "327542",
+                "name": "Atakan Akkaynak",
+                "shirt_number": 8,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/327542-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "396745",
+                "name": "Tunahan Ergül",
+                "shirt_number": 14,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/396745-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "251824",
+                "name": "Ozan Sol",
+                "shirt_number": 23,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/251824-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "511115",
+                "name": "Suat Kaya",
+                "shirt_number": 11,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/511115-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "251089",
+                "name": "Ahmethan Köse",
+                "shirt_number": 17,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/251089-1755536817.jpg?lm=1"
+              },
+              {
+                "player_id": "297365",
+                "name": "Thomas Verheydt",
+                "shirt_number": 9,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/297365-1755536817.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 76,
+                "extra_time": null,
+                "player": {
+                  "player_id": "457782",
+                  "name": "Owusu",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/457782-1755536817.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "1197995",
+                  "name": "Miraç Şimşek",
+                  "shirt_number": 90,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1197995-1755536817.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Cross",
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 7,
+                "season_assist_number": 1
+              }
+            ],
+            "cards": [
+              {
+                "minute": 90,
+                "extra_time": 2,
+                "player": {
+                  "player_id": "530157",
+                  "name": "Cem Türkmen",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/530157-1755536817.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 6
+              },
+              {
+                "minute": 58,
+                "extra_time": null,
+                "player": {
+                  "player_id": "477929",
+                  "name": "Kerem Kalafat",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/477929-1755536817.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 6
+              },
+              {
+                "minute": 74,
+                "extra_time": null,
+                "player": {
+                  "player_id": "127169",
+                  "name": "Geraldo",
+                  "shirt_number": 29,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/127169-1755536817.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 3
+              },
+              {
+                "minute": 80,
+                "extra_time": null,
+                "player": {
+                  "player_id": "263267",
+                  "name": "Riad Bajic",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/263267-1755536817.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 2
+              },
+              {
+                "minute": 90,
+                "extra_time": 1,
+                "player": {
+                  "player_id": "293661",
+                  "name": "Osman Çelik",
+                  "shirt_number": 88,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/293661-1755536817.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 8
+              },
+              {
+                "minute": 90,
+                "extra_time": 5,
+                "player": {
+                  "player_id": "327542",
+                  "name": "Atakan Akkaynak",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/327542-1755536817.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Dissent",
+                "team_side": "away",
+                "season_card_number": 9
+              },
+              {
+                "minute": 90,
+                "extra_time": 8,
+                "player": {
+                  "player_id": "270486",
+                  "name": "Hasan Hüseyin Akınay",
+                  "shirt_number": 27,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/270486-1755536817.jpg?lm=1"
+                },
+                "card_type": "red",
+                "reason": "Unsporting behaviour",
+                "team_side": "away",
+                "season_card_number": null
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "94037",
+                  "name": "Ferhat Yazgan",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/94037-1755536817.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "396745",
+                  "name": "Tunahan Ergül",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/396745-1755536817.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "165711",
+                  "name": "Erkan Kaş",
+                  "shirt_number": 39,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/165711-1755536817.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "111063",
+                  "name": "Atila Turan",
+                  "shirt_number": 89,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/111063-1755536817.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "251812",
+                  "name": "Coshqun Diniyev",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/251812-1755536817.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "297365",
+                  "name": "Thomas Verheydt",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/297365-1755536817.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "605194",
+                  "name": "Eren Karadağ",
+                  "shirt_number": 99,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/605194-1755536817.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "511115",
+                  "name": "Suat Kaya",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/511115-1755536817.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 54,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "338226",
+                  "name": "Hayrullah Bilazer",
+                  "shirt_number": 77,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/338226-1755536817.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1197995",
+                  "name": "Miraç Şimşek",
+                  "shirt_number": 90,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1197995-1755536817.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 54,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "530157",
+                  "name": "Cem Türkmen",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/530157-1755536817.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "529548",
+                  "name": "Michal Rakoczy",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/529548-1755536817.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 54,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "250573",
+                  "name": "Dorin Rotariu",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/250573-1755536817.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "263267",
+                  "name": "Riad Bajic",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/263267-1755536817.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 63,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "396745",
+                  "name": "Tunahan Ergül",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/396745-1755536817.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "327542",
+                  "name": "Atakan Akkaynak",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/327542-1755536817.jpg?lm=1"
+                },
+                "reason": "Injury",
+                "team_side": "away"
+              },
+              {
+                "minute": 71,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "483495",
+                  "name": "Ali Kaan Güneren",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/483495-1755536817.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "184444",
+                  "name": "Yusuf Gültekin",
+                  "shirt_number": 40,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/184444-1755536817.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 90,
+                "extra_time": 4,
+                "player_out": {
+                  "player_id": "457782",
+                  "name": "Owusu",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/457782-1755536817.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "215525",
+                  "name": "Diogo Coelho",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/215525-1755536817.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              }
+            ]
+          }
+        }
+      ],
+      "league_table": {
+        "season": "24/25",
+        "teams": [
+          {
+            "position": 1,
+            "movement": "same",
+            "team_id": "120",
+            "name": "Kocaelispor",
+            "short_name": "Kocaelispor",
+            "profile_url": "/kocaelispor/spielplan/verein/120/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/120.png?lm=1753430297",
+            "matches": 36,
+            "goal_difference": "28",
+            "points": 69
+          },
+          {
+            "position": 2,
+            "movement": "same",
+            "team_id": "6646",
+            "name": "Fatih Karagümrük",
+            "short_name": "Karagümrük",
+            "profile_url": "/fatih-karagumruk/spielplan/verein/6646/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/6646.png?lm=1753429757",
+            "matches": 36,
+            "goal_difference": "20",
+            "points": 63
+          },
+          {
+            "position": 3,
+            "movement": "same",
+            "team_id": "820",
+            "name": "Genclerbirligi Ankara",
+            "short_name": "Genclerbirligi",
+            "profile_url": "/genclerbirligi-ankara/spielplan/verein/820/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/820.png?lm=1753429938",
+            "matches": 36,
+            "goal_difference": "17",
+            "points": 62
+          },
+          {
+            "position": 4,
+            "movement": "up",
+            "team_id": "20760",
+            "name": "Bandirmaspor",
+            "short_name": "Bandirmaspor",
+            "profile_url": "/bandirmaspor/spielplan/verein/20760/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/20760.png?lm=1753360832",
+            "matches": 36,
+            "goal_difference": "6",
+            "points": 60
+          },
+          {
+            "position": 5,
+            "movement": "up",
+            "team_id": "924",
+            "name": "Istanbulspor",
+            "short_name": "Istanbulspor",
+            "profile_url": "/istanbulspor/spielplan/verein/924/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/924.png?lm=1753360188",
+            "matches": 36,
+            "goal_difference": "23",
+            "points": 58
+          },
+          {
+            "position": 6,
+            "movement": "down",
+            "team_id": "39722",
+            "name": "Erzurumspor FK",
+            "short_name": "Erzurumspor FK",
+            "profile_url": "/buyuksehir-belediye-erzurumspor/spielplan/verein/39722/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/39722.png?lm=1753360744",
+            "matches": 36,
+            "goal_difference": "19",
+            "points": 58
+          },
+          {
+            "position": 7,
+            "movement": "up",
+            "team_id": "74664",
+            "name": "Igdir FK",
+            "short_name": "Igdir FK",
+            "profile_url": "/76-igdir-belediye-spor/spielplan/verein/74664/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/74664.png?lm=1753360609",
+            "matches": 36,
+            "goal_difference": "21",
+            "points": 55
+          },
+          {
+            "position": 8,
+            "movement": "up",
+            "team_id": "3207",
+            "name": "Boluspor",
+            "short_name": "Boluspor",
+            "profile_url": "/boluspor/spielplan/verein/3207/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/3207.png?lm=1753361127",
+            "matches": 36,
+            "goal_difference": "10",
+            "points": 55
+          },
+          {
+            "position": 9,
+            "movement": "down",
+            "team_id": "12382",
+            "name": "Amed SK",
+            "short_name": "Amed SK",
+            "profile_url": "/amed-sk/spielplan/verein/12382/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/12382.png?lm=1442152631",
+            "matches": 36,
+            "goal_difference": "6",
+            "points": 54
+          },
+          {
+            "position": 10,
+            "movement": "up",
+            "team_id": "24245",
+            "name": "Ümraniyespor",
+            "short_name": "Ümraniyespor",
+            "profile_url": "/umraniyespor/spielplan/verein/24245/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/24245.png?lm=1753361257",
+            "matches": 36,
+            "goal_difference": "9",
+            "points": 53
+          },
+          {
+            "position": 11,
+            "movement": "down",
+            "team_id": "45269",
+            "name": "Esenler Erokspor",
+            "short_name": "E. Erokspor",
+            "profile_url": "/esenler-erokspor/spielplan/verein/45269/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/45269.png?lm=1753360923",
+            "matches": 36,
+            "goal_difference": "8",
+            "points": 52
+          },
+          {
+            "position": 12,
+            "movement": "down",
+            "team_id": "37951",
+            "name": "Corum FK",
+            "short_name": "Corum FK",
+            "profile_url": "/corum-fk/spielplan/verein/37951/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/37951.png?lm=1753360663",
+            "matches": 36,
+            "goal_difference": "6",
+            "points": 51
+          },
+          {
+            "position": 13,
+            "movement": "down",
+            "team_id": "12388",
+            "name": "Ankara Keciörengücü",
+            "short_name": "A. Keciörengücü",
+            "profile_url": "/ankara-keciorengucu/spielplan/verein/12388/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/12388.png?lm=1598890097",
+            "matches": 36,
+            "goal_difference": "11",
+            "points": 51
+          },
+          {
+            "position": 14,
+            "movement": "up",
+            "team_id": "2463",
+            "name": "Sakaryaspor",
+            "short_name": "Sakaryaspor",
+            "profile_url": "/sakaryaspor/spielplan/verein/2463/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/2463.png?lm=1753361664",
+            "matches": 36,
+            "goal_difference": "-7",
+            "points": 48
+          },
+          {
+            "position": 15,
+            "movement": "down",
+            "team_id": "3209",
+            "name": "Pendikspor",
+            "short_name": "Pendikspor",
+            "profile_url": "/pendikspor/spielplan/verein/3209/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/3209.png?lm=1753361006",
+            "matches": 36,
+            "goal_difference": "-7",
+            "points": 45
+          },
+          {
+            "position": 16,
+            "movement": "same",
+            "team_id": "48913",
+            "name": "Manisa FK",
+            "short_name": "Manisa FK",
+            "profile_url": "/manisa-fk/spielplan/verein/48913/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/48913.png?lm=1753361326",
+            "matches": 36,
+            "goal_difference": "-3",
+            "points": 44
+          },
+          {
+            "position": 17,
+            "movement": "up",
+            "team_id": "868",
+            "name": "MKE Ankaragücü",
+            "short_name": "Ankaragücü",
+            "profile_url": "/mke-ankaragucu/spielplan/verein/868/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/868.png?lm=1582635029",
+            "matches": 36,
+            "goal_difference": "-2",
+            "points": 42
+          },
+          {
+            "position": 18,
+            "movement": "down",
+            "team_id": "6630",
+            "name": "Sanliurfaspor",
+            "short_name": "Sanliurfaspor",
+            "profile_url": "/sanliurfaspor/spielplan/verein/6630/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/6630.png?lm=1415443693",
+            "matches": 36,
+            "goal_difference": "-8",
+            "points": 40
+          },
+          {
+            "position": 19,
+            "movement": "same",
+            "team_id": "6",
+            "name": "Adanaspor",
+            "short_name": "Adanaspor",
+            "profile_url": "/adanaspor/spielplan/verein/6/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/6.png?lm=1442130460",
+            "matches": 36,
+            "goal_difference": "-32",
+            "points": 30
+          },
+          {
+            "position": 20,
+            "movement": "same",
+            "team_id": "19789",
+            "name": "Yeni Malatyaspor",
+            "short_name": "Y. Malatyaspor",
+            "profile_url": "/yeni-malatyaspor/spielplan/verein/19789/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/19789.png?lm=1441755473",
+            "matches": 36,
+            "goal_difference": "-125",
+            "points": 0
+          }
+        ]
+      },
+      "top_scorers": [
+        {
+          "name": "Oğulcan Çağlayan",
+          "short_name": "O. Çağlayan",
+          "profile_url": "/ogulcan-caglayan/profil/spieler/248219",
+          "clubs": [
+            {
+              "name": "Kocaelispor",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/120.png?lm=1753430297"
+            }
+          ],
+          "goals_this_matchday": "1",
+          "total_goals": 21
+        },
+        {
+          "name": "Wesley Moraes",
+          "short_name": "Wesley Moraes",
+          "profile_url": "/wesley-moraes/profil/spieler/381362",
+          "clubs": [
+            {
+              "name": "Fatih Karagümrük",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/6646.png?lm=1753429757"
+            }
+          ],
+          "goals_this_matchday": "1",
+          "total_goals": 21
+        },
+        {
+          "name": "Marco Paixão",
+          "short_name": "M. Paixão",
+          "profile_url": "/marco-paixao/profil/spieler/71662",
+          "clubs": [
+            {
+              "name": "Bandirmaspor",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/20760.png?lm=1753360832"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 17
+        },
+        {
+          "name": "Emir Kaan Gültekin",
+          "short_name": "E. Gültekin",
+          "profile_url": "/emir-kaan-gultekin/profil/spieler/544472",
+          "clubs": [
+            {
+              "name": "Istanbulspor",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/924.png?lm=1753360188"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 15
+        },
+        {
+          "name": "Gaoussou Diarra",
+          "short_name": "G. Diarra",
+          "profile_url": "/gaoussou-diarra/profil/spieler/1233996",
+          "clubs": [
+            {
+              "name": "Istanbulspor",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/924.png?lm=1753360188"
+            }
+          ],
+          "goals_this_matchday": "2",
+          "total_goals": 15
+        },
+        {
+          "name": "Eren Tozlu",
+          "short_name": "E. Tozlu",
+          "profile_url": "/eren-tozlu/profil/spieler/136212",
+          "clubs": [
+            {
+              "name": "Erzurumspor FK",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/39722.png?lm=1753360744"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 14
+        },
+        {
+          "name": "Metehan Mimaroğlu",
+          "short_name": "M. Mimaroğlu",
+          "profile_url": "/metehan-mimaroglu/profil/spieler/294100",
+          "clubs": [
+            {
+              "name": "Genclerbirligi Ankara",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/820.png?lm=1753429938"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 14
+        },
+        {
+          "name": "Olarenwaju Kayode",
+          "short_name": "O. Kayode",
+          "profile_url": "/olarenwaju-kayode/profil/spieler/131694",
+          "clubs": [
+            {
+              "name": "Sanliurfaspor",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/6630.png?lm=1415443693"
+            },
+            {
+              "name": "Esenler Erokspor",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/45269.png?lm=1753360923"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 14
+        },
+        {
+          "name": "Mame Diouf",
+          "short_name": "M. Diouf",
+          "profile_url": "/mame-diouf/profil/spieler/62049",
+          "clubs": [
+            {
+              "name": "Ankara Keciörengücü",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/12388.png?lm=1598890097"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 14
+        },
+        {
+          "name": "Junior Fernandes",
+          "short_name": "J. Fernandes",
+          "profile_url": "/junior-fernandes/profil/spieler/89708",
+          "clubs": [
+            {
+              "name": "Esenler Erokspor",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/45269.png?lm=1753360923"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 13
+        }
+      ],
+      "summary": {
+        "matches": 10,
+        "goals": 39,
+        "own_goals": 1,
+        "yellow_cards": 53,
+        "second_yellow_cards": "-",
+        "red_cards": 2,
+        "total_attendance": "28615",
+        "average_attendance": "2862",
+        "sold_out_matches": 0
+      },
+      "metadata": {
+        "extraction_time": "2025-08-18T20:06:09.057564",
+        "source": "worker_extraction",
+        "total_matches": 10,
+        "is_recovery_work": true,
+        "recovery_targets": [
+          "4420266",
+          "4420264",
+          "4420265",
+          "4420267"
+        ]
+      }
+    }
+  ],
+  "created_at": "2025-08-18T09:34:08Z",
+  "created_by": "recovery_system",
+  "status": "completed",
+  "claimed_by": "match_MacBookPro.home_27769_69c4253e",
+  "claimed_at": "2025-08-18T20:05:45.659942",
+  "claim_id": "match_MacBookPro.home_27769_69c4253e_1755536745659_732f5d1d",
+  "started_at": "2025-08-18T17:05:50.481939+00:00",
+  "completed_at": "2025-08-18T17:06:57.118184+00:00",
+  "total_matchdays": 1,
+  "total_matches": 4,
+  "execution_time_seconds": 27169.117291,
+  "execution_time_minutes": 452.82,
+  "execution_time_hours": 7.55,
+  "processing_time_seconds": 66.58472329191864,
+  "processing_time_minutes": 1.11,
+  "processing_time_hours": 0.02,
+  "queue_wait_seconds": 27102.480723,
+  "was_recovery_work": true,
+  "recovery_success": true,
+  "recovered_match_targets": [
+    "4420266",
+    "4420264",
+    "4420265",
+    "4420267"
+  ],
+  "requeue_template": {
+    "work_id": "requeue_recovery_TR2_2024_md36_1755498848_1",
+    "work_type": "match_data",
+    "version": "2.0",
+    "competition_id": "TR2",
+    "competition_code": "1-lig",
+    "competition_name": "1.Lig",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_TR2_2024_1755102181",
+    "recovery_reason": "missing_team_data",
+    "recovery_created_at": "2025-08-18T17:06:57.118223+00:00",
+    "recovery_matchday_number": 36,
+    "specific_match_targets": [
+      "4420264",
+      "4420265",
+      "4420266",
+      "4420267"
+    ],
+    "team_count": 20,
+    "expected_matchdays": 38,
+    "priority": 320,
+    "processing_hints": {
+      "is_recovery": true,
+      "focus_on_team_data": true,
+      "preserve_existing_data": true,
+      "original_work_id": "match_TR2_2024_1755102181",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-18T17:06:57.118255+00:00",
+    "created_by": "requeue_adapter"
+  }
+}
