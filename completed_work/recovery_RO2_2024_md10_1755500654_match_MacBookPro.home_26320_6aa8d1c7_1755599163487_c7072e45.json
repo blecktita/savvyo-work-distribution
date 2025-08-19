@@ -1,0 +1,82 @@
+{
+  "work_id": "recovery_RO2_2024_md10_1755500654",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_RO2_2024_1755102145",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-18T10:04:14Z",
+  "competition_id": "RO2",
+  "competition_code": "liga-2",
+  "competition_name": "Liga 2",
+  "season_year": "2024",
+  "team_count": 22,
+  "expected_matchdays": 42,
+  "recovery_matchday_number": 10,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4421217"
+  ],
+  "priority": 330,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_RO2_2024_1755102145"
+  },
+  "matchdays_data": [],
+  "created_at": "2025-08-18T10:04:14Z",
+  "created_by": "recovery_system",
+  "status": "completed",
+  "claimed_by": "match_MacBookPro.home_26320_6aa8d1c7",
+  "claimed_at": "2025-08-19T13:26:03.487410",
+  "claim_id": "match_MacBookPro.home_26320_6aa8d1c7_1755599163487_c7072e45",
+  "started_at": "2025-08-19T10:26:08.782267+00:00",
+  "completed_at": "2025-08-19T10:26:08.795652+00:00",
+  "total_matchdays": 0,
+  "total_matches": 0,
+  "execution_time_seconds": 87714.794493,
+  "execution_time_minutes": 1461.91,
+  "execution_time_hours": 24.37,
+  "processing_time_seconds": 0.013802333734929562,
+  "processing_time_minutes": 0.0,
+  "processing_time_hours": 0.0,
+  "queue_wait_seconds": 87714.780694,
+  "was_recovery_work": true,
+  "recovery_success": false,
+  "recovered_match_targets": [
+    "4421217"
+  ],
+  "requeue_template": {
+    "work_id": "requeue_recovery_RO2_2024_md10_1755500654_1",
+    "work_type": "match_data",
+    "version": "2.0",
+    "competition_id": "RO2",
+    "competition_code": "liga-2",
+    "competition_name": "Liga 2",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_RO2_2024_1755102145",
+    "recovery_reason": "missing_team_data",
+    "recovery_created_at": "2025-08-19T10:26:08.795676+00:00",
+    "recovery_matchday_number": 10,
+    "specific_match_targets": [
+      "4421217"
+    ],
+    "team_count": 22,
+    "expected_matchdays": 42,
+    "priority": 320,
+    "processing_hints": {
+      "is_recovery": true,
+      "focus_on_team_data": true,
+      "preserve_existing_data": true,
+      "original_work_id": "match_RO2_2024_1755102145",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-19T10:26:08.795685+00:00",
+    "created_by": "requeue_adapter"
+  }
+}
