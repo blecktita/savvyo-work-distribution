@@ -1,0 +1,96 @@
+{
+  "work_id": "recovery_PO1_2024_md32_1755498098",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_PO1_2024_1755102270",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-18T09:21:38Z",
+  "competition_id": "PO1",
+  "competition_code": "liga-portugal",
+  "competition_name": "Liga Portugal",
+  "season_year": "2024",
+  "team_count": 18,
+  "expected_matchdays": 34,
+  "recovery_matchday_number": 32,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4396873"
+  ],
+  "priority": 320,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_PO1_2024_1755102270"
+  },
+  "matchdays_data": [
+    {
+      "matchday_info": {
+        "number": 32,
+        "season": "2024",
+        "competition": "Liga Portugal",
+        "source_url": "https://www.transfermarkt.com/liga-portugal/spieltag/wettbewerb/PO1/saison_id/2024/spieltag/32",
+        "total_matches": 9
+      },
+      "matches": [
+        {
+          "match_info": {
+            "match_id": "4396873",
+            "competition_name": "Liga Portugal",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4396873",
+            "day_of_week": "Saturday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        }
+      ],
+      "league_table": {},
+      "top_scorers": [],
+      "summary": {
+        "recovery_context": true,
+        "original_work_id": "match_PO1_2024_1755102270",
+        "recovery_reason": "missing_team_data"
+      }
+    }
+  ],
+  "created_at": "2025-08-18T09:21:38Z",
+  "created_by": "recovery_system",
+  "status": "claiming",
+  "claimed_by": "match_ASEs-MacBook-Pro.local_3541_72f5d5f5",
+  "claimed_at": "2025-08-19T22:05:25.521683",
+  "claim_id": "match_ASEs-MacBook-Pro.local_3541_72f5d5f5_1755630325521_bdaf3b20"
+}
