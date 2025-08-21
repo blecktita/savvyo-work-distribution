@@ -1,0 +1,137 @@
+{
+  "work_id": "recovery_CZ3C_2024_md21_1755792039",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_CZ3C_2024_md21_1755532313",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-21T19:00:39Z",
+  "competition_id": "CZ3C",
+  "competition_code": "ceska-fotbalova-liga",
+  "competition_name": "CFL",
+  "season_year": "2024",
+  "team_count": 34,
+  "expected_matchdays": 66,
+  "recovery_matchday_number": 21,
+  "recovery_matches_count": 2,
+  "specific_match_targets": [
+    "4530183",
+    "4530180"
+  ],
+  "priority": 370,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_CZ3C_2024_md21_1755532313"
+  },
+  "matchdays_data": [
+    {
+      "matchday_info": {
+        "number": 21,
+        "season": "2024",
+        "competition": "CFL",
+        "source_url": "https://www.transfermarkt.com/ceska-fotbalova-liga/spieltag/wettbewerb/CZ3C/saison_id/2024/spieltag/21",
+        "total_matches": 16
+      },
+      "matches": [
+        {
+          "match_info": {
+            "match_id": "4530183",
+            "competition_name": "CFL",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4530183",
+            "day_of_week": "Sunday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4530180",
+            "competition_name": "CFL",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4530180",
+            "day_of_week": "Sunday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        }
+      ],
+      "league_table": {},
+      "top_scorers": [],
+      "summary": {
+        "recovery_context": true,
+        "original_work_id": "match_CZ3C_2024_md21_1755532313",
+        "recovery_reason": "missing_team_data"
+      }
+    }
+  ],
+  "created_at": "2025-08-21T19:00:39Z",
+  "created_by": "recovery_system",
+  "status": "available"
+}
