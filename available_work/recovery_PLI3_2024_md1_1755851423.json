@@ -1,0 +1,137 @@
+{
+  "work_id": "recovery_PLI3_2024_md1_1755851423",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_PLI3_2024_md01_1755532097",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-22T11:30:23Z",
+  "competition_id": "PLI3",
+  "competition_code": "liga-3",
+  "competition_name": "Liga 3",
+  "season_year": "2024",
+  "team_count": 37,
+  "expected_matchdays": 72,
+  "recovery_matchday_number": 1,
+  "recovery_matches_count": 2,
+  "specific_match_targets": [
+    "4613403",
+    "4613412"
+  ],
+  "priority": 355,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_PLI3_2024_md01_1755532097"
+  },
+  "matchdays_data": [
+    {
+      "matchday_info": {
+        "number": 1,
+        "season": "2024",
+        "competition": "Liga 3",
+        "source_url": "https://www.transfermarkt.com/liga-3/spieltag/wettbewerb/PLI3/saison_id/2024/spieltag/1",
+        "total_matches": 17
+      },
+      "matches": [
+        {
+          "match_info": {
+            "match_id": "4613403",
+            "competition_name": "Liga 3",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4613403",
+            "day_of_week": "Saturday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4613412",
+            "competition_name": "Liga 3",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4613412",
+            "day_of_week": "Monday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        }
+      ],
+      "league_table": {},
+      "top_scorers": [],
+      "summary": {
+        "recovery_context": true,
+        "original_work_id": "match_PLI3_2024_md01_1755532097",
+        "recovery_reason": "missing_team_data"
+      }
+    }
+  ],
+  "created_at": "2025-08-22T11:30:23Z",
+  "created_by": "recovery_system",
+  "status": "available"
+}
