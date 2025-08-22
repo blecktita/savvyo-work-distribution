@@ -2314,11 +2314,12 @@
     "match_id": "4639126",
     "original_work_id": "match_PLI3_2024_1754490698",
     "failure_reason": "missing_home_team_id; missing_away_team_id",
-    "retry_count": 0,
+    "retry_count": 1,
     "first_failed_at": "2025-08-13T20:39:29Z",
-    "last_failed_at": "2025-08-13T20:39:29Z",
+    "last_failed_at": "2025-08-22T12:15:11Z",
     "recovery_work_ids": [
-      "recovery_PLI3_2024_md13_1755106776"
+      "recovery_PLI3_2024_md13_1755106776",
+      "recovery_PLI3_2024_md13_1755854111"
     ]
   },
   "4639197": {
@@ -33398,6 +33399,17 @@
     "last_failed_at": "2025-08-22T12:15:04Z",
     "recovery_work_ids": [
       "recovery_ARG2_2024_md15_1755854104"
+    ]
+  },
+  "4639128": {
+    "match_id": "4639128",
+    "original_work_id": "match_PLI3_2024_md13_1755532118",
+    "failure_reason": "missing_home_team_id; missing_away_team_id",
+    "retry_count": 0,
+    "first_failed_at": "2025-08-22T12:15:11Z",
+    "last_failed_at": "2025-08-22T12:15:11Z",
+    "recovery_work_ids": [
+      "recovery_PLI3_2024_md13_1755854111"
     ]
   }
 }
