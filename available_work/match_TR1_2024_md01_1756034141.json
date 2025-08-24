@@ -1,5 +1,5 @@
 {
-  "work_id": "match_TR1_2024_md01_1756032428",
+  "work_id": "match_TR1_2024_md01_1756034141",
   "work_type": "match_data",
   "version": "3.1",
   "competition_id": "TR1",
@@ -8,11 +8,11 @@
   "season_year": "2024",
   "target_matchday": {
     "number": 1,
-    "status": "unknown",
+    "status": "missing",
     "existing_matches": 0,
-    "completion_reason": "query_error",
+    "completion_reason": "not_discovered",
     "source_verified": true,
-    "discovery_method": "cache_driven_scraping"
+    "discovery_method": "cache_driven"
   },
   "team_count": 19,
   "existing_matchdays_count": 0,
@@ -21,17 +21,17 @@
   "competition_status": "empty",
   "priority": 620,
   "processing_hints": {
-    "scope": "single_matchday_cache_driven",
+    "scope": "single_matchday",
     "matchday_focused": true,
     "target_matchday": 1,
-    "expected_completion_time": "5_to_15_minutes",
+    "expected_completion_time": "15_minutes",
     "team_count_category": "medium",
-    "data_source": "cache_guided_scraping",
+    "data_source": "db_sync",
     "requires_validation": true,
     "cache_last_analyzed": "2025-08-24T12:53:46.563935"
   },
-  "created_at": "2025-08-24T13:47:08Z",
-  "created_by": "cache_driven_work_manager",
+  "created_at": "2025-08-24T14:15:41Z",
+  "created_by": "work_manager",
   "creation_method": "cache_integrated_system",
   "status": "available",
   "quality_level": "production"
