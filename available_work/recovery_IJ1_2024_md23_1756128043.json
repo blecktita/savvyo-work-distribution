@@ -1,0 +1,93 @@
+{
+  "work_id": "recovery_IJ1_2024_md23_1756128043",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_IJ1_2024_md23_1755866466",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-25T16:20:43Z",
+  "competition_id": "IJ1",
+  "competition_code": "primavera-1",
+  "competition_name": "Primavera 1",
+  "season_year": "2024",
+  "team_count": 20,
+  "expected_matchdays": 38,
+  "recovery_matchday_number": 23,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4401749"
+  ],
+  "priority": 385,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_IJ1_2024_md23_1755866466"
+  },
+  "matchdays_data": [
+    {
+      "matchday_info": {
+        "number": 23,
+        "season": "2024",
+        "competition": "Primavera 1",
+        "source_url": "https://www.transfermarkt.com/primavera-1/spieltag/wettbewerb/IJ1/saison_id/2024/spieltag/23",
+        "total_matches": 10
+      },
+      "matches": [
+        {
+          "match_info": {
+            "match_id": "4401749",
+            "competition_name": "Primavera 1",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4401749",
+            "day_of_week": "Friday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        }
+      ],
+      "league_table": {},
+      "top_scorers": [],
+      "summary": {
+        "recovery_context": true,
+        "original_work_id": "match_IJ1_2024_md23_1755866466",
+        "recovery_reason": "missing_team_data"
+      }
+    }
+  ],
+  "created_at": "2025-08-25T16:20:43Z",
+  "created_by": "recovery_system",
+  "status": "available"
+}
