@@ -1,0 +1,93 @@
+{
+  "work_id": "recovery_MNP3_2024_md18_1756114650",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_MNP3_2024_md18_1755858526",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-25T12:37:30Z",
+  "competition_id": "MNP3",
+  "competition_code": "mls-next-pro",
+  "competition_name": "MLS Next Pro",
+  "season_year": "2024",
+  "team_count": 29,
+  "expected_matchdays": 56,
+  "recovery_matchday_number": 18,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4641783"
+  ],
+  "priority": 371,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_MNP3_2024_md18_1755858526"
+  },
+  "matchdays_data": [
+    {
+      "matchday_info": {
+        "number": 18,
+        "season": "2024",
+        "competition": "MLS Next Pro",
+        "source_url": "https://www.transfermarkt.com/mls-next-pro/spieltag/wettbewerb/MNP3/saison_id/2024/spieltag/18",
+        "total_matches": 18
+      },
+      "matches": [
+        {
+          "match_info": {
+            "match_id": "4641783",
+            "competition_name": "MLS Next Pro",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4641783",
+            "day_of_week": "Friday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        }
+      ],
+      "league_table": {},
+      "top_scorers": [],
+      "summary": {
+        "recovery_context": true,
+        "original_work_id": "match_MNP3_2024_md18_1755858526",
+        "recovery_reason": "missing_team_data"
+      }
+    }
+  ],
+  "created_at": "2025-08-25T12:37:30Z",
+  "created_by": "recovery_system",
+  "status": "available"
+}
