@@ -1,0 +1,92 @@
+{
+  "work_id": "recovery_CNAT_2024_md43_1756127561",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_CNAT_2024_md43_1755858741",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-25T16:12:41Z",
+  "competition_id": "CNAT",
+  "competition_code": "national-league",
+  "competition_name": "National League",
+  "season_year": "2024",
+  "team_count": 24,
+  "expected_matchdays": 46,
+  "recovery_matchday_number": 43,
+  "recovery_matches_count": 3,
+  "specific_match_targets": [
+    "4417225",
+    "4417233",
+    "4417240"
+  ],
+  "priority": 401,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_CNAT_2024_md43_1755858741"
+  },
+  "matchdays_data": [],
+  "created_at": "2025-08-25T16:12:41Z",
+  "created_by": "recovery_system",
+  "status": "failed",
+  "claimed_by": "match_MacBookPro.home_27751_70f1d311",
+  "claimed_at": "2025-08-26T13:54:36.363642",
+  "claim_id": "match_MacBookPro.home_27751_70f1d311_1756205676363_7ee6a42c",
+  "started_at": "2025-08-26T10:54:40.971110+00:00",
+  "completed_at": "2025-08-26T10:55:52.267848+00:00",
+  "total_matchdays": 0,
+  "total_matches": 0,
+  "processing_time_seconds": 0.0,
+  "queue_wait_seconds": 0.0,
+  "was_recovery_work": true,
+  "recovery_success": false,
+  "recovered_match_targets": [
+    "4417225",
+    "4417233",
+    "4417240"
+  ],
+  "error": {
+    "message": "Processing error: Command '['git', 'pull', '--no-edit', 'origin', 'main']' timed out after 30 seconds",
+    "code": "SCRAPE_ERROR",
+    "stage": "scrape",
+    "transient": true,
+    "retry_after_seconds": 900,
+    "stack": "Traceback (most recent call last):\n  File \"/Users/aseathleticsdata/Documents/savvyo_stable_runs/product-dev/runnables/match_worker_station/core/work_manager.py\", line 341, in run_match_worker_cycle\n    self.github_bridge.submit_completed_work_match(work_order, results) # type: ignore[arg-type]\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/aseathleticsdata/Documents/savvyo_stable_runs/product-dev/coordination/github_bridge.py\", line 1544, in submit_completed_work_match\n    self._write_artifact(\n  File \"/Users/aseathleticsdata/Documents/savvyo_stable_runs/product-dev/coordination/github_bridge.py\", line 1657, in _write_artifact\n    self._git_add_commit_push(cm)\n  File \"/Users/aseathleticsdata/Documents/savvyo_stable_runs/product-dev/coordination/github_bridge.py\", line 708, in _git_add_commit_push\n    subprocess.run(\n  File \"/Users/aseathleticsdata/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/subprocess.py\", line 550, in run\n    stdout, stderr = process.communicate(input, timeout=timeout)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/aseathleticsdata/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/subprocess.py\", line 1209, in communicate\n    stdout, stderr = self._communicate(input, endtime, timeout)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/aseathleticsdata/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/subprocess.py\", line 2116, in _communicate\n    self._check_timeout(endtime, orig_timeout, stdout, stderr)\n  File \"/Users/aseathleticsdata/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/subprocess.py\", line 1253, in _check_timeout\n    raise TimeoutExpired(\nsubprocess.TimeoutExpired: Command '['git', 'pull', '--no-edit', 'origin', 'main']' timed out after 30 seconds\n",
+    "observations": []
+  },
+  "requeue_template": {
+    "work_id": "requeue_recovery_CNAT_2024_md43_1756127561_1",
+    "work_type": "match_data",
+    "version": "2.0",
+    "competition_id": "CNAT",
+    "competition_code": "national-league",
+    "competition_name": "National League",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_CNAT_2024_md43_1755858741",
+    "recovery_reason": "missing_team_data",
+    "recovery_created_at": "2025-08-26T10:55:52.268046+00:00",
+    "recovery_matchday_number": 43,
+    "specific_match_targets": [
+      "4417225",
+      "4417233",
+      "4417240"
+    ],
+    "team_count": 24,
+    "expected_matchdays": 46,
+    "priority": 391,
+    "processing_hints": {
+      "is_recovery": true,
+      "focus_on_team_data": true,
+      "preserve_existing_data": true,
+      "original_work_id": "match_CNAT_2024_md43_1755858741",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-26T10:55:52.268074+00:00",
+    "created_by": "requeue_adapter"
+  }
+}
