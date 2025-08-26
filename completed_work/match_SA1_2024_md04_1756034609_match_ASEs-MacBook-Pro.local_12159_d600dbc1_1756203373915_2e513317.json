@@ -1,0 +1,3426 @@
+{
+  "work_id": "match_SA1_2024_md04_1756034609",
+  "work_type": "match_data",
+  "version": "3.1",
+  "competition_id": "SA1",
+  "competition_code": "saudi-pro-league",
+  "competition_name": "Saudi Pro League",
+  "season_year": "2024",
+  "target_matchday": {
+    "number": 4,
+    "status": "missing",
+    "existing_matches": 0,
+    "completion_reason": "not_discovered",
+    "source_verified": true,
+    "discovery_method": "cache_driven"
+  },
+  "team_count": 18,
+  "existing_matchdays_count": 0,
+  "existing_matches_count": 0,
+  "competition_tier": "First Tier",
+  "competition_status": "empty",
+  "priority": 620,
+  "processing_hints": {
+    "scope": "single_matchday",
+    "matchday_focused": true,
+    "target_matchday": 4,
+    "expected_completion_time": "15_minutes",
+    "team_count_category": "medium",
+    "data_source": "db_sync",
+    "requires_validation": true,
+    "cache_last_analyzed": "2025-08-24T12:53:46.695783"
+  },
+  "created_at": "2025-08-24T14:23:29Z",
+  "created_by": "work_manager",
+  "creation_method": "cache_integrated_system",
+  "status": "completed",
+  "quality_level": "production",
+  "claimed_by": "match_ASEs-MacBook-Pro.local_12159_d600dbc1",
+  "claimed_at": "2025-08-26T13:16:13.915665",
+  "claim_id": "match_ASEs-MacBook-Pro.local_12159_d600dbc1_1756203373915_2e513317",
+  "started_at": "2025-08-26T10:16:18.482206+00:00",
+  "completed_at": "2025-08-26T10:19:34.562055+00:00",
+  "matchdays_data": [
+    {
+      "matchday_info": {
+        "number": 4,
+        "season": "2024",
+        "competition": "Saudi Pro League",
+        "source_url": "https://www.transfermarkt.com/saudi-pro-league/spieltag/wettbewerb/SA1/saison_id/2024/spieltag/4",
+        "total_matches": 9
+      },
+      "matches": [
+        {
+          "match_info": {
+            "match_id": "4404866",
+            "competition_name": "Saudi Pro League",
+            "season": "2024",
+            "date": "2024-09-19",
+            "time": "5:40",
+            "venue": "Prince Hathloul bin Abdulaziz Sports City Stadium",
+            "attendance": 1219,
+            "referee": "Sultan Al-Harbi",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4404866",
+            "day_of_week": "Thursday"
+          },
+          "home_team": {
+            "team_id": "71665",
+            "name": "Al-Okhdood Club",
+            "formation": "4-2-3-1",
+            "manager": "Stjepan Tomas"
+          },
+          "away_team": {
+            "team_id": "26069",
+            "name": "Al-Qadsiah FC",
+            "formation": "4-2-3-1",
+            "manager": "Míchel"
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": 0,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "419120",
+                "name": "Vítor",
+                "shirt_number": 28,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/419120-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "213257",
+                "name": "Al-Rubaie",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/213257-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "901135",
+                "name": "Al-Qaydhi",
+                "shirt_number": 98,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/901135-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "271716",
+                "name": "Lowe",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/271716-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "265939",
+                "name": "Khamis",
+                "shirt_number": 27,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/265939-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "200558",
+                "name": "Petros",
+                "shirt_number": 66,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/200558-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "677706",
+                "name": "Pedroza",
+                "shirt_number": 18,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/677706-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "120785",
+                "name": "Musona",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/120785-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "295327",
+                "name": "Godwin",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/295327-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "374281",
+                "name": "Bassogog",
+                "shirt_number": 13,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/374281-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "490223",
+                "name": "Koné",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/490223-1756203403.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "108880",
+                "name": "Casteels",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/108880-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "901334",
+                "name": "Thakri",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/901334-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "58884",
+                "name": "Fernández",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/58884-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "577486",
+                "name": "Álvarez",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/577486-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "1181852",
+                "name": "Abu Al-Sha.",
+                "shirt_number": 2,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1181852-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "664708",
+                "name": "Fernández",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/664708-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "315063",
+                "name": "Nández",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/315063-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "449592",
+                "name": "Puertas",
+                "shirt_number": 88,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/449592-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "31671",
+                "name": "Al-Ammar",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/31671-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "58864",
+                "name": "Aubameyang",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/58864-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "416090",
+                "name": "Quiñones",
+                "shirt_number": 33,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/416090-1756203403.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "112813",
+                "name": "Rakan Al-Najjar",
+                "shirt_number": 1,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/112813-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "1145063",
+                "name": "Naif Asiri",
+                "shirt_number": 15,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1145063-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "1305931",
+                "name": "Ghassan Hawsawi",
+                "shirt_number": 87,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1305931-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "965992",
+                "name": "Hussain Al-Zabdani",
+                "shirt_number": 8,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/965992-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "1130616",
+                "name": "Eid Al-Muwallad",
+                "shirt_number": 6,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1130616-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "1169198",
+                "name": "Abdulaziz Al-Hatila",
+                "shirt_number": 12,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1169198-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "965864",
+                "name": "Mohammed Al-Jahif",
+                "shirt_number": 21,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/965864-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "1173786",
+                "name": "Saud Salem",
+                "shirt_number": 19,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1173786-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "950528",
+                "name": "Saleh Al-Harthi",
+                "shirt_number": 20,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/950528-1756203403.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "177956",
+                "name": "Ahmed Al-Kassar",
+                "shirt_number": 28,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/177956-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "362905",
+                "name": "Qasem Lajami",
+                "shirt_number": 87,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/362905-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "288390",
+                "name": "Mohammed Qasem",
+                "shirt_number": 24,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/288390-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "474967",
+                "name": "Abdulrahman Al-Dawsari",
+                "shirt_number": 39,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/474967-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "153172",
+                "name": "Ali Abdullah Hazazi",
+                "shirt_number": 11,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/153172-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "901124",
+                "name": "Hussain Al-Qahtani",
+                "shirt_number": 15,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/901124-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "1181090",
+                "name": "Saif Rajab",
+                "shirt_number": 14,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1181090-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "796803",
+                "name": "Haitham Asiri",
+                "shirt_number": 18,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/796803-1756203403.jpg?lm=1"
+              },
+              {
+                "player_id": "1208196",
+                "name": "Abdulaziz Al-Othman",
+                "shirt_number": 66,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1208196-1756203403.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [],
+            "cards": [
+              {
+                "minute": 16,
+                "extra_time": null,
+                "player": {
+                  "player_id": "271716",
+                  "name": "Damion Lowe",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/271716-1756203403.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": null
+              },
+              {
+                "minute": 45,
+                "extra_time": null,
+                "player": {
+                  "player_id": "416090",
+                  "name": "Julián Quiñones",
+                  "shirt_number": 33,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/416090-1756203403.jpg?lm=1"
+                },
+                "card_type": "red",
+                "reason": "Serious foul",
+                "team_side": "away",
+                "season_card_number": null
+              },
+              {
+                "minute": 82,
+                "extra_time": null,
+                "player": {
+                  "player_id": "677706",
+                  "name": "Juan Sebastián Pedroza",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/677706-1756203403.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 87,
+                "extra_time": null,
+                "player": {
+                  "player_id": "315063",
+                  "name": "Nahitan Nández",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/315063-1756203403.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 2
+              },
+              {
+                "minute": 90,
+                "extra_time": 3,
+                "player": {
+                  "player_id": "58884",
+                  "name": "Nacho Fernández",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/58884-1756203403.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Dissent",
+                "team_side": "away",
+                "season_card_number": 1
+              },
+              {
+                "minute": 90,
+                "extra_time": 7,
+                "player": {
+                  "player_id": "271716",
+                  "name": "Damion Lowe",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/271716-1756203403.jpg?lm=1"
+                },
+                "card_type": "second_yellow",
+                "reason": null,
+                "team_side": "home",
+                "season_card_number": null
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "295327",
+                  "name": "Saviour Godwin",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/295327-1756203403.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "965864",
+                  "name": "Mohammed Al-Jahif",
+                  "shirt_number": 21,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/965864-1756203403.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "31671",
+                  "name": "Turki Al-Ammar",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/31671-1756203403.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "288390",
+                  "name": "Mohammed Qasem",
+                  "shirt_number": 24,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/288390-1756203403.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 55,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "449592",
+                  "name": "Cameron Puertas",
+                  "shirt_number": 88,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/449592-1756203403.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "901124",
+                  "name": "Hussain Al-Qahtani",
+                  "shirt_number": 15,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/901124-1756203403.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 76,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "901135",
+                  "name": "Mohanad Al-Qaydhi",
+                  "shirt_number": 98,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/901135-1756203403.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "950528",
+                  "name": "Saleh Al-Harthi",
+                  "shirt_number": 20,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/950528-1756203403.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 77,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "664708",
+                  "name": "Ezequiel Fernández",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/664708-1756203403.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "153172",
+                  "name": "Ali Abdullah Hazazi",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/153172-1756203403.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 77,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "58864",
+                  "name": "Pierre-Emerick Aubameyang",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/58864-1756203403.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1208196",
+                  "name": "Abdulaziz Al-Othman",
+                  "shirt_number": 66,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1208196-1756203403.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 83,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "490223",
+                  "name": "Ibrahima Koné",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/490223-1756203403.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1169198",
+                  "name": "Abdulaziz Al-Hatila",
+                  "shirt_number": 12,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1169198-1756203403.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 90,
+                "extra_time": 9,
+                "player_out": {
+                  "player_id": "374281",
+                  "name": "Christian Bassogog",
+                  "shirt_number": 13,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/374281-1756203403.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1145063",
+                  "name": "Naif Asiri",
+                  "shirt_number": 15,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1145063-1756203403.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 90,
+                "extra_time": 9,
+                "player_out": {
+                  "player_id": "315063",
+                  "name": "Nahitan Nández",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/315063-1756203403.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "474967",
+                  "name": "Abdulrahman Al-Dawsari",
+                  "shirt_number": 39,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/474967-1756203403.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4404865",
+            "competition_name": "Saudi Pro League",
+            "season": "2024",
+            "date": "2024-09-19",
+            "time": "6:00",
+            "venue": "Al-Jouf University Stadium",
+            "attendance": 2710,
+            "referee": "Mohammed Saif Al-Harbi",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4404865",
+            "day_of_week": "Thursday"
+          },
+          "home_team": {
+            "team_id": "39536",
+            "name": "Al-Orobah FC",
+            "formation": "4-1-4-1",
+            "manager": "Álvaro Pacheco"
+          },
+          "away_team": {
+            "team_id": "27221",
+            "name": "Al-Fateh SC",
+            "formation": "4-2-3-1",
+            "manager": "Jens Gustafsson"
+          },
+          "score": {
+            "home_final": 1,
+            "away_final": 0,
+            "home_ht": 0,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "338651",
+                "name": "Coucke",
+                "shirt_number": 28,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/338651-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "575594",
+                "name": "Kandouss",
+                "shirt_number": 3,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/575594-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "157509",
+                "name": "Zouma",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/157509-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "364452",
+                "name": "Al-Maghati",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/364452-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "153841",
+                "name": "Al-Zubaidi",
+                "shirt_number": 13,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/153841-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "388042",
+                "name": "Muhar",
+                "shirt_number": 73,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/388042-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "178614",
+                "name": "Seri",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/178614-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "141834",
+                "name": "Tello",
+                "shirt_number": 37,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/141834-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "1145037",
+                "name": "Al-Zubaidi",
+                "shirt_number": 29,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1145037-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "89231",
+                "name": "Gudmundsson",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/89231-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "332612",
+                "name": "Boateng",
+                "shirt_number": 21,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/332612-1756203415.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "168074",
+                "name": "Szappanos",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/168074-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "210009",
+                "name": "Saadane",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/210009-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "277114",
+                "name": "Denayer",
+                "shirt_number": 64,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/277114-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "886841",
+                "name": "Al-Kunaydiri",
+                "shirt_number": 12,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/886841-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "490844",
+                "name": "Baattia",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/490844-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "1112072",
+                "name": "Al-Zaid",
+                "shirt_number": 18,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1112072-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "248250",
+                "name": "Bendebka",
+                "shirt_number": 28,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/248250-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "230030",
+                "name": "Zelarayán",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/230030-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "851220",
+                "name": "Sbaï",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/851220-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "234975",
+                "name": "Batna",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/234975-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "197170",
+                "name": "Djaniny",
+                "shirt_number": 21,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/197170-1756203415.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "1162361",
+                "name": "Saud Al-Ruwaili",
+                "shirt_number": 22,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1162361-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "264892",
+                "name": "Rafi Al-Ruwaili",
+                "shirt_number": 1,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/264892-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "1162363",
+                "name": "Ziyad Al-Hunaiti",
+                "shirt_number": 4,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1162363-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "185538",
+                "name": "Husein Al-Shuwaish",
+                "shirt_number": 33,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/185538-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "452889",
+                "name": "Abdulmalek Al-Shammari",
+                "shirt_number": 18,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/452889-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "1052901",
+                "name": "Nawaf Al-Qamiri",
+                "shirt_number": 12,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1052901-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "343287",
+                "name": "Fahad Al-Rashidi",
+                "shirt_number": 80,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/343287-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "1168839",
+                "name": "Sattam Al-Roqi",
+                "shirt_number": 32,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1168839-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "321046",
+                "name": "Mohammed Al-Saiari",
+                "shirt_number": 90,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/321046-1756203415.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "939942",
+                "name": "Walid Al-Enezi",
+                "shirt_number": 55,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/939942-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "314859",
+                "name": "Ammar Al-Dohaim",
+                "shirt_number": 24,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/314859-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "1305862",
+                "name": "Hussain Al-Zarie",
+                "shirt_number": 82,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1305862-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "154550",
+                "name": "Mohammed Al-Fuhaid",
+                "shirt_number": 14,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/154550-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "1092630",
+                "name": "Naif Masoud",
+                "shirt_number": 6,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1092630-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "970663",
+                "name": "Abdullah Al-Anazi",
+                "shirt_number": 94,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/970663-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "901153",
+                "name": "Othman Al-Othman",
+                "shirt_number": 88,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/901153-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "970671",
+                "name": "Faisal Al-Abdulwahed",
+                "shirt_number": 80,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/970671-1756203415.jpg?lm=1"
+              },
+              {
+                "player_id": "1140944",
+                "name": "Saad Al-Sharfa",
+                "shirt_number": 49,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1140944-1756203415.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 50,
+                "extra_time": null,
+                "player": {
+                  "player_id": "141834",
+                  "name": "Cristian Tello",
+                  "shirt_number": 37,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/141834-1756203415.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "332612",
+                  "name": "Emmanuel Boateng",
+                  "shirt_number": 21,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/332612-1756203415.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Pass",
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 1
+              }
+            ],
+            "cards": [
+              {
+                "minute": 22,
+                "extra_time": null,
+                "player": {
+                  "player_id": "364452",
+                  "name": "Hamed Al-Maghati",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/364452-1756203415.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 29,
+                "extra_time": null,
+                "player": {
+                  "player_id": "210009",
+                  "name": "Marwane Saadane",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/210009-1756203415.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Dissent",
+                "team_side": "away",
+                "season_card_number": 1
+              },
+              {
+                "minute": 49,
+                "extra_time": null,
+                "player": {
+                  "player_id": "230030",
+                  "name": "Lucas Zelarayán",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/230030-1756203415.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Dissent",
+                "team_side": "away",
+                "season_card_number": 1
+              },
+              {
+                "minute": 53,
+                "extra_time": null,
+                "player": {
+                  "player_id": "153841",
+                  "name": "Ibrahim Al-Zubaidi",
+                  "shirt_number": 13,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/153841-1756203415.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 2
+              },
+              {
+                "minute": 57,
+                "extra_time": null,
+                "player": {
+                  "player_id": "388042",
+                  "name": "Karlo Muhar",
+                  "shirt_number": 73,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/388042-1756203415.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 2
+              },
+              {
+                "minute": 77,
+                "extra_time": null,
+                "player": {
+                  "player_id": "277114",
+                  "name": "Jason Denayer",
+                  "shirt_number": 64,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/277114-1756203415.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              },
+              {
+                "minute": 84,
+                "extra_time": null,
+                "player": {
+                  "player_id": "89231",
+                  "name": "Jóhann Berg Gudmundsson",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/89231-1756203415.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Time wasting",
+                "team_side": "home",
+                "season_card_number": 2
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 62,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1145037",
+                  "name": "Fahad Aqeel Al-Zubaidi",
+                  "shirt_number": 29,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1145037-1756203415.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1168839",
+                  "name": "Sattam Al-Roqi",
+                  "shirt_number": 32,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1168839-1756203415.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 68,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "851220",
+                  "name": "Amine Sbaï",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/851220-1756203415.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1140944",
+                  "name": "Saad Al-Sharfa",
+                  "shirt_number": 49,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1140944-1756203415.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 75,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "141834",
+                  "name": "Cristian Tello",
+                  "shirt_number": 37,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/141834-1756203415.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "452889",
+                  "name": "Abdulmalek Al-Shammari",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/452889-1756203415.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 75,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "153841",
+                  "name": "Ibrahim Al-Zubaidi",
+                  "shirt_number": 13,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/153841-1756203415.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "185538",
+                  "name": "Husein Al-Shuwaish",
+                  "shirt_number": 33,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/185538-1756203415.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 75,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "248250",
+                  "name": "Sofiane Bendebka",
+                  "shirt_number": 28,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/248250-1756203415.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1092630",
+                  "name": "Naif Masoud",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1092630-1756203415.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 85,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1112072",
+                  "name": "Suhayb Al-Zaid",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1112072-1756203415.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "970663",
+                  "name": "Abdullah Al-Anazi",
+                  "shirt_number": 94,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/970663-1756203415.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 85,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "886841",
+                  "name": "Mohammed Al-Kunaydiri",
+                  "shirt_number": 12,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/886841-1756203415.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "901153",
+                  "name": "Othman Al-Othman",
+                  "shirt_number": 88,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/901153-1756203415.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 90,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "364452",
+                  "name": "Hamed Al-Maghati",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/364452-1756203415.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1052901",
+                  "name": "Nawaf Al-Qamiri",
+                  "shirt_number": 12,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1052901-1756203415.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 90,
+                "extra_time": 1,
+                "player_out": {
+                  "player_id": "332612",
+                  "name": "Emmanuel Boateng",
+                  "shirt_number": 21,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/332612-1756203415.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "321046",
+                  "name": "Mohammed Al-Saiari",
+                  "shirt_number": 90,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/321046-1756203415.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4404864",
+            "competition_name": "Saudi Pro League",
+            "season": "2024",
+            "date": "2024-09-19",
+            "time": "8:00",
+            "venue": "King Abdul Aziz Stadium",
+            "attendance": 897,
+            "referee": "Fareeh Al-Jaloud",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4404864",
+            "day_of_week": "Thursday"
+          },
+          "home_team": {
+            "team_id": "17209",
+            "name": "Al-Wehda FC",
+            "formation": "4-2-3-1",
+            "manager": "Josef Zinnbauer"
+          },
+          "away_team": {
+            "team_id": "91427",
+            "name": "Al-Kholood Club",
+            "formation": "5-4-1",
+            "manager": "Paulo Duarte"
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 1,
+            "home_ht": 0,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "187950",
+                "name": "Al-Oaisher",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/187950-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "193151",
+                "name": "Al-Hafith",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/193151-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "235412",
+                "name": "El Yamiq",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/235412-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "250826",
+                "name": "Al-Mowalad",
+                "shirt_number": 2,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/250826-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "1162365",
+                "name": "Darwish",
+                "shirt_number": 14,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1162365-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "216661",
+                "name": "Crețu",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/216661-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "274235",
+                "name": "Al-Makahasi",
+                "shirt_number": 35,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/274235-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "348863",
+                "name": "Bacuna",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/348863-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "684307",
+                "name": "Amyn",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/684307-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "214798",
+                "name": "Goodwin",
+                "shirt_number": 23,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/214798-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "62121",
+                "name": "Ighalo",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/62121-1756203426.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "52313",
+                "name": "Grohe",
+                "shirt_number": 34,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/52313-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "205054",
+                "name": "Gyömbér",
+                "shirt_number": 23,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/205054-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "192875",
+                "name": "Troost-Ekong",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/192875-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "141810",
+                "name": "Al-Dosari",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/141810-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "1131860",
+                "name": "Al-Shehri",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1131860-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "922497",
+                "name": "Al-Hawsawi",
+                "shirt_number": 24,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/922497-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "410427",
+                "name": "Dieng",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/410427-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "686019",
+                "name": "Al-Safari",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/686019-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "282722",
+                "name": "Collado",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/282722-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "371142",
+                "name": "Maolida",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/371142-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "549966",
+                "name": "Muleka",
+                "shirt_number": 18,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/549966-1756203426.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "631926",
+                "name": "Abdulrahman Al-Shammari",
+                "shirt_number": 21,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/631926-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "1058034",
+                "name": "Ali Al-Salem",
+                "shirt_number": 49,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1058034-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "1320116",
+                "name": "Saad Al-Qahtani",
+                "shirt_number": 19,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1320116-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "147869",
+                "name": "Waleed Bakshween",
+                "shirt_number": 4,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/147869-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "443937",
+                "name": "Alaa Hejji",
+                "shirt_number": 8,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/443937-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "253752",
+                "name": "Saad Bguir",
+                "shirt_number": 18,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/253752-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "1058345",
+                "name": "Abdulaziz Noor",
+                "shirt_number": 24,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1058345-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "673933",
+                "name": "Yahya Naji",
+                "shirt_number": 80,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/673933-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "1142756",
+                "name": "Murad Khadhari",
+                "shirt_number": 77,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1142756-1756203426.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "1131851",
+                "name": "Jassim Al-Oshbaan",
+                "shirt_number": 33,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1131851-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "159561",
+                "name": "Mohammed Jahfali",
+                "shirt_number": 70,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/159561-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "505496",
+                "name": "Hamdan Al-Shammrani",
+                "shirt_number": 27,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/505496-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "901162",
+                "name": "Hassan Al-Asmari",
+                "shirt_number": 12,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/901162-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "1131858",
+                "name": "Mohammed Sawaan",
+                "shirt_number": 11,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1131858-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "264236",
+                "name": "Abdulfattah Asiri",
+                "shirt_number": 45,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/264236-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "1118034",
+                "name": "Hammam Al-Hammami",
+                "shirt_number": 22,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1118034-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "1318427",
+                "name": "Majed Khalifa",
+                "shirt_number": 99,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1318427-1756203426.jpg?lm=1"
+              },
+              {
+                "player_id": "1183281",
+                "name": "Abdulmalik Al-Harbi",
+                "shirt_number": 47,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1183281-1756203426.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 60,
+                "extra_time": null,
+                "player": {
+                  "player_id": "282722",
+                  "name": "Álex Collado",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/282722-1756203426.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "922497",
+                  "name": "Abdullah Al-Hawsawi",
+                  "shirt_number": 24,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/922497-1756203426.jpg?lm=1"
+                },
+                "goal_type": "Left-footed shot",
+                "assist_type": "Pass",
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  1
+                ],
+                "season_goal_number": 3,
+                "season_assist_number": 2
+              }
+            ],
+            "cards": [
+              {
+                "minute": 45,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1162365",
+                  "name": "Bandar Darwish",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1162365-1756203426.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": null
+              },
+              {
+                "minute": 57,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1162365",
+                  "name": "Bandar Darwish",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1162365-1756203426.jpg?lm=1"
+                },
+                "card_type": "second_yellow",
+                "reason": null,
+                "team_side": "home",
+                "season_card_number": null
+              },
+              {
+                "minute": 66,
+                "extra_time": null,
+                "player": {
+                  "player_id": "274235",
+                  "name": "Mohamed Al-Makahasi",
+                  "shirt_number": 35,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/274235-1756203426.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 81,
+                "extra_time": null,
+                "player": {
+                  "player_id": "549966",
+                  "name": "Jackson Muleka",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/549966-1756203426.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              },
+              {
+                "minute": 90,
+                "extra_time": null,
+                "player": {
+                  "player_id": "631926",
+                  "name": "Abdulrahman Al-Shammari",
+                  "shirt_number": 21,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/631926-1756203426.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Dissent",
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 90,
+                "extra_time": 3,
+                "player": {
+                  "player_id": "250826",
+                  "name": "Saeed Al-Mowalad",
+                  "shirt_number": 2,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/250826-1756203426.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 90,
+                "extra_time": 3,
+                "player": {
+                  "player_id": "1118034",
+                  "name": "Hammam Al-Hammami",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1118034-1756203426.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "away",
+                "season_card_number": 1
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 66,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1131860",
+                  "name": "Sultan Al-Shehri",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1131860-1756203426.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1131858",
+                  "name": "Mohammed Sawaan",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1131858-1756203426.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 71,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "62121",
+                  "name": "Odion Ighalo",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/62121-1756203426.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1058345",
+                  "name": "Abdulaziz Noor",
+                  "shirt_number": 24,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1058345-1756203426.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 71,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "214798",
+                  "name": "Craig Goodwin",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/214798-1756203426.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "673933",
+                  "name": "Yahya Naji",
+                  "shirt_number": 80,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/673933-1756203426.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 80,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "348863",
+                  "name": "Juninho Bacuna",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/348863-1756203426.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1142756",
+                  "name": "Murad Khadhari",
+                  "shirt_number": 77,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1142756-1756203426.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 80,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "274235",
+                  "name": "Mohamed Al-Makahasi",
+                  "shirt_number": 35,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/274235-1756203426.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "253752",
+                  "name": "Saad Bguir",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/253752-1756203426.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 83,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "549966",
+                  "name": "Jackson Muleka",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/549966-1756203426.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1118034",
+                  "name": "Hammam Al-Hammami",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1118034-1756203426.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 84,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "141810",
+                  "name": "Jamaan Al-Dosari",
+                  "shirt_number": 4,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/141810-1756203426.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "505496",
+                  "name": "Hamdan Al-Shammrani",
+                  "shirt_number": 27,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/505496-1756203426.jpg?lm=1"
+                },
+                "reason": "Injury",
+                "team_side": "away"
+              },
+              {
+                "minute": 89,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "282722",
+                  "name": "Álex Collado",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/282722-1756203426.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "159561",
+                  "name": "Mohammed Jahfali",
+                  "shirt_number": 70,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/159561-1756203426.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4404868",
+            "competition_name": "Saudi Pro League",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4404868",
+            "day_of_week": "Friday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4404870",
+            "competition_name": "Saudi Pro League",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4404870",
+            "day_of_week": "Friday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4404867",
+            "competition_name": "Saudi Pro League",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4404867",
+            "day_of_week": "Friday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4404871",
+            "competition_name": "Saudi Pro League",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4404871",
+            "day_of_week": "Saturday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4404863",
+            "competition_name": "Saudi Pro League",
+            "season": "2024",
+            "date": "2024-09-21",
+            "time": "5:40",
+            "venue": "King Abdullah Sports City Stadium in Buraidah",
+            "attendance": 1658,
+            "referee": "Abdullah Dhafer Al-Shehri",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4404863",
+            "day_of_week": "Saturday"
+          },
+          "home_team": {
+            "team_id": "22381",
+            "name": "Al-Raed SFC",
+            "formation": "4-4-2",
+            "manager": "Odair Hellmann"
+          },
+          "away_team": {
+            "team_id": "31008",
+            "name": "Al-Riyadh SC",
+            "formation": "4-1-4-1",
+            "manager": "Sabri Lamouchi"
+          },
+          "score": {
+            "home_final": 1,
+            "away_final": 2,
+            "home_ht": 0,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "901767",
+                "name": "Sanyor",
+                "shirt_number": 50,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/901767-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "235448",
+                "name": "Qasmi",
+                "shirt_number": 16,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/235448-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "388795",
+                "name": "Gonzalez",
+                "shirt_number": 21,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/388795-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "1172146",
+                "name": "Al-Subaie",
+                "shirt_number": 24,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1172146-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "364445",
+                "name": "Al-Jayzani",
+                "shirt_number": 28,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/364445-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "672389",
+                "name": "Al-Dawsari",
+                "shirt_number": 32,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/672389-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "111036",
+                "name": "Abeid",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/111036-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "122493",
+                "name": "Sayoud",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/122493-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "229940",
+                "name": "Al-Amri",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/229940-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "236708",
+                "name": "Fouzair",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/236708-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "362278",
+                "name": "El Berkaoui",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/362278-1756203521.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "67797",
+                "name": "Borjan",
+                "shirt_number": 82,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/67797-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "159838",
+                "name": "Barbet",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/159838-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "209499",
+                "name": "Asiri",
+                "shirt_number": 29,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/209499-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "1169016",
+                "name": "Al-Khaibri",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1169016-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "435489",
+                "name": "Kal",
+                "shirt_number": 21,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/435489-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "203654",
+                "name": "Tozé",
+                "shirt_number": 20,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/203654-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "324321",
+                "name": "Mensah",
+                "shirt_number": 43,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/324321-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "560957",
+                "name": "Bayesh",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/560957-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "150788",
+                "name": "Al-Shehri",
+                "shirt_number": 88,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/150788-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "352017",
+                "name": "Selemani",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/352017-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "457743",
+                "name": "Konaté",
+                "shirt_number": 13,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/457743-1756203521.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "901062",
+                "name": "Saleh Al-Ohaymid",
+                "shirt_number": 30,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/901062-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "1092876",
+                "name": "Mobarak Al-Rajeh",
+                "shirt_number": 94,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1092876-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "1180408",
+                "name": "Abdullah Hazazi",
+                "shirt_number": 4,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1180408-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "180926",
+                "name": "Abdullah Al-Yousif",
+                "shirt_number": 13,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/180926-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "264831",
+                "name": "Nayef Hazazi",
+                "shirt_number": 18,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/264831-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "1250543",
+                "name": "Omar Shami",
+                "shirt_number": 25,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1250543-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "1098512",
+                "name": "Anas Al-Zahrani",
+                "shirt_number": 42,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1098512-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "177998",
+                "name": "Raed Al-Ghamdi",
+                "shirt_number": 9,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/177998-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "1094866",
+                "name": "Nawaf Al-Sahli",
+                "shirt_number": 41,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1094866-1756203521.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "1177725",
+                "name": "Abdulrahman Al-Shammari",
+                "shirt_number": 40,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1177725-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "1244173",
+                "name": "Marzouq Tambakti",
+                "shirt_number": 87,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1244173-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "421391",
+                "name": "Ziyad Al-Sahafi",
+                "shirt_number": 14,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/421391-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "1060927",
+                "name": "Suwailem Al-Manhali",
+                "shirt_number": 25,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1060927-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "1169025",
+                "name": "Nawaf Al-Hawsawi",
+                "shirt_number": 50,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1169025-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "1051397",
+                "name": "Hussain Al-Nuweqi",
+                "shirt_number": 27,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1051397-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "1009026",
+                "name": "Nasser Al-Beshy",
+                "shirt_number": 15,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1009026-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "1168841",
+                "name": "Mohammed Al-Oqil",
+                "shirt_number": 18,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1168841-1756203521.jpg?lm=1"
+              },
+              {
+                "player_id": "922459",
+                "name": "Mohammed Al-Aqel",
+                "shirt_number": 7,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/922459-1756203521.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 71,
+                "extra_time": null,
+                "player": {
+                  "player_id": "122493",
+                  "name": "Amir Sayoud",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/122493-1756203521.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "229940",
+                  "name": "Saleh Al-Amri",
+                  "shirt_number": 15,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/229940-1756203521.jpg?lm=1"
+                },
+                "goal_type": "Left-footed shot",
+                "assist_type": "Pass",
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 3
+              },
+              {
+                "minute": 80,
+                "extra_time": null,
+                "player": {
+                  "player_id": "352017",
+                  "name": "Faïz Selemani",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/352017-1756203521.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "324321",
+                  "name": "Bernard Mensah",
+                  "shirt_number": 43,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/324321-1756203521.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Cross",
+                "team_side": "away",
+                "score_after": [
+                  1,
+                  1
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 2
+              },
+              {
+                "minute": 90,
+                "extra_time": 5,
+                "player": {
+                  "player_id": "457743",
+                  "name": "Mohamed Konaté",
+                  "shirt_number": 13,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/457743-1756203521.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "352017",
+                  "name": "Faïz Selemani",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/352017-1756203521.jpg?lm=1"
+                },
+                "goal_type": "Header",
+                "assist_type": "Cross",
+                "team_side": "away",
+                "score_after": [
+                  1,
+                  2
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 1
+              }
+            ],
+            "cards": [
+              {
+                "minute": 23,
+                "extra_time": null,
+                "player": {
+                  "player_id": "672389",
+                  "name": "Mohammed Al-Dawsari",
+                  "shirt_number": 32,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/672389-1756203521.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 2
+              },
+              {
+                "minute": 27,
+                "extra_time": null,
+                "player": {
+                  "player_id": "388795",
+                  "name": "Oumar Gonzalez",
+                  "shirt_number": 21,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/388795-1756203521.jpg?lm=1"
+                },
+                "card_type": "red",
+                "reason": "Violent conduct",
+                "team_side": "home",
+                "season_card_number": null
+              },
+              {
+                "minute": 70,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1060927",
+                  "name": "Suwailem Al-Manhali",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1060927-1756203521.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              },
+              {
+                "minute": 90,
+                "extra_time": 9,
+                "player": {
+                  "player_id": "922459",
+                  "name": "Mohammed Al-Aqel",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/922459-1756203521.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "away",
+                "season_card_number": 2
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "111036",
+                  "name": "Mehdi Abeid",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/111036-1756203521.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1092876",
+                  "name": "Mobarak Al-Rajeh",
+                  "shirt_number": 94,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1092876-1756203521.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 58,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "364445",
+                  "name": "Hamad Al-Jayzani",
+                  "shirt_number": 28,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/364445-1756203521.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1180408",
+                  "name": "Abdullah Hazazi",
+                  "shirt_number": 4,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1180408-1756203521.jpg?lm=1"
+                },
+                "reason": "Injury",
+                "team_side": "home"
+              },
+              {
+                "minute": 65,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "560957",
+                  "name": "Ibrahim Bayesh",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/560957-1756203521.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "922459",
+                  "name": "Mohammed Al-Aqel",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/922459-1756203521.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 65,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "150788",
+                  "name": "Yahya Al-Shehri",
+                  "shirt_number": 88,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/150788-1756203521.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1060927",
+                  "name": "Suwailem Al-Manhali",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1060927-1756203521.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 87,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "229940",
+                  "name": "Saleh Al-Amri",
+                  "shirt_number": 15,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/229940-1756203521.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1094866",
+                  "name": "Nawaf Al-Sahli",
+                  "shirt_number": 41,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1094866-1756203521.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 90,
+                "extra_time": 10,
+                "player_out": {
+                  "player_id": "209499",
+                  "name": "Ahmed Asiri",
+                  "shirt_number": 29,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/209499-1756203521.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "421391",
+                  "name": "Ziyad Al-Sahafi",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/421391-1756203521.jpg?lm=1"
+                },
+                "reason": "Injury",
+                "team_side": "away"
+              },
+              {
+                "minute": 90,
+                "extra_time": 10,
+                "player_out": {
+                  "player_id": "1169016",
+                  "name": "Abdulelah Al-Khaibri",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1169016-1756203521.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1169025",
+                  "name": "Nawaf Al-Hawsawi",
+                  "shirt_number": 50,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1169025-1756203521.jpg?lm=1"
+                },
+                "reason": "Injury",
+                "team_side": "away"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4404869",
+            "competition_name": "Saudi Pro League",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4404869",
+            "day_of_week": "Saturday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        }
+      ],
+      "league_table": {
+        "season": "24/25",
+        "teams": [
+          {
+            "position": 1,
+            "movement": "up",
+            "team_id": "1114",
+            "name": "Al-Hilal SFC",
+            "short_name": "Al-Hilal",
+            "profile_url": "/al-hilal-riad/spielplan/verein/1114/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/1114.png?lm=1755170975",
+            "matches": 4,
+            "goal_difference": "9",
+            "points": 12
+          },
+          {
+            "position": 2,
+            "movement": "down",
+            "team_id": "8023",
+            "name": "Al-Ittihad Club",
+            "short_name": "Al-Ittihad",
+            "profile_url": "/al-ittihad-dschidda/spielplan/verein/8023/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/8023.png?lm=1716885888",
+            "matches": 4,
+            "goal_difference": "6",
+            "points": 9
+          },
+          {
+            "position": 3,
+            "movement": "up",
+            "team_id": "9840",
+            "name": "Al-Shabab",
+            "short_name": "Al-Shabab",
+            "profile_url": "/al-shabab-riad/spielplan/verein/9840/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/9840.png?lm=1697051433",
+            "matches": 4,
+            "goal_difference": "2",
+            "points": 9
+          },
+          {
+            "position": 4,
+            "movement": "down",
+            "team_id": "7732",
+            "name": "Al-Ettifaq",
+            "short_name": "Al-Ettifaq",
+            "profile_url": "/al-ettifaq/spielplan/verein/7732/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/7732.png?lm=1754783076",
+            "matches": 4,
+            "goal_difference": "0",
+            "points": 9
+          },
+          {
+            "position": 5,
+            "movement": "up",
+            "team_id": "18544",
+            "name": "Al-Nassr",
+            "short_name": "Al-Nassr",
+            "profile_url": "/al-nasr-riad/spielplan/verein/18544/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/18544_1747675136.png?lm=1747675136",
+            "matches": 4,
+            "goal_difference": "6",
+            "points": 8
+          },
+          {
+            "position": 6,
+            "movement": "up",
+            "team_id": "18487",
+            "name": "Al-Ahli SFC",
+            "short_name": "Al-Ahli",
+            "profile_url": "/al-ahli-dschidda/spielplan/verein/18487/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/18487_1752077607.png?lm=1752077607",
+            "matches": 4,
+            "goal_difference": "3",
+            "points": 7
+          },
+          {
+            "position": 7,
+            "movement": "down",
+            "team_id": "26069",
+            "name": "Al-Qadsiah",
+            "short_name": "Al-Qadsiah",
+            "profile_url": "/al-qadisiyah-fc/spielplan/verein/26069/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/26069.png?lm=1719262902",
+            "matches": 4,
+            "goal_difference": "3",
+            "points": 7
+          },
+          {
+            "position": 8,
+            "movement": "up",
+            "team_id": "31008",
+            "name": "Al-Riyadh SC",
+            "short_name": "Al-Riyadh",
+            "profile_url": "/al-riad/spielplan/verein/31008/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/31008.png?lm=1754902654",
+            "matches": 4,
+            "goal_difference": "0",
+            "points": 7
+          },
+          {
+            "position": 9,
+            "movement": "down",
+            "team_id": "28844",
+            "name": "Al-Taawoun",
+            "short_name": "Al-Taawoun",
+            "profile_url": "/al-taawoun-fc/spielplan/verein/28844/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/28844.png?lm=1754049259",
+            "matches": 4,
+            "goal_difference": "1",
+            "points": 6
+          },
+          {
+            "position": 10,
+            "movement": "down",
+            "team_id": "22381",
+            "name": "Al-Raed SFC",
+            "short_name": "Al-Raed",
+            "profile_url": "/al-raed/spielplan/verein/22381/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/22381.png?lm=1756122770",
+            "matches": 4,
+            "goal_difference": "3",
+            "points": 4
+          },
+          {
+            "position": 11,
+            "movement": "up",
+            "team_id": "91427",
+            "name": "Al-Kholood Club",
+            "short_name": "Al-Kholood",
+            "profile_url": "/al-kholood/spielplan/verein/91427/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/91427_1755109158.png?lm=1755109158",
+            "matches": 4,
+            "goal_difference": "-2",
+            "points": 4
+          },
+          {
+            "position": 11,
+            "movement": "up",
+            "team_id": "39536",
+            "name": "Al-Orobah",
+            "short_name": "Al-Orobah",
+            "profile_url": "/al-orubah/spielplan/verein/39536/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/39536.png?lm=1720021685",
+            "matches": 4,
+            "goal_difference": "-2",
+            "points": 4
+          },
+          {
+            "position": 13,
+            "movement": "same",
+            "team_id": "6070",
+            "name": "Al-Khaleej",
+            "short_name": "Al-Khaleej",
+            "profile_url": "/al-khaleej/spielplan/verein/6070/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/6070.png?lm=1699360923",
+            "matches": 4,
+            "goal_difference": "-2",
+            "points": 4
+          },
+          {
+            "position": 14,
+            "movement": "down",
+            "team_id": "17209",
+            "name": "Al-Wehda",
+            "short_name": "Al-Wehda",
+            "profile_url": "/al-wahda-mekka/spielplan/verein/17209/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/17209.png?lm=1695313339",
+            "matches": 4,
+            "goal_difference": "-6",
+            "points": 4
+          },
+          {
+            "position": 15,
+            "movement": "down",
+            "team_id": "50532",
+            "name": "Damac",
+            "short_name": "Damac FC",
+            "profile_url": "/damac-fc/spielplan/verein/50532/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/50532.png?lm=1748640587",
+            "matches": 4,
+            "goal_difference": "-2",
+            "points": 3
+          },
+          {
+            "position": 16,
+            "movement": "down",
+            "team_id": "27221",
+            "name": "Al-Fateh SC",
+            "short_name": "Al-Fateh",
+            "profile_url": "/al-fateh/spielplan/verein/27221/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/27221.png?lm=1694169528",
+            "matches": 4,
+            "goal_difference": "-4",
+            "points": 3
+          },
+          {
+            "position": 17,
+            "movement": "same",
+            "team_id": "71665",
+            "name": "Al-Okhdood Club",
+            "short_name": "Al-Okhdood",
+            "profile_url": "/al-akhdoud-club/spielplan/verein/71665/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/71665.png?lm=1737766195",
+            "matches": 4,
+            "goal_difference": "-6",
+            "points": 1
+          },
+          {
+            "position": 18,
+            "movement": "same",
+            "team_id": "50531",
+            "name": "Al-Fayha",
+            "short_name": "Al-Fayha",
+            "profile_url": "/al-fayha-fc/spielplan/verein/50531/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/50531.png?lm=1755028110",
+            "matches": 4,
+            "goal_difference": "-9",
+            "points": 1
+          }
+        ]
+      },
+      "top_scorers": [
+        {
+          "name": "Cristiano Ronaldo",
+          "short_name": "C. Ronaldo",
+          "profile_url": "/cristiano-ronaldo/profil/spieler/8198",
+          "clubs": [
+            {
+              "name": " ",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/18544_1747675136.png?lm=1747675136"
+            }
+          ],
+          "goals_this_matchday": "1",
+          "total_goals": 25
+        },
+        {
+          "name": "Ivan Toney",
+          "short_name": "I. Toney",
+          "profile_url": "/ivan-toney/profil/spieler/251664",
+          "clubs": [
+            {
+              "name": " ",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/18487_1752077607.png?lm=1752077607"
+            }
+          ],
+          "goals_this_matchday": "2",
+          "total_goals": 23
+        },
+        {
+          "name": "Karim Benzema",
+          "short_name": "K. Benzema",
+          "profile_url": "/karim-benzema/profil/spieler/18922",
+          "clubs": [
+            {
+              "name": "Al-Ittihad Club",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/8023.png?lm=1716885888"
+            }
+          ],
+          "goals_this_matchday": "1",
+          "total_goals": 21
+        },
+        {
+          "name": "Abderrazak Hamdallah",
+          "short_name": "A. Hamdallah",
+          "profile_url": "/abderrazak-hamdallah/profil/spieler/235052",
+          "clubs": [
+            {
+              "name": "Al-Shabab FC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/9840.png?lm=1697051433"
+            }
+          ],
+          "goals_this_matchday": "1",
+          "total_goals": 21
+        },
+        {
+          "name": "Julián Quiñones",
+          "short_name": "J. Quiñones",
+          "profile_url": "/julian-quinones/profil/spieler/416090",
+          "clubs": [
+            {
+              "name": "Al-Qadsiah FC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/26069.png?lm=1719262902"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 20
+        },
+        {
+          "name": "Aleksandar Mitrović",
+          "short_name": "A. Mitrović",
+          "profile_url": "/aleksandar-mitrovic/profil/spieler/51152",
+          "clubs": [
+            {
+              "name": "Al-Hilal SFC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/1114.png?lm=1755170975"
+            }
+          ],
+          "goals_this_matchday": "2",
+          "total_goals": 19
+        },
+        {
+          "name": "Pierre-Emerick Aubameyang",
+          "short_name": "P. Aubameyang",
+          "profile_url": "/pierre-emerick-aubameyang/profil/spieler/58864",
+          "clubs": [
+            {
+              "name": "Al-Qadsiah FC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/26069.png?lm=1719262902"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 17
+        },
+        {
+          "name": "Marcos Leonardo",
+          "short_name": "Marcos Leonardo",
+          "profile_url": "/marcos-leonardo/profil/spieler/668267",
+          "clubs": [
+            {
+              "name": "Al-Hilal SFC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/1114.png?lm=1755170975"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 17
+        },
+        {
+          "name": "Salem Al-Dawsari",
+          "short_name": "S. Al-Dawsari",
+          "profile_url": "/salem-al-dawsari/profil/spieler/195332",
+          "clubs": [
+            {
+              "name": "Al-Hilal SFC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/1114.png?lm=1755170975"
+            }
+          ],
+          "goals_this_matchday": "1",
+          "total_goals": 15
+        },
+        {
+          "name": "Myziane Maolida",
+          "short_name": "M. Maolida",
+          "profile_url": "/myziane-maolida/profil/spieler/371142",
+          "clubs": [
+            {
+              "name": " ",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/91427_1755109158.png?lm=1755109158"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 15
+        }
+      ],
+      "summary": {
+        "matches": 9,
+        "goals": 19,
+        "own_goals": 0,
+        "yellow_cards": 41,
+        "second_yellow_cards": "2",
+        "red_cards": 2,
+        "total_attendance": "64027",
+        "average_attendance": "7114",
+        "sold_out_matches": 0
+      },
+      "metadata": {
+        "extraction_time": "2025-08-26T13:16:30.473005",
+        "source": "worker_extraction",
+        "total_matches": 9,
+        "is_recovery_work": false,
+        "recovery_targets": []
+      }
+    }
+  ],
+  "total_matchdays": 1,
+  "total_matches": 9,
+  "execution_time_seconds": 158165.558838,
+  "execution_time_minutes": 2636.09,
+  "execution_time_hours": 43.93,
+  "processing_time_seconds": 196.079178375192,
+  "processing_time_minutes": 3.27,
+  "processing_time_hours": 0.05,
+  "queue_wait_seconds": 157969.482206,
+  "was_recovery_work": false,
+  "recovery_success": false,
+  "recovered_match_targets": [],
+  "requeue_template": {
+    "work_id": "requeue_match_SA1_2024_md04_1756034609_1",
+    "work_type": "match_data",
+    "version": "3.1",
+    "competition_id": "SA1",
+    "competition_code": "saudi-pro-league",
+    "competition_name": "Saudi Pro League",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_SA1_2024_md04_1756034609",
+    "recovery_reason": "retry_failed",
+    "recovery_created_at": "2025-08-26T10:19:34.562115+00:00",
+    "recovery_matchday_number": null,
+    "specific_match_targets": [],
+    "team_count": 18,
+    "expected_matchdays": null,
+    "priority": 610,
+    "processing_hints": {
+      "scope": "single_matchday",
+      "matchday_focused": true,
+      "target_matchday": 4,
+      "expected_completion_time": "15_minutes",
+      "team_count_category": "medium",
+      "data_source": "db_sync",
+      "requires_validation": true,
+      "cache_last_analyzed": "2025-08-24T12:53:46.695783",
+      "is_recovery": true,
+      "preserve_existing_data": true,
+      "focus_on_team_data": true,
+      "original_work_id": "match_SA1_2024_md04_1756034609",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-26T10:19:34.562154+00:00",
+    "created_by": "requeue_adapter"
+  }
+}
