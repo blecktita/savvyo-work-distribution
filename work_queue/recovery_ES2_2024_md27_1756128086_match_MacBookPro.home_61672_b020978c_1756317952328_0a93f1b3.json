@@ -1,0 +1,96 @@
+{
+  "work_id": "recovery_ES2_2024_md27_1756128086",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_ES2_2024_md27_1755865428",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-25T16:21:26Z",
+  "competition_id": "ES2",
+  "competition_code": "laliga2",
+  "competition_name": "LaLiga2",
+  "season_year": "2024",
+  "team_count": 22,
+  "expected_matchdays": 42,
+  "recovery_matchday_number": 27,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4426590"
+  ],
+  "priority": 387,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_ES2_2024_md27_1755865428"
+  },
+  "matchdays_data": [
+    {
+      "matchday_info": {
+        "number": 27,
+        "season": "2024",
+        "competition": "LaLiga2",
+        "source_url": "https://www.transfermarkt.com/laliga2/spieltag/wettbewerb/ES2/saison_id/2024/spieltag/27",
+        "total_matches": 11
+      },
+      "matches": [
+        {
+          "match_info": {
+            "match_id": "4426590",
+            "competition_name": "LaLiga2",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4426590",
+            "day_of_week": "Sunday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        }
+      ],
+      "league_table": {},
+      "top_scorers": [],
+      "summary": {
+        "recovery_context": true,
+        "original_work_id": "match_ES2_2024_md27_1755865428",
+        "recovery_reason": "missing_team_data"
+      }
+    }
+  ],
+  "created_at": "2025-08-25T16:21:26Z",
+  "created_by": "recovery_system",
+  "status": "claiming",
+  "claimed_by": "match_MacBookPro.home_61672_b020978c",
+  "claimed_at": "2025-08-27T21:05:52.328690",
+  "claim_id": "match_MacBookPro.home_61672_b020978c_1756317952328_0a93f1b3"
+}
