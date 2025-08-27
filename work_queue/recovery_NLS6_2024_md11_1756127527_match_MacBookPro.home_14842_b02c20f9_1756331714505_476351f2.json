@@ -1,0 +1,96 @@
+{
+  "work_id": "recovery_NLS6_2024_md11_1756127527",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_NLS6_2024_md11_1755858631",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-25T16:12:07Z",
+  "competition_id": "NLS6",
+  "competition_code": "national-league-south",
+  "competition_name": "National League South",
+  "season_year": "2024",
+  "team_count": 24,
+  "expected_matchdays": 46,
+  "recovery_matchday_number": 11,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4418781"
+  ],
+  "priority": 366,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_NLS6_2024_md11_1755858631"
+  },
+  "matchdays_data": [
+    {
+      "matchday_info": {
+        "number": 11,
+        "season": "2024",
+        "competition": "National League South",
+        "source_url": "https://www.transfermarkt.com/national-league-south/spieltag/wettbewerb/NLS6/saison_id/2024/spieltag/11",
+        "total_matches": 12
+      },
+      "matches": [
+        {
+          "match_info": {
+            "match_id": "4418781",
+            "competition_name": "National League South",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4418781",
+            "day_of_week": "Saturday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        }
+      ],
+      "league_table": {},
+      "top_scorers": [],
+      "summary": {
+        "recovery_context": true,
+        "original_work_id": "match_NLS6_2024_md11_1755858631",
+        "recovery_reason": "missing_team_data"
+      }
+    }
+  ],
+  "created_at": "2025-08-25T16:12:07Z",
+  "created_by": "recovery_system",
+  "status": "claiming",
+  "claimed_by": "match_MacBookPro.home_14842_b02c20f9",
+  "claimed_at": "2025-08-28T00:55:14.506014",
+  "claim_id": "match_MacBookPro.home_14842_b02c20f9_1756331714505_476351f2"
+}
