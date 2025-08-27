@@ -1,0 +1,96 @@
+{
+  "work_id": "recovery_CNAT_2024_md27_1756127378",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_CNAT_2024_md27_1755858714",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-25T16:09:38Z",
+  "competition_id": "CNAT",
+  "competition_code": "national-league",
+  "competition_name": "National League",
+  "season_year": "2024",
+  "team_count": 24,
+  "expected_matchdays": 46,
+  "recovery_matchday_number": 27,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4416997"
+  ],
+  "priority": 384,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_CNAT_2024_md27_1755858714"
+  },
+  "matchdays_data": [
+    {
+      "matchday_info": {
+        "number": 27,
+        "season": "2024",
+        "competition": "National League",
+        "source_url": "https://www.transfermarkt.com/national-league/spieltag/wettbewerb/CNAT/saison_id/2024/spieltag/27",
+        "total_matches": 12
+      },
+      "matches": [
+        {
+          "match_info": {
+            "match_id": "4416997",
+            "competition_name": "National League",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4416997",
+            "day_of_week": "Tuesday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        }
+      ],
+      "league_table": {},
+      "top_scorers": [],
+      "summary": {
+        "recovery_context": true,
+        "original_work_id": "match_CNAT_2024_md27_1755858714",
+        "recovery_reason": "missing_team_data"
+      }
+    }
+  ],
+  "created_at": "2025-08-25T16:09:38Z",
+  "created_by": "recovery_system",
+  "status": "claiming",
+  "claimed_by": "match_MacBookPro.home_61672_b020978c",
+  "claimed_at": "2025-08-27T21:23:45.057823",
+  "claim_id": "match_MacBookPro.home_61672_b020978c_1756319025057_c02fab37"
+}
