@@ -1,0 +1,3663 @@
+{
+  "work_id": "match_EC1N_2024_md02_1756034922",
+  "work_type": "match_data",
+  "version": "3.1",
+  "competition_id": "EC1N",
+  "competition_code": "ligapro-serie-a",
+  "competition_name": "LigaPro Serie A",
+  "season_year": "2024",
+  "target_matchday": {
+    "number": 2,
+    "status": "missing",
+    "existing_matches": 0,
+    "completion_reason": "not_discovered",
+    "source_verified": true,
+    "discovery_method": "cache_driven"
+  },
+  "team_count": 16,
+  "existing_matchdays_count": 0,
+  "existing_matches_count": 0,
+  "competition_tier": "First Tier",
+  "competition_status": "empty",
+  "priority": 620,
+  "processing_hints": {
+    "scope": "single_matchday",
+    "matchday_focused": true,
+    "target_matchday": 2,
+    "expected_completion_time": "15_minutes",
+    "team_count_category": "medium",
+    "data_source": "db_sync",
+    "requires_validation": true,
+    "cache_last_analyzed": "2025-08-24T12:53:46.831750"
+  },
+  "created_at": "2025-08-24T14:28:42Z",
+  "created_by": "work_manager",
+  "creation_method": "cache_integrated_system",
+  "status": "completed",
+  "quality_level": "production",
+  "claimed_by": "match_ASEs-MacBook-Pro.local_12159_6713dceb",
+  "claimed_at": "2025-08-25T22:40:05.116254",
+  "claim_id": "match_ASEs-MacBook-Pro.local_12159_6713dceb_1756150805116_f0e27d91",
+  "started_at": "2025-08-25T19:40:12.920536+00:00",
+  "completed_at": "2025-08-25T19:43:14.986085+00:00",
+  "matchdays_data": [
+    {
+      "matchday_info": {
+        "number": 2,
+        "season": "2024",
+        "competition": "LigaPro Serie A",
+        "source_url": "https://www.transfermarkt.com/ligapro-serie-a/spieltag/wettbewerb/EC1N/saison_id/2024/spieltag/2",
+        "total_matches": 8
+      },
+      "matches": [
+        {
+          "match_info": {
+            "match_id": "4536018",
+            "competition_name": "LigaPro Serie A",
+            "season": "2024",
+            "date": "2025-02-22",
+            "time": "2:00",
+            "venue": "Estadio Alejandro Serrano Aguilar",
+            "attendance": 4869,
+            "referee": "Gorky Araujo",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4536018",
+            "day_of_week": "Saturday"
+          },
+          "home_team": {
+            "team_id": "8781",
+            "name": "Deportivo Cuenca",
+            "formation": "4-2-3-1",
+            "manager": "Norberto Araujo"
+          },
+          "away_team": {
+            "team_id": "6362",
+            "name": "SD Aucas",
+            "formation": "4-1-3-2",
+            "manager": "Gabriel Pereyra"
+          },
+          "score": {
+            "home_final": 2,
+            "away_final": 0,
+            "home_ht": 1,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "660734",
+                "name": "Bustos",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/660734-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "524311",
+                "name": "Gómez",
+                "shirt_number": 19,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/524311-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "1108130",
+                "name": "Raggio",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1108130-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "687631",
+                "name": "Piedra",
+                "shirt_number": 18,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/687631-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "212653",
+                "name": "López",
+                "shirt_number": 25,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/212653-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "1048975",
+                "name": "Gustavino",
+                "shirt_number": 16,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1048975-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "212625",
+                "name": "Calderón",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/212625-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "646375",
+                "name": "Moreno",
+                "shirt_number": 32,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/646375-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "491627",
+                "name": "Tobar",
+                "shirt_number": 99,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/491627-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "202761",
+                "name": "Mancinelli",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/202761-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "302136",
+                "name": "Bailone",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/302136-1756150840.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "295423",
+                "name": "Reséndez",
+                "shirt_number": 24,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/295423-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "690737",
+                "name": "Ontaneda",
+                "shirt_number": 3,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/690737-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "690837",
+                "name": "Segura",
+                "shirt_number": 2,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/690837-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "680511",
+                "name": "Mina",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/680511-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "288197",
+                "name": "Patiño",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/288197-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "203537",
+                "name": "Vázquez",
+                "shirt_number": 23,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/203537-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "746209",
+                "name": "Carcelén",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/746209-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "342792",
+                "name": "Jaramillo",
+                "shirt_number": 25,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/342792-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "690603",
+                "name": "Mina",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/690603-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "1048974",
+                "name": "Almagro",
+                "shirt_number": 18,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1048974-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "279508",
+                "name": "Porozo",
+                "shirt_number": 97,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/279508-1756150840.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "903613",
+                "name": "Ethan Minda",
+                "shirt_number": 12,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/903613-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "337592",
+                "name": "Eddie Guevara",
+                "shirt_number": 23,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/337592-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "1051821",
+                "name": "Bryan Nazareno",
+                "shirt_number": 77,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1051821-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "323927",
+                "name": "David Noboa",
+                "shirt_number": 5,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/323927-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "988947",
+                "name": "Stalin Morocho",
+                "shirt_number": 21,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/988947-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "909399",
+                "name": "Agustin Venezia",
+                "shirt_number": 10,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/909399-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "648172",
+                "name": "Luis Estupiñán",
+                "shirt_number": 11,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/648172-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "941417",
+                "name": "Mathías Solís",
+                "shirt_number": 15,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/941417-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "553423",
+                "name": "Alexis Rodríguez",
+                "shirt_number": 17,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/553423-1756150840.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "1375930",
+                "name": "José Caicedo",
+                "shirt_number": 36,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1375930-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "212655",
+                "name": "Hamilton Piedra",
+                "shirt_number": 32,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/212655-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "388450",
+                "name": "Carlos Rolón",
+                "shirt_number": 16,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/388450-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "1284965",
+                "name": "Virgilio Olaya",
+                "shirt_number": 55,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1284965-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "917826",
+                "name": "Ulises Ciccioli",
+                "shirt_number": 27,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/917826-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "719256",
+                "name": "Thiago Serpa",
+                "shirt_number": 5,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/719256-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "1284964",
+                "name": "Ederson Quiñónez",
+                "shirt_number": 28,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1284964-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "881816",
+                "name": "Ronald Briones",
+                "shirt_number": 14,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/881816-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "564943",
+                "name": "Fernando Illescas",
+                "shirt_number": 11,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/564943-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "1208212",
+                "name": "Elian Pepinos",
+                "shirt_number": 19,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1208212-1756150840.jpg?lm=1"
+              },
+              {
+                "player_id": "1337038",
+                "name": "Snayder Porozo",
+                "shirt_number": 33,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1337038-1756150840.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 31,
+                "extra_time": null,
+                "player": {
+                  "player_id": "491627",
+                  "name": "Cristian Tobar",
+                  "shirt_number": 99,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/491627-1756150840.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": "Left-footed shot",
+                "assist_type": null,
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": null
+              },
+              {
+                "minute": 85,
+                "extra_time": null,
+                "player": {
+                  "player_id": "491627",
+                  "name": "Cristian Tobar",
+                  "shirt_number": 99,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/491627-1756150840.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "687631",
+                  "name": "Mateo Piedra",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/687631-1756150840.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Pass",
+                "team_side": "home",
+                "score_after": [
+                  2,
+                  0
+                ],
+                "season_goal_number": 2,
+                "season_assist_number": 1
+              }
+            ],
+            "cards": [
+              {
+                "minute": 4,
+                "extra_time": null,
+                "player": {
+                  "player_id": "746209",
+                  "name": "Michael Carcelén",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/746209-1756150840.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              },
+              {
+                "minute": 12,
+                "extra_time": null,
+                "player": {
+                  "player_id": "680511",
+                  "name": "Jonnathan Mina",
+                  "shirt_number": 15,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/680511-1756150840.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              },
+              {
+                "minute": 51,
+                "extra_time": null,
+                "player": {
+                  "player_id": "342792",
+                  "name": "Renny Jaramillo",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/342792-1756150840.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Dissent",
+                "team_side": "away",
+                "season_card_number": 2
+              },
+              {
+                "minute": 62,
+                "extra_time": null,
+                "player": {
+                  "player_id": "212653",
+                  "name": "Andrés López",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/212653-1756150840.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 76,
+                "extra_time": null,
+                "player": {
+                  "player_id": "553423",
+                  "name": "Alexis Rodríguez",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/553423-1756150840.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 78,
+                "extra_time": null,
+                "player": {
+                  "player_id": "202761",
+                  "name": "Lucas Mancinelli",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/202761-1756150840.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Dissent",
+                "team_side": "home",
+                "season_card_number": 1
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 68,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "302136",
+                  "name": "Ignacio Bailone",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/302136-1756150840.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "553423",
+                  "name": "Alexis Rodríguez",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/553423-1756150840.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 71,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "690603",
+                  "name": "Angelo Mina",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/690603-1756150840.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "881816",
+                  "name": "Ronald Briones",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/881816-1756150840.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 71,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "279508",
+                  "name": "Daniel Porozo",
+                  "shirt_number": 97,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/279508-1756150840.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1337038",
+                  "name": "Snayder Porozo",
+                  "shirt_number": 33,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1337038-1756150840.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 79,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "202761",
+                  "name": "Lucas Mancinelli",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/202761-1756150840.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "648172",
+                  "name": "Luis Estupiñán",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/648172-1756150840.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 79,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "212653",
+                  "name": "Andrés López",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/212653-1756150840.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "988947",
+                  "name": "Stalin Morocho",
+                  "shirt_number": 21,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/988947-1756150840.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 83,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "342792",
+                  "name": "Renny Jaramillo",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/342792-1756150840.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "564943",
+                  "name": "Fernando Illescas",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/564943-1756150840.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 87,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "491627",
+                  "name": "Cristian Tobar",
+                  "shirt_number": 99,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/491627-1756150840.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "909399",
+                  "name": "Agustin Venezia",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/909399-1756150840.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4536020",
+            "competition_name": "LigaPro Serie A",
+            "season": "2024",
+            "date": "2025-02-22",
+            "time": "8:00",
+            "venue": "Estadio Olímpico Atahualpa",
+            "attendance": 750,
+            "referee": "Robert Cabrera",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4536020",
+            "day_of_week": "Saturday"
+          },
+          "home_team": {
+            "team_id": "25958",
+            "name": "Vinotinto FC",
+            "formation": "3-5-2 flat",
+            "manager": "Juan Grabowski"
+          },
+          "away_team": {
+            "team_id": "17426",
+            "name": "CD Macará",
+            "formation": "4-4-2",
+            "manager": "Álex Pallarés"
+          },
+          "score": {
+            "home_final": 1,
+            "away_final": 2,
+            "home_ht": 1,
+            "away_ht": 1
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "729555",
+                "name": "Mitre",
+                "shirt_number": 25,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/729555-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "282607",
+                "name": "Aguirre",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/282607-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "891771",
+                "name": "Iriarte",
+                "shirt_number": 2,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/891771-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "830853",
+                "name": "Nardelli",
+                "shirt_number": 36,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/830853-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "750442",
+                "name": "Gómez",
+                "shirt_number": 23,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/750442-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "486127",
+                "name": "Mera",
+                "shirt_number": 40,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/486127-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "485411",
+                "name": "Larotonda",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/485411-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "380141",
+                "name": "Ushiña",
+                "shirt_number": 18,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/380141-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "193933",
+                "name": "Luna",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/193933-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "986221",
+                "name": "Molina",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/986221-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "212300",
+                "name": "Lugo",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/212300-1756150854.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "400942",
+                "name": "Cevallos",
+                "shirt_number": 22,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/400942-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "295058",
+                "name": "Marrufo",
+                "shirt_number": 14,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/295058-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "666130",
+                "name": "Caicedo",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/666130-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "242270",
+                "name": "Ayala",
+                "shirt_number": 13,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/242270-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "1048909",
+                "name": "Espinoza",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1048909-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "1208233",
+                "name": "Tello",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1208233-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "355331",
+                "name": "Cazares",
+                "shirt_number": 16,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/355331-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "840869",
+                "name": "Blanc",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/840869-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "542073",
+                "name": "Morales",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/542073-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "368417",
+                "name": "Muñoz",
+                "shirt_number": 19,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/368417-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "253225",
+                "name": "López",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/253225-1756150854.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "653430",
+                "name": "Joan López",
+                "shirt_number": 1,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/653430-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "1247709",
+                "name": "Carlos Micolta",
+                "shirt_number": 3,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1247709-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "634986",
+                "name": "Edison Hernández",
+                "shirt_number": 26,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/634986-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "1183413",
+                "name": "Kevin Coba",
+                "shirt_number": 5,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1183413-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "659805",
+                "name": "Edwin Rodríguez",
+                "shirt_number": 22,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/659805-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "274901",
+                "name": "Marco Carrasco",
+                "shirt_number": 13,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/274901-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "178388",
+                "name": "Andrés Oña",
+                "shirt_number": 6,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/178388-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "512247",
+                "name": "Stalin Caicedo",
+                "shirt_number": 8,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/512247-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "732443",
+                "name": "Rafael Monti",
+                "shirt_number": 17,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/732443-1756150854.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "189474",
+                "name": "Darwin Cuero",
+                "shirt_number": 12,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/189474-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "552629",
+                "name": "Nahuel Arena",
+                "shirt_number": 2,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/552629-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "610205",
+                "name": "Jairo Jiménez",
+                "shirt_number": 4,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/610205-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "212550",
+                "name": "Rody Zambrano",
+                "shirt_number": 29,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/212550-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "504402",
+                "name": "Leonel Álvarez",
+                "shirt_number": 5,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/504402-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "607408",
+                "name": "Víctor Ávila",
+                "shirt_number": 77,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/607408-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "1221349",
+                "name": "Mateo Viera",
+                "shirt_number": 20,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1221349-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "1052846",
+                "name": "Antony Chére",
+                "shirt_number": 9,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1052846-1756150854.jpg?lm=1"
+              },
+              {
+                "player_id": "1088058",
+                "name": "Federico Paz",
+                "shirt_number": 7,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1088058-1756150854.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 4,
+                "extra_time": null,
+                "player": {
+                  "player_id": "840869",
+                  "name": "Gastón Blanc",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/840869-1756150854.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "368417",
+                  "name": "Adolfo Muñoz",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/368417-1756150854.jpg?lm=1"
+                },
+                "goal_type": "Left-footed shot",
+                "assist_type": "Pass",
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  1
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 1
+              },
+              {
+                "minute": 12,
+                "extra_time": null,
+                "player": {
+                  "player_id": "486127",
+                  "name": "Francisco Mera",
+                  "shirt_number": 40,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/486127-1756150854.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "750442",
+                  "name": "Luis Gómez",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/750442-1756150854.jpg?lm=1"
+                },
+                "goal_type": "Header",
+                "assist_type": "Cross",
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  1
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 1
+              },
+              {
+                "minute": 72,
+                "extra_time": null,
+                "player": {
+                  "player_id": "634986",
+                  "name": "Edison Hernández",
+                  "shirt_number": 26,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/634986-1756150854.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "away",
+                "score_after": [
+                  1,
+                  2
+                ],
+                "season_goal_number": null,
+                "season_assist_number": null
+              }
+            ],
+            "cards": [
+              {
+                "minute": 42,
+                "extra_time": null,
+                "player": {
+                  "player_id": "542073",
+                  "name": "Janpol Morales",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/542073-1756150854.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Dissent",
+                "team_side": "away",
+                "season_card_number": 2
+              },
+              {
+                "minute": 43,
+                "extra_time": null,
+                "player": {
+                  "player_id": "840869",
+                  "name": "Gastón Blanc",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/840869-1756150854.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              },
+              {
+                "minute": 90,
+                "extra_time": 1,
+                "player": {
+                  "player_id": "986221",
+                  "name": "Nicolás Molina",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/986221-1756150854.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 79,
+                "extra_time": null,
+                "player": {
+                  "player_id": "750442",
+                  "name": "Luis Gómez",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/750442-1756150854.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 2
+              },
+              {
+                "minute": 86,
+                "extra_time": null,
+                "player": {
+                  "player_id": "891771",
+                  "name": "Iago Iriarte",
+                  "shirt_number": 2,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/891771-1756150854.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 90,
+                "extra_time": 2,
+                "player": {
+                  "player_id": "732443",
+                  "name": "Rafael Monti",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/732443-1756150854.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Dissent",
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 90,
+                "extra_time": 2,
+                "player": {
+                  "player_id": "666130",
+                  "name": "Bryan Caicedo",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/666130-1756150854.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Dissent",
+                "team_side": "away",
+                "season_card_number": 1
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "986221",
+                  "name": "Nicolás Molina",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/986221-1756150854.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "732443",
+                  "name": "Rafael Monti",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/732443-1756150854.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "282607",
+                  "name": "Alan Aguirre",
+                  "shirt_number": 4,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/282607-1756150854.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "634986",
+                  "name": "Edison Hernández",
+                  "shirt_number": 26,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/634986-1756150854.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 62,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "253225",
+                  "name": "Darwin López",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/253225-1756150854.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1052846",
+                  "name": "Antony Chére",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1052846-1756150854.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 62,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1208233",
+                  "name": "Martín Tello",
+                  "shirt_number": 15,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1208233-1756150854.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1221349",
+                  "name": "Mateo Viera",
+                  "shirt_number": 20,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1221349-1756150854.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 68,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "486127",
+                  "name": "Francisco Mera",
+                  "shirt_number": 40,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/486127-1756150854.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "178388",
+                  "name": "Andrés Oña",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/178388-1756150854.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 75,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "840869",
+                  "name": "Gastón Blanc",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/840869-1756150854.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "504402",
+                  "name": "Leonel Álvarez",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/504402-1756150854.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 75,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "368417",
+                  "name": "Adolfo Muñoz",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/368417-1756150854.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1088058",
+                  "name": "Federico Paz",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1088058-1756150854.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 80,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "485411",
+                  "name": "Christian Larotonda",
+                  "shirt_number": 15,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/485411-1756150854.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "512247",
+                  "name": "Stalin Caicedo",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/512247-1756150854.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 80,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "750442",
+                  "name": "Luis Gómez",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/750442-1756150854.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "659805",
+                  "name": "Edwin Rodríguez",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/659805-1756150854.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 84,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "542073",
+                  "name": "Janpol Morales",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/542073-1756150854.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "552629",
+                  "name": "Nahuel Arena",
+                  "shirt_number": 2,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/552629-1756150854.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4536016",
+            "competition_name": "LigaPro Serie A",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4536016",
+            "day_of_week": "Saturday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4536017",
+            "competition_name": "LigaPro Serie A",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4536017",
+            "day_of_week": "Sunday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4536019",
+            "competition_name": "LigaPro Serie A",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4536019",
+            "day_of_week": "Sunday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4536022",
+            "competition_name": "LigaPro Serie A",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4536022",
+            "day_of_week": "Sunday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4536021",
+            "competition_name": "LigaPro Serie A",
+            "season": "2024",
+            "date": "2025-02-24",
+            "time": "12:00",
+            "venue": "Monumental Banco Pichincha",
+            "attendance": 10451,
+            "referee": "Yerson Zambrano",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4536021",
+            "day_of_week": "Monday"
+          },
+          "home_team": {
+            "team_id": "3523",
+            "name": "Barcelona SC Guayaquil",
+            "formation": "4-3-3 Attacking",
+            "manager": "Segundo Castillo"
+          },
+          "away_team": {
+            "team_id": "25576",
+            "name": "Mushuc Runa SC",
+            "formation": "4-4-2",
+            "manager": "Éver Almeida"
+          },
+          "score": {
+            "home_final": 1,
+            "away_final": 0,
+            "home_ht": 0,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "308226",
+                "name": "Contreras",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/308226-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "323854",
+                "name": "Arreaga",
+                "shirt_number": 3,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/323854-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "292174",
+                "name": "Campi",
+                "shirt_number": 37,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/292174-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "473096",
+                "name": "Vargas",
+                "shirt_number": 27,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/473096-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "400961",
+                "name": "Castillo",
+                "shirt_number": 26,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/400961-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "747819",
+                "name": "Leonai",
+                "shirt_number": 22,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/747819-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "437842",
+                "name": "Quiñónez",
+                "shirt_number": 28,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/437842-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "803018",
+                "name": "Valiente",
+                "shirt_number": 21,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/803018-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "189473",
+                "name": "Cortez",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/189473-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "421698",
+                "name": "Corozo",
+                "shirt_number": 13,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/421698-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "249211",
+                "name": "Rivero",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/249211-1756150988.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "601648",
+                "name": "Formento",
+                "shirt_number": 25,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/601648-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "355650",
+                "name": "Quintero",
+                "shirt_number": 29,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/355650-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "468906",
+                "name": "Bentaberry",
+                "shirt_number": 2,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/468906-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "653778",
+                "name": "Mina",
+                "shirt_number": 31,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/653778-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "367407",
+                "name": "Peralta",
+                "shirt_number": 26,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/367407-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "653305",
+                "name": "Tapiero",
+                "shirt_number": 14,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/653305-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "653329",
+                "name": "Arce",
+                "shirt_number": 88,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/653329-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "213317",
+                "name": "Orejuela",
+                "shirt_number": 32,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/213317-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "212309",
+                "name": "Penilla",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/212309-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "431065",
+                "name": "Miranda",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/431065-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "412899",
+                "name": "Simisterra",
+                "shirt_number": 27,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/412899-1756150988.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "819709",
+                "name": "Kleber Pinargote",
+                "shirt_number": 77,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/819709-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "1051820",
+                "name": "Jhonnier Chalá",
+                "shirt_number": 44,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1051820-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "477041",
+                "name": "Gustavo Vallecilla",
+                "shirt_number": 4,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/477041-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "875118",
+                "name": "Álex Rangel",
+                "shirt_number": 14,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/875118-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "193937",
+                "name": "Mario Pineida",
+                "shirt_number": 2,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/193937-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "391486",
+                "name": "Bryan Carabalí",
+                "shirt_number": 18,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/391486-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "193929",
+                "name": "Dixon Arroyo",
+                "shirt_number": 23,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/193929-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "1241107",
+                "name": "Jandry Gómez",
+                "shirt_number": 7,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1241107-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "1185499",
+                "name": "Juan Usma",
+                "shirt_number": 33,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1185499-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "690439",
+                "name": "Brian Oyola",
+                "shirt_number": 30,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/690439-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "727934",
+                "name": "Cristhian Solano",
+                "shirt_number": 25,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/727934-1756150988.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "820033",
+                "name": "Cristhian Tapia",
+                "shirt_number": 1,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/820033-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "481192",
+                "name": "Luis Haquín",
+                "shirt_number": 4,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/481192-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "333064",
+                "name": "Ángel Gracia",
+                "shirt_number": 19,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/333064-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "542085",
+                "name": "Pedro Perlaza",
+                "shirt_number": 13,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/542085-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "1051818",
+                "name": "Jerry Parrales",
+                "shirt_number": 3,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1051818-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "714826",
+                "name": "Arnaldo Zambrano",
+                "shirt_number": 8,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/714826-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "357126",
+                "name": "Ramiro Cristóbal",
+                "shirt_number": 21,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/357126-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "406283",
+                "name": "Nicolás Davila",
+                "shirt_number": 5,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/406283-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "195852",
+                "name": "Mauricio Alonso",
+                "shirt_number": 22,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/195852-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "1292070",
+                "name": "Elian Caicedo",
+                "shirt_number": 41,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1292070-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "261305",
+                "name": "Matías Rigoleto",
+                "shirt_number": 9,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/261305-1756150988.jpg?lm=1"
+              },
+              {
+                "player_id": "319911",
+                "name": "Bryan Angulo",
+                "shirt_number": 18,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/319911-1756150988.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 82,
+                "extra_time": null,
+                "player": {
+                  "player_id": "421698",
+                  "name": "Janner Corozo",
+                  "shirt_number": 13,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/421698-1756150988.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "292174",
+                  "name": "Gastón Campi",
+                  "shirt_number": 37,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/292174-1756150988.jpg?lm=1"
+                },
+                "goal_type": "Header",
+                "assist_type": null,
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 1
+              }
+            ],
+            "cards": [
+              {
+                "minute": 11,
+                "extra_time": null,
+                "player": {
+                  "player_id": "400961",
+                  "name": "Byron Castillo",
+                  "shirt_number": 26,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/400961-1756150988.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 61,
+                "extra_time": null,
+                "player": {
+                  "player_id": "653305",
+                  "name": "Stiven Tapiero",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/653305-1756150988.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 2
+              },
+              {
+                "minute": 66,
+                "extra_time": null,
+                "player": {
+                  "player_id": "355650",
+                  "name": "Dennys Quintero",
+                  "shirt_number": 29,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/355650-1756150988.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              },
+              {
+                "minute": 75,
+                "extra_time": null,
+                "player": {
+                  "player_id": "653778",
+                  "name": "Glendys Mina",
+                  "shirt_number": 31,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/653778-1756150988.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              },
+              {
+                "minute": 86,
+                "extra_time": null,
+                "player": {
+                  "player_id": "747819",
+                  "name": "Leonai",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/747819-1756150988.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 2
+              },
+              {
+                "minute": 87,
+                "extra_time": null,
+                "player": {
+                  "player_id": "468906",
+                  "name": "Bryan Bentaberry",
+                  "shirt_number": 2,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/468906-1756150988.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "212309",
+                  "name": "Cristian Penilla",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/212309-1756150988.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "261305",
+                  "name": "Matías Rigoleto",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/261305-1756150988.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "431065",
+                  "name": "Bruno Miranda",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/431065-1756150988.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "195852",
+                  "name": "Mauricio Alonso",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/195852-1756150988.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "412899",
+                  "name": "Renny Simisterra",
+                  "shirt_number": 27,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/412899-1756150988.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1292070",
+                  "name": "Elian Caicedo",
+                  "shirt_number": 41,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1292070-1756150988.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 64,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "189473",
+                  "name": "Gabriel Cortez",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/189473-1756150988.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "690439",
+                  "name": "Brian Oyola",
+                  "shirt_number": 30,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/690439-1756150988.jpg?lm=1"
+                },
+                "reason": "Injury",
+                "team_side": "home"
+              },
+              {
+                "minute": 69,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "213317",
+                  "name": "Carlos Orejuela",
+                  "shirt_number": 32,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/213317-1756150988.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "333064",
+                  "name": "Ángel Gracia",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/333064-1756150988.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 79,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "400961",
+                  "name": "Byron Castillo",
+                  "shirt_number": 26,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/400961-1756150988.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "391486",
+                  "name": "Bryan Carabalí",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/391486-1756150988.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 79,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "803018",
+                  "name": "Joaquín Valiente",
+                  "shirt_number": 21,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/803018-1756150988.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "727934",
+                  "name": "Cristhian Solano",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/727934-1756150988.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 80,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "437842",
+                  "name": "Jhonny Quiñónez",
+                  "shirt_number": 28,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/437842-1756150988.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "193929",
+                  "name": "Dixon Arroyo",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/193929-1756150988.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 81,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "653329",
+                  "name": "Luis Arce",
+                  "shirt_number": 88,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/653329-1756150988.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "714826",
+                  "name": "Arnaldo Zambrano",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/714826-1756150988.jpg?lm=1"
+                },
+                "reason": "Injury",
+                "team_side": "away"
+              },
+              {
+                "minute": 90,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "249211",
+                  "name": "Octavio Rivero",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/249211-1756150988.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1051820",
+                  "name": "Jhonnier Chalá",
+                  "shirt_number": 44,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1051820-1756150988.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4536023",
+            "competition_name": "LigaPro Serie A",
+            "season": "2024",
+            "date": "2025-02-25",
+            "time": "1:00",
+            "venue": "Estadio Bellavista",
+            "attendance": 2129,
+            "referee": "Bryan Loayza",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4536023",
+            "day_of_week": "Tuesday"
+          },
+          "home_team": {
+            "team_id": "19104",
+            "name": "Técnico Universitario",
+            "formation": "4-2-3-1",
+            "manager": "Paúl Vélez"
+          },
+          "away_team": {
+            "team_id": "87068",
+            "name": "Libertad FC",
+            "formation": "4-4-2",
+            "manager": "Juan Carlos León"
+          },
+          "score": {
+            "home_final": 2,
+            "away_final": 2,
+            "home_ht": 1,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "189471",
+                "name": "Chávez",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/189471-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "997420",
+                "name": "Gómez",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/997420-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "621164",
+                "name": "Medranda",
+                "shirt_number": 26,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/621164-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "354640",
+                "name": "Hernández",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/354640-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "690836",
+                "name": "Camacho",
+                "shirt_number": 23,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/690836-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "1241095",
+                "name": "Torres",
+                "shirt_number": 70,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1241095-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "569481",
+                "name": "Caicedo",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/569481-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "961686",
+                "name": "Vera",
+                "shirt_number": 77,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/961686-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "474262",
+                "name": "Ordóñez",
+                "shirt_number": 44,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/474262-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "264290",
+                "name": "Patta",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/264290-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "359148",
+                "name": "González",
+                "shirt_number": 29,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/359148-1756150994.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "1113772",
+                "name": "Bores",
+                "shirt_number": 90,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1113772-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "704884",
+                "name": "Becerra",
+                "shirt_number": 3,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/704884-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "646077",
+                "name": "Biojó",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/646077-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "488017",
+                "name": "Monaga",
+                "shirt_number": 24,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/488017-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "674639",
+                "name": "Bolaños",
+                "shirt_number": 25,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/674639-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "507653",
+                "name": "Montaño",
+                "shirt_number": 28,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/507653-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "556727",
+                "name": "Zambrano",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/556727-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "256975",
+                "name": "Arboleda",
+                "shirt_number": 37,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/256975-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "355639",
+                "name": "Ayoví",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/355639-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "264375",
+                "name": "Caicedo",
+                "shirt_number": 19,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/264375-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "520501",
+                "name": "Quiñónez",
+                "shirt_number": 21,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/520501-1756150994.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "595226",
+                "name": "John Mero",
+                "shirt_number": 24,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/595226-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "302057",
+                "name": "Roberto Luzarraga",
+                "shirt_number": 4,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/302057-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "355342",
+                "name": "Edison Carcelén",
+                "shirt_number": 31,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/355342-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "1027681",
+                "name": "Jair Castillo",
+                "shirt_number": 33,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1027681-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "715926",
+                "name": "Cristopher Angulo",
+                "shirt_number": 11,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/715926-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "330041",
+                "name": "Madison Julio",
+                "shirt_number": 8,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/330041-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "428933",
+                "name": "Juan David Jiménez",
+                "shirt_number": 21,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/428933-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "212289",
+                "name": "Marvin Cortéz",
+                "shirt_number": 25,
+                "position": "LM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/212289-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "875119",
+                "name": "Jordán Mohor",
+                "shirt_number": 3,
+                "position": "LM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/875119-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "486124",
+                "name": "Andrés Chicaiza",
+                "shirt_number": 50,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/486124-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "941419",
+                "name": "Jairón Charcopa",
+                "shirt_number": 99,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/941419-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "212282",
+                "name": "José Miguel Andrade",
+                "shirt_number": 10,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/212282-1756150994.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "1161480",
+                "name": "Richard Borja",
+                "shirt_number": 18,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1161480-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "1250344",
+                "name": "Samuel Castillo",
+                "shirt_number": 99,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1250344-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "907651",
+                "name": "Carlos Gruezo",
+                "shirt_number": 23,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/907651-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "556617",
+                "name": "Fernando Cagua",
+                "shirt_number": 22,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/556617-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "242998",
+                "name": "Orlin Quiñónez",
+                "shirt_number": 6,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/242998-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "682687",
+                "name": "Jostin Bravo",
+                "shirt_number": 30,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/682687-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "594191",
+                "name": "Jean Humanante",
+                "shirt_number": 50,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/594191-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "670764",
+                "name": "Yerlin Quiñónez",
+                "shirt_number": 70,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/670764-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "829971",
+                "name": "Edgar Lastre",
+                "shirt_number": 11,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/829971-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "287591",
+                "name": "Diego Ávila",
+                "shirt_number": 9,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/287591-1756150994.jpg?lm=1"
+              },
+              {
+                "player_id": "1292071",
+                "name": "Nestor Caicedo",
+                "shirt_number": 14,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1292071-1756150994.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 32,
+                "extra_time": null,
+                "player": {
+                  "player_id": "474262",
+                  "name": "Jorge Ordóñez",
+                  "shirt_number": 44,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/474262-1756150994.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "264290",
+                  "name": "Elvis Patta",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/264290-1756150994.jpg?lm=1"
+                },
+                "goal_type": "Left-footed shot",
+                "assist_type": "Pass",
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 1
+              },
+              {
+                "minute": 57,
+                "extra_time": null,
+                "player": {
+                  "player_id": "569481",
+                  "name": "Jefferson Caicedo",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/569481-1756150994.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "961686",
+                  "name": "Dixon Vera",
+                  "shirt_number": 77,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/961686-1756150994.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Cross",
+                "team_side": "home",
+                "score_after": [
+                  2,
+                  0
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 1
+              },
+              {
+                "minute": 66,
+                "extra_time": null,
+                "player": {
+                  "player_id": "704884",
+                  "name": "Kevin Becerra",
+                  "shirt_number": 3,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/704884-1756150994.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "256975",
+                  "name": "Carlos Arboleda",
+                  "shirt_number": 37,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/256975-1756150994.jpg?lm=1"
+                },
+                "goal_type": "Header",
+                "assist_type": "Corner",
+                "team_side": "away",
+                "score_after": [
+                  2,
+                  1
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 1
+              },
+              {
+                "minute": 68,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1292071",
+                  "name": "Nestor Caicedo",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1292071-1756150994.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": "Right-footed shot",
+                "assist_type": null,
+                "team_side": "away",
+                "score_after": [
+                  2,
+                  2
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": null
+              }
+            ],
+            "cards": [
+              {
+                "minute": 9,
+                "extra_time": null,
+                "player": {
+                  "player_id": "474262",
+                  "name": "Jorge Ordóñez",
+                  "shirt_number": 44,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/474262-1756150994.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Dissent",
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 15,
+                "extra_time": null,
+                "player": {
+                  "player_id": "690836",
+                  "name": "Davis Camacho",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/690836-1756150994.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 2
+              },
+              {
+                "minute": 23,
+                "extra_time": null,
+                "player": {
+                  "player_id": "646077",
+                  "name": "Ronny Biojó",
+                  "shirt_number": 4,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/646077-1756150994.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              },
+              {
+                "minute": 28,
+                "extra_time": null,
+                "player": {
+                  "player_id": "488017",
+                  "name": "José Monaga",
+                  "shirt_number": 24,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/488017-1756150994.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 2
+              },
+              {
+                "minute": 35,
+                "extra_time": null,
+                "player": {
+                  "player_id": "704884",
+                  "name": "Kevin Becerra",
+                  "shirt_number": 3,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/704884-1756150994.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "264375",
+                  "name": "Eber Caicedo",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/264375-1756150994.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1292071",
+                  "name": "Nestor Caicedo",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1292071-1756150994.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "488017",
+                  "name": "José Monaga",
+                  "shirt_number": 24,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/488017-1756150994.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "242998",
+                  "name": "Orlin Quiñónez",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/242998-1756150994.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 75,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "474262",
+                  "name": "Jorge Ordóñez",
+                  "shirt_number": 44,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/474262-1756150994.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "941419",
+                  "name": "Jairón Charcopa",
+                  "shirt_number": 99,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/941419-1756150994.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 75,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "359148",
+                  "name": "Sergio González",
+                  "shirt_number": 29,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/359148-1756150994.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "486124",
+                  "name": "Andrés Chicaiza",
+                  "shirt_number": 50,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/486124-1756150994.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 75,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "690836",
+                  "name": "Davis Camacho",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/690836-1756150994.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "330041",
+                  "name": "Madison Julio",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/330041-1756150994.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 78,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "355639",
+                  "name": "Wilter Ayoví",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/355639-1756150994.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "907651",
+                  "name": "Carlos Gruezo",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/907651-1756150994.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 83,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "569481",
+                  "name": "Jefferson Caicedo",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/569481-1756150994.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "875119",
+                  "name": "Jordán Mohor",
+                  "shirt_number": 3,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/875119-1756150994.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 83,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "674639",
+                  "name": "Denilson Bolaños",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/674639-1756150994.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "829971",
+                  "name": "Edgar Lastre",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/829971-1756150994.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 86,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "961686",
+                  "name": "Dixon Vera",
+                  "shirt_number": 77,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/961686-1756150994.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "715926",
+                  "name": "Cristopher Angulo",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/715926-1756150994.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 90,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "507653",
+                  "name": "Carlos Montaño",
+                  "shirt_number": 28,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/507653-1756150994.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "594191",
+                  "name": "Jean Humanante",
+                  "shirt_number": 50,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/594191-1756150994.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              }
+            ]
+          }
+        }
+      ],
+      "league_table": {
+        "season": null,
+        "teams": [
+          {
+            "position": 1,
+            "movement": "up",
+            "team_id": "8781",
+            "name": "Deportivo Cuenca",
+            "short_name": "Dep. Cuenca",
+            "profile_url": "/deportivo-cuenca/spielplan/verein/8781/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/8781.png?lm=1716474235",
+            "matches": 2,
+            "goal_difference": "3",
+            "points": 6
+          },
+          {
+            "position": 2,
+            "movement": "up",
+            "team_id": "3523",
+            "name": "Barcelona SC Guayaquil",
+            "short_name": "Barcelona SC",
+            "profile_url": "/barcelona-sc-guayaquil/spielplan/verein/3523/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/3523.png?lm=1721907936",
+            "matches": 2,
+            "goal_difference": "2",
+            "points": 6
+          },
+          {
+            "position": 3,
+            "movement": "up",
+            "team_id": "17426",
+            "name": "CD Macará",
+            "short_name": "CD Macará",
+            "profile_url": "/cd-macara/spielplan/verein/17426/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/17426.png?lm=1420747333",
+            "matches": 2,
+            "goal_difference": "2",
+            "points": 6
+          },
+          {
+            "position": 4,
+            "movement": "down",
+            "team_id": "17584",
+            "name": "CD Universidad Católica",
+            "short_name": "Uni. Católica",
+            "profile_url": "/cd-universidad-catolica/spielplan/verein/17584/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/17584.png?lm=1416040868",
+            "matches": 2,
+            "goal_difference": "4",
+            "points": 4
+          },
+          {
+            "position": 5,
+            "movement": "down",
+            "team_id": "87068",
+            "name": "Libertad",
+            "short_name": "Libertad FC",
+            "profile_url": "/libertad-fc/spielplan/verein/87068/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/87068.png?lm=1617795696",
+            "matches": 2,
+            "goal_difference": "2",
+            "points": 4
+          },
+          {
+            "position": 6,
+            "movement": "down",
+            "team_id": "6362",
+            "name": "SD Aucas",
+            "short_name": "SD Aucas",
+            "profile_url": "/sd-aucas/spielplan/verein/6362/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/6362.png?lm=1643034473",
+            "matches": 2,
+            "goal_difference": "1",
+            "points": 3
+          },
+          {
+            "position": 7,
+            "movement": "down",
+            "team_id": "25576",
+            "name": "Mushuc Runa SC",
+            "short_name": "Mushuc Runa SC",
+            "profile_url": "/mushuc-runa-sc/spielplan/verein/25576/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/25576.png?lm=1416041258",
+            "matches": 2,
+            "goal_difference": "1",
+            "points": 3
+          },
+          {
+            "position": 8,
+            "movement": "up",
+            "team_id": "19304",
+            "name": "Delfín SC",
+            "short_name": "Delfín SC",
+            "profile_url": "/delfin-sc/spielplan/verein/19304/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/19304.png?lm=1578419144",
+            "matches": 2,
+            "goal_difference": "0",
+            "points": 3
+          },
+          {
+            "position": 8,
+            "movement": "up",
+            "team_id": "36020",
+            "name": "Orense SC",
+            "short_name": "Orense SC",
+            "profile_url": "/orense-sc/spielplan/verein/36020/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/36020.png?lm=1702847286",
+            "matches": 2,
+            "goal_difference": "0",
+            "points": 3
+          },
+          {
+            "position": 10,
+            "movement": "down",
+            "team_id": "9855",
+            "name": "LDU Quito",
+            "short_name": "LDU Quito",
+            "profile_url": "/ldu-quito/spielplan/verein/9855/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/9855.png?lm=1698577762",
+            "matches": 2,
+            "goal_difference": "0",
+            "points": 2
+          },
+          {
+            "position": 11,
+            "movement": "down",
+            "team_id": "25958",
+            "name": "Vinotinto",
+            "short_name": "Vinotinto FC",
+            "profile_url": "/cuniburo-fc/spielplan/verein/25958/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/25958.png?lm=1736793132",
+            "matches": 2,
+            "goal_difference": "-1",
+            "points": 1
+          },
+          {
+            "position": 11,
+            "movement": "down",
+            "team_id": "1143",
+            "name": "CD El Nacional",
+            "short_name": "CD El Nacional",
+            "profile_url": "/cd-el-nacional/spielplan/verein/1143/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/1143.png?lm=1416040998",
+            "matches": 2,
+            "goal_difference": "-1",
+            "points": 1
+          },
+          {
+            "position": 13,
+            "movement": "up",
+            "team_id": "19309",
+            "name": "Independiente del Valle",
+            "short_name": "Independiente",
+            "profile_url": "/independiente-del-valle/spielplan/verein/19309/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/19309.png?lm=1678730279",
+            "matches": 2,
+            "goal_difference": "-2",
+            "points": 1
+          },
+          {
+            "position": 14,
+            "movement": "up",
+            "team_id": "19104",
+            "name": "Técnico Universitario",
+            "short_name": "Técnico U.",
+            "profile_url": "/tecnico-universitario/spielplan/verein/19104/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/19104.png?lm=1716692104",
+            "matches": 2,
+            "goal_difference": "-3",
+            "points": 1
+          },
+          {
+            "position": 15,
+            "movement": "down",
+            "team_id": "18099",
+            "name": "Manta",
+            "short_name": "Manta FC",
+            "profile_url": "/manta-fc/spielplan/verein/18099/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/18099.png?lm=1718551151",
+            "matches": 2,
+            "goal_difference": "-2",
+            "points": 0
+          },
+          {
+            "position": 16,
+            "movement": "same",
+            "team_id": "4561",
+            "name": "CS Emelec",
+            "short_name": "CS Emelec",
+            "profile_url": "/cs-emelec/spielplan/verein/4561/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/4561.png?lm=1549631840",
+            "matches": 2,
+            "goal_difference": "-6",
+            "points": 0
+          }
+        ]
+      },
+      "top_scorers": [
+        {
+          "name": "Byron Palacios",
+          "short_name": "B. Palacios",
+          "profile_url": "/byron-palacios/profil/spieler/627922",
+          "clubs": [
+            {
+              "name": "CD Universidad Católica",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/17584.png?lm=1416040868"
+            }
+          ],
+          "goals_this_matchday": "1",
+          "total_goals": 16
+        },
+        {
+          "name": "Daniel Valencia",
+          "short_name": "D. Valencia",
+          "profile_url": "/daniel-valencia/profil/spieler/653779",
+          "clubs": [
+            {
+              "name": "Manta FC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/18099.png?lm=1718551151"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 14
+        },
+        {
+          "name": "Eber Caicedo",
+          "short_name": "E. Caicedo",
+          "profile_url": "/eber-caicedo/profil/spieler/264375",
+          "clubs": [
+            {
+              "name": "Libertad FC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/87068.png?lm=1617795696"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 14
+        },
+        {
+          "name": "Rafael Monti",
+          "short_name": "R. Monti",
+          "profile_url": "/rafael-monti/profil/spieler/732443",
+          "clubs": [
+            {
+              "name": "Vinotinto FC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/25958.png?lm=1736793132"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 13
+        },
+        {
+          "name": "Miguel Parrales",
+          "short_name": "M. Parrales",
+          "profile_url": "/miguel-parrales/profil/spieler/242444",
+          "clubs": [
+            {
+              "name": "Orense SC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/36020.png?lm=1702847286"
+            }
+          ],
+          "goals_this_matchday": "1",
+          "total_goals": 11
+        },
+        {
+          "name": "Claudio Spinelli",
+          "short_name": "C. Spinelli",
+          "profile_url": "/claudio-spinelli/profil/spieler/504882",
+          "clubs": [
+            {
+              "name": "Independiente del Valle",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/19309.png?lm=1678730279"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 11
+        },
+        {
+          "name": "Janner Corozo",
+          "short_name": "J. Corozo",
+          "profile_url": "/janner-corozo/profil/spieler/421698",
+          "clubs": [
+            {
+              "name": "Barcelona SC Guayaquil",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/3523.png?lm=1721907936"
+            }
+          ],
+          "goals_this_matchday": "1",
+          "total_goals": 11
+        },
+        {
+          "name": "Djorkaeff Reasco",
+          "short_name": "D. Reasco",
+          "profile_url": "/djorkaeff-reasco/profil/spieler/473346",
+          "clubs": [],
+          "goals_this_matchday": 0,
+          "total_goals": 10
+        },
+        {
+          "name": "Michael Hoyos",
+          "short_name": "M. Hoyos",
+          "profile_url": "/michael-hoyos/profil/spieler/138387",
+          "clubs": [
+            {
+              "name": "Independiente del Valle",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/19309.png?lm=1678730279"
+            }
+          ],
+          "goals_this_matchday": "1",
+          "total_goals": 9
+        },
+        {
+          "name": "Michael Estrada",
+          "short_name": "M. Estrada",
+          "profile_url": "/michael-estrada/profil/spieler/265481",
+          "clubs": [
+            {
+              "name": "LDU Quito",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/9855.png?lm=1698577762"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 8
+        }
+      ],
+      "summary": {
+        "matches": 8,
+        "goals": 19,
+        "own_goals": 1,
+        "yellow_cards": 47,
+        "second_yellow_cards": "-",
+        "red_cards": 0,
+        "total_attendance": "27078",
+        "average_attendance": "3385",
+        "sold_out_matches": 0
+      },
+      "metadata": {
+        "extraction_time": "2025-08-25T22:40:27.373978",
+        "source": "worker_extraction",
+        "total_matches": 8,
+        "is_recovery_work": false,
+        "recovery_targets": []
+      }
+    }
+  ],
+  "total_matchdays": 1,
+  "total_matches": 8,
+  "execution_time_seconds": 105272.9846,
+  "execution_time_minutes": 1754.55,
+  "execution_time_hours": 29.24,
+  "processing_time_seconds": 182.06982795801014,
+  "processing_time_minutes": 3.03,
+  "processing_time_hours": 0.05,
+  "queue_wait_seconds": 105090.920536,
+  "was_recovery_work": false,
+  "recovery_success": false,
+  "recovered_match_targets": [],
+  "requeue_template": {
+    "work_id": "requeue_match_EC1N_2024_md02_1756034922_1",
+    "work_type": "match_data",
+    "version": "3.1",
+    "competition_id": "EC1N",
+    "competition_code": "ligapro-serie-a",
+    "competition_name": "LigaPro Serie A",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_EC1N_2024_md02_1756034922",
+    "recovery_reason": "retry_failed",
+    "recovery_created_at": "2025-08-25T19:43:14.986110+00:00",
+    "recovery_matchday_number": null,
+    "specific_match_targets": [],
+    "team_count": 16,
+    "expected_matchdays": null,
+    "priority": 610,
+    "processing_hints": {
+      "scope": "single_matchday",
+      "matchday_focused": true,
+      "target_matchday": 2,
+      "expected_completion_time": "15_minutes",
+      "team_count_category": "medium",
+      "data_source": "db_sync",
+      "requires_validation": true,
+      "cache_last_analyzed": "2025-08-24T12:53:46.831750",
+      "is_recovery": true,
+      "preserve_existing_data": true,
+      "focus_on_team_data": true,
+      "original_work_id": "match_EC1N_2024_md02_1756034922",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-25T19:43:14.986118+00:00",
+    "created_by": "requeue_adapter"
+  }
+}

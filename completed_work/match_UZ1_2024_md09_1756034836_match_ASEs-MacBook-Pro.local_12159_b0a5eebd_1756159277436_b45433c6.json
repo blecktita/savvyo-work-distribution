@@ -1,0 +1,3285 @@
+{
+  "work_id": "match_UZ1_2024_md09_1756034836",
+  "work_type": "match_data",
+  "version": "3.1",
+  "competition_id": "UZ1",
+  "competition_code": "ozbekiston-superligasi",
+  "competition_name": "Superliga",
+  "season_year": "2024",
+  "target_matchday": {
+    "number": 9,
+    "status": "missing",
+    "existing_matches": 0,
+    "completion_reason": "not_discovered",
+    "source_verified": true,
+    "discovery_method": "cache_driven"
+  },
+  "team_count": 16,
+  "existing_matchdays_count": 0,
+  "existing_matches_count": 0,
+  "competition_tier": "First Tier",
+  "competition_status": "empty",
+  "priority": 620,
+  "processing_hints": {
+    "scope": "single_matchday",
+    "matchday_focused": true,
+    "target_matchday": 9,
+    "expected_completion_time": "15_minutes",
+    "team_count_category": "medium",
+    "data_source": "db_sync",
+    "requires_validation": true,
+    "cache_last_analyzed": "2025-08-24T12:53:46.780502"
+  },
+  "created_at": "2025-08-24T14:27:16Z",
+  "created_by": "work_manager",
+  "creation_method": "cache_integrated_system",
+  "status": "completed",
+  "quality_level": "production",
+  "claimed_by": "match_ASEs-MacBook-Pro.local_12159_b0a5eebd",
+  "claimed_at": "2025-08-26T01:01:17.436387",
+  "claim_id": "match_ASEs-MacBook-Pro.local_12159_b0a5eebd_1756159277436_b45433c6",
+  "started_at": "2025-08-25T22:01:22.114543+00:00",
+  "completed_at": "2025-08-25T22:04:39.948126+00:00",
+  "matchdays_data": [
+    {
+      "matchday_info": {
+        "number": 9,
+        "season": "2024",
+        "competition": "Superliga",
+        "source_url": "https://www.transfermarkt.com/ozbekiston-superligasi/spieltag/wettbewerb/UZ1/saison_id/2024/spieltag/9",
+        "total_matches": 8
+      },
+      "matches": [
+        {
+          "match_info": {
+            "match_id": "4571911",
+            "competition_name": "Superliga",
+            "season": "2024",
+            "date": "2025-05-09",
+            "time": "3:00",
+            "venue": "Bobur Arena",
+            "attendance": 9124,
+            "referee": "Ilgiz Tantashev",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4571911",
+            "day_of_week": "Friday"
+          },
+          "home_team": {
+            "team_id": "20099",
+            "name": "FC Andijon",
+            "formation": "4-2-3-1",
+            "manager": "Artem Petrosyan"
+          },
+          "away_team": {
+            "team_id": "13306",
+            "name": "Neftchi Fergana",
+            "formation": "4-3-3 Attacking",
+            "manager": "Vitaliy Levchenko"
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 2,
+            "home_ht": 0,
+            "away_ht": 1
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "754022",
+                "name": "Rakhimov",
+                "shirt_number": 25,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/754022-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "757312",
+                "name": "Mamatkazin",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/757312-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "340401",
+                "name": "Uskokovic",
+                "shirt_number": 32,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/340401-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "208188",
+                "name": "Zoteev",
+                "shirt_number": 33,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/208188-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "659912",
+                "name": "Gulomov",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/659912-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "637117",
+                "name": "Kryeziu",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/637117-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "658912",
+                "name": "Temirov",
+                "shirt_number": 18,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/658912-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "836822",
+                "name": "Abdumannonov",
+                "shirt_number": 71,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/836822-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "324748",
+                "name": "Azimov",
+                "shirt_number": 13,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/324748-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "1002472",
+                "name": "Abduganiev",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1002472-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "763092",
+                "name": "Turdimuradov",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/763092-1756159305.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "312690",
+                "name": "Ergashev",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/312690-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "493443",
+                "name": "Gofurov",
+                "shirt_number": 20,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/493443-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "580784",
+                "name": "Ciger",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/580784-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "212499",
+                "name": "Sayfiev",
+                "shirt_number": 34,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/212499-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "189641",
+                "name": "Ubaydullaev",
+                "shirt_number": 21,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/189641-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "493437",
+                "name": "Gulyamov",
+                "shirt_number": 24,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/493437-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "311898",
+                "name": "Alibaev",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/311898-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "500289",
+                "name": "Ismoilov",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/500289-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "260857",
+                "name": "Iskanderov",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/260857-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "423566",
+                "name": "Ruziev",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/423566-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "220780",
+                "name": "Marusic",
+                "shirt_number": 32,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/220780-1756159305.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "519899",
+                "name": "Eldor Adkhamov",
+                "shirt_number": 1,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/519899-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "293241",
+                "name": "Miomir Djurickovic",
+                "shirt_number": 66,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/293241-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "658914",
+                "name": "Usmonali Ismonaliev",
+                "shirt_number": 22,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/658914-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "914670",
+                "name": "Abdurakhmon Komilov",
+                "shirt_number": 14,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/914670-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "379056",
+                "name": "Iskandar Shaykulov",
+                "shirt_number": 8,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/379056-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "52140",
+                "name": "Mirzad Mehanovic",
+                "shirt_number": 9,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/52140-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "661066",
+                "name": "Farkhod Sokhibzhonov",
+                "shirt_number": 17,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/661066-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "661061",
+                "name": "Doniyor Abdumannopov",
+                "shirt_number": 23,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/661061-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "284392",
+                "name": "Islam Mashukov",
+                "shirt_number": 11,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/284392-1756159305.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "1405290",
+                "name": "Nodirbek Karimov",
+                "shirt_number": 28,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1405290-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "1391353",
+                "name": "Shokhrukhbek Yokubjonov",
+                "shirt_number": 33,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1391353-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "185373",
+                "name": "Akbar Turaev",
+                "shirt_number": 45,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/185373-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "704545",
+                "name": "Ibrokhimkhalil Yuldoshev",
+                "shirt_number": 6,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/704545-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "288887",
+                "name": "Jamshid Boltaboev",
+                "shirt_number": 14,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/288887-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "772000",
+                "name": "Bilolkhon Toshmirzaev",
+                "shirt_number": 77,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/772000-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "212463",
+                "name": "Shokhrukh Gadoev",
+                "shirt_number": 9,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/212463-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "758474",
+                "name": "Mukhammadali Giyosov",
+                "shirt_number": 17,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/758474-1756159305.jpg?lm=1"
+              },
+              {
+                "player_id": "183687",
+                "name": "Toma Tabatadze",
+                "shirt_number": 22,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/183687-1756159305.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 11,
+                "extra_time": null,
+                "player": {
+                  "player_id": "212499",
+                  "name": "Farrukh Sayfiev",
+                  "shirt_number": 34,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/212499-1756159305.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "493437",
+                  "name": "Gulyamkhaydar Gulyamov",
+                  "shirt_number": 24,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/493437-1756159305.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Cross",
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  1
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 1
+              },
+              {
+                "minute": 59,
+                "extra_time": null,
+                "player": {
+                  "player_id": "260857",
+                  "name": "Jamshid Iskanderov",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/260857-1756159305.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "500289",
+                  "name": "Abrorbek Ismoilov",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/500289-1756159305.jpg?lm=1"
+                },
+                "goal_type": "Left-footed shot",
+                "assist_type": "Pass",
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  2
+                ],
+                "season_goal_number": 2,
+                "season_assist_number": 2
+              }
+            ],
+            "cards": [
+              {
+                "minute": 86,
+                "extra_time": null,
+                "player": {
+                  "player_id": "661061",
+                  "name": "Doniyor Abdumannopov",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/661061-1756159305.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 88,
+                "extra_time": null,
+                "player": {
+                  "player_id": "493443",
+                  "name": "Anvarjon Gofurov",
+                  "shirt_number": 20,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/493443-1756159305.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "324748",
+                  "name": "Sardorbek Azimov",
+                  "shirt_number": 13,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/324748-1756159305.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "661061",
+                  "name": "Doniyor Abdumannopov",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/661061-1756159305.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 66,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "311898",
+                  "name": "Ikromzhon Alibaev",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/311898-1756159305.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "288887",
+                  "name": "Jamshid Boltaboev",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/288887-1756159305.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 66,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1002472",
+                  "name": "Ilkhomzhon Abduganiev",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1002472-1756159305.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "52140",
+                  "name": "Mirzad Mehanovic",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/52140-1756159305.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 66,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "836822",
+                  "name": "Bektemir Abdumannonov",
+                  "shirt_number": 71,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/836822-1756159305.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "661066",
+                  "name": "Farkhod Sokhibzhonov",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/661066-1756159305.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 77,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "220780",
+                  "name": "Zoran Marusic",
+                  "shirt_number": 32,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/220780-1756159305.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "183687",
+                  "name": "Toma Tabatadze",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/183687-1756159305.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 77,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "423566",
+                  "name": "Kuvondik Ruziev",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/423566-1756159305.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "772000",
+                  "name": "Bilolkhon Toshmirzaev",
+                  "shirt_number": 77,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/772000-1756159305.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 77,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "763092",
+                  "name": "Rustam Turdimuradov",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/763092-1756159305.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "658914",
+                  "name": "Usmonali Ismonaliev",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/658914-1756159305.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 84,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "659912",
+                  "name": "Abduvokhid Gulomov",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/659912-1756159305.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "284392",
+                  "name": "Islam Mashukov",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/284392-1756159305.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 90,
+                "extra_time": 3,
+                "player_out": {
+                  "player_id": "260857",
+                  "name": "Jamshid Iskanderov",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/260857-1756159305.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "758474",
+                  "name": "Mukhammadali Giyosov",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/758474-1756159305.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4571912",
+            "competition_name": "Superliga",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4571912",
+            "day_of_week": "Friday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4571913",
+            "competition_name": "Superliga",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4571913",
+            "day_of_week": "Saturday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4571915",
+            "competition_name": "Superliga",
+            "season": "2024",
+            "date": "2025-05-10",
+            "time": "4:00",
+            "venue": "Markaziy stadioni",
+            "attendance": 9859,
+            "referee": "Olim Tuychiboev",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4571915",
+            "day_of_week": "Saturday"
+          },
+          "home_team": {
+            "team_id": "20591",
+            "name": "Nasaf Qarshi",
+            "formation": "3-4-3",
+            "manager": "Ruzikul Berdiev"
+          },
+          "away_team": {
+            "team_id": "19401",
+            "name": "Bunyodkor Tashkent",
+            "formation": "4-4-2 double 6",
+            "manager": "Ilyas Zeytullaev"
+          },
+          "score": {
+            "home_final": 2,
+            "away_final": 2,
+            "home_ht": 1,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "527866",
+                "name": "Nematov",
+                "shirt_number": 35,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/527866-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "712357",
+                "name": "Davronov",
+                "shirt_number": 2,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/712357-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "493725",
+                "name": "Eshmurodov",
+                "shirt_number": 92,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/493725-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "500288",
+                "name": "Gaybullaev",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/500288-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "128936",
+                "name": "Golban",
+                "shirt_number": 22,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/128936-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "608537",
+                "name": "Nasrullaev",
+                "shirt_number": 34,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/608537-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "989049",
+                "name": "Abdirakhma.",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/989049-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "756948",
+                "name": "Rakhmatov",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/756948-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "631352",
+                "name": "Bozorov",
+                "shirt_number": 77,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/631352-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "35976",
+                "name": "Ceran",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/35976-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "342820",
+                "name": "Hebaj",
+                "shirt_number": 99,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/342820-1756159358.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "189618",
+                "name": "Abdujalilov",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/189618-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "501007",
+                "name": "Bugarin",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/501007-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "311931",
+                "name": "Normurodov",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/311931-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "1096528",
+                "name": "Rakhimzhonov",
+                "shirt_number": 23,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1096528-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "263459",
+                "name": "Yuldashov",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/263459-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "288915",
+                "name": "Khamrobekov",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/288915-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "1129758",
+                "name": "Turakulov",
+                "shirt_number": 57,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1129758-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "630012",
+                "name": "Olimzhonov",
+                "shirt_number": 77,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/630012-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "180182",
+                "name": "Abdukholikov",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/180182-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "411193",
+                "name": "Ashortia",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/411193-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "431291",
+                "name": "Kacorri",
+                "shirt_number": 74,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/431291-1756159358.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "494264",
+                "name": "Oleksandr Vorobey",
+                "shirt_number": 1,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/494264-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "1349522",
+                "name": "Bakhodir Khalilov",
+                "shirt_number": 33,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1349522-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "325617",
+                "name": "Shukhrat Mukhammadiev",
+                "shirt_number": 28,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/325617-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "562022",
+                "name": "Akmal Mozgovoy",
+                "shirt_number": 7,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/562022-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "431913",
+                "name": "Sharof Mukhitdinov",
+                "shirt_number": 14,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/431913-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "1228939",
+                "name": "Sardorbek Bakhromov",
+                "shirt_number": 24,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1228939-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "366004",
+                "name": "Stefan Colovic",
+                "shirt_number": 19,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/366004-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "355876",
+                "name": "Sukhrob Nurullaev",
+                "shirt_number": 17,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/355876-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "704549",
+                "name": "Khusayin Norchaev",
+                "shirt_number": 18,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/704549-1756159358.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "661763",
+                "name": "Khamidullo Abdunabiev",
+                "shirt_number": 13,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/661763-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "1077648",
+                "name": "Azizbek Tulkinbekov",
+                "shirt_number": 66,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1077648-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "1061551",
+                "name": "Aleksandr Zevadinov",
+                "shirt_number": 5,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1061551-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "571209",
+                "name": "Rasul Yuldoshev",
+                "shirt_number": 10,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/571209-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "1082385",
+                "name": "Narimonjon Akhmadjonov",
+                "shirt_number": 18,
+                "position": "LM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1082385-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "1005724",
+                "name": "Nosirzhon Abdusalomov",
+                "shirt_number": 21,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1005724-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "510408",
+                "name": "Martin Sroler",
+                "shirt_number": 8,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/510408-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "659959",
+                "name": "Sardor Abdunabiev",
+                "shirt_number": 30,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/659959-1756159358.jpg?lm=1"
+              },
+              {
+                "player_id": "517918",
+                "name": "Azizbek Amanov",
+                "shirt_number": 22,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/517918-1756159358.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 23,
+                "extra_time": null,
+                "player": {
+                  "player_id": "342820",
+                  "name": "Rubin Hebaj",
+                  "shirt_number": 99,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/342820-1756159358.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "631352",
+                  "name": "Oybek Bozorov",
+                  "shirt_number": 77,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/631352-1756159358.jpg?lm=1"
+                },
+                "goal_type": "Left-footed shot",
+                "assist_type": "Cross",
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 2,
+                "season_assist_number": 2
+              },
+              {
+                "minute": 78,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1005724",
+                  "name": "Nosirzhon Abdusalomov",
+                  "shirt_number": 21,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1005724-1756159358.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "431291",
+                  "name": "Luis Kacorri",
+                  "shirt_number": 74,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/431291-1756159358.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Pass",
+                "team_side": "away",
+                "score_after": [
+                  1,
+                  1
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 1
+              },
+              {
+                "minute": 84,
+                "extra_time": null,
+                "player": {
+                  "player_id": "631352",
+                  "name": "Oybek Bozorov",
+                  "shirt_number": 77,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/631352-1756159358.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "562022",
+                  "name": "Akmal Mozgovoy",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/562022-1756159358.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Pass",
+                "team_side": "home",
+                "score_after": [
+                  2,
+                  1
+                ],
+                "season_goal_number": 3,
+                "season_assist_number": 3
+              },
+              {
+                "minute": 90,
+                "extra_time": 1,
+                "player": {
+                  "player_id": "501007",
+                  "name": "Marko Bugarin",
+                  "shirt_number": 15,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/501007-1756159358.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "510408",
+                  "name": "Martin Sroler",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/510408-1756159358.jpg?lm=1"
+                },
+                "goal_type": "Header",
+                "assist_type": "Corner",
+                "team_side": "away",
+                "score_after": [
+                  2,
+                  2
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 1
+              }
+            ],
+            "cards": [
+              {
+                "minute": 88,
+                "extra_time": null,
+                "player": {
+                  "player_id": "288915",
+                  "name": "Odildzhon Khamrobekov",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/288915-1756159358.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 3
+              },
+              {
+                "minute": 90,
+                "extra_time": 7,
+                "player": {
+                  "player_id": "571209",
+                  "name": "Rasul Yuldoshev",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/571209-1756159358.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1129758",
+                  "name": "Amir Turakulov",
+                  "shirt_number": 57,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1129758-1756159358.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "510408",
+                  "name": "Martin Sroler",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/510408-1756159358.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 64,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "180182",
+                  "name": "Temurkhuzha Abdukholikov",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/180182-1756159358.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "517918",
+                  "name": "Azizbek Amanov",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/517918-1756159358.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 64,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1096528",
+                  "name": "Asadbek Rakhimzhonov",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1096528-1756159358.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "659959",
+                  "name": "Sardor Abdunabiev",
+                  "shirt_number": 30,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/659959-1756159358.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 66,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "35976",
+                  "name": "Dragan Ceran",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/35976-1756159358.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "366004",
+                  "name": "Stefan Colovic",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/366004-1756159358.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 66,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "756948",
+                  "name": "Murodbek Rakhmatov",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/756948-1756159358.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "562022",
+                  "name": "Akmal Mozgovoy",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/562022-1756159358.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 66,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "342820",
+                  "name": "Rubin Hebaj",
+                  "shirt_number": 99,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/342820-1756159358.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "704549",
+                  "name": "Khusayin Norchaev",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/704549-1756159358.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 75,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "500288",
+                  "name": "Golib Gaybullaev",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/500288-1756159358.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "325617",
+                  "name": "Shukhrat Mukhammadiev",
+                  "shirt_number": 28,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/325617-1756159358.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 77,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "411193",
+                  "name": "Imeda Ashortia",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/411193-1756159358.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1005724",
+                  "name": "Nosirzhon Abdusalomov",
+                  "shirt_number": 21,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1005724-1756159358.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 81,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "989049",
+                  "name": "Zafarmurod Abdirakhmatov",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/989049-1756159358.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "431913",
+                  "name": "Sharof Mukhitdinov",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/431913-1756159358.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 89,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "630012",
+                  "name": "Muzaffar Olimzhonov",
+                  "shirt_number": 77,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/630012-1756159358.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "571209",
+                  "name": "Rasul Yuldoshev",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/571209-1756159358.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4571914",
+            "competition_name": "Superliga",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4571914",
+            "day_of_week": "Saturday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4571916",
+            "competition_name": "Superliga",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4571916",
+            "day_of_week": "Sunday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4571917",
+            "competition_name": "Superliga",
+            "season": "2024",
+            "date": "2025-05-11",
+            "time": "4:00",
+            "venue": "Shurtan Stadion",
+            "attendance": 1311,
+            "referee": "Khushnud Suyunboev",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4571917",
+            "day_of_week": "Sunday"
+          },
+          "home_team": {
+            "team_id": "13649",
+            "name": "Mash'al Mubarek",
+            "formation": "4-3-3 Attacking",
+            "manager": "Asror Alikulov"
+          },
+          "away_team": {
+            "team_id": "20115",
+            "name": "FC Qizilqum",
+            "formation": "4-3-3 Attacking",
+            "manager": "Nikola Lazarevic"
+          },
+          "score": {
+            "home_final": 2,
+            "away_final": 2,
+            "home_ht": 1,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "562021",
+                "name": "Khamroev",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/562021-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "747986",
+                "name": "Alikulov",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/747986-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "843313",
+                "name": "Ochilov",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/843313-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "493262",
+                "name": "Ismoilov",
+                "shirt_number": 28,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/493262-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "756951",
+                "name": "Baratov",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/756951-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "493718",
+                "name": "Mamatkhodz.",
+                "shirt_number": 24,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/493718-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "758470",
+                "name": "Muzaffarov",
+                "shirt_number": 22,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/758470-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "492567",
+                "name": "Abduraimov",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/492567-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "661550",
+                "name": "Sharipov",
+                "shirt_number": 19,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/661550-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "571210",
+                "name": "Numonov",
+                "shirt_number": 96,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/571210-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "492573",
+                "name": "Murtazoev",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/492573-1756159473.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "127748",
+                "name": "Kuvvatov",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/127748-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "661080",
+                "name": "Komilov",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/661080-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "390078",
+                "name": "Kumburovic",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/390078-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "153705",
+                "name": "Mijic",
+                "shirt_number": 88,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/153705-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "845300",
+                "name": "Vakhobov",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/845300-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "988939",
+                "name": "Rakhmatull.",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/988939-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "562291",
+                "name": "Bekmuradov",
+                "shirt_number": 18,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/562291-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "188184",
+                "name": "Jigauri",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/188184-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "820017",
+                "name": "Jumankuziev",
+                "shirt_number": 77,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/820017-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "270201",
+                "name": "Masovic",
+                "shirt_number": 70,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/270201-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "175824",
+                "name": "Lobjanidze",
+                "shirt_number": 99,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/175824-1756159473.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "745388",
+                "name": "Doston Tukhtaboev",
+                "shirt_number": 35,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/745388-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "372599",
+                "name": "Sherzod Fayziev",
+                "shirt_number": 37,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/372599-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "745390",
+                "name": "Zafar Akromov",
+                "shirt_number": 27,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/745390-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "848894",
+                "name": "Shakhboz Juraev",
+                "shirt_number": 34,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/848894-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "733470",
+                "name": "Mudasiru Salifu",
+                "shirt_number": 2,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/733470-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "208182",
+                "name": "Dilshod Rakhmatullaev",
+                "shirt_number": 18,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/208182-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "492555",
+                "name": "Ibrokhim Ganikhonov",
+                "shirt_number": 9,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/492555-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "661558",
+                "name": "Anvar Murodov",
+                "shirt_number": 17,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/661558-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "496339",
+                "name": "Shokhnazar Norbekov",
+                "shirt_number": 30,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/496339-1756159473.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "883722",
+                "name": "Farkhod Rakhmatov",
+                "shirt_number": 30,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/883722-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "745398",
+                "name": "Samandar Shukurillaev",
+                "shirt_number": 23,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/745398-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "1209189",
+                "name": "Murodali Usmonov",
+                "shirt_number": 6,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1209189-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "1209189",
+                "name": "Murodali Usmonov",
+                "shirt_number": 6,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1209189-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "1122102",
+                "name": "Diyor Rakhmatilloev",
+                "shirt_number": 79,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1122102-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "659915",
+                "name": "Davron Anvarov",
+                "shirt_number": 7,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/659915-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "1131373",
+                "name": "Sulton Rakhmatov",
+                "shirt_number": 33,
+                "position": "RM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1131373-1756159473.jpg?lm=1"
+              },
+              {
+                "player_id": "903133",
+                "name": "Roman Paparyga",
+                "shirt_number": 10,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/903133-1756159473.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 21,
+                "extra_time": null,
+                "player": {
+                  "player_id": "492573",
+                  "name": "Khumoyun Murtazoev",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/492573-1756159473.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "492567",
+                  "name": "Sardor Abduraimov",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/492567-1756159473.jpg?lm=1"
+                },
+                "goal_type": "Left-footed shot",
+                "assist_type": "Pass",
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 2,
+                "season_assist_number": 2
+              },
+              {
+                "minute": 54,
+                "extra_time": null,
+                "player": {
+                  "player_id": "270201",
+                  "name": "Alen Masovic",
+                  "shirt_number": 70,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/270201-1756159473.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "153705",
+                  "name": "Dusan Mijic",
+                  "shirt_number": 88,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/153705-1756159473.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Pass",
+                "team_side": "away",
+                "score_after": [
+                  1,
+                  1
+                ],
+                "season_goal_number": 2,
+                "season_assist_number": 1
+              },
+              {
+                "minute": 67,
+                "extra_time": null,
+                "player": {
+                  "player_id": "270201",
+                  "name": "Alen Masovic",
+                  "shirt_number": 70,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/270201-1756159473.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "153705",
+                  "name": "Dusan Mijic",
+                  "shirt_number": 88,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/153705-1756159473.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Pass",
+                "team_side": "away",
+                "score_after": [
+                  1,
+                  2
+                ],
+                "season_goal_number": 3,
+                "season_assist_number": 2
+              },
+              {
+                "minute": 72,
+                "extra_time": null,
+                "player": {
+                  "player_id": "492573",
+                  "name": "Khumoyun Murtazoev",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/492573-1756159473.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "571210",
+                  "name": "Ibrokhim Numonov",
+                  "shirt_number": 96,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/571210-1756159473.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Pass",
+                "team_side": "home",
+                "score_after": [
+                  2,
+                  2
+                ],
+                "season_goal_number": 3,
+                "season_assist_number": 2
+              }
+            ],
+            "cards": [
+              {
+                "minute": 29,
+                "extra_time": null,
+                "player": {
+                  "player_id": "661080",
+                  "name": "Dilshod Komilov",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/661080-1756159473.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 3
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 64,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "562291",
+                  "name": "Farkhod Bekmuradov",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/562291-1756159473.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "659915",
+                  "name": "Davron Anvarov",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/659915-1756159473.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 76,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "661550",
+                  "name": "Islom Sharipov",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/661550-1756159473.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "208182",
+                  "name": "Dilshod Rakhmatullaev",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/208182-1756159473.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 76,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "756951",
+                  "name": "Islombek Baratov",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/756951-1756159473.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "492555",
+                  "name": "Ibrokhim Ganikhonov",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/492555-1756159473.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 82,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "820017",
+                  "name": "Fayzullo Jumankuziev",
+                  "shirt_number": 77,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/820017-1756159473.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "903133",
+                  "name": "Roman Paparyga",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/903133-1756159473.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 82,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "270201",
+                  "name": "Alen Masovic",
+                  "shirt_number": 70,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/270201-1756159473.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1122102",
+                  "name": "Diyor Rakhmatilloev",
+                  "shirt_number": 79,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1122102-1756159473.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 86,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "492567",
+                  "name": "Sardor Abduraimov",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/492567-1756159473.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "372599",
+                  "name": "Sherzod Fayziev",
+                  "shirt_number": 37,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/372599-1756159473.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 90,
+                "extra_time": 2,
+                "player_out": {
+                  "player_id": "571210",
+                  "name": "Ibrokhim Numonov",
+                  "shirt_number": 96,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/571210-1756159473.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "661558",
+                  "name": "Anvar Murodov",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/661558-1756159473.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4571918",
+            "competition_name": "Superliga",
+            "season": "2024",
+            "date": "2025-05-11",
+            "time": "5:15",
+            "venue": "Sogdiana Sport Complex",
+            "attendance": 1010,
+            "referee": "Turabek Suyunov",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4571918",
+            "day_of_week": "Sunday"
+          },
+          "home_team": {
+            "team_id": "35157",
+            "name": "Sogdiana Jizzakh",
+            "formation": "4-4-2 double 6",
+            "manager": "Ivan Boskovic"
+          },
+          "away_team": {
+            "team_id": "15315",
+            "name": "Shurtan Guzar",
+            "formation": "4-4-2 double 6",
+            "manager": "Eldor Moyliev"
+          },
+          "score": {
+            "home_final": 1,
+            "away_final": 1,
+            "home_ht": 0,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "1065972",
+                "name": "Sobirov",
+                "shirt_number": 21,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1065972-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "1141468",
+                "name": "Akhadov",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1141468-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "486760",
+                "name": "Kobilov",
+                "shirt_number": 3,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/486760-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "107308",
+                "name": "Andreev",
+                "shirt_number": 28,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/107308-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "573041",
+                "name": "Pandzhshanbe",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/573041-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "519898",
+                "name": "Izzatov",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/519898-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "1209192",
+                "name": "Mustafokulov",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1209192-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "329200",
+                "name": "Doriev",
+                "shirt_number": 14,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/329200-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "494128",
+                "name": "Kakhramonov",
+                "shirt_number": 19,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/494128-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "1251433",
+                "name": "Khoshimov",
+                "shirt_number": 23,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1251433-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "582641",
+                "name": "Rashidov",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/582641-1756159479.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "494097",
+                "name": "Eshbutaev",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/494097-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "500287",
+                "name": "Khudoyberd.",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/500287-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "660011",
+                "name": "Mannonov",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/660011-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "843326",
+                "name": "Pirmukhame.",
+                "shirt_number": 55,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/843326-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "1169468",
+                "name": "Rakhmatov",
+                "shirt_number": 33,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1169468-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "431915",
+                "name": "Kuziev",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/431915-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "754039",
+                "name": "Mamasidikov",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/754039-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "510494",
+                "name": "Toshkuziev",
+                "shirt_number": 14,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/510494-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "431914",
+                "name": "Narzullaev",
+                "shirt_number": 24,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/431914-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "660947",
+                "name": "Jabborov",
+                "shirt_number": 21,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/660947-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "1075870",
+                "name": "Sharipov",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1075870-1756159479.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "1258536",
+                "name": "Inomjon Abdumajidov",
+                "shirt_number": 46,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1258536-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "756906",
+                "name": "Shokhrukh Isokov",
+                "shirt_number": 1,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/756906-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "1079578",
+                "name": "Bekhruz Dzhumatov",
+                "shirt_number": 5,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1079578-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "513883",
+                "name": "Zoir Dzhuraboev",
+                "shirt_number": 2,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/513883-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "1165115",
+                "name": "Samandar Sindorov",
+                "shirt_number": 6,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1165115-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "1341818",
+                "name": "Dilshod Misraliev",
+                "shirt_number": 34,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1341818-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "837433",
+                "name": "Umid Sultonov",
+                "shirt_number": 99,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/837433-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "1141467",
+                "name": "Sardorbek Erkinov",
+                "shirt_number": 42,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1141467-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "583732",
+                "name": "Oybek Nurmatov",
+                "shirt_number": 18,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/583732-1756159479.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "781481",
+                "name": "Sherzodbek Abduraimov",
+                "shirt_number": 35,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/781481-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "763052",
+                "name": "Mirkamol Abdurazzakov",
+                "shirt_number": 5,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/763052-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "661768",
+                "name": "Shokhzhakhon Sultonmurodov",
+                "shirt_number": 3,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/661768-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "608538",
+                "name": "Sardor Sadulloev",
+                "shirt_number": 22,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/608538-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "868996",
+                "name": "Asadbek Saidkhonov",
+                "shirt_number": 77,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/868996-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "848895",
+                "name": "Bekzod Suvonov",
+                "shirt_number": 7,
+                "position": "LM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/848895-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "897968",
+                "name": "Shakhboz Nuriddinov",
+                "shirt_number": 8,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/897968-1756159479.jpg?lm=1"
+              },
+              {
+                "player_id": "659951",
+                "name": "Kamron Saydazimov",
+                "shirt_number": 99,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/659951-1756159479.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 77,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1141468",
+                  "name": "Otabek Akhadov",
+                  "shirt_number": 4,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1141468-1756159479.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "660011",
+                  "name": "Jurabek Mannonov",
+                  "shirt_number": 15,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/660011-1756159479.jpg?lm=1"
+                },
+                "goal_type": null,
+                "assist_type": "Shot on goal",
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  1
+                ],
+                "season_goal_number": null,
+                "season_assist_number": 1
+              },
+              {
+                "minute": 90,
+                "extra_time": 5,
+                "player": {
+                  "player_id": "486760",
+                  "name": "Islomzhon Kobilov",
+                  "shirt_number": 3,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/486760-1756159479.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "1141467",
+                  "name": "Sardorbek Erkinov",
+                  "shirt_number": 42,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1141467-1756159479.jpg?lm=1"
+                },
+                "goal_type": "Header",
+                "assist_type": "Pass",
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  1
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 1
+              }
+            ],
+            "cards": [
+              {
+                "minute": 11,
+                "extra_time": null,
+                "player": {
+                  "player_id": "329200",
+                  "name": "Ljupco Doriev",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/329200-1756159479.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 22,
+                "extra_time": null,
+                "player": {
+                  "player_id": "582641",
+                  "name": "Sakhob Rashidov",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/582641-1756159479.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 90,
+                "extra_time": 6,
+                "player": {
+                  "player_id": "843326",
+                  "name": "Azizbek Pirmukhamedov",
+                  "shirt_number": 55,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/843326-1756159479.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 2
+              },
+              {
+                "minute": 83,
+                "extra_time": null,
+                "player": {
+                  "player_id": "608538",
+                  "name": "Sardor Sadulloev",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/608538-1756159479.jpg?lm=1"
+                },
+                "card_type": "red",
+                "reason": "Serious foul",
+                "team_side": "away",
+                "season_card_number": null
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 47,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1169468",
+                  "name": "Bekjon Rakhmatov",
+                  "shirt_number": 33,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1169468-1756159479.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "659951",
+                  "name": "Kamron Saydazimov",
+                  "shirt_number": 99,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/659951-1756159479.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 58,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "754039",
+                  "name": "Temur Mamasidikov",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/754039-1756159479.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "608538",
+                  "name": "Sardor Sadulloev",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/608538-1756159479.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 60,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "582641",
+                  "name": "Sakhob Rashidov",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/582641-1756159479.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "837433",
+                  "name": "Umid Sultonov",
+                  "shirt_number": 99,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/837433-1756159479.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 70,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "519898",
+                  "name": "Sukhrob Izzatov",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/519898-1756159479.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "583732",
+                  "name": "Oybek Nurmatov",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/583732-1756159479.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 73,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "660947",
+                  "name": "Murodkhuja Jabborov",
+                  "shirt_number": 21,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/660947-1756159479.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "848895",
+                  "name": "Bekzod Suvonov",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/848895-1756159479.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 85,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "573041",
+                  "name": "Ekhson Pandzhshanbe",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/573041-1756159479.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1141467",
+                  "name": "Sardorbek Erkinov",
+                  "shirt_number": 42,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1141467-1756159479.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              }
+            ]
+          }
+        }
+      ],
+      "league_table": {
+        "season": null,
+        "teams": [
+          {
+            "position": 1,
+            "movement": "same",
+            "team_id": "31216",
+            "name": "OKMK Olmaliq",
+            "short_name": "OKMK Olmaliq",
+            "profile_url": "/fk-agmk-olmaliq/spielplan/verein/31216/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/31216.png?lm=1677059509",
+            "matches": 9,
+            "goal_difference": "9",
+            "points": 22
+          },
+          {
+            "position": 2,
+            "movement": "same",
+            "team_id": "20591",
+            "name": "Nasaf Qarshi",
+            "short_name": "Nasaf Qarshi",
+            "profile_url": "/nasaf-qarshi/spielplan/verein/20591/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/20591.png?lm=1693548296",
+            "matches": 9,
+            "goal_difference": "11",
+            "points": 19
+          },
+          {
+            "position": 3,
+            "movement": "up",
+            "team_id": "13306",
+            "name": "Neftchi Fergana",
+            "short_name": "Neftchi",
+            "profile_url": "/neftchi-fergana/spielplan/verein/13306/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/13306.png?lm=1668001180",
+            "matches": 9,
+            "goal_difference": "5",
+            "points": 18
+          },
+          {
+            "position": 4,
+            "movement": "up",
+            "team_id": "15300",
+            "name": "Dinamo Samarqand",
+            "short_name": "Dinamo",
+            "profile_url": "/dinamo-samarkand/spielplan/verein/15300/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/15300.png?lm=1617955717",
+            "matches": 9,
+            "goal_difference": "4",
+            "points": 18
+          },
+          {
+            "position": 5,
+            "movement": "down",
+            "team_id": "19401",
+            "name": "Bunyodkor Tashkent",
+            "short_name": "Bunyodkor",
+            "profile_url": "/bunyodkor-tashkent/spielplan/verein/19401/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/19401.png?lm=1420984790",
+            "matches": 9,
+            "goal_difference": "6",
+            "points": 16
+          },
+          {
+            "position": 6,
+            "movement": "up",
+            "team_id": "15310",
+            "name": "Navbahor Namangan",
+            "short_name": "Navbahor",
+            "profile_url": "/navbahor-namangan/spielplan/verein/15310/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/15310.png?lm=1646142875",
+            "matches": 9,
+            "goal_difference": "4",
+            "points": 14
+          },
+          {
+            "position": 7,
+            "movement": "up",
+            "team_id": "3718",
+            "name": "Pakhtakor Tashkent",
+            "short_name": "Pakhtakor",
+            "profile_url": "/pakhtakor-tashkent/spielplan/verein/3718/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/3718.png?lm=1688479388",
+            "matches": 9,
+            "goal_difference": "9",
+            "points": 12
+          },
+          {
+            "position": 8,
+            "movement": "down",
+            "team_id": "53299",
+            "name": "Kokand 1912",
+            "short_name": "Kokand 1912",
+            "profile_url": "/fk-kokand-1912/spielplan/verein/53299/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/53299.png?lm=1644307810",
+            "matches": 9,
+            "goal_difference": "-2",
+            "points": 12
+          },
+          {
+            "position": 9,
+            "movement": "down",
+            "team_id": "38976",
+            "name": "Xorazm Urganch",
+            "short_name": "Xorazm FС",
+            "profile_url": "/xorazm-fk-urganch/spielplan/verein/38976/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/38976.png?lm=1742057282",
+            "matches": 9,
+            "goal_difference": "1",
+            "points": 11
+          },
+          {
+            "position": 10,
+            "movement": "same",
+            "team_id": "20115",
+            "name": "Qizilqum",
+            "short_name": "Qizilqum",
+            "profile_url": "/qizilqum-zarafshan/spielplan/verein/20115/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/20115.png?lm=1706768905",
+            "matches": 9,
+            "goal_difference": "-7",
+            "points": 11
+          },
+          {
+            "position": 11,
+            "movement": "same",
+            "team_id": "13649",
+            "name": "Mash'al Mubarek",
+            "short_name": "Mash'al",
+            "profile_url": "/mashal-mubarek/spielplan/verein/13649/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/13649.png?lm=1700061690",
+            "matches": 9,
+            "goal_difference": "-7",
+            "points": 11
+          },
+          {
+            "position": 12,
+            "movement": "down",
+            "team_id": "65036",
+            "name": "Surkhon Termiz",
+            "short_name": "Surkhon",
+            "profile_url": "/surkhon-termiz/spielplan/verein/65036/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/65036.png?lm=1646226663",
+            "matches": 9,
+            "goal_difference": "-4",
+            "points": 10
+          },
+          {
+            "position": 13,
+            "movement": "same",
+            "team_id": "20099",
+            "name": "Andijon",
+            "short_name": "FC Andijon",
+            "profile_url": "/fk-andijon/spielplan/verein/20099/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/20099.png?lm=1609697423",
+            "matches": 9,
+            "goal_difference": "-3",
+            "points": 9
+          },
+          {
+            "position": 14,
+            "movement": "same",
+            "team_id": "35157",
+            "name": "Sogdiana Jizzakh",
+            "short_name": "Sogdiana",
+            "profile_url": "/sogdiana-jizzakh/spielplan/verein/35157/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/35157.png?lm=1521322682",
+            "matches": 9,
+            "goal_difference": "-2",
+            "points": 8
+          },
+          {
+            "position": 15,
+            "movement": "same",
+            "team_id": "20151",
+            "name": "Buxoro",
+            "short_name": "FC Buxoro",
+            "profile_url": "/fk-bukhara/spielplan/verein/20151/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/20151.png?lm=1640703486",
+            "matches": 9,
+            "goal_difference": "-11",
+            "points": 6
+          },
+          {
+            "position": 16,
+            "movement": "same",
+            "team_id": "15315",
+            "name": "Shurtan Guzar",
+            "short_name": "Shurtan",
+            "profile_url": "/shurtan-guzar/spielplan/verein/15315/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/15315.png?lm=1605370840",
+            "matches": 9,
+            "goal_difference": "-13",
+            "points": 2
+          }
+        ]
+      },
+      "top_scorers": [
+        {
+          "name": "Igor Sergeev",
+          "short_name": "I. Sergeev",
+          "profile_url": "/igor-sergeev/profil/spieler/185372",
+          "clubs": [
+            {
+              "name": "Pakhtakor Tashkent",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/3718.png?lm=1688479388"
+            }
+          ],
+          "goals_this_matchday": "1",
+          "total_goals": 12
+        },
+        {
+          "name": "Khusayin Norchaev",
+          "short_name": "K. Norchaev",
+          "profile_url": "/khusayin-norchaev/profil/spieler/704549",
+          "clubs": [
+            {
+              "name": "Nasaf Qarshi",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/20591.png?lm=1693548296"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 11
+        },
+        {
+          "name": "Ljupco Doriev",
+          "short_name": "L. Doriev",
+          "profile_url": "/ljupco-doriev/profil/spieler/329200",
+          "clubs": [
+            {
+              "name": "Sogdiana Jizzakh",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/35157.png?lm=1521322682"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 10
+        },
+        {
+          "name": "Abbos Gulomov",
+          "short_name": "A. Gulomov",
+          "profile_url": "/abbos-gulomov/profil/spieler/650354",
+          "clubs": [
+            {
+              "name": "Navbahor Namangan",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/15310.png?lm=1646142875"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 9
+        },
+        {
+          "name": "Luis Kacorri",
+          "short_name": "L. Kacorri",
+          "profile_url": "/luis-kacorri/profil/spieler/431291",
+          "clubs": [
+            {
+              "name": "Bunyodkor Tashkent",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/19401.png?lm=1420984790"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 8
+        },
+        {
+          "name": "Ruslanbek Jiyanov",
+          "short_name": "R. Jiyanov",
+          "profile_url": "/ruslanbek-jiyanov/profil/spieler/754040",
+          "clubs": [
+            {
+              "name": "Navbahor Namangan",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/15310.png?lm=1646142875"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 8
+        },
+        {
+          "name": "Anvar Khozhimirzaev",
+          "short_name": "A. Khozhimirzaev",
+          "profile_url": "/anvar-khozhimirzaev/profil/spieler/744137",
+          "clubs": [
+            {
+              "name": "Dinamo Samarqand",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/15300.png?lm=1617955717"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 6
+        },
+        {
+          "name": "Khumoyun Murtazoev",
+          "short_name": "K. Murtazoev",
+          "profile_url": "/khumoyun-murtazoev/profil/spieler/492573",
+          "clubs": [
+            {
+              "name": "Mash'al Mubarek",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/13649.png?lm=1700061690"
+            }
+          ],
+          "goals_this_matchday": "2",
+          "total_goals": 6
+        },
+        {
+          "name": "Murodbek Bobojonov",
+          "short_name": "M. Bobojonov",
+          "profile_url": "/murodbek-bobojonov/profil/spieler/451115",
+          "clubs": [
+            {
+              "name": "Xorazm Urganch",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/38976.png?lm=1742057282"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 6
+        },
+        {
+          "name": "Khurshid Giyosov",
+          "short_name": "K. Giyosov",
+          "profile_url": "/khurshid-giyosov/profil/spieler/375957",
+          "clubs": [
+            {
+              "name": "FC OKMK Olmaliq",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/31216.png?lm=1677059509"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 6
+        }
+      ],
+      "summary": {
+        "matches": 8,
+        "goals": 24,
+        "own_goals": 2,
+        "yellow_cards": 21,
+        "second_yellow_cards": "-",
+        "red_cards": 1,
+        "total_attendance": "51271",
+        "average_attendance": "6409",
+        "sold_out_matches": 1
+      },
+      "metadata": {
+        "extraction_time": "2025-08-26T01:01:34.874959",
+        "source": "worker_extraction",
+        "total_matches": 8,
+        "is_recovery_work": false,
+        "recovery_targets": []
+      }
+    }
+  ],
+  "total_matchdays": 1,
+  "total_matches": 8,
+  "execution_time_seconds": 113843.946677,
+  "execution_time_minutes": 1897.4,
+  "execution_time_hours": 31.62,
+  "processing_time_seconds": 197.84022691706195,
+  "processing_time_minutes": 3.3,
+  "processing_time_hours": 0.05,
+  "queue_wait_seconds": 113646.114543,
+  "was_recovery_work": false,
+  "recovery_success": false,
+  "recovered_match_targets": [],
+  "requeue_template": {
+    "work_id": "requeue_match_UZ1_2024_md09_1756034836_1",
+    "work_type": "match_data",
+    "version": "3.1",
+    "competition_id": "UZ1",
+    "competition_code": "ozbekiston-superligasi",
+    "competition_name": "Superliga",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_UZ1_2024_md09_1756034836",
+    "recovery_reason": "retry_failed",
+    "recovery_created_at": "2025-08-25T22:04:39.948155+00:00",
+    "recovery_matchday_number": null,
+    "specific_match_targets": [],
+    "team_count": 16,
+    "expected_matchdays": null,
+    "priority": 610,
+    "processing_hints": {
+      "scope": "single_matchday",
+      "matchday_focused": true,
+      "target_matchday": 9,
+      "expected_completion_time": "15_minutes",
+      "team_count_category": "medium",
+      "data_source": "db_sync",
+      "requires_validation": true,
+      "cache_last_analyzed": "2025-08-24T12:53:46.780502",
+      "is_recovery": true,
+      "preserve_existing_data": true,
+      "focus_on_team_data": true,
+      "original_work_id": "match_UZ1_2024_md09_1756034836",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-25T22:04:39.948178+00:00",
+    "created_by": "requeue_adapter"
+  }
+}

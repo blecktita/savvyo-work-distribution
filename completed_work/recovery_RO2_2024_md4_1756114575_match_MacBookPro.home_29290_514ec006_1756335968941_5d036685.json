@@ -1,0 +1,1532 @@
+{
+  "work_id": "recovery_RO2_2024_md4_1756114575",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_RO2_2024_md04_1755865499",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-25T12:36:15Z",
+  "competition_id": "RO2",
+  "competition_code": "liga-2",
+  "competition_name": "Liga 2",
+  "season_year": "2024",
+  "team_count": 22,
+  "expected_matchdays": 42,
+  "recovery_matchday_number": 4,
+  "recovery_matches_count": 2,
+  "specific_match_targets": [
+    "4421143",
+    "4421145"
+  ],
+  "priority": 359,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_RO2_2024_md04_1755865499"
+  },
+  "matchdays_data": [
+    {
+      "matchday_info": {
+        "number": 4,
+        "season": "2024",
+        "competition": "Liga 2",
+        "source_url": "https://www.transfermarkt.com/liga-2/spieltag/wettbewerb/RO2/saison_id/2024/spieltag/4",
+        "total_matches": 11
+      },
+      "matches": [
+        {
+          "match_info": {
+            "match_id": "4421143",
+            "competition_name": "Liga 2",
+            "season": "2024",
+            "date": "2024-08-24",
+            "time": "10:00",
+            "venue": "CNAF Buftea sintetic",
+            "attendance": 200,
+            "referee": "Sergiu Anton",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4421143",
+            "day_of_week": "Saturday"
+          },
+          "home_team": {
+            "team_id": "94872",
+            "name": "AFC Campulung Muscel 2022",
+            "formation": null,
+            "manager": "Costin Lazăr"
+          },
+          "away_team": {
+            "team_id": "84065",
+            "name": "CSM Slatina",
+            "formation": null,
+            "manager": "Daniel Oprescu"
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 5,
+            "home_ht": 0,
+            "away_ht": 3
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "374015",
+                "name": "Marian Voicu",
+                "shirt_number": null,
+                "position": "Goalkeeper",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/374015-1756335998.jpg?lm=1"
+              },
+              {
+                "player_id": "967047",
+                "name": "Robert Stănici",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/967047-1756335998.jpg?lm=1"
+              },
+              {
+                "player_id": "341142",
+                "name": "Vlad Gîsă",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/341142-1756335998.jpg?lm=1"
+              },
+              {
+                "player_id": "798358",
+                "name": "Andrei Stelea",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/798358-1756335998.jpg?lm=1"
+              },
+              {
+                "player_id": "1229554",
+                "name": "Luca Stancu",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1229554-1756335998.jpg?lm=1"
+              },
+              {
+                "player_id": "289774",
+                "name": "Bogdan Vasile",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/289774-1756335998.jpg?lm=1"
+              },
+              {
+                "player_id": "1007234",
+                "name": "Jose Ntamack",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1007234-1756335998.jpg?lm=1"
+              },
+              {
+                "player_id": "1292421",
+                "name": "Daniel Popescu",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1292421-1756335998.jpg?lm=1"
+              },
+              {
+                "player_id": "540921",
+                "name": "Aleksandru Longher",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/540921-1756335998.jpg?lm=1"
+              },
+              {
+                "player_id": "824919",
+                "name": "Alexandru Enache",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/824919-1756335998.jpg?lm=1"
+              },
+              {
+                "player_id": "504909",
+                "name": "Alexandru Popescu",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/504909-1756335998.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "1041672",
+                "name": "Paul Toroc",
+                "shirt_number": null,
+                "position": "Goalkeeper",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1041672-1756335998.jpg?lm=1"
+              },
+              {
+                "player_id": "339955",
+                "name": "Robert Gherghe",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/339955-1756335998.jpg?lm=1"
+              },
+              {
+                "player_id": "1170516",
+                "name": "Mario Bărăitaru",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1170516-1756335998.jpg?lm=1"
+              },
+              {
+                "player_id": "530728",
+                "name": "Călin Toma",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/530728-1756335998.jpg?lm=1"
+              },
+              {
+                "player_id": "724575",
+                "name": "Ionuț Mitran",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/724575-1756335998.jpg?lm=1"
+              },
+              {
+                "player_id": "530927",
+                "name": "Silvian Matei",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/530927-1756335998.jpg?lm=1"
+              },
+              {
+                "player_id": "379164",
+                "name": "Andrei Trașcu",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/379164-1756335998.jpg?lm=1"
+              },
+              {
+                "player_id": "804920",
+                "name": "Constantin Radu",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/804920-1756335998.jpg?lm=1"
+              },
+              {
+                "player_id": "46536",
+                "name": "Cătălin Doman",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/46536-1756335998.jpg?lm=1"
+              },
+              {
+                "player_id": "241234",
+                "name": "Cătălin Golofca",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/241234-1756335998.jpg?lm=1"
+              },
+              {
+                "player_id": "963556",
+                "name": "Kayondo Mahadi Mahrez",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/963556-1756335998.jpg?lm=1"
+              }
+            ],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 7,
+                "extra_time": null,
+                "player": {
+                  "player_id": "46536",
+                  "name": "Cătălin Doman",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/46536-1756335998.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  1
+                ],
+                "season_goal_number": 5,
+                "season_assist_number": null
+              },
+              {
+                "minute": 13,
+                "extra_time": null,
+                "player": {
+                  "player_id": "46536",
+                  "name": "Cătălin Doman",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/46536-1756335998.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  2
+                ],
+                "season_goal_number": 6,
+                "season_assist_number": null
+              },
+              {
+                "minute": 42,
+                "extra_time": null,
+                "player": {
+                  "player_id": "379164",
+                  "name": "Andrei Trașcu",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/379164-1756335998.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  3
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": null
+              },
+              {
+                "minute": 59,
+                "extra_time": null,
+                "player": {
+                  "player_id": "379164",
+                  "name": "Andrei Trașcu",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/379164-1756335998.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  4
+                ],
+                "season_goal_number": 2,
+                "season_assist_number": null
+              },
+              {
+                "minute": 75,
+                "extra_time": null,
+                "player": {
+                  "player_id": "724575",
+                  "name": "Ionuț Mitran",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/724575-1756335998.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  5
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": null
+              }
+            ],
+            "cards": [],
+            "substitutions": [
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "967047",
+                  "name": "Robert Stănici",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/967047-1756335998.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1005120",
+                  "name": "Marian Sanda",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1005120-1756335998.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "289774",
+                  "name": "Bogdan Vasile",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/289774-1756335998.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1271570",
+                  "name": "Georgian Jenaru",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1271570-1756335998.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "824919",
+                  "name": "Alexandru Enache",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/824919-1756335998.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1167262",
+                  "name": "Darius Ciurea",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1167262-1756335998.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "46536",
+                  "name": "Cătălin Doman",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/46536-1756335998.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "148000",
+                  "name": "Ionuț Năstăsie",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/148000-1756335998.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 65,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "241234",
+                  "name": "Cătălin Golofca",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/241234-1756335998.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1146868",
+                  "name": "Denis Dragu",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1146868-1756335998.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 65,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "963556",
+                  "name": "Kayondo Mahadi Mahrez",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/963556-1756335998.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "168257",
+                  "name": "Cătălin Țîră",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/168257-1756335998.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 66,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "540921",
+                  "name": "Aleksandru Longher",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/540921-1756335998.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1271569",
+                  "name": "Robert Dumitrescu",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1271569-1756335998.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 74,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1292421",
+                  "name": "Daniel Popescu",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1292421-1756335998.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1268367",
+                  "name": "Radu Cacior",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1268367-1756335998.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 75,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "804920",
+                  "name": "Constantin Radu",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/804920-1756335998.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "623411",
+                  "name": "Robert Riza",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/623411-1756335998.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 79,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "379164",
+                  "name": "Andrei Trașcu",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/379164-1756335998.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "539398",
+                  "name": "Dorin Toma",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/539398-1756335998.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4421145",
+            "competition_name": "Liga 2",
+            "season": "2024",
+            "date": "2024-08-24",
+            "time": "10:00",
+            "venue": "Metalul",
+            "attendance": 400,
+            "referee": "Valentin Naidin",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4421145",
+            "day_of_week": "Saturday"
+          },
+          "home_team": {
+            "team_id": "60792",
+            "name": "AFC Metalul Buzau",
+            "formation": null,
+            "manager": "Valentin Stan"
+          },
+          "away_team": {
+            "team_id": "101331",
+            "name": "FC Bihor 1902",
+            "formation": null,
+            "manager": "Gustavo Aragolaza"
+          },
+          "score": {
+            "home_final": 1,
+            "away_final": 2,
+            "home_ht": 1,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "382659",
+                "name": "Iulian Dinu",
+                "shirt_number": null,
+                "position": "Goalkeeper",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/382659-1756336041.jpg?lm=1"
+              },
+              {
+                "player_id": "508761",
+                "name": "Marian Manea",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/508761-1756336041.jpg?lm=1"
+              },
+              {
+                "player_id": "605546",
+                "name": "Alberto Olaru",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/605546-1756336041.jpg?lm=1"
+              },
+              {
+                "player_id": "319197",
+                "name": "Ciprian Perju",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/319197-1756336041.jpg?lm=1"
+              },
+              {
+                "player_id": "1163786",
+                "name": "Răzvan Radu",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1163786-1756336041.jpg?lm=1"
+              },
+              {
+                "player_id": "1267851",
+                "name": "Florin Opaiț",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1267851-1756336041.jpg?lm=1"
+              },
+              {
+                "player_id": "474520",
+                "name": "Claudiu Borțoneanu",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/474520-1756336041.jpg?lm=1"
+              },
+              {
+                "player_id": "350965",
+                "name": "Marius Tudorica",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/350965-1756336041.jpg?lm=1"
+              },
+              {
+                "player_id": "709667",
+                "name": "Matei Constantinescu",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/709667-1756336041.jpg?lm=1"
+              },
+              {
+                "player_id": "271283",
+                "name": "Alin Manea",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/271283-1756336041.jpg?lm=1"
+              },
+              {
+                "player_id": "645491",
+                "name": "Valentin Robu",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/645491-1756336041.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "477132",
+                "name": "Rodrìgo Accinelli",
+                "shirt_number": null,
+                "position": "Goalkeeper",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/477132-1756336041.jpg?lm=1"
+              },
+              {
+                "player_id": "435735",
+                "name": "Alex Băican",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/435735-1756336041.jpg?lm=1"
+              },
+              {
+                "player_id": "491770",
+                "name": "Deniz Giafer",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/491770-1756336041.jpg?lm=1"
+              },
+              {
+                "player_id": "470151",
+                "name": "Călin Jurj",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/470151-1756336041.jpg?lm=1"
+              },
+              {
+                "player_id": "169272",
+                "name": "Ioan Filip",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/169272-1756336041.jpg?lm=1"
+              },
+              {
+                "player_id": "605544",
+                "name": "Răzvan Gunie",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/605544-1756336041.jpg?lm=1"
+              },
+              {
+                "player_id": "975195",
+                "name": "David Sala",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/975195-1756336041.jpg?lm=1"
+              },
+              {
+                "player_id": "364942",
+                "name": "Ionuț Ban",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/364942-1756336041.jpg?lm=1"
+              },
+              {
+                "player_id": "1231503",
+                "name": "Andrei Moga",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1231503-1756336041.jpg?lm=1"
+              },
+              {
+                "player_id": "478022",
+                "name": "Albert Stahl",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/478022-1756336041.jpg?lm=1"
+              },
+              {
+                "player_id": "422573",
+                "name": "Sergiu Jurj",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/422573-1756336041.jpg?lm=1"
+              }
+            ],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 8,
+                "extra_time": null,
+                "player": {
+                  "player_id": "645491",
+                  "name": "Valentin Robu",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/645491-1756336041.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 3,
+                "season_assist_number": null
+              },
+              {
+                "minute": 58,
+                "extra_time": null,
+                "player": {
+                  "player_id": "422573",
+                  "name": "Sergiu Jurj",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/422573-1756336041.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "away",
+                "score_after": [
+                  1,
+                  1
+                ],
+                "season_goal_number": 2,
+                "season_assist_number": null
+              },
+              {
+                "minute": 68,
+                "extra_time": null,
+                "player": {
+                  "player_id": "54528",
+                  "name": "Ioan Hora",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/54528-1756336041.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "away",
+                "score_after": [
+                  1,
+                  2
+                ],
+                "season_goal_number": 2,
+                "season_assist_number": null
+              }
+            ],
+            "cards": [],
+            "substitutions": [
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "709667",
+                  "name": "Matei Constantinescu",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/709667-1756336041.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "476152",
+                  "name": "Adrian Moldovan",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/476152-1756336041.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "364942",
+                  "name": "Ionuț Ban",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/364942-1756336041.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "54528",
+                  "name": "Ioan Hora",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/54528-1756336041.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "605544",
+                  "name": "Răzvan Gunie",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/605544-1756336041.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "418215",
+                  "name": "Ricardo Farcaș",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/418215-1756336041.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "975195",
+                  "name": "David Sala",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/975195-1756336041.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1027038",
+                  "name": "Sebastian Cucu",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1027038-1756336041.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 56,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1267851",
+                  "name": "Florin Opaiț",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1267851-1756336041.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "803428",
+                  "name": "Dragoș Lazăr",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/803428-1756336041.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 56,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1231503",
+                  "name": "Andrei Moga",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1231503-1756336041.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1158644",
+                  "name": "Adelin Nica",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1158644-1756336041.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 61,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "271283",
+                  "name": "Alin Manea",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/271283-1756336041.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "710089",
+                  "name": "Eduard Rusu",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/710089-1756336041.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 66,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "478022",
+                  "name": "Albert Stahl",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/478022-1756336041.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1024862",
+                  "name": "Luca Tincău",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1024862-1756336041.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              }
+            ]
+          }
+        }
+      ],
+      "league_table": {
+        "season": "24/25",
+        "teams": [
+          {
+            "position": 1,
+            "movement": "up",
+            "team_id": "37255",
+            "name": "FK Csikszereda Miercurea Ciuc",
+            "short_name": "FK Csikszereda",
+            "profile_url": "/afk-csikszereda-miercurea-ciuc/spielplan/verein/37255/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/37255.png?lm=1621077041",
+            "matches": 3,
+            "goal_difference": "6",
+            "points": 9
+          },
+          {
+            "position": 2,
+            "movement": "down",
+            "team_id": "41061",
+            "name": "Corvinul Hunedoara",
+            "short_name": "Corvinul",
+            "profile_url": "/cs-hunedoara/spielplan/verein/41061/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/41061.png?lm=1658328354",
+            "matches": 4,
+            "goal_difference": "2",
+            "points": 9
+          },
+          {
+            "position": 3,
+            "movement": "up",
+            "team_id": "4686",
+            "name": "ACSM Resita",
+            "short_name": "ACSM Resita",
+            "profile_url": "/csm-resita/spielplan/verein/4686/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/4686.png?lm=1584550894",
+            "matches": 4,
+            "goal_difference": "3",
+            "points": 8
+          },
+          {
+            "position": 4,
+            "movement": "up",
+            "team_id": "61687",
+            "name": "CSA Steaua",
+            "short_name": "CSA Steaua",
+            "profile_url": "/csa-steaua/spielplan/verein/61687/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/61687.png?lm=1691519292",
+            "matches": 4,
+            "goal_difference": "2",
+            "points": 8
+          },
+          {
+            "position": 5,
+            "movement": "up",
+            "team_id": "84065",
+            "name": "CSM Slatina",
+            "short_name": "Slatina",
+            "profile_url": "/csm-slatina/spielplan/verein/84065/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/84065.png?lm=1732738180",
+            "matches": 3,
+            "goal_difference": "8",
+            "points": 7
+          },
+          {
+            "position": 6,
+            "movement": "down",
+            "team_id": "1007",
+            "name": "U Craiova 1948",
+            "short_name": "FC U Craiova",
+            "profile_url": "/fc-u-craiova-1948/spielplan/verein/1007/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/1007.png?lm=1695392000",
+            "matches": 4,
+            "goal_difference": "0",
+            "points": 7
+          },
+          {
+            "position": 7,
+            "movement": "down",
+            "team_id": "37624",
+            "name": "Metaloglobus Bucharest",
+            "short_name": "Metaloglobus",
+            "profile_url": "/fc-metaloglobus-bukarest/spielplan/verein/37624/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/37624.png?lm=1503912739",
+            "matches": 4,
+            "goal_difference": "1",
+            "points": 6
+          },
+          {
+            "position": 8,
+            "movement": "up",
+            "team_id": "37620",
+            "name": "CS Afumati",
+            "short_name": "CS Afumati",
+            "profile_url": "/cs-afumati/spielplan/verein/37620/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/37620.png?lm=1455805302",
+            "matches": 3,
+            "goal_difference": "1",
+            "points": 6
+          },
+          {
+            "position": 9,
+            "movement": "up",
+            "team_id": "101331",
+            "name": "Bihor 1902",
+            "short_name": "FC Bihor",
+            "profile_url": "/fc-bihor-1902/spielplan/verein/101331/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/101331.png?lm=1662880828",
+            "matches": 3,
+            "goal_difference": "1",
+            "points": 6
+          },
+          {
+            "position": 10,
+            "movement": "up",
+            "team_id": "12680",
+            "name": "AChindia Targoviste",
+            "short_name": "Chindia",
+            "profile_url": "/afc-chindia-targoviste/spielplan/verein/12680/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/12680.png?lm=1462035035",
+            "matches": 4,
+            "goal_difference": "0",
+            "points": 6
+          },
+          {
+            "position": 11,
+            "movement": "up",
+            "team_id": "40843",
+            "name": "Voluntari",
+            "short_name": "FC Voluntari",
+            "profile_url": "/fc-voluntari/spielplan/verein/40843/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/40843.png?lm=1626459369",
+            "matches": 3,
+            "goal_difference": "2",
+            "points": 5
+          },
+          {
+            "position": 12,
+            "movement": "down",
+            "team_id": "78257",
+            "name": "CSC 1599 Selimbar",
+            "short_name": "CSC Selimbar",
+            "profile_url": "/viitorul-selimbar/spielplan/verein/78257/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/78257.png?lm=1629303550",
+            "matches": 4,
+            "goal_difference": "0",
+            "points": 4
+          },
+          {
+            "position": 12,
+            "movement": "down",
+            "team_id": "72297",
+            "name": "CSC Dumbravita",
+            "short_name": "Dumbravita",
+            "profile_url": "/acs-dumbravita/spielplan/verein/72297/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/72297.png?lm=1638532877",
+            "matches": 4,
+            "goal_difference": "0",
+            "points": 4
+          },
+          {
+            "position": 14,
+            "movement": "down",
+            "team_id": "41278",
+            "name": "ACSC Arges",
+            "short_name": "FC Arges",
+            "profile_url": "/acsc-fc-arges/spielplan/verein/41278/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/41278.png?lm=1663149849",
+            "matches": 4,
+            "goal_difference": "0",
+            "points": 4
+          },
+          {
+            "position": 15,
+            "movement": "down",
+            "team_id": "60792",
+            "name": "AMetalul Buzau",
+            "short_name": "Metalul Buzau",
+            "profile_url": "/metalul-buzau/spielplan/verein/60792/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/60792.png?lm=1526909951",
+            "matches": 4,
+            "goal_difference": "-1",
+            "points": 3
+          },
+          {
+            "position": 16,
+            "movement": "down",
+            "team_id": "8687",
+            "name": "CSM Ceahlaul Piatra Neamt",
+            "short_name": "Ceahlaul",
+            "profile_url": "/csm-ceahlaul-piatra-neamt/spielplan/verein/8687/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/8687.png?lm=1618762842",
+            "matches": 3,
+            "goal_difference": "-3",
+            "points": 3
+          },
+          {
+            "position": 17,
+            "movement": "down",
+            "team_id": "13812",
+            "name": "CSM Focsani 2007",
+            "short_name": "CSM Focsani",
+            "profile_url": "/csm-focsani/spielplan/verein/13812/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/13812.png?lm=1550607836",
+            "matches": 4,
+            "goal_difference": "-4",
+            "points": 3
+          },
+          {
+            "position": 18,
+            "movement": "down",
+            "team_id": "94872",
+            "name": "ACampulung Muscel 2022",
+            "short_name": "Campulung",
+            "profile_url": "/cs-rucar/spielplan/verein/94872/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/94872.png?lm=1672397033",
+            "matches": 4,
+            "goal_difference": "-9",
+            "points": 3
+          },
+          {
+            "position": 19,
+            "movement": "same",
+            "team_id": "15945",
+            "name": "Concordia Chiajna",
+            "short_name": "Concordia",
+            "profile_url": "/concordia-chiajna/spielplan/verein/15945/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/15945.png?lm=1476378142",
+            "matches": 3,
+            "goal_difference": "-4",
+            "points": 1
+          },
+          {
+            "position": 20,
+            "movement": "same",
+            "team_id": "62129",
+            "name": "Viitorul Pandurii Targu Jiu (- 2024)",
+            "short_name": "Viitorul Tg.Jiu",
+            "profile_url": "/acs-viitorul-p-targu-jiu/spielplan/verein/62129/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/62129.png?lm=1572894993",
+            "matches": 0,
+            "goal_difference": "-",
+            "points": 0
+          },
+          {
+            "position": 21,
+            "movement": "same",
+            "team_id": "86099",
+            "name": "CS Unirea Ungheni",
+            "short_name": "Unirea Ungheni",
+            "profile_url": "/cs-unirea-ungheni/spielplan/verein/86099/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/86099.png?lm=1741190701",
+            "matches": 3,
+            "goal_difference": "-5",
+            "points": 0
+          },
+          {
+            "position": 22,
+            "movement": "same",
+            "team_id": "11390",
+            "name": "CS Mioveni",
+            "short_name": "CS Mioveni",
+            "profile_url": "/cs-mioveni/spielplan/verein/11390/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/11390.png?lm=1438637344",
+            "matches": 0,
+            "goal_difference": "-",
+            "points": 0
+          }
+        ]
+      },
+      "top_scorers": [
+        {
+          "name": "Jozef Dolny",
+          "short_name": "J. Dolny",
+          "profile_url": "/jozef-dolny/profil/spieler/148712",
+          "clubs": [
+            {
+              "name": "FK Csikszereda Miercurea Ciuc",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/37255.png?lm=1621077041"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 12
+        },
+        {
+          "name": "Bogdan Chipirliu",
+          "short_name": "B. Chipirliu",
+          "profile_url": "/bogdan-chipirliu/profil/spieler/250134",
+          "clubs": [
+            {
+              "name": "CSA Steaua",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/61687.png?lm=1691519292"
+            }
+          ],
+          "goals_this_matchday": "1",
+          "total_goals": 11
+        },
+        {
+          "name": "Alexandru Boiciuc",
+          "short_name": "A. Boiciuc",
+          "profile_url": "/alexandru-boiciuc/profil/spieler/358734",
+          "clubs": [],
+          "goals_this_matchday": 0,
+          "total_goals": 11
+        },
+        {
+          "name": "Cătălin Doman",
+          "short_name": "C. Doman",
+          "profile_url": "/catalin-doman/profil/spieler/46536",
+          "clubs": [
+            {
+              "name": "CSM Slatina",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/84065.png?lm=1732738180"
+            }
+          ],
+          "goals_this_matchday": "2",
+          "total_goals": 9
+        },
+        {
+          "name": "Valentin Robu",
+          "short_name": "V. Robu",
+          "profile_url": "/valentin-robu/profil/spieler/645491",
+          "clubs": [
+            {
+              "name": "AFC Metalul Buzau",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/60792.png?lm=1526909951"
+            }
+          ],
+          "goals_this_matchday": "1",
+          "total_goals": 8
+        },
+        {
+          "name": "Matko Babic",
+          "short_name": "M. Babic",
+          "profile_url": "/matko-babic/profil/spieler/371223",
+          "clubs": [
+            {
+              "name": "CSC 1599 Selimbar",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/78257.png?lm=1629303550"
+            }
+          ],
+          "goals_this_matchday": "1",
+          "total_goals": 8
+        },
+        {
+          "name": "Moussa Samake",
+          "short_name": "M. Samake",
+          "profile_url": "/moussa-samake/profil/spieler/1185785",
+          "clubs": [
+            {
+              "name": "ACSM Resita",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/4686.png?lm=1584550894"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 7
+        },
+        {
+          "name": "Dragoș Huiban",
+          "short_name": "D. Huiban",
+          "profile_url": "/dragos-huiban/profil/spieler/64054",
+          "clubs": [
+            {
+              "name": "FC Metaloglobus Bucharest",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/37624.png?lm=1503912739"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 7
+        },
+        {
+          "name": "Patrick Petre",
+          "short_name": "P. Petre",
+          "profile_url": "/patrick-petre/profil/spieler/295885",
+          "clubs": [
+            {
+              "name": "CSM Ceahlaul Piatra Neamt",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/8687.png?lm=1618762842"
+            }
+          ],
+          "goals_this_matchday": "1",
+          "total_goals": 7
+        },
+        {
+          "name": "Giovani Ghimfuș",
+          "short_name": "G. Ghimfuș",
+          "profile_url": "/giovani-ghimfus/profil/spieler/1017317",
+          "clubs": [
+            {
+              "name": "Concordia Chiajna",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/15945.png?lm=1476378142"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 7
+        }
+      ],
+      "summary": {
+        "matches": 11,
+        "goals": 23,
+        "own_goals": 0,
+        "yellow_cards": 11,
+        "second_yellow_cards": "1",
+        "red_cards": 0,
+        "total_attendance": "6050",
+        "average_attendance": "550",
+        "sold_out_matches": 0
+      },
+      "metadata": {
+        "extraction_time": "2025-08-28T02:06:28.872853",
+        "source": "worker_extraction",
+        "total_matches": 11,
+        "is_recovery_work": true,
+        "recovery_targets": [
+          "4421145",
+          "4421143"
+        ]
+      }
+    }
+  ],
+  "created_at": "2025-08-25T12:36:15Z",
+  "created_by": "recovery_system",
+  "status": "completed",
+  "claimed_by": "match_MacBookPro.home_29290_514ec006",
+  "claimed_at": "2025-08-28T02:06:08.942095",
+  "claim_id": "match_MacBookPro.home_29290_514ec006_1756335968941_5d036685",
+  "started_at": "2025-08-27T23:06:14.661377+00:00",
+  "completed_at": "2025-08-27T23:07:21.900358+00:00",
+  "total_matchdays": 1,
+  "total_matches": 2,
+  "execution_time_seconds": 210666.897434,
+  "execution_time_minutes": 3511.11,
+  "execution_time_hours": 58.52,
+  "processing_time_seconds": 67.23857075022534,
+  "processing_time_minutes": 1.12,
+  "processing_time_hours": 0.02,
+  "queue_wait_seconds": 210599.661377,
+  "was_recovery_work": true,
+  "recovery_success": true,
+  "recovered_match_targets": [
+    "4421145",
+    "4421143"
+  ],
+  "requeue_template": {
+    "work_id": "requeue_recovery_RO2_2024_md4_1756114575_1",
+    "work_type": "match_data",
+    "version": "2.0",
+    "competition_id": "RO2",
+    "competition_code": "liga-2",
+    "competition_name": "Liga 2",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_RO2_2024_md04_1755865499",
+    "recovery_reason": "missing_team_data",
+    "recovery_created_at": "2025-08-27T23:07:21.900400+00:00",
+    "recovery_matchday_number": 4,
+    "specific_match_targets": [
+      "4421143",
+      "4421145"
+    ],
+    "team_count": 22,
+    "expected_matchdays": 42,
+    "priority": 349,
+    "processing_hints": {
+      "is_recovery": true,
+      "focus_on_team_data": true,
+      "preserve_existing_data": true,
+      "original_work_id": "match_RO2_2024_md04_1755865499",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-27T23:07:21.900417+00:00",
+    "created_by": "requeue_adapter"
+  }
+}
