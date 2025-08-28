@@ -1,0 +1,82 @@
+{
+  "work_id": "recovery_FR1_2024_md30_1756375962",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_FR1_2024_md30_1756034426",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-28T13:12:42Z",
+  "competition_id": "FR1",
+  "competition_code": "ligue-1",
+  "competition_name": "Ligue 1",
+  "season_year": "2024",
+  "team_count": 18,
+  "expected_matchdays": null,
+  "recovery_matchday_number": 30,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4364009"
+  ],
+  "priority": 820,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_FR1_2024_md30_1756034426"
+  },
+  "matchdays_data": [],
+  "created_at": "2025-08-28T13:12:42Z",
+  "created_by": "recovery_system",
+  "status": "completed",
+  "claimed_by": "match_MacBookPro.home_80036_9892a491",
+  "claimed_at": "2025-08-28T19:54:11.686717",
+  "claim_id": "match_MacBookPro.home_80036_9892a491_1756400051686_9f566b7c",
+  "started_at": "2025-08-28T16:54:16.719623+00:00",
+  "completed_at": "2025-08-28T16:55:09.681343+00:00",
+  "total_matchdays": 0,
+  "total_matches": 0,
+  "execution_time_seconds": 13347.680011,
+  "execution_time_minutes": 222.46,
+  "execution_time_hours": 3.71,
+  "processing_time_seconds": 52.96238691685721,
+  "processing_time_minutes": 0.88,
+  "processing_time_hours": 0.01,
+  "queue_wait_seconds": 13294.719623,
+  "was_recovery_work": true,
+  "recovery_success": false,
+  "recovered_match_targets": [
+    "4364009"
+  ],
+  "requeue_template": {
+    "work_id": "requeue_recovery_FR1_2024_md30_1756375962_1",
+    "work_type": "match_data",
+    "version": "2.0",
+    "competition_id": "FR1",
+    "competition_code": "ligue-1",
+    "competition_name": "Ligue 1",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_FR1_2024_md30_1756034426",
+    "recovery_reason": "missing_team_data",
+    "recovery_created_at": "2025-08-28T16:55:09.681367+00:00",
+    "recovery_matchday_number": 30,
+    "specific_match_targets": [
+      "4364009"
+    ],
+    "team_count": 18,
+    "expected_matchdays": null,
+    "priority": 810,
+    "processing_hints": {
+      "is_recovery": true,
+      "focus_on_team_data": true,
+      "preserve_existing_data": true,
+      "original_work_id": "match_FR1_2024_md30_1756034426",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-28T16:55:09.681387+00:00",
+    "created_by": "requeue_adapter"
+  }
+}
