@@ -1,0 +1,82 @@
+{
+  "work_id": "recovery_SMR1_2024_md9_1756376134",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_SMR1_2024_md09_1756034757",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-28T13:15:34Z",
+  "competition_id": "SMR1",
+  "competition_code": "campionato-sammarinese",
+  "competition_name": "Camp. Sammarinese",
+  "season_year": "2024",
+  "team_count": 16,
+  "expected_matchdays": null,
+  "recovery_matchday_number": 9,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4489133"
+  ],
+  "priority": 820,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_SMR1_2024_md09_1756034757"
+  },
+  "matchdays_data": [],
+  "created_at": "2025-08-28T13:15:34Z",
+  "created_by": "recovery_system",
+  "status": "completed",
+  "claimed_by": "match_MacBookPro.home_93086_1ac0db8f",
+  "claimed_at": "2025-08-28T20:34:37.705317",
+  "claim_id": "match_MacBookPro.home_93086_1ac0db8f_1756402477705_ff7ee98e",
+  "started_at": "2025-08-28T17:34:42.526525+00:00",
+  "completed_at": "2025-08-28T17:35:34.121392+00:00",
+  "total_matchdays": 0,
+  "total_matches": 0,
+  "execution_time_seconds": 15600.120433,
+  "execution_time_minutes": 260.0,
+  "execution_time_hours": 4.33,
+  "processing_time_seconds": 51.5966830002144,
+  "processing_time_minutes": 0.86,
+  "processing_time_hours": 0.01,
+  "queue_wait_seconds": 15548.526525,
+  "was_recovery_work": true,
+  "recovery_success": false,
+  "recovered_match_targets": [
+    "4489133"
+  ],
+  "requeue_template": {
+    "work_id": "requeue_recovery_SMR1_2024_md9_1756376134_1",
+    "work_type": "match_data",
+    "version": "2.0",
+    "competition_id": "SMR1",
+    "competition_code": "campionato-sammarinese",
+    "competition_name": "Camp. Sammarinese",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_SMR1_2024_md09_1756034757",
+    "recovery_reason": "missing_team_data",
+    "recovery_created_at": "2025-08-28T17:35:34.121419+00:00",
+    "recovery_matchday_number": 9,
+    "specific_match_targets": [
+      "4489133"
+    ],
+    "team_count": 16,
+    "expected_matchdays": null,
+    "priority": 810,
+    "processing_hints": {
+      "is_recovery": true,
+      "focus_on_team_data": true,
+      "preserve_existing_data": true,
+      "original_work_id": "match_SMR1_2024_md09_1756034757",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-28T17:35:34.121435+00:00",
+    "created_by": "requeue_adapter"
+  }
+}
