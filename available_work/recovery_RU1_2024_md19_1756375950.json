@@ -1,0 +1,137 @@
+{
+  "work_id": "recovery_RU1_2024_md19_1756375950",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_RU1_2024_md19_1756034491",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-28T13:12:30Z",
+  "competition_id": "RU1",
+  "competition_code": "premier-liga",
+  "competition_name": "Premier Liga",
+  "season_year": "2024",
+  "team_count": 18,
+  "expected_matchdays": null,
+  "recovery_matchday_number": 19,
+  "recovery_matches_count": 2,
+  "specific_match_targets": [
+    "4408308",
+    "4408302"
+  ],
+  "priority": 820,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_RU1_2024_md19_1756034491"
+  },
+  "matchdays_data": [
+    {
+      "matchday_info": {
+        "number": 19,
+        "season": "2024",
+        "competition": "Premier Liga",
+        "source_url": "https://www.transfermarkt.com/premier-liga/spieltag/wettbewerb/RU1/saison_id/2024/spieltag/19",
+        "total_matches": 8
+      },
+      "matches": [
+        {
+          "match_info": {
+            "match_id": "4408308",
+            "competition_name": "Premier Liga",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4408308",
+            "day_of_week": "Friday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4408302",
+            "competition_name": "Premier Liga",
+            "season": "2024",
+            "date": null,
+            "time": null,
+            "venue": null,
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4408302",
+            "day_of_week": "Saturday"
+          },
+          "home_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "",
+            "name": "",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        }
+      ],
+      "league_table": {},
+      "top_scorers": [],
+      "summary": {
+        "recovery_context": true,
+        "original_work_id": "match_RU1_2024_md19_1756034491",
+        "recovery_reason": "missing_team_data"
+      }
+    }
+  ],
+  "created_at": "2025-08-28T13:12:30Z",
+  "created_by": "recovery_system",
+  "status": "available"
+}
