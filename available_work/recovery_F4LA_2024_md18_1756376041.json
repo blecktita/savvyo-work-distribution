@@ -1,0 +1,93 @@
+{
+  "work_id": "recovery_F4LA_2024_md18_1756376041",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "recovery_F4LA_2024_md18_1756127356",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-28T13:14:01Z",
+  "competition_id": "F4LA",
+  "competition_code": "kolmonen-lantinen",
+  "competition_name": "Kolmonen Läntinen",
+  "season_year": "2024",
+  "team_count": 35,
+  "expected_matchdays": 68,
+  "recovery_matchday_number": 18,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4710526"
+  ],
+  "priority": 568,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "recovery_F4LA_2024_md18_1756127356"
+  },
+  "matchdays_data": [
+    {
+      "matchday_info": {
+        "number": 18,
+        "season": "2024",
+        "competition": "Kolmonen Läntinen",
+        "source_url": "https://www.transfermarkt.com/kolmonen-lantinen/spieltag/wettbewerb/F4LA/saison_id/2024/spieltag/18",
+        "total_matches": 17
+      },
+      "matches": [
+        {
+          "match_info": {
+            "match_id": "4710526",
+            "competition_name": "Kolmonen Läntinen",
+            "season": "2024",
+            "date": "2025-08-22",
+            "time": "7:00",
+            "venue": "Hervanta keskuskenttä",
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4710526",
+            "day_of_week": "Friday"
+          },
+          "home_team": {
+            "team_id": "78921",
+            "name": "AC Estudiantes",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "28260",
+            "name": "Nokian Palloseura",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 2,
+            "away_final": 2,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        }
+      ],
+      "league_table": {},
+      "top_scorers": [],
+      "summary": {
+        "recovery_context": true,
+        "original_work_id": "recovery_F4LA_2024_md18_1756127356",
+        "recovery_reason": "missing_team_data"
+      }
+    }
+  ],
+  "created_at": "2025-08-28T13:14:01Z",
+  "created_by": "recovery_system",
+  "status": "available"
+}
