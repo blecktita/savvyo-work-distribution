@@ -1,0 +1,82 @@
+{
+  "work_id": "recovery_IN1L_2024_md25_1756373089",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_IN1L_2024_md25_1756034332",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-28T12:24:49Z",
+  "competition_id": "IN1L",
+  "competition_code": "liga-1-indonesia",
+  "competition_name": "Liga 1",
+  "season_year": "2024",
+  "team_count": 18,
+  "expected_matchdays": null,
+  "recovery_matchday_number": 25,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4413423"
+  ],
+  "priority": 820,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_IN1L_2024_md25_1756034332"
+  },
+  "matchdays_data": [],
+  "created_at": "2025-08-28T12:24:49Z",
+  "created_by": "recovery_system",
+  "status": "completed",
+  "claimed_by": "match_MacBookPro.home_68497_82fff308",
+  "claimed_at": "2025-08-28T19:01:09.831415",
+  "claim_id": "match_MacBookPro.home_68497_82fff308_1756396869831_fdbf9b77",
+  "started_at": "2025-08-28T16:01:14.448321+00:00",
+  "completed_at": "2025-08-28T16:01:41.179815+00:00",
+  "total_matchdays": 0,
+  "total_matches": 0,
+  "execution_time_seconds": 13012.178817,
+  "execution_time_minutes": 216.87,
+  "execution_time_hours": 3.61,
+  "processing_time_seconds": 26.732112541794777,
+  "processing_time_minutes": 0.45,
+  "processing_time_hours": 0.01,
+  "queue_wait_seconds": 12985.448321,
+  "was_recovery_work": true,
+  "recovery_success": false,
+  "recovered_match_targets": [
+    "4413423"
+  ],
+  "requeue_template": {
+    "work_id": "requeue_recovery_IN1L_2024_md25_1756373089_1",
+    "work_type": "match_data",
+    "version": "2.0",
+    "competition_id": "IN1L",
+    "competition_code": "liga-1-indonesia",
+    "competition_name": "Liga 1",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_IN1L_2024_md25_1756034332",
+    "recovery_reason": "missing_team_data",
+    "recovery_created_at": "2025-08-28T16:01:41.179842+00:00",
+    "recovery_matchday_number": 25,
+    "specific_match_targets": [
+      "4413423"
+    ],
+    "team_count": 18,
+    "expected_matchdays": null,
+    "priority": 810,
+    "processing_hints": {
+      "is_recovery": true,
+      "focus_on_team_data": true,
+      "preserve_existing_data": true,
+      "original_work_id": "match_IN1L_2024_md25_1756034332",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-28T16:01:41.179855+00:00",
+    "created_by": "requeue_adapter"
+  }
+}
