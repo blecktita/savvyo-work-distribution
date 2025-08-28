@@ -1,0 +1,82 @@
+{
+  "work_id": "recovery_EC1N_2024_md8_1756375235",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_EC1N_2024_md08_1756034935",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-28T13:00:35Z",
+  "competition_id": "EC1N",
+  "competition_code": "ligapro-serie-a",
+  "competition_name": "LigaPro Serie A",
+  "season_year": "2024",
+  "team_count": 16,
+  "expected_matchdays": null,
+  "recovery_matchday_number": 8,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4536066"
+  ],
+  "priority": 820,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_EC1N_2024_md08_1756034935"
+  },
+  "matchdays_data": [],
+  "created_at": "2025-08-28T13:00:35Z",
+  "created_by": "recovery_system",
+  "status": "completed",
+  "claimed_by": "match_MacBookPro.home_80036_9892a491",
+  "claimed_at": "2025-08-28T20:04:43.107990",
+  "claim_id": "match_MacBookPro.home_80036_9892a491_1756400683107_a5d44817",
+  "started_at": "2025-08-28T17:04:47.505381+00:00",
+  "completed_at": "2025-08-28T17:05:48.743428+00:00",
+  "total_matchdays": 0,
+  "total_matches": 0,
+  "execution_time_seconds": 14713.742236,
+  "execution_time_minutes": 245.23,
+  "execution_time_hours": 4.09,
+  "processing_time_seconds": 61.23869370762259,
+  "processing_time_minutes": 1.02,
+  "processing_time_hours": 0.02,
+  "queue_wait_seconds": 14652.505381,
+  "was_recovery_work": true,
+  "recovery_success": false,
+  "recovered_match_targets": [
+    "4536066"
+  ],
+  "requeue_template": {
+    "work_id": "requeue_recovery_EC1N_2024_md8_1756375235_1",
+    "work_type": "match_data",
+    "version": "2.0",
+    "competition_id": "EC1N",
+    "competition_code": "ligapro-serie-a",
+    "competition_name": "LigaPro Serie A",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_EC1N_2024_md08_1756034935",
+    "recovery_reason": "missing_team_data",
+    "recovery_created_at": "2025-08-28T17:05:48.743450+00:00",
+    "recovery_matchday_number": 8,
+    "specific_match_targets": [
+      "4536066"
+    ],
+    "team_count": 16,
+    "expected_matchdays": null,
+    "priority": 810,
+    "processing_hints": {
+      "is_recovery": true,
+      "focus_on_team_data": true,
+      "preserve_existing_data": true,
+      "original_work_id": "match_EC1N_2024_md08_1756034935",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-28T17:05:48.743465+00:00",
+    "created_by": "requeue_adapter"
+  }
+}
