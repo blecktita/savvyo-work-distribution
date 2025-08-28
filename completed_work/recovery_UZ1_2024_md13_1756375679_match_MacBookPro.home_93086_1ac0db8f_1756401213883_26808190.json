@@ -1,0 +1,82 @@
+{
+  "work_id": "recovery_UZ1_2024_md13_1756375679",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_UZ1_2024_md13_1756034845",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-28T13:07:59Z",
+  "competition_id": "UZ1",
+  "competition_code": "ozbekiston-superligasi",
+  "competition_name": "Superliga",
+  "season_year": "2024",
+  "team_count": 16,
+  "expected_matchdays": null,
+  "recovery_matchday_number": 13,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4595523"
+  ],
+  "priority": 820,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_UZ1_2024_md13_1756034845"
+  },
+  "matchdays_data": [],
+  "created_at": "2025-08-28T13:07:59Z",
+  "created_by": "recovery_system",
+  "status": "completed",
+  "claimed_by": "match_MacBookPro.home_93086_1ac0db8f",
+  "claimed_at": "2025-08-28T20:13:33.883090",
+  "claim_id": "match_MacBookPro.home_93086_1ac0db8f_1756401213883_26808190",
+  "started_at": "2025-08-28T17:13:39.647242+00:00",
+  "completed_at": "2025-08-28T17:14:04.063365+00:00",
+  "total_matchdays": 0,
+  "total_matches": 0,
+  "execution_time_seconds": 14765.061108,
+  "execution_time_minutes": 246.08,
+  "execution_time_hours": 4.1,
+  "processing_time_seconds": 24.4204895417206,
+  "processing_time_minutes": 0.41,
+  "processing_time_hours": 0.01,
+  "queue_wait_seconds": 14740.647242,
+  "was_recovery_work": true,
+  "recovery_success": false,
+  "recovered_match_targets": [
+    "4595523"
+  ],
+  "requeue_template": {
+    "work_id": "requeue_recovery_UZ1_2024_md13_1756375679_1",
+    "work_type": "match_data",
+    "version": "2.0",
+    "competition_id": "UZ1",
+    "competition_code": "ozbekiston-superligasi",
+    "competition_name": "Superliga",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_UZ1_2024_md13_1756034845",
+    "recovery_reason": "missing_team_data",
+    "recovery_created_at": "2025-08-28T17:14:04.063431+00:00",
+    "recovery_matchday_number": 13,
+    "specific_match_targets": [
+      "4595523"
+    ],
+    "team_count": 16,
+    "expected_matchdays": null,
+    "priority": 810,
+    "processing_hints": {
+      "is_recovery": true,
+      "focus_on_team_data": true,
+      "preserve_existing_data": true,
+      "original_work_id": "match_UZ1_2024_md13_1756034845",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-28T17:14:04.063439+00:00",
+    "created_by": "requeue_adapter"
+  }
+}
