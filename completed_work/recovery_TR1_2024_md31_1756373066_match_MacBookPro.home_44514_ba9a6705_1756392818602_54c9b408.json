@@ -1,0 +1,82 @@
+{
+  "work_id": "recovery_TR1_2024_md31_1756373066",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_TR1_2024_md31_1756034205",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-28T12:24:26Z",
+  "competition_id": "TR1",
+  "competition_code": "super-lig",
+  "competition_name": "Süper Lig",
+  "season_year": "2024",
+  "team_count": 19,
+  "expected_matchdays": null,
+  "recovery_matchday_number": 31,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4393382"
+  ],
+  "priority": 820,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_TR1_2024_md31_1756034205"
+  },
+  "matchdays_data": [],
+  "created_at": "2025-08-28T12:24:26Z",
+  "created_by": "recovery_system",
+  "status": "completed",
+  "claimed_by": "match_MacBookPro.home_44514_ba9a6705",
+  "claimed_at": "2025-08-28T17:53:38.603024",
+  "claim_id": "match_MacBookPro.home_44514_ba9a6705_1756392818602_54c9b408",
+  "started_at": "2025-08-28T14:53:45.482143+00:00",
+  "completed_at": "2025-08-28T14:54:35.015916+00:00",
+  "total_matchdays": 0,
+  "total_matches": 0,
+  "execution_time_seconds": 9009.013755,
+  "execution_time_minutes": 150.15,
+  "execution_time_hours": 2.5,
+  "processing_time_seconds": 49.533473290968686,
+  "processing_time_minutes": 0.83,
+  "processing_time_hours": 0.01,
+  "queue_wait_seconds": 8959.482143,
+  "was_recovery_work": true,
+  "recovery_success": false,
+  "recovered_match_targets": [
+    "4393382"
+  ],
+  "requeue_template": {
+    "work_id": "requeue_recovery_TR1_2024_md31_1756373066_1",
+    "work_type": "match_data",
+    "version": "2.0",
+    "competition_id": "TR1",
+    "competition_code": "super-lig",
+    "competition_name": "Süper Lig",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_TR1_2024_md31_1756034205",
+    "recovery_reason": "missing_team_data",
+    "recovery_created_at": "2025-08-28T14:54:35.015927+00:00",
+    "recovery_matchday_number": 31,
+    "specific_match_targets": [
+      "4393382"
+    ],
+    "team_count": 19,
+    "expected_matchdays": null,
+    "priority": 810,
+    "processing_hints": {
+      "is_recovery": true,
+      "focus_on_team_data": true,
+      "preserve_existing_data": true,
+      "original_work_id": "match_TR1_2024_md31_1756034205",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-28T14:54:35.015932+00:00",
+    "created_by": "requeue_adapter"
+  }
+}
