@@ -1,0 +1,82 @@
+{
+  "work_id": "recovery_TDeA_2024_md2_1756373182",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_TDeA_2024_md02_1756034232",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-28T12:26:22Z",
+  "competition_id": "TDeA",
+  "competition_code": "liga-1-apertura",
+  "competition_name": "Liga 1 Apertura",
+  "season_year": "2024",
+  "team_count": 19,
+  "expected_matchdays": null,
+  "recovery_matchday_number": 2,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4533542"
+  ],
+  "priority": 820,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_TDeA_2024_md02_1756034232"
+  },
+  "matchdays_data": [],
+  "created_at": "2025-08-28T12:26:22Z",
+  "created_by": "recovery_system",
+  "status": "completed",
+  "claimed_by": "match_MacBookPro.home_80036_9892a491",
+  "claimed_at": "2025-08-28T19:46:07.637913",
+  "claim_id": "match_MacBookPro.home_80036_9892a491_1756399567637_1f253da1",
+  "started_at": "2025-08-28T16:46:13.329843+00:00",
+  "completed_at": "2025-08-28T16:47:10.769826+00:00",
+  "total_matchdays": 0,
+  "total_matches": 0,
+  "execution_time_seconds": 15648.768888,
+  "execution_time_minutes": 260.81,
+  "execution_time_hours": 4.35,
+  "processing_time_seconds": 57.440822707954794,
+  "processing_time_minutes": 0.96,
+  "processing_time_hours": 0.02,
+  "queue_wait_seconds": 15591.329843,
+  "was_recovery_work": true,
+  "recovery_success": false,
+  "recovered_match_targets": [
+    "4533542"
+  ],
+  "requeue_template": {
+    "work_id": "requeue_recovery_TDeA_2024_md2_1756373182_1",
+    "work_type": "match_data",
+    "version": "2.0",
+    "competition_id": "TDeA",
+    "competition_code": "liga-1-apertura",
+    "competition_name": "Liga 1 Apertura",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_TDeA_2024_md02_1756034232",
+    "recovery_reason": "missing_team_data",
+    "recovery_created_at": "2025-08-28T16:47:10.769849+00:00",
+    "recovery_matchday_number": 2,
+    "specific_match_targets": [
+      "4533542"
+    ],
+    "team_count": 19,
+    "expected_matchdays": null,
+    "priority": 810,
+    "processing_hints": {
+      "is_recovery": true,
+      "focus_on_team_data": true,
+      "preserve_existing_data": true,
+      "original_work_id": "match_TDeA_2024_md02_1756034232",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-28T16:47:10.769858+00:00",
+    "created_by": "requeue_adapter"
+  }
+}
