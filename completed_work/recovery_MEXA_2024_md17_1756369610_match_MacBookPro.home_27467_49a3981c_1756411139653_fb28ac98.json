@@ -1,0 +1,82 @@
+{
+  "work_id": "recovery_MEXA_2024_md17_1756369610",
+  "work_type": "match_data",
+  "version": "2.0",
+  "is_recovery_work": true,
+  "original_work_id": "match_MEXA_2024_md17_1756034725",
+  "recovery_reason": "missing_team_data",
+  "recovery_created_at": "2025-08-28T11:26:50Z",
+  "competition_id": "MEXA",
+  "competition_code": "liga-mx-apertura",
+  "competition_name": "Liga MX Apertura",
+  "season_year": "2024",
+  "team_count": 18,
+  "expected_matchdays": null,
+  "recovery_matchday_number": 17,
+  "recovery_matches_count": 1,
+  "specific_match_targets": [
+    "4388172"
+  ],
+  "priority": 820,
+  "processing_hints": {
+    "is_recovery": true,
+    "focus_on_team_data": true,
+    "preserve_existing_data": true,
+    "original_work_id": "match_MEXA_2024_md17_1756034725"
+  },
+  "matchdays_data": [],
+  "created_at": "2025-08-28T11:26:50Z",
+  "created_by": "recovery_system",
+  "status": "completed",
+  "claimed_by": "match_MacBookPro.home_27467_49a3981c",
+  "claimed_at": "2025-08-28T22:58:59.653941",
+  "claim_id": "match_MacBookPro.home_27467_49a3981c_1756411139653_fb28ac98",
+  "started_at": "2025-08-28T19:59:10.048260+00:00",
+  "completed_at": "2025-08-28T20:00:39.260785+00:00",
+  "total_matchdays": 0,
+  "total_matches": 0,
+  "execution_time_seconds": 30829.259758,
+  "execution_time_minutes": 513.82,
+  "execution_time_hours": 8.56,
+  "processing_time_seconds": 89.21656304085627,
+  "processing_time_minutes": 1.49,
+  "processing_time_hours": 0.02,
+  "queue_wait_seconds": 30740.04826,
+  "was_recovery_work": true,
+  "recovery_success": false,
+  "recovered_match_targets": [
+    "4388172"
+  ],
+  "requeue_template": {
+    "work_id": "requeue_recovery_MEXA_2024_md17_1756369610_1",
+    "work_type": "match_data",
+    "version": "2.0",
+    "competition_id": "MEXA",
+    "competition_code": "liga-mx-apertura",
+    "competition_name": "Liga MX Apertura",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_MEXA_2024_md17_1756034725",
+    "recovery_reason": "missing_team_data",
+    "recovery_created_at": "2025-08-28T20:00:39.260814+00:00",
+    "recovery_matchday_number": 17,
+    "specific_match_targets": [
+      "4388172"
+    ],
+    "team_count": 18,
+    "expected_matchdays": null,
+    "priority": 810,
+    "processing_hints": {
+      "is_recovery": true,
+      "focus_on_team_data": true,
+      "preserve_existing_data": true,
+      "original_work_id": "match_MEXA_2024_md17_1756034725",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-28T20:00:39.260824+00:00",
+    "created_by": "requeue_adapter"
+  }
+}
