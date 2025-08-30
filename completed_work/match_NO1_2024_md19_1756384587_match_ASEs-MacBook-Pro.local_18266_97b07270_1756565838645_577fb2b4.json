@@ -1,0 +1,4708 @@
+{
+  "work_id": "match_NO1_2024_md19_1756384587",
+  "work_type": "match_data",
+  "version": "3.1",
+  "competition_id": "NO1",
+  "competition_code": "eliteserien",
+  "competition_name": "Eliteserien",
+  "season_year": "2024",
+  "target_matchday": {
+    "number": 19,
+    "status": "missing",
+    "existing_matches": 0,
+    "completion_reason": "not_discovered",
+    "source_verified": true,
+    "discovery_method": "cache_driven"
+  },
+  "team_count": 16,
+  "existing_matchdays_count": 0,
+  "existing_matches_count": 0,
+  "competition_tier": "First Tier",
+  "competition_status": "empty",
+  "priority": 620,
+  "processing_hints": {
+    "scope": "single_matchday",
+    "matchday_focused": true,
+    "target_matchday": 19,
+    "expected_completion_time": "15_minutes",
+    "team_count_category": "medium",
+    "data_source": "db_sync",
+    "requires_validation": true,
+    "cache_last_analyzed": "2025-08-28T15:29:39.876467"
+  },
+  "created_at": "2025-08-28T15:36:27Z",
+  "created_by": "work_manager",
+  "creation_method": "cache_integrated_system",
+  "status": "completed",
+  "quality_level": "production",
+  "claimed_by": "match_ASEs-MacBook-Pro.local_18266_97b07270",
+  "claimed_at": "2025-08-30T17:57:18.645825",
+  "claim_id": "match_ASEs-MacBook-Pro.local_18266_97b07270_1756565838645_577fb2b4",
+  "started_at": "2025-08-30T14:57:28.819487+00:00",
+  "completed_at": "2025-08-30T15:00:56.610823+00:00",
+  "matchdays_data": [
+    {
+      "matchday_info": {
+        "number": 19,
+        "season": "2024",
+        "competition": "Eliteserien",
+        "source_url": "https://www.transfermarkt.com/eliteserien/spieltag/wettbewerb/NO1/saison_id/2024/spieltag/19",
+        "total_matches": 8
+      },
+      "matches": [
+        {
+          "match_info": {
+            "match_id": "4522649",
+            "competition_name": "Eliteserien",
+            "season": "2024",
+            "date": "2025-05-28",
+            "time": "9:00",
+            "venue": "Aspmyra Stadion",
+            "attendance": 6869,
+            "referee": "Kristoffer Hagenes",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4522649",
+            "day_of_week": "Wednesday"
+          },
+          "home_team": {
+            "team_id": "501",
+            "name": "FK Bodø/Glimt",
+            "formation": "4-3-3 Attacking",
+            "manager": "Kjetil Knutsen"
+          },
+          "away_team": {
+            "team_id": "239",
+            "name": "Viking FK",
+            "formation": "4-3-3 Attacking",
+            "manager": "Morten Jensen"
+          },
+          "score": {
+            "home_final": 2,
+            "away_final": 4,
+            "home_ht": 2,
+            "away_ht": 1
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "255440",
+                "name": "Haikin",
+                "shirt_number": 12,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/255440-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "342129",
+                "name": "Gundersen",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/342129-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "230166",
+                "name": "Aleesami",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/230166-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "364938",
+                "name": "Bjørkan",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/364938-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "912959",
+                "name": "Sjøvold",
+                "shirt_number": 20,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/912959-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "308439",
+                "name": "Berg",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/308439-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "201865",
+                "name": "Saltnes",
+                "shirt_number": 14,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/201865-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "394688",
+                "name": "Evjen",
+                "shirt_number": 26,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/394688-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "422355",
+                "name": "Hauge",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/422355-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "644607",
+                "name": "Blomberg",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/644607-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "542877",
+                "name": "Høgh",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/542877-1756565914.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "418561",
+                "name": "Klaesson",
+                "shirt_number": 13,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/418561-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "743088",
+                "name": "Falchener",
+                "shirt_number": 25,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/743088-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "422947",
+                "name": "Bærtelsen",
+                "shirt_number": 21,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/422947-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "240012",
+                "name": "Vevatne",
+                "shirt_number": 3,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/240012-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "674288",
+                "name": "Haugen",
+                "shirt_number": 2,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/674288-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "790245",
+                "name": "Heggheim",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/790245-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "345700",
+                "name": "Bell",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/345700-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "269503",
+                "name": "Svendsen",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/269503-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "1027708",
+                "name": "Hansen",
+                "shirt_number": 33,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1027708-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "980787",
+                "name": "Austbø",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/980787-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "542462",
+                "name": "Christiansen",
+                "shirt_number": 20,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/542462-1756565914.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "905700",
+                "name": "Magnus Brøndbo",
+                "shirt_number": 44,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/905700-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "953067",
+                "name": "Villads Nielsen",
+                "shirt_number": 2,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/953067-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "502558",
+                "name": "Odin Bjørtuft",
+                "shirt_number": 4,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/502558-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "335298",
+                "name": "Sondre Brunstad Fet",
+                "shirt_number": 19,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/335298-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "581112",
+                "name": "Sondre Auklend",
+                "shirt_number": 8,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/581112-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "660979",
+                "name": "Jeppe Kjær",
+                "shirt_number": 95,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/660979-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "664809",
+                "name": "Isak Dybvik Määttä",
+                "shirt_number": 25,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/664809-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "320140",
+                "name": "Sondre Sørli",
+                "shirt_number": 27,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/320140-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "333012",
+                "name": "Andreas Helmersen",
+                "shirt_number": 21,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/333012-1756565914.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "73327",
+                "name": "Arild Østbø",
+                "shirt_number": 1,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/73327-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "1120134",
+                "name": "Vetle Auklend",
+                "shirt_number": 24,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1120134-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "487605",
+                "name": "Jost Urbancic",
+                "shirt_number": 23,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/487605-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "338939",
+                "name": "Sondre Bjørshol",
+                "shirt_number": 18,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/338939-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "893547",
+                "name": "Simen Kvia-Egeskog",
+                "shirt_number": 26,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/893547-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "574495",
+                "name": "Kristoffer Askildsen",
+                "shirt_number": 19,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/574495-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "544931",
+                "name": "Christian Cappis",
+                "shirt_number": 27,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/544931-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "195274",
+                "name": "Zlatko Tripic",
+                "shirt_number": 10,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/195274-1756565914.jpg?lm=1"
+              },
+              {
+                "player_id": "806524",
+                "name": "Hilmir Rafn Mikaelsson",
+                "shirt_number": 28,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/806524-1756565914.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 25,
+                "extra_time": null,
+                "player": {
+                  "player_id": "542877",
+                  "name": "Kasper Høgh",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/542877-1756565914.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "644607",
+                  "name": "Ole Didrik Blomberg",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/644607-1756565914.jpg?lm=1"
+                },
+                "goal_type": "Header",
+                "assist_type": "Cross",
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 7,
+                "season_assist_number": 3
+              },
+              {
+                "minute": 28,
+                "extra_time": null,
+                "player": {
+                  "player_id": "980787",
+                  "name": "Edvin Austbø",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/980787-1756565914.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "269503",
+                  "name": "Sander Svendsen",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/269503-1756565914.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Pass",
+                "team_side": "away",
+                "score_after": [
+                  1,
+                  1
+                ],
+                "season_goal_number": 3,
+                "season_assist_number": 2
+              },
+              {
+                "minute": 44,
+                "extra_time": null,
+                "player": {
+                  "player_id": "342129",
+                  "name": "Jostein Gundersen",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/342129-1756565914.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": "Tap-in",
+                "assist_type": null,
+                "team_side": "home",
+                "score_after": [
+                  2,
+                  1
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": null
+              },
+              {
+                "minute": 73,
+                "extra_time": null,
+                "player": {
+                  "player_id": "195274",
+                  "name": "Zlatko Tripic",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/195274-1756565914.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "980787",
+                  "name": "Edvin Austbø",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/980787-1756565914.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Cross",
+                "team_side": "away",
+                "score_after": [
+                  2,
+                  2
+                ],
+                "season_goal_number": 8,
+                "season_assist_number": 2
+              },
+              {
+                "minute": 83,
+                "extra_time": null,
+                "player": {
+                  "player_id": "338939",
+                  "name": "Sondre Bjørshol",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/338939-1756565914.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": "Right-footed shot",
+                "assist_type": null,
+                "team_side": "away",
+                "score_after": [
+                  2,
+                  3
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": null
+              },
+              {
+                "minute": 90,
+                "extra_time": 1,
+                "player": {
+                  "player_id": "893547",
+                  "name": "Simen Kvia-Egeskog",
+                  "shirt_number": 26,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/893547-1756565914.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "542462",
+                  "name": "Peter Christiansen",
+                  "shirt_number": 20,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/542462-1756565914.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Pass",
+                "team_side": "away",
+                "score_after": [
+                  2,
+                  4
+                ],
+                "season_goal_number": 3,
+                "season_assist_number": 3
+              }
+            ],
+            "cards": [
+              {
+                "minute": 24,
+                "extra_time": null,
+                "player": {
+                  "player_id": "790245",
+                  "name": "Henrik Heggheim",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/790245-1756565914.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 3
+              },
+              {
+                "minute": 63,
+                "extra_time": null,
+                "player": {
+                  "player_id": "342129",
+                  "name": "Jostein Gundersen",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/342129-1756565914.jpg?lm=1"
+                },
+                "card_type": "red",
+                "reason": "Professional foul",
+                "team_side": "home",
+                "season_card_number": null
+              },
+              {
+                "minute": 69,
+                "extra_time": null,
+                "player": {
+                  "player_id": "674288",
+                  "name": "Herman Haugen",
+                  "shirt_number": 2,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/674288-1756565914.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              },
+              {
+                "minute": 74,
+                "extra_time": null,
+                "player": {
+                  "player_id": "195274",
+                  "name": "Zlatko Tripic",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/195274-1756565914.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 3
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 57,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "269503",
+                  "name": "Sander Svendsen",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/269503-1756565914.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "544931",
+                  "name": "Christian Cappis",
+                  "shirt_number": 27,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/544931-1756565914.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 57,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "422947",
+                  "name": "Anders Bærtelsen",
+                  "shirt_number": 21,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/422947-1756565914.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "195274",
+                  "name": "Zlatko Tripic",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/195274-1756565914.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 70,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "542877",
+                  "name": "Kasper Høgh",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/542877-1756565914.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "502558",
+                  "name": "Odin Bjørtuft",
+                  "shirt_number": 4,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/502558-1756565914.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 73,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1027708",
+                  "name": "Jakob Segadal Hansen",
+                  "shirt_number": 33,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1027708-1756565914.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "574495",
+                  "name": "Kristoffer Askildsen",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/574495-1756565914.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 73,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "980787",
+                  "name": "Edvin Austbø",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/980787-1756565914.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "893547",
+                  "name": "Simen Kvia-Egeskog",
+                  "shirt_number": 26,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/893547-1756565914.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 79,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "201865",
+                  "name": "Ulrik Saltnes",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/201865-1756565914.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "335298",
+                  "name": "Sondre Brunstad Fet",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/335298-1756565914.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 79,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "674288",
+                  "name": "Herman Haugen",
+                  "shirt_number": 2,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/674288-1756565914.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "338939",
+                  "name": "Sondre Bjørshol",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/338939-1756565914.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 80,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "644607",
+                  "name": "Ole Didrik Blomberg",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/644607-1756565914.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "664809",
+                  "name": "Isak Dybvik Määttä",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/664809-1756565914.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 90,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "912959",
+                  "name": "Fredrik Sjøvold",
+                  "shirt_number": 20,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/912959-1756565914.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "333012",
+                  "name": "Andreas Helmersen",
+                  "shirt_number": 21,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/333012-1756565914.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4522653",
+            "competition_name": "Eliteserien",
+            "season": "2024",
+            "date": "2025-08-22",
+            "time": "7:00",
+            "venue": "KFUM-Arena",
+            "attendance": 1911,
+            "referee": "Sivert Amland",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4522653",
+            "day_of_week": "Friday"
+          },
+          "home_team": {
+            "team_id": "23184",
+            "name": "KFUM-Kameratene Oslo",
+            "formation": "3-4-3",
+            "manager": "Johannes Moesgaard"
+          },
+          "away_team": {
+            "team_id": "4309",
+            "name": "Hamarkameratene",
+            "formation": "3-5-2 flat",
+            "manager": "Thomas Myhre"
+          },
+          "score": {
+            "home_final": 2,
+            "away_final": 2,
+            "home_ht": 0,
+            "away_ht": 1
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "367243",
+                "name": "Ødegaard",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/367243-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "501821",
+                "name": "Aleesami",
+                "shirt_number": 3,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/501821-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "526489",
+                "name": "Berglie",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/526489-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "1022746",
+                "name": "Tønnessen",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1022746-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "410547",
+                "name": "Hickson",
+                "shirt_number": 42,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/410547-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "912481",
+                "name": "Sandal",
+                "shirt_number": 25,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/912481-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "370879",
+                "name": "Hestnes",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/370879-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "523052",
+                "name": "Hoseth",
+                "shirt_number": 14,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/523052-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "686005",
+                "name": "Hjorth",
+                "shirt_number": 16,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/686005-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "295509",
+                "name": "Njie",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/295509-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "353727",
+                "name": "Ndiaye",
+                "shirt_number": 28,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/353727-1756565928.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "63443",
+                "name": "Sandberg",
+                "shirt_number": 12,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/63443-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "501569",
+                "name": "Granath",
+                "shirt_number": 2,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/501569-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "180064",
+                "name": "Sjølstad",
+                "shirt_number": 23,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/180064-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "315733",
+                "name": "Mares",
+                "shirt_number": 14,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/315733-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "819392",
+                "name": "Ekeroth",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/819392-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "459390",
+                "name": "Sørås",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/459390-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "877320",
+                "name": "Potur",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/877320-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "670105",
+                "name": "Roaldsøy",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/670105-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "178918",
+                "name": "Jónsson",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/178918-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "667378",
+                "name": "Lien",
+                "shirt_number": 19,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/667378-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "433833",
+                "name": "Mawa",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/433833-1756565928.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "1248424",
+                "name": "Henri Sørlie",
+                "shirt_number": 31,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1248424-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "890050",
+                "name": "Momodou Lion Njie",
+                "shirt_number": 4,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/890050-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "944800",
+                "name": "Daniel Schneider",
+                "shirt_number": 2,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/944800-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "539662",
+                "name": "Brage Skaret",
+                "shirt_number": 13,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/539662-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "89647",
+                "name": "Amin Nouri",
+                "shirt_number": 33,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/89647-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "598392",
+                "name": "Mansour Sinyan",
+                "shirt_number": 6,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/598392-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "464493",
+                "name": "Teodor Berg Haltvik",
+                "shirt_number": 17,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/464493-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "503258",
+                "name": "Bilal Njie",
+                "shirt_number": 11,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/503258-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "877339",
+                "name": "Bjørn Martin Kristensen",
+                "shirt_number": 22,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/877339-1756565928.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "599958",
+                "name": "Alexander Nilsson",
+                "shirt_number": 30,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/599958-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "1242711",
+                "name": "Mads Orrhaug Larsen",
+                "shirt_number": 34,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1242711-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "795430",
+                "name": "Ethan Amundsen-Day",
+                "shirt_number": 3,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/795430-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "893787",
+                "name": "Halvor Rødølen Opsahl",
+                "shirt_number": 4,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/893787-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "1420734",
+                "name": "Peter Sunday",
+                "shirt_number": 36,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1420734-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "943989",
+                "name": "Mats Pedersen",
+                "shirt_number": 26,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/943989-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "434195",
+                "name": "Gard Simenstad",
+                "shirt_number": 18,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/434195-1756565928.jpg?lm=1"
+              },
+              {
+                "player_id": "436959",
+                "name": "Henrik Udahl",
+                "shirt_number": 9,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/436959-1756565928.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 14,
+                "extra_time": null,
+                "player": {
+                  "player_id": "670105",
+                  "name": "Alwande Roaldsøy",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/670105-1756565928.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "877320",
+                  "name": "Aksel Baran Potur",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/877320-1756565928.jpg?lm=1"
+                },
+                "goal_type": "Left-footed shot",
+                "assist_type": "Pass",
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  1
+                ],
+                "season_goal_number": 4,
+                "season_assist_number": 1
+              },
+              {
+                "minute": 48,
+                "extra_time": null,
+                "player": {
+                  "player_id": "370879",
+                  "name": "Simen Hestnes",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/370879-1756565928.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "912481",
+                  "name": "Sverre Sandal",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/912481-1756565928.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Pass",
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  1
+                ],
+                "season_goal_number": 3,
+                "season_assist_number": 4
+              },
+              {
+                "minute": 64,
+                "extra_time": null,
+                "player": {
+                  "player_id": "523052",
+                  "name": "Håkon Helland Hoseth",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/523052-1756565928.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "501821",
+                  "name": "Ayoub Aleesami",
+                  "shirt_number": 3,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/501821-1756565928.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Pass",
+                "team_side": "home",
+                "score_after": [
+                  2,
+                  1
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 1
+              },
+              {
+                "minute": 88,
+                "extra_time": null,
+                "player": {
+                  "player_id": "434195",
+                  "name": "Gard Simenstad",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/434195-1756565928.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": "Direct free kick",
+                "assist_type": null,
+                "team_side": "away",
+                "score_after": [
+                  2,
+                  2
+                ],
+                "season_goal_number": 2,
+                "season_assist_number": null
+              }
+            ],
+            "cards": [
+              {
+                "minute": 68,
+                "extra_time": null,
+                "player": {
+                  "player_id": "670105",
+                  "name": "Alwande Roaldsøy",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/670105-1756565928.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 3
+              },
+              {
+                "minute": 87,
+                "extra_time": null,
+                "player": {
+                  "player_id": "877339",
+                  "name": "Bjørn Martin Kristensen",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/877339-1756565928.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 4
+              },
+              {
+                "minute": 89,
+                "extra_time": null,
+                "player": {
+                  "player_id": "795430",
+                  "name": "Ethan Amundsen-Day",
+                  "shirt_number": 3,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/795430-1756565928.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 61,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "459390",
+                  "name": "Tore André Sørås",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/459390-1756565928.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "434195",
+                  "name": "Gard Simenstad",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/434195-1756565928.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 68,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "410547",
+                  "name": "David Hickson",
+                  "shirt_number": 42,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/410547-1756565928.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "503258",
+                  "name": "Bilal Njie",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/503258-1756565928.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 68,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "353727",
+                  "name": "Mame Mor Ndiaye",
+                  "shirt_number": 28,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/353727-1756565928.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "464493",
+                  "name": "Teodor Berg Haltvik",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/464493-1756565928.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 80,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "295509",
+                  "name": "Moussa Njie",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/295509-1756565928.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "877339",
+                  "name": "Bjørn Martin Kristensen",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/877339-1756565928.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 80,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "523052",
+                  "name": "Håkon Helland Hoseth",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/523052-1756565928.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "89647",
+                  "name": "Amin Nouri",
+                  "shirt_number": 33,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/89647-1756565928.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 80,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "180064",
+                  "name": "Fredrik Sjølstad",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/180064-1756565928.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "795430",
+                  "name": "Ethan Amundsen-Day",
+                  "shirt_number": 3,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/795430-1756565928.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 80,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "667378",
+                  "name": "Kristian Strømland Lien",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/667378-1756565928.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "436959",
+                  "name": "Henrik Udahl",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/436959-1756565928.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 82,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "178918",
+                  "name": "Vidar Ari Jónsson",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/178918-1756565928.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "943989",
+                  "name": "Mats Pedersen",
+                  "shirt_number": 26,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/943989-1756565928.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4522655",
+            "competition_name": "Eliteserien",
+            "season": "2024",
+            "date": "2025-08-23",
+            "time": "6:00",
+            "venue": "Lerkendal Stadion",
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/vorbericht/index/spielbericht/4522655",
+            "day_of_week": "Saturday"
+          },
+          "home_team": {
+            "team_id": "195",
+            "name": "Rosenborg BK",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "6399",
+            "name": "Sandefjord Fotball",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4522652",
+            "competition_name": "Eliteserien",
+            "season": "2024",
+            "date": "2025-08-24",
+            "time": "2:30",
+            "venue": "Haugesund Sparebank Arena",
+            "attendance": 3626,
+            "referee": "Mohammad Usman Aslam",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4522652",
+            "day_of_week": "Sunday"
+          },
+          "home_team": {
+            "team_id": "2761",
+            "name": "FK Haugesund",
+            "formation": "4-3-3 Attacking",
+            "manager": "Toni Korkeakunnas"
+          },
+          "away_team": {
+            "team_id": "76",
+            "name": "Vålerenga Fotball Elite",
+            "formation": "4-3-3 Attacking",
+            "manager": "Geir Bakke"
+          },
+          "score": {
+            "home_final": 2,
+            "away_final": 3,
+            "home_ht": 1,
+            "away_ht": 1
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "1133832",
+                "name": "Fauskanger",
+                "shirt_number": 12,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1133832-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "633870",
+                "name": "Kukleci",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/633870-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "1176365",
+                "name": "Dia",
+                "shirt_number": 55,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1176365-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "700673",
+                "name": "Niyukuri",
+                "shirt_number": 2,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/700673-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "351546",
+                "name": "Hämäläinen",
+                "shirt_number": 3,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/351546-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "1015705",
+                "name": "Hope",
+                "shirt_number": 25,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1015705-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "476167",
+                "name": "Leite",
+                "shirt_number": 16,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/476167-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "467289",
+                "name": "Hannola",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/467289-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "939564",
+                "name": "Grindhaug",
+                "shirt_number": 40,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/939564-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "1002038",
+                "name": "Innvær",
+                "shirt_number": 37,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1002038-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "926975",
+                "name": "Rohd",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/926975-1756566011.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "325179",
+                "name": "Hedvall",
+                "shirt_number": 16,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/325179-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "501833",
+                "name": "Jarl",
+                "shirt_number": 55,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/501833-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "633546",
+                "name": "Olsen",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/633546-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "1110258",
+                "name": "Nogueira",
+                "shirt_number": 27,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1110258-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "73333",
+                "name": "Hedenstad",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/73333-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "566410",
+                "name": "Hagen",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/566410-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "268620",
+                "name": "Bjørdal",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/268620-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "503325",
+                "name": "Lange",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/503325-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "422930",
+                "name": "Sørensen",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/422930-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "369650",
+                "name": "Ofkir",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/369650-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "578928",
+                "name": "Grundetjern",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/578928-1756566011.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "1253883",
+                "name": "Lars Tanggaard Eide",
+                "shirt_number": 43,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1253883-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "308459",
+                "name": "Amund Wichne",
+                "shirt_number": 1,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/308459-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "690743",
+                "name": "Jasper Silva Torkildsen",
+                "shirt_number": 38,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/690743-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "609402",
+                "name": "Miika Koskela",
+                "shirt_number": 33,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/609402-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "919708",
+                "name": "Eivind Helgeland",
+                "shirt_number": 36,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/919708-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "1176364",
+                "name": "Amidou Traoré",
+                "shirt_number": 66,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1176364-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "1356706",
+                "name": "Ismael Petcho Camara",
+                "shirt_number": 30,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1356706-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "1028916",
+                "name": "Martin Alvsaker",
+                "shirt_number": 39,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1028916-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "1143066",
+                "name": "Ismaël Seone",
+                "shirt_number": 20,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1143066-1756566011.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "214774",
+                "name": "Jacob Storevik",
+                "shirt_number": 1,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/214774-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "663643",
+                "name": "Noah Pallas",
+                "shirt_number": 23,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/663643-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "944803",
+                "name": "Håkon Sjåtil",
+                "shirt_number": 3,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/944803-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "960572",
+                "name": "Stian Sjøvold",
+                "shirt_number": 22,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/960572-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "319661",
+                "name": "Petter Strand",
+                "shirt_number": 24,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/319661-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "1045990",
+                "name": "Filip Thorvaldsen",
+                "shirt_number": 26,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1045990-1756566011.jpg?lm=1"
+              },
+              {
+                "player_id": "998745",
+                "name": "Onyebuchi Obasi",
+                "shirt_number": 14,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/998745-1756566011.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 11,
+                "extra_time": null,
+                "player": {
+                  "player_id": "633870",
+                  "name": "Ilir Kukleci",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/633870-1756566011.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "467289",
+                  "name": "Pyry Hannola",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/467289-1756566011.jpg?lm=1"
+                },
+                "goal_type": "Header",
+                "assist_type": "Corner",
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 1
+              },
+              {
+                "minute": 33,
+                "extra_time": null,
+                "player": {
+                  "player_id": "566410",
+                  "name": "Elias Hagen",
+                  "shirt_number": 15,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/566410-1756566011.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "578928",
+                  "name": "Mathias Grundetjern",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/578928-1756566011.jpg?lm=1"
+                },
+                "goal_type": "Penalty",
+                "assist_type": null,
+                "team_side": "away",
+                "score_after": [
+                  1,
+                  1
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": null
+              },
+              {
+                "minute": 56,
+                "extra_time": null,
+                "player": {
+                  "player_id": "700673",
+                  "name": "Claus Niyukuri",
+                  "shirt_number": 2,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/700673-1756566011.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "467289",
+                  "name": "Pyry Hannola",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/467289-1756566011.jpg?lm=1"
+                },
+                "goal_type": "Header",
+                "assist_type": "Free kick",
+                "team_side": "home",
+                "score_after": [
+                  2,
+                  1
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 2
+              },
+              {
+                "minute": 68,
+                "extra_time": null,
+                "player": {
+                  "player_id": "422930",
+                  "name": "Elias Sørensen",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/422930-1756566011.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "578928",
+                  "name": "Mathias Grundetjern",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/578928-1756566011.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Pass",
+                "team_side": "away",
+                "score_after": [
+                  2,
+                  2
+                ],
+                "season_goal_number": 9,
+                "season_assist_number": 2
+              },
+              {
+                "minute": 71,
+                "extra_time": null,
+                "player": {
+                  "player_id": "422930",
+                  "name": "Elias Sørensen",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/422930-1756566011.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "578928",
+                  "name": "Mathias Grundetjern",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/578928-1756566011.jpg?lm=1"
+                },
+                "goal_type": "Left-footed shot",
+                "assist_type": "Pass",
+                "team_side": "away",
+                "score_after": [
+                  2,
+                  3
+                ],
+                "season_goal_number": 10,
+                "season_assist_number": 3
+              }
+            ],
+            "cards": [
+              {
+                "minute": 27,
+                "extra_time": null,
+                "player": {
+                  "player_id": "926975",
+                  "name": "Emil Rohd",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/926975-1756566011.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 2
+              },
+              {
+                "minute": 50,
+                "extra_time": null,
+                "player": {
+                  "player_id": "566410",
+                  "name": "Elias Hagen",
+                  "shirt_number": 15,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/566410-1756566011.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              },
+              {
+                "minute": 66,
+                "extra_time": null,
+                "player": {
+                  "player_id": "268620",
+                  "name": "Henrik Bjørdal",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/268620-1756566011.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 2
+              },
+              {
+                "minute": 77,
+                "extra_time": null,
+                "player": {
+                  "player_id": "939564",
+                  "name": "Almar Grindhaug",
+                  "shirt_number": 40,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/939564-1756566011.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 90,
+                "extra_time": 1,
+                "player": {
+                  "player_id": "1028916",
+                  "name": "Martin Alvsaker",
+                  "shirt_number": 39,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1028916-1756566011.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 1
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 62,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "369650",
+                  "name": "Mohamed Ofkir",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/369650-1756566011.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1045990",
+                  "name": "Filip Thorvaldsen",
+                  "shirt_number": 26,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1045990-1756566011.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 62,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "476167",
+                  "name": "Bruno Leite",
+                  "shirt_number": 16,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/476167-1756566011.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1143066",
+                  "name": "Ismaël Seone",
+                  "shirt_number": 20,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1143066-1756566011.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 70,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "700673",
+                  "name": "Claus Niyukuri",
+                  "shirt_number": 2,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/700673-1756566011.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "609402",
+                  "name": "Miika Koskela",
+                  "shirt_number": 33,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/609402-1756566011.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 72,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "268620",
+                  "name": "Henrik Bjørdal",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/268620-1756566011.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "319661",
+                  "name": "Petter Strand",
+                  "shirt_number": 24,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/319661-1756566011.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 81,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1002038",
+                  "name": "Sander Håvik Innvær",
+                  "shirt_number": 37,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1002038-1756566011.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1356706",
+                  "name": "Ismael Petcho Camara",
+                  "shirt_number": 30,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1356706-1756566011.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 81,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1176365",
+                  "name": "Madiodio Dia",
+                  "shirt_number": 55,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1176365-1756566011.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1253883",
+                  "name": "Lars Tanggaard Eide",
+                  "shirt_number": 43,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1253883-1756566011.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 81,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "926975",
+                  "name": "Emil Rohd",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/926975-1756566011.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1028916",
+                  "name": "Martin Alvsaker",
+                  "shirt_number": 39,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1028916-1756566011.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 86,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "578928",
+                  "name": "Mathias Grundetjern",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/578928-1756566011.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "960572",
+                  "name": "Stian Sjøvold",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/960572-1756566011.jpg?lm=1"
+                },
+                "reason": "Injury",
+                "team_side": "away"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4522650",
+            "competition_name": "Eliteserien",
+            "season": "2024",
+            "date": "2025-08-24",
+            "time": "5:00",
+            "venue": "Brann Stadion",
+            "attendance": null,
+            "referee": null,
+            "match_report_url": "https://www.transfermarkt.com/vorbericht/index/spielbericht/4522650",
+            "day_of_week": "Sunday"
+          },
+          "home_team": {
+            "team_id": "1100",
+            "name": "SK Brann",
+            "formation": null,
+            "manager": null
+          },
+          "away_team": {
+            "team_id": "3837",
+            "name": "Fredrikstad FK",
+            "formation": null,
+            "manager": null
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": null,
+            "away_ht": null
+          },
+          "lineups": {
+            "home_starting": [],
+            "away_starting": [],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [],
+            "substitutions": []
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4522651",
+            "competition_name": "Eliteserien",
+            "season": "2024",
+            "date": "2025-08-24",
+            "time": "5:00",
+            "venue": "Bryne Stadion",
+            "attendance": 2666,
+            "referee": "Stian Røvig Sletner",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4522651",
+            "day_of_week": "Sunday"
+          },
+          "home_team": {
+            "team_id": "1057",
+            "name": "Bryne FK",
+            "formation": "4-4-2 double 6",
+            "manager": "Ole Kevin Knappen"
+          },
+          "away_team": {
+            "team_id": "2817",
+            "name": "Strømsgodset IF",
+            "formation": "4-3-3 Attacking",
+            "manager": "Dag-Eilev Fagermo"
+          },
+          "score": {
+            "home_final": 2,
+            "away_final": 2,
+            "home_ht": 0,
+            "away_ht": 1
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "426142",
+                "name": "de Boer",
+                "shirt_number": 12,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/426142-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "507309",
+                "name": "Husebø",
+                "shirt_number": 24,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/507309-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "514918",
+                "name": "Haahr",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/514918-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "502907",
+                "name": "Saunes",
+                "shirt_number": 14,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/502907-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "903370",
+                "name": "Qvigstad",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/903370-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "605561",
+                "name": "Sødal",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/605561-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "954792",
+                "name": "Gregersen",
+                "shirt_number": 20,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/954792-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "933835",
+                "name": "Larsen",
+                "shirt_number": 22,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/933835-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "1204048",
+                "name": "Håland",
+                "shirt_number": 23,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1204048-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "553072",
+                "name": "Scriven",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/553072-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "500640",
+                "name": "Moreira",
+                "shirt_number": 18,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/500640-1756566033.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "226410",
+                "name": "Bråtveit",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/226410-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "412451",
+                "name": "Taaje",
+                "shirt_number": 25,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/412451-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "136185",
+                "name": "Valsvik",
+                "shirt_number": 71,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/136185-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "578703",
+                "name": "Dahl",
+                "shirt_number": 27,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/578703-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "41997",
+                "name": "Vilsvik",
+                "shirt_number": 26,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/41997-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "375419",
+                "name": "Krasniqi",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/375419-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "712880",
+                "name": "Bakke",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/712880-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "183588",
+                "name": "Stengel",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/183588-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "663153",
+                "name": "Farji",
+                "shirt_number": 21,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/663153-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "1043978",
+                "name": "Ardraa",
+                "shirt_number": 16,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1043978-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "996665",
+                "name": "Conteh",
+                "shirt_number": 20,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/996665-1756566033.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "243103",
+                "name": "Anton Cajtoft",
+                "shirt_number": 1,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/243103-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "1024845",
+                "name": "Patrick Wik",
+                "shirt_number": 3,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1024845-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "388167",
+                "name": "Dadi Dodou Gaye",
+                "shirt_number": 16,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/388167-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "92751",
+                "name": "Christian Landu-Landu",
+                "shirt_number": 4,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/92751-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "591349",
+                "name": "Mats Thornes",
+                "shirt_number": 7,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/591349-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "128028",
+                "name": "Jon-Helge Tveita",
+                "shirt_number": 15,
+                "position": "LM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/128028-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "1036501",
+                "name": "Sjur Jonassen",
+                "shirt_number": 32,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1036501-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "320281",
+                "name": "Robert Undheim",
+                "shirt_number": 10,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/320281-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "501699",
+                "name": "Sanel Bojadzic",
+                "shirt_number": 9,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/501699-1756566033.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "605557",
+                "name": "Frank Stople",
+                "shirt_number": 32,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/605557-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "534536",
+                "name": "Sivert Westerlund",
+                "shirt_number": 4,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/534536-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "268713",
+                "name": "Bent Sørmo",
+                "shirt_number": 5,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/268713-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "923500",
+                "name": "Andreas Heredia-Randen",
+                "shirt_number": 15,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/923500-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "920452",
+                "name": "Samuel Silalahi",
+                "shirt_number": 6,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/920452-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "896460",
+                "name": "Ole Enersen",
+                "shirt_number": 14,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/896460-1756566033.jpg?lm=1"
+              },
+              {
+                "player_id": "864120",
+                "name": "James Ampofo",
+                "shirt_number": 99,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/864120-1756566033.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 18,
+                "extra_time": null,
+                "player": {
+                  "player_id": "183588",
+                  "name": "Herman Stengel",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/183588-1756566033.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": "Direct corner",
+                "assist_type": null,
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  1
+                ],
+                "season_goal_number": 3,
+                "season_assist_number": null
+              },
+              {
+                "minute": 53,
+                "extra_time": null,
+                "player": {
+                  "player_id": "996665",
+                  "name": "Alie Conteh",
+                  "shirt_number": 20,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/996665-1756566033.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "1043978",
+                  "name": "Fredrik Ardraa",
+                  "shirt_number": 16,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1043978-1756566033.jpg?lm=1"
+                },
+                "goal_type": "Left-footed shot",
+                "assist_type": "Pass",
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  2
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 2
+              },
+              {
+                "minute": 67,
+                "extra_time": null,
+                "player": {
+                  "player_id": "903370",
+                  "name": "Lasse Qvigstad",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/903370-1756566033.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "933835",
+                  "name": "Heine Åsen Larsen",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/933835-1756566033.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Pass",
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  2
+                ],
+                "season_goal_number": 2,
+                "season_assist_number": 1
+              },
+              {
+                "minute": 72,
+                "extra_time": null,
+                "player": {
+                  "player_id": "933835",
+                  "name": "Heine Åsen Larsen",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/933835-1756566033.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": "Tap-in",
+                "assist_type": null,
+                "team_side": "home",
+                "score_after": [
+                  2,
+                  2
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": null
+              }
+            ],
+            "cards": [
+              {
+                "minute": 38,
+                "extra_time": null,
+                "player": {
+                  "player_id": "514918",
+                  "name": "Jacob Haahr",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/514918-1756566033.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 2
+              },
+              {
+                "minute": 39,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1043978",
+                  "name": "Fredrik Ardraa",
+                  "shirt_number": 16,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1043978-1756566033.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 2
+              },
+              {
+                "minute": 65,
+                "extra_time": null,
+                "player": {
+                  "player_id": "553072",
+                  "name": "Alfred Scriven",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/553072-1756566033.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 4
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 29,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "41997",
+                  "name": "Lars Christopher Vilsvik",
+                  "shirt_number": 26,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/41997-1756566033.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "268713",
+                  "name": "Bent Sørmo",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/268713-1756566033.jpg?lm=1"
+                },
+                "reason": "Injury",
+                "team_side": "away"
+              },
+              {
+                "minute": 70,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1204048",
+                  "name": "Kristian Skurve Håland",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1204048-1756566033.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "591349",
+                  "name": "Mats Thornes",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/591349-1756566033.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 72,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "996665",
+                  "name": "Alie Conteh",
+                  "shirt_number": 20,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/996665-1756566033.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "864120",
+                  "name": "James Ampofo",
+                  "shirt_number": 99,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/864120-1756566033.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 72,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "712880",
+                  "name": "Johan Bakke",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/712880-1756566033.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "920452",
+                  "name": "Samuel Silalahi",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/920452-1756566033.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 78,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "954792",
+                  "name": "Jesper Gregersen",
+                  "shirt_number": 20,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/954792-1756566033.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "92751",
+                  "name": "Christian Landu-Landu",
+                  "shirt_number": 4,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/92751-1756566033.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 88,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "375419",
+                  "name": "Kreshnik Krasniqi",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/375419-1756566033.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "896460",
+                  "name": "Ole Enersen",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/896460-1756566033.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4522654",
+            "competition_name": "Eliteserien",
+            "season": "2024",
+            "date": "2025-08-24",
+            "time": "7:15",
+            "venue": "Aker Stadion",
+            "attendance": 5919,
+            "referee": "Rohit Saggi",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4522654",
+            "day_of_week": "Sunday"
+          },
+          "home_team": {
+            "team_id": "687",
+            "name": "Molde FK",
+            "formation": "4-3-3 Attacking",
+            "manager": "Per-Mathias Høgmo"
+          },
+          "away_team": {
+            "team_id": "1293",
+            "name": "Tromsø IL",
+            "formation": "3-5-2 flat",
+            "manager": "Jørgen Vik"
+          },
+          "score": {
+            "home_final": 2,
+            "away_final": 0,
+            "home_ht": 1,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "329924",
+                "name": "Karlstrøm",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/329924-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "331575",
+                "name": "Risa",
+                "shirt_number": 33,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/331575-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "308444",
+                "name": "Haugan",
+                "shirt_number": 19,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/308444-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "1175086",
+                "name": "Kabini",
+                "shirt_number": 26,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1175086-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "137582",
+                "name": "Linnes",
+                "shirt_number": 21,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/137582-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "463030",
+                "name": "Kaasa",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/463030-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "538670",
+                "name": "Breivik",
+                "shirt_number": 16,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/538670-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "190831",
+                "name": "Dæhli",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/190831-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "617699",
+                "name": "Zady Sery",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/617699-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "110708",
+                "name": "Gulbrandsen",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/110708-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "1007817",
+                "name": "Spiten-Nys.",
+                "shirt_number": 25,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1007817-1756566043.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "138335",
+                "name": "Haugaard",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/138335-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "639327",
+                "name": "Skjærvik",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/639327-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "1385275",
+                "name": "Kinteh",
+                "shirt_number": 25,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1385275-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "890617",
+                "name": "Guddal",
+                "shirt_number": 21,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/890617-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "501629",
+                "name": "Cornic",
+                "shirt_number": 2,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/501629-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "923535",
+                "name": "Hjertø-Dahl",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/923535-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "532965",
+                "name": "Edvardsson",
+                "shirt_number": 20,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/532965-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "41335",
+                "name": "Jenssen",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/41335-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "814992",
+                "name": "Norheim",
+                "shirt_number": 23,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/814992-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "993703",
+                "name": "Braut",
+                "shirt_number": 18,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/993703-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "333016",
+                "name": "Erlien",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/333016-1756566043.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "126194",
+                "name": "Sean McDermott",
+                "shirt_number": 34,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/126194-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "595594",
+                "name": "Casper Øyvann",
+                "shirt_number": 3,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/595594-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "746604",
+                "name": "Isak Helstad Amundsen",
+                "shirt_number": 6,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/746604-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "1029788",
+                "name": "Sondre Granaas",
+                "shirt_number": 23,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1029788-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "1015612",
+                "name": "Daniel Daga",
+                "shirt_number": 27,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1015612-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "400121",
+                "name": "Halldor Stenevik",
+                "shirt_number": 18,
+                "position": "RM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/400121-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "228069",
+                "name": "Eirik Hestad",
+                "shirt_number": 5,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/228069-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "54775",
+                "name": "Magnus Wolff Eikrem",
+                "shirt_number": 7,
+                "position": "SS",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/54775-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "923527",
+                "name": "Gustav Nyheim",
+                "shirt_number": 29,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/923527-1756566043.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "1391842",
+                "name": "Mads Mikkelsen",
+                "shirt_number": 34,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1391842-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "394733",
+                "name": "Ole Kristian Lauvli",
+                "shirt_number": 27,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/394733-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "150295",
+                "name": "Ruben Kristiansen",
+                "shirt_number": 24,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/150295-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "230847",
+                "name": "Anders Jenssen",
+                "shirt_number": 5,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/230847-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "1110611",
+                "name": "Alexander Thongla-Iad Warneryd",
+                "shirt_number": 29,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1110611-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "822103",
+                "name": "Isak Vådebu",
+                "shirt_number": 30,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/822103-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "432682",
+                "name": "Lars Olden Larsen",
+                "shirt_number": 7,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/432682-1756566043.jpg?lm=1"
+              },
+              {
+                "player_id": "744903",
+                "name": "Ieltsin Camões",
+                "shirt_number": 9,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/744903-1756566043.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 27,
+                "extra_time": null,
+                "player": {
+                  "player_id": "110708",
+                  "name": "Fredrik Gulbrandsen",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/110708-1756566043.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "",
+                  "name": "Handball by <a class=\"wichtig\" href=\"/leo-cornic/leistungsdatendetails/spieler/501629/saison/2024/wettbewerb/NO1\" title=\"Leo Cornic\">Leo Cornic</a> </div>",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": null
+                },
+                "goal_type": "Penalty",
+                "assist_type": null,
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 6,
+                "season_assist_number": null
+              },
+              {
+                "minute": 73,
+                "extra_time": null,
+                "player": {
+                  "player_id": "400121",
+                  "name": "Halldor Stenevik",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/400121-1756566043.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "538670",
+                  "name": "Emil Breivik",
+                  "shirt_number": 16,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/538670-1756566043.jpg?lm=1"
+                },
+                "goal_type": "Penalty",
+                "assist_type": null,
+                "team_side": "home",
+                "score_after": [
+                  2,
+                  0
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": null
+              }
+            ],
+            "cards": [
+              {
+                "minute": 31,
+                "extra_time": null,
+                "player": {
+                  "player_id": "41335",
+                  "name": "Ruben Yttergård Jenssen",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/41335-1756566043.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              },
+              {
+                "minute": 39,
+                "extra_time": null,
+                "player": {
+                  "player_id": "639327",
+                  "name": "Vetle Skjærvik",
+                  "shirt_number": 4,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/639327-1756566043.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 6
+              },
+              {
+                "minute": 90,
+                "extra_time": 3,
+                "player": {
+                  "player_id": "329924",
+                  "name": "Jacob Karlstrøm",
+                  "shirt_number": 1,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/329924-1756566043.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Time wasting",
+                "team_side": "home",
+                "season_card_number": 3
+              },
+              {
+                "minute": 60,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1175086",
+                  "name": "Samukelo Kabini",
+                  "shirt_number": 26,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1175086-1756566043.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 4
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "993703",
+                  "name": "Daniel Braut",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/993703-1756566043.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "744903",
+                  "name": "Ieltsin Camões",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/744903-1756566043.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "814992",
+                  "name": "Runar Norheim",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/814992-1756566043.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1110611",
+                  "name": "Alexander Thongla-Iad Warneryd",
+                  "shirt_number": 29,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1110611-1756566043.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 54,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "137582",
+                  "name": "Martin Linnes",
+                  "shirt_number": 21,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/137582-1756566043.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "400121",
+                  "name": "Halldor Stenevik",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/400121-1756566043.jpg?lm=1"
+                },
+                "reason": "Injury",
+                "team_side": "home"
+              },
+              {
+                "minute": 64,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "110708",
+                  "name": "Fredrik Gulbrandsen",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/110708-1756566043.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "228069",
+                  "name": "Eirik Hestad",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/228069-1756566043.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 64,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "617699",
+                  "name": "Caleb Zady Sery",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/617699-1756566043.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "54775",
+                  "name": "Magnus Wolff Eikrem",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/54775-1756566043.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 72,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "923535",
+                  "name": "Jens Hjertø-Dahl",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/923535-1756566043.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "432682",
+                  "name": "Lars Olden Larsen",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/432682-1756566043.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 81,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "190831",
+                  "name": "Mats Møller Dæhli",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/190831-1756566043.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "595594",
+                  "name": "Casper Øyvann",
+                  "shirt_number": 3,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/595594-1756566043.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 81,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1007817",
+                  "name": "Oskar Spiten-Nysæter",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1007817-1756566043.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "923527",
+                  "name": "Gustav Nyheim",
+                  "shirt_number": 29,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/923527-1756566043.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4522656",
+            "competition_name": "Eliteserien",
+            "season": "2024",
+            "date": "2025-08-25",
+            "time": "7:00",
+            "venue": "Sarpsborg Stadion",
+            "attendance": 3849,
+            "referee": "Ola Hobber Nilsen",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4522656",
+            "day_of_week": "Monday"
+          },
+          "home_team": {
+            "team_id": "10217",
+            "name": "Sarpsborg 08 FF",
+            "formation": "4-2-3-1",
+            "manager": "Sander Nyland"
+          },
+          "away_team": {
+            "team_id": "21101",
+            "name": "Kristiansund BK",
+            "formation": "4-3-3 Attacking",
+            "manager": "Amund Skiri"
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 1,
+            "home_ht": 0,
+            "away_ht": 1
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "1111044",
+                "name": "Ndiaye",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1111044-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "106437",
+                "name": "Ødegaard",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/106437-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "226530",
+                "name": "Utvik",
+                "shirt_number": 13,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/226530-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "351524",
+                "name": "Wichne",
+                "shirt_number": 32,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/351524-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "599489",
+                "name": "Reinhardsen",
+                "shirt_number": 20,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/599489-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "432697",
+                "name": "Christiansen",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/432697-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "909663",
+                "name": "Bruseth",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/909663-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "411252",
+                "name": "Sanyang",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/411252-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "320140",
+                "name": "Sørli",
+                "shirt_number": 28,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/320140-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "661205",
+                "name": "Karlsbakk",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/661205-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "73323",
+                "name": "Berget",
+                "shirt_number": 14,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/73323-1756566056.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "946000",
+                "name": "Sæther",
+                "shirt_number": 12,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/946000-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "792523",
+                "name": "Olsen",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/792523-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "155555",
+                "name": "Ulvestad",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/155555-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "893930",
+                "name": "Rakneberg",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/893930-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "469852",
+                "name": "Hoffmann",
+                "shirt_number": 22,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/469852-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "1167645",
+                "name": "Igor",
+                "shirt_number": 20,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1167645-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "914949",
+                "name": "Ødegård",
+                "shirt_number": 18,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/914949-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "577222",
+                "name": "Sletsjøe",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/577222-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "1129400",
+                "name": "Kilen",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1129400-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "915537",
+                "name": "Tufekcic",
+                "shirt_number": 16,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/915537-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "1032405",
+                "name": "Alvheim",
+                "shirt_number": 19,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1032405-1756566056.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "258957",
+                "name": "Håvar Jenssen",
+                "shirt_number": 31,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/258957-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "1061763",
+                "name": "Nikolai Skuseth",
+                "shirt_number": 4,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1061763-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "993704",
+                "name": "Anders Hiim",
+                "shirt_number": 21,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/993704-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "1251861",
+                "name": "Mathias Svenningsen-Grønn",
+                "shirt_number": 81,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1251861-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "939217",
+                "name": "Victor Halvorsen",
+                "shirt_number": 22,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/939217-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "432692",
+                "name": "Harald Tangen",
+                "shirt_number": 10,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/432692-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "695226",
+                "name": "Michael Opoku",
+                "shirt_number": 15,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/695226-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "1237900",
+                "name": "Daniel Job",
+                "shirt_number": 26,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1237900-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "332527",
+                "name": "Sveinn Aron Gudjohnsen",
+                "shirt_number": 19,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/332527-1756566056.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "368823",
+                "name": "Knut André Skjærstein",
+                "shirt_number": 26,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/368823-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "698969",
+                "name": "Max Williamsen",
+                "shirt_number": 17,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/698969-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "585795",
+                "name": "Igor Jelicic",
+                "shirt_number": 21,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/585795-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "824077",
+                "name": "Frederik Flex",
+                "shirt_number": 3,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/824077-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "751474",
+                "name": "Syver Skeide",
+                "shirt_number": 6,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/751474-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "1006939",
+                "name": "Adrian Kurd Rønning",
+                "shirt_number": 27,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1006939-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "283193",
+                "name": "Rezan Corlu",
+                "shirt_number": 10,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/283193-1756566056.jpg?lm=1"
+              },
+              {
+                "player_id": "1059440",
+                "name": "Mustapha Isah",
+                "shirt_number": 7,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059440-1756566056.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 38,
+                "extra_time": null,
+                "player": {
+                  "player_id": "915537",
+                  "name": "David Tufekcic",
+                  "shirt_number": 16,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/915537-1756566056.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "914949",
+                  "name": "Niklas Ødegård",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/914949-1756566056.jpg?lm=1"
+                },
+                "goal_type": "Left-footed shot",
+                "assist_type": "Pass",
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  1
+                ],
+                "season_goal_number": 4,
+                "season_assist_number": 2
+              }
+            ],
+            "cards": [
+              {
+                "minute": 21,
+                "extra_time": null,
+                "player": {
+                  "player_id": "411252",
+                  "name": "Alagie Sanyang",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/411252-1756566056.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 2
+              },
+              {
+                "minute": 36,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1167645",
+                  "name": "Wilfred George Igor",
+                  "shirt_number": 20,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1167645-1756566056.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 5
+              },
+              {
+                "minute": 60,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1032405",
+                  "name": "Leander Alvheim",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1032405-1756566056.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 2
+              },
+              {
+                "minute": 76,
+                "extra_time": null,
+                "player": {
+                  "player_id": "599489",
+                  "name": "Peter Reinhardsen",
+                  "shirt_number": 20,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/599489-1756566056.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 2
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 58,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "411252",
+                  "name": "Alagie Sanyang",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/411252-1756566056.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1237900",
+                  "name": "Daniel Job",
+                  "shirt_number": 26,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1237900-1756566056.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 67,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "909663",
+                  "name": "Heine Gikling Bruseth",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/909663-1756566056.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "432692",
+                  "name": "Harald Tangen",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/432692-1756566056.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 67,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "469852",
+                  "name": "Ian Hoffmann",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/469852-1756566056.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "698969",
+                  "name": "Max Williamsen",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/698969-1756566056.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 67,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1032405",
+                  "name": "Leander Alvheim",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1032405-1756566056.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1059440",
+                  "name": "Mustapha Isah",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059440-1756566056.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 76,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "351524",
+                  "name": "Eirik Wichne",
+                  "shirt_number": 32,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/351524-1756566056.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "993704",
+                  "name": "Anders Hiim",
+                  "shirt_number": 21,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/993704-1756566056.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 76,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "661205",
+                  "name": "Daniel Karlsbakk",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/661205-1756566056.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "332527",
+                  "name": "Sveinn Aron Gudjohnsen",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/332527-1756566056.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 81,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "915537",
+                  "name": "David Tufekcic",
+                  "shirt_number": 16,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/915537-1756566056.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "283193",
+                  "name": "Rezan Corlu",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/283193-1756566056.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 81,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "577222",
+                  "name": "Henry Sletsjøe",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/577222-1756566056.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "751474",
+                  "name": "Syver Skeide",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/751474-1756566056.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              }
+            ]
+          }
+        }
+      ],
+      "league_table": {
+        "season": null,
+        "teams": [
+          {
+            "position": 1,
+            "movement": "same",
+            "team_id": "501",
+            "name": "FK Bodø/Glimt",
+            "short_name": "Bodø/Glimt",
+            "profile_url": "/fk-bodo-glimt/spielplan/verein/501/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/501.png?lm=1410462743",
+            "matches": 19,
+            "goal_difference": "32",
+            "points": 42
+          },
+          {
+            "position": 2,
+            "movement": "same",
+            "team_id": "239",
+            "name": "Viking FK",
+            "short_name": "Viking",
+            "profile_url": "/viking-stavanger/spielplan/verein/239/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/239.png?lm=1615368654",
+            "matches": 19,
+            "goal_difference": "21",
+            "points": 42
+          },
+          {
+            "position": 3,
+            "movement": "same",
+            "team_id": "1100",
+            "name": "SK Brann",
+            "short_name": "Brann",
+            "profile_url": "/sk-brann/spielplan/verein/1100/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/1100.png?lm=1444211296",
+            "matches": 18,
+            "goal_difference": "7",
+            "points": 36
+          },
+          {
+            "position": 4,
+            "movement": "same",
+            "team_id": "1293",
+            "name": "Tromsø IL",
+            "short_name": "Tromsø",
+            "profile_url": "/tromso-il/spielplan/verein/1293/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/1293.png?lm=1438202054",
+            "matches": 19,
+            "goal_difference": "3",
+            "points": 33
+          },
+          {
+            "position": 5,
+            "movement": "same",
+            "team_id": "195",
+            "name": "Rosenborg BK",
+            "short_name": "Rosenborg",
+            "profile_url": "/rosenborg-bk/spielplan/verein/195/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/195.png?lm=1714073077",
+            "matches": 18,
+            "goal_difference": "3",
+            "points": 30
+          },
+          {
+            "position": 6,
+            "movement": "same",
+            "team_id": "6399",
+            "name": "Sandefjord Fotball",
+            "short_name": "Sandefjord",
+            "profile_url": "/sandefjord-fotball/spielplan/verein/6399/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/6399.png?lm=1480871661",
+            "matches": 18,
+            "goal_difference": "9",
+            "points": 28
+          },
+          {
+            "position": 7,
+            "movement": "same",
+            "team_id": "23184",
+            "name": "KFUM-Kameratene Oslo",
+            "short_name": "KFUM",
+            "profile_url": "/kfum-kameratene-oslo/spielplan/verein/23184/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/23184.png?lm=1474488697",
+            "matches": 19,
+            "goal_difference": "9",
+            "points": 27
+          },
+          {
+            "position": 8,
+            "movement": "up",
+            "team_id": "687",
+            "name": "Molde FK",
+            "short_name": "Molde FK",
+            "profile_url": "/molde-fk/spielplan/verein/687/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/687.png?lm=1409159512",
+            "matches": 19,
+            "goal_difference": "4",
+            "points": 27
+          },
+          {
+            "position": 9,
+            "movement": "up",
+            "team_id": "76",
+            "name": "Vålerenga Fotball Elite",
+            "short_name": "Vålerenga",
+            "profile_url": "/valerenga-fotball/spielplan/verein/76/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/76.png?lm=1450646255",
+            "matches": 19,
+            "goal_difference": "1",
+            "points": 27
+          },
+          {
+            "position": 10,
+            "movement": "down",
+            "team_id": "3837",
+            "name": "Fredrikstad FK",
+            "short_name": "Fredrikstad",
+            "profile_url": "/fredrikstad-fk/spielplan/verein/3837/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/3837.png?lm=1697453990",
+            "matches": 18,
+            "goal_difference": "3",
+            "points": 26
+          },
+          {
+            "position": 11,
+            "movement": "up",
+            "team_id": "21101",
+            "name": "Kristiansund BK",
+            "short_name": "Kristiansund",
+            "profile_url": "/kristiansund-bk/spielplan/verein/21101/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/21101.png?lm=1480871752",
+            "matches": 19,
+            "goal_difference": "-12",
+            "points": 23
+          },
+          {
+            "position": 12,
+            "movement": "down",
+            "team_id": "10217",
+            "name": "Sarpsborg 08 FF",
+            "short_name": "Sarpsborg 08",
+            "profile_url": "/sarpsborg-08-ff/spielplan/verein/10217/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/10217.png?lm=1410172953",
+            "matches": 19,
+            "goal_difference": "-1",
+            "points": 22
+          },
+          {
+            "position": 13,
+            "movement": "down",
+            "team_id": "4309",
+            "name": "Hamarkameratene",
+            "short_name": "HamKam",
+            "profile_url": "/hamarkameratene/spielplan/verein/4309/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/4309.png?lm=1639076682",
+            "matches": 19,
+            "goal_difference": "-10",
+            "points": 21
+          },
+          {
+            "position": 14,
+            "movement": "same",
+            "team_id": "1057",
+            "name": "Bryne FK",
+            "short_name": "Bryne",
+            "profile_url": "/bryne-fk/spielplan/verein/1057/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/1057.png?lm=1480871779",
+            "matches": 19,
+            "goal_difference": "-9",
+            "points": 20
+          },
+          {
+            "position": 15,
+            "movement": "same",
+            "team_id": "2817",
+            "name": "Strømsgodset IF",
+            "short_name": "Strømsgodset",
+            "profile_url": "/stromsgodset-if/spielplan/verein/2817/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/2817.png?lm=1522008831",
+            "matches": 19,
+            "goal_difference": "-21",
+            "points": 10
+          },
+          {
+            "position": 16,
+            "movement": "same",
+            "team_id": "2761",
+            "name": "FK Haugesund",
+            "short_name": "Haugesund",
+            "profile_url": "/fk-haugesund/spielplan/verein/2761/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/2761.png?lm=1515836744",
+            "matches": 19,
+            "goal_difference": "-39",
+            "points": 5
+          }
+        ]
+      },
+      "top_scorers": [
+        {
+          "name": "Kasper Høgh",
+          "short_name": "K. Høgh",
+          "profile_url": "/kasper-hogh/profil/spieler/542877",
+          "clubs": [
+            {
+              "name": "FK Bodø/Glimt",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/501.png?lm=1410462743"
+            }
+          ],
+          "goals_this_matchday": "1",
+          "total_goals": 16
+        },
+        {
+          "name": "Daniel Karlsbakk",
+          "short_name": "D. Karlsbakk",
+          "profile_url": "/daniel-karlsbakk/profil/spieler/661205",
+          "clubs": [
+            {
+              "name": "Sarpsborg 08 FF",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/10217.png?lm=1410172953"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 13
+        },
+        {
+          "name": "Stefán Ingi Sigurdarson",
+          "short_name": "S. Sigurdarson",
+          "profile_url": "/stefan-ingi-sigurdarson/profil/spieler/464454",
+          "clubs": [
+            {
+              "name": "Sandefjord Fotball",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/6399.png?lm=1480871661"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 11
+        },
+        {
+          "name": "Elias Sørensen",
+          "short_name": "E. Sørensen",
+          "profile_url": "/elias-sorensen/profil/spieler/422930",
+          "clubs": [
+            {
+              "name": "Vålerenga Fotball Elite",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/76.png?lm=1450646255"
+            }
+          ],
+          "goals_this_matchday": "2",
+          "total_goals": 10
+        },
+        {
+          "name": "Zlatko Tripic",
+          "short_name": "Z. Tripic",
+          "profile_url": "/zlatko-tripic/profil/spieler/195274",
+          "clubs": [
+            {
+              "name": "Viking FK",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/239.png?lm=1615368654"
+            }
+          ],
+          "goals_this_matchday": "1",
+          "total_goals": 10
+        },
+        {
+          "name": "Vegard Erlien",
+          "short_name": "V. Erlien",
+          "profile_url": "/vegard-erlien/profil/spieler/333016",
+          "clubs": [
+            {
+              "name": "Tromsø IL",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/1293.png?lm=1438202054"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 9
+        },
+        {
+          "name": "Dino Islamovic",
+          "short_name": "D. Islamovic",
+          "profile_url": "/dino-islamovic/profil/spieler/208095",
+          "clubs": [
+            {
+              "name": "Rosenborg BK",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/195.png?lm=1714073077"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 8
+        },
+        {
+          "name": "Peter Christiansen",
+          "short_name": "P. Christiansen",
+          "profile_url": "/peter-christiansen/profil/spieler/542462",
+          "clubs": [
+            {
+              "name": "Viking FK",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/239.png?lm=1615368654"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 8
+        },
+        {
+          "name": "Aune Heggebø",
+          "short_name": "A. Heggebø",
+          "profile_url": "/aune-heggebo/profil/spieler/587222",
+          "clubs": [
+            {
+              "name": "SK Brann",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/1100.png?lm=1444211296"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 7
+        },
+        {
+          "name": "Ulrik Saltnes",
+          "short_name": "U. Saltnes",
+          "profile_url": "/ulrik-saltnes/profil/spieler/201865",
+          "clubs": [
+            {
+              "name": "FK Bodø/Glimt",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/501.png?lm=1410462743"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 7
+        }
+      ],
+      "summary": {
+        "matches": 6,
+        "goals": 22,
+        "own_goals": 0,
+        "yellow_cards": 22,
+        "second_yellow_cards": "-",
+        "red_cards": 1,
+        "total_attendance": "24840",
+        "average_attendance": "4140",
+        "sold_out_matches": 0
+      },
+      "metadata": {
+        "extraction_time": "2025-08-30T17:57:42.500649",
+        "source": "worker_extraction",
+        "total_matches": 8,
+        "is_recovery_work": false,
+        "recovery_targets": []
+      }
+    }
+  ],
+  "total_matchdays": 1,
+  "total_matches": 8,
+  "execution_time_seconds": 170669.608912,
+  "execution_time_minutes": 2844.49,
+  "execution_time_hours": 47.41,
+  "processing_time_seconds": 207.79355420917273,
+  "processing_time_minutes": 3.46,
+  "processing_time_hours": 0.06,
+  "queue_wait_seconds": 170461.819487,
+  "was_recovery_work": false,
+  "recovery_success": false,
+  "recovered_match_targets": [],
+  "requeue_template": {
+    "work_id": "requeue_match_NO1_2024_md19_1756384587_1",
+    "work_type": "match_data",
+    "version": "3.1",
+    "competition_id": "NO1",
+    "competition_code": "eliteserien",
+    "competition_name": "Eliteserien",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_NO1_2024_md19_1756384587",
+    "recovery_reason": "retry_failed",
+    "recovery_created_at": "2025-08-30T15:00:56.610847+00:00",
+    "recovery_matchday_number": null,
+    "specific_match_targets": [],
+    "team_count": 16,
+    "expected_matchdays": null,
+    "priority": 610,
+    "processing_hints": {
+      "scope": "single_matchday",
+      "matchday_focused": true,
+      "target_matchday": 19,
+      "expected_completion_time": "15_minutes",
+      "team_count_category": "medium",
+      "data_source": "db_sync",
+      "requires_validation": true,
+      "cache_last_analyzed": "2025-08-28T15:29:39.876467",
+      "is_recovery": true,
+      "preserve_existing_data": true,
+      "focus_on_team_data": true,
+      "original_work_id": "match_NO1_2024_md19_1756384587",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-30T15:00:56.610854+00:00",
+    "created_by": "requeue_adapter"
+  }
+}
