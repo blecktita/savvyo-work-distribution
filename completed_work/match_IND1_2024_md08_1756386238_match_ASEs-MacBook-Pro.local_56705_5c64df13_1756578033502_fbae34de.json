@@ -1,0 +1,4527 @@
+{
+  "work_id": "match_IND1_2024_md08_1756386238",
+  "work_type": "match_data",
+  "version": "3.1",
+  "competition_id": "IND1",
+  "competition_code": "indian-super-league",
+  "competition_name": "Indian Super League",
+  "season_year": "2024",
+  "target_matchday": {
+    "number": 8,
+    "status": "missing",
+    "existing_matches": 0,
+    "completion_reason": "not_discovered",
+    "source_verified": true,
+    "discovery_method": "cache_driven"
+  },
+  "team_count": 13,
+  "existing_matchdays_count": 0,
+  "existing_matches_count": 0,
+  "competition_tier": "First Tier",
+  "competition_status": "empty",
+  "priority": 610,
+  "processing_hints": {
+    "scope": "single_matchday",
+    "matchday_focused": true,
+    "target_matchday": 8,
+    "expected_completion_time": "15_minutes",
+    "team_count_category": "small",
+    "data_source": "db_sync",
+    "requires_validation": true,
+    "cache_last_analyzed": "2025-08-28T15:29:40.057699"
+  },
+  "created_at": "2025-08-28T16:03:58Z",
+  "created_by": "work_manager",
+  "creation_method": "cache_integrated_system",
+  "status": "completed",
+  "quality_level": "production",
+  "claimed_by": "match_ASEs-MacBook-Pro.local_56705_5c64df13",
+  "claimed_at": "2025-08-30T21:20:33.503123",
+  "claim_id": "match_ASEs-MacBook-Pro.local_56705_5c64df13_1756578033502_fbae34de",
+  "started_at": "2025-08-30T18:20:38.742267+00:00",
+  "completed_at": "2025-08-30T18:22:33.307309+00:00",
+  "matchdays_data": [
+    {
+      "matchday_info": {
+        "number": 8,
+        "season": "2024",
+        "competition": "Indian Super League",
+        "source_url": "https://www.transfermarkt.com/indian-super-league/spieltag/wettbewerb/IND1/saison_id/2024/spieltag/8",
+        "total_matches": 6
+      },
+      "matches": [
+        {
+          "match_info": {
+            "match_id": "4442494",
+            "competition_name": "Indian Super League",
+            "season": "2024",
+            "date": "2024-11-06",
+            "time": "4:00",
+            "venue": "Jawaharlal Nehru Stadium - Goa",
+            "attendance": 10821,
+            "referee": "Ramachandran Venkatesh",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4442494",
+            "day_of_week": "Wednesday"
+          },
+          "home_team": {
+            "team_id": "45321",
+            "name": "FC Goa",
+            "formation": "4-2-3-1",
+            "manager": "Manolo Márquez"
+          },
+          "away_team": {
+            "team_id": "85902",
+            "name": "Punjab FC",
+            "formation": "4-4-2",
+            "manager": "Panagiotis Dilmperis"
+          },
+          "score": {
+            "home_final": 2,
+            "away_final": 1,
+            "home_ht": 1,
+            "away_ht": 1
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "742268",
+                "name": "Tiwari",
+                "shirt_number": 55,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/742268-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "284997",
+                "name": "Jhingan",
+                "shirt_number": 3,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/284997-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "167113",
+                "name": "Onaindia",
+                "shirt_number": 16,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/167113-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "503167",
+                "name": "Sangwan",
+                "shirt_number": 27,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/503167-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "727265",
+                "name": "Chhetri",
+                "shirt_number": 14,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/727265-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "458315",
+                "name": "Tavora",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/458315-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "468143",
+                "name": "Singh",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/468143-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "291247",
+                "name": "Drazic",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/291247-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "82471",
+                "name": "Guarrotxena",
+                "shirt_number": 34,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/82471-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "523645",
+                "name": "Yasir",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/523645-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "140082",
+                "name": "Sadiku",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/140082-1756578061.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "229434",
+                "name": "Kumar",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/229434-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "690347",
+                "name": "Meitei",
+                "shirt_number": 74,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/690347-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "349015",
+                "name": "Novoselec",
+                "shirt_number": 33,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/349015-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "739137",
+                "name": "Singh",
+                "shirt_number": 27,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/739137-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "429618",
+                "name": "Rai",
+                "shirt_number": 16,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/429618-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "739342",
+                "name": "Prabhu",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/739342-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "573119",
+                "name": "Augustine",
+                "shirt_number": 31,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/573119-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "267655",
+                "name": "Vidal",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/267655-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "158162",
+                "name": "Suljic",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/158162-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "739452",
+                "name": "Sudeesh",
+                "shirt_number": 77,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/739452-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "79976",
+                "name": "Majcen",
+                "shirt_number": 99,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/79976-1756578061.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "1005336",
+                "name": "Yanglem Sanatomba Singh",
+                "shirt_number": 99,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1005336-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "1112957",
+                "name": "Prachit Gaonkar",
+                "shirt_number": 48,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1112957-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "761690",
+                "name": "Muhammad Nemil",
+                "shirt_number": 44,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/761690-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "1005150",
+                "name": "Jovial Dias",
+                "shirt_number": 49,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1005150-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "211387",
+                "name": "Laxmikant Kattimani",
+                "shirt_number": 25,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/211387-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "416246",
+                "name": "Nim Dorjee Tamang",
+                "shirt_number": 30,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/416246-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "1165083",
+                "name": "Jay Gupta",
+                "shirt_number": 41,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1165083-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "421050",
+                "name": "Seriton Fernandes",
+                "shirt_number": 20,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/421050-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "742267",
+                "name": "Brison Fernandes",
+                "shirt_number": 42,
+                "position": "LM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/742267-1756578061.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "1112953",
+                "name": "Pramveer",
+                "shirt_number": 35,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1112953-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "1054244",
+                "name": "Manglenthang Kipgen",
+                "shirt_number": 17,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1054244-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "739447",
+                "name": "Muheet Shabir",
+                "shirt_number": 78,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/739447-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "931094",
+                "name": "Nitesh Darjee",
+                "shirt_number": 45,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/931094-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "559485",
+                "name": "Ashis Pradhan",
+                "shirt_number": 23,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/559485-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "652435",
+                "name": "Ricky John Shabong",
+                "shirt_number": 6,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/652435-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "1213786",
+                "name": "Singamayum Shami",
+                "shirt_number": 25,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1213786-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "468147",
+                "name": "Ninthoi Meetei",
+                "shirt_number": 44,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/468147-1756578061.jpg?lm=1"
+              },
+              {
+                "player_id": "121577",
+                "name": "Mushaga Bakenga",
+                "shirt_number": 9,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/121577-1756578061.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 13,
+                "extra_time": null,
+                "player": {
+                  "player_id": "158162",
+                  "name": "Asmir Suljic",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/158162-1756578061.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "739452",
+                  "name": "Nihal Sudeesh",
+                  "shirt_number": 77,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/739452-1756578061.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Cross",
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  1
+                ],
+                "season_goal_number": 2,
+                "season_assist_number": 1
+              },
+              {
+                "minute": 22,
+                "extra_time": null,
+                "player": {
+                  "player_id": "140082",
+                  "name": "Armando Sadiku",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/140082-1756578061.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "82471",
+                  "name": "Iker Guarrotxena",
+                  "shirt_number": 34,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/82471-1756578061.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Pass",
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  1
+                ],
+                "season_goal_number": 8,
+                "season_assist_number": 2
+              },
+              {
+                "minute": 49,
+                "extra_time": null,
+                "player": {
+                  "player_id": "82471",
+                  "name": "Iker Guarrotxena",
+                  "shirt_number": 34,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/82471-1756578061.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": "Counter attack goal",
+                "assist_type": null,
+                "team_side": "home",
+                "score_after": [
+                  2,
+                  1
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": null
+              }
+            ],
+            "cards": [
+              {
+                "minute": 18,
+                "extra_time": null,
+                "player": {
+                  "player_id": "267655",
+                  "name": "Ezequiel Vidal",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/267655-1756578061.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              },
+              {
+                "minute": 88,
+                "extra_time": null,
+                "player": {
+                  "player_id": "652435",
+                  "name": "Ricky John Shabong",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/652435-1756578061.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 2
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 51,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "349015",
+                  "name": "Ivan Novoselec",
+                  "shirt_number": 33,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/349015-1756578061.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "652435",
+                  "name": "Ricky John Shabong",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/652435-1756578061.jpg?lm=1"
+                },
+                "reason": "Injury",
+                "team_side": "away"
+              },
+              {
+                "minute": 68,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "523645",
+                  "name": "Mohammed Yasir",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/523645-1756578061.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "742267",
+                  "name": "Brison Fernandes",
+                  "shirt_number": 42,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/742267-1756578061.jpg?lm=1"
+                },
+                "reason": "Injury",
+                "team_side": "home"
+              },
+              {
+                "minute": 68,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "739452",
+                  "name": "Nihal Sudeesh",
+                  "shirt_number": 77,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/739452-1756578061.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "121577",
+                  "name": "Mushaga Bakenga",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/121577-1756578061.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 68,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "429618",
+                  "name": "Vinit Rai",
+                  "shirt_number": 16,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/429618-1756578061.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "468147",
+                  "name": "Ninthoi Meetei",
+                  "shirt_number": 44,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/468147-1756578061.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 87,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "573119",
+                  "name": "Leon Augustine",
+                  "shirt_number": 31,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/573119-1756578061.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "931094",
+                  "name": "Nitesh Darjee",
+                  "shirt_number": 45,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/931094-1756578061.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 90,
+                "extra_time": 4,
+                "player_out": {
+                  "player_id": "82471",
+                  "name": "Iker Guarrotxena",
+                  "shirt_number": 34,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/82471-1756578061.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "761690",
+                  "name": "Muhammad Nemil",
+                  "shirt_number": 44,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/761690-1756578061.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 90,
+                "extra_time": 5,
+                "player_out": {
+                  "player_id": "727265",
+                  "name": "Ayush Dev Chhetri",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/727265-1756578061.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1165083",
+                  "name": "Jay Gupta",
+                  "shirt_number": 41,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1165083-1756578061.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4442495",
+            "competition_name": "Indian Super League",
+            "season": "2024",
+            "date": "2024-11-07",
+            "time": "4:00",
+            "venue": "Jawaharlal Nehru Stadium - Kochi",
+            "attendance": 15416,
+            "referee": "Surojit Das",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4442495",
+            "day_of_week": "Thursday"
+          },
+          "home_team": {
+            "team_id": "45277",
+            "name": "Kerala Blasters FC",
+            "formation": "4-2-3-1",
+            "manager": "Mikael Stahre"
+          },
+          "away_team": {
+            "team_id": "76364",
+            "name": "Hyderabad FC",
+            "formation": "4-2-3-1",
+            "manager": "Thangboi Singto"
+          },
+          "score": {
+            "home_final": 1,
+            "away_final": 2,
+            "home_ht": 1,
+            "away_ht": 1
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "856488",
+                "name": "Kumar",
+                "shirt_number": 31,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/856488-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "89450",
+                "name": "Coeff",
+                "shirt_number": 29,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/89450-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "390079",
+                "name": "Drincic",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/390079-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "698371",
+                "name": "Ruivah",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/698371-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "630000",
+                "name": "Singh",
+                "shirt_number": 50,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/630000-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "416255",
+                "name": "Singh",
+                "shirt_number": 3,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/416255-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "842524",
+                "name": "Mohanan",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/842524-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "131113",
+                "name": "Luna",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/131113-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "1004494",
+                "name": "Aimen",
+                "shirt_number": 19,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1004494-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "931045",
+                "name": "Singh",
+                "shirt_number": 25,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/931045-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "510545",
+                "name": "Jiménez",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/510545-1756578074.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "1221644",
+                "name": "PA",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1221644-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "642353",
+                "name": "Biaka",
+                "shirt_number": 33,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/642353-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "682172",
+                "name": "Rafi",
+                "shirt_number": 3,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/682172-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "630259",
+                "name": "Saji",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/630259-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "429243",
+                "name": "Sapic",
+                "shirt_number": 65,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/429243-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "630478",
+                "name": "Shrivas",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/630478-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "432962",
+                "name": "Alba",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/432962-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "739450",
+                "name": "Rabeeh A K",
+                "shirt_number": 77,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/739450-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "425190",
+                "name": "Vanmalsawma",
+                "shirt_number": 28,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/425190-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "1098080",
+                "name": "Allan Paul.",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1098080-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "734346",
+                "name": "Ramhlunchh.",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/734346-1756578074.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "757901",
+                "name": "Nora Fernandes",
+                "shirt_number": 2,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/757901-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "1048464",
+                "name": "Muhammed Saheef",
+                "shirt_number": 5,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1048464-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "343413",
+                "name": "Pritam Kotal",
+                "shirt_number": 20,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/343413-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "968732",
+                "name": "Freddy Lallawmawma",
+                "shirt_number": 6,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/968732-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "857675",
+                "name": "Sukham Yoihenba Meitei",
+                "shirt_number": 22,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/857675-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "777491",
+                "name": "Mohammed Azhar",
+                "shirt_number": 32,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/777491-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "629600",
+                "name": "Danish Farooq",
+                "shirt_number": 13,
+                "position": "LM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/629600-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "331478",
+                "name": "Noah Sadaoui",
+                "shirt_number": 77,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/331478-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "543346",
+                "name": "Rahul KP",
+                "shirt_number": 7,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/543346-1756578074.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "1118994",
+                "name": "Aron Vanlalrinchhana",
+                "shirt_number": 22,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1118994-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "758378",
+                "name": "Aaryan Anjaneya",
+                "shirt_number": 50,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/758378-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "630380",
+                "name": "Leander D'Cunha",
+                "shirt_number": 25,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/630380-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "1036567",
+                "name": "Soyal Joshy",
+                "shirt_number": 43,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1036567-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "225358",
+                "name": "Lenny Rodrigues",
+                "shirt_number": 24,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/225358-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "644952",
+                "name": "Ayush Adhikari",
+                "shirt_number": 8,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/644952-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "929230",
+                "name": "Sourav K",
+                "shirt_number": 27,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/929230-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "728311",
+                "name": "Edmilson Correia",
+                "shirt_number": 7,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/728311-1756578074.jpg?lm=1"
+              },
+              {
+                "player_id": "757906",
+                "name": "Devendra Murgaokar",
+                "shirt_number": 29,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/757906-1756578074.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 13,
+                "extra_time": null,
+                "player": {
+                  "player_id": "510545",
+                  "name": "Jesús Jiménez",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/510545-1756578074.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "931045",
+                  "name": "Korou Singh",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/931045-1756578074.jpg?lm=1"
+                },
+                "goal_type": "Counter attack goal",
+                "assist_type": "Pass",
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 6,
+                "season_assist_number": 1
+              },
+              {
+                "minute": 43,
+                "extra_time": null,
+                "player": {
+                  "player_id": "432962",
+                  "name": "Andrei Alba",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/432962-1756578074.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "630478",
+                  "name": "Parag Satish Shrivas",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/630478-1756578074.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Pass",
+                "team_side": "away",
+                "score_after": [
+                  1,
+                  1
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 2
+              },
+              {
+                "minute": 70,
+                "extra_time": null,
+                "player": {
+                  "player_id": "432962",
+                  "name": "Andrei Alba",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/432962-1756578074.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": "Penalty",
+                "assist_type": null,
+                "team_side": "away",
+                "score_after": [
+                  1,
+                  2
+                ],
+                "season_goal_number": 2,
+                "season_assist_number": null
+              }
+            ],
+            "cards": [
+              {
+                "minute": 47,
+                "extra_time": null,
+                "player": {
+                  "player_id": "931045",
+                  "name": "Korou Singh",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/931045-1756578074.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 53,
+                "extra_time": null,
+                "player": {
+                  "player_id": "630478",
+                  "name": "Parag Satish Shrivas",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/630478-1756578074.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              },
+              {
+                "minute": 68,
+                "extra_time": null,
+                "player": {
+                  "player_id": "698371",
+                  "name": "Hormipam Ruivah",
+                  "shirt_number": 4,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/698371-1756578074.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Handball",
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 90,
+                "extra_time": 6,
+                "player": {
+                  "player_id": "642353",
+                  "name": "Biaka",
+                  "shirt_number": 33,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/642353-1756578074.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Time wasting",
+                "team_side": "away",
+                "season_card_number": 1
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 33,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1004494",
+                  "name": "Mohammed Aimen",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1004494-1756578074.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "968732",
+                  "name": "Freddy Lallawmawma",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/968732-1756578074.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "89450",
+                  "name": "Alexandre Coeff",
+                  "shirt_number": 29,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/89450-1756578074.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "331478",
+                  "name": "Noah Sadaoui",
+                  "shirt_number": 77,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/331478-1756578074.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "425190",
+                  "name": "Issac Vanmalsawma",
+                  "shirt_number": 28,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/425190-1756578074.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "225358",
+                  "name": "Lenny Rodrigues",
+                  "shirt_number": 24,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/225358-1756578074.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1221644",
+                  "name": "Abhijith PA",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1221644-1756578074.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "728311",
+                  "name": "Edmilson Correia",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/728311-1756578074.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 55,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "931045",
+                  "name": "Korou Singh",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/931045-1756578074.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "543346",
+                  "name": "Rahul KP",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/543346-1756578074.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 77,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "698371",
+                  "name": "Hormipam Ruivah",
+                  "shirt_number": 4,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/698371-1756578074.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "343413",
+                  "name": "Pritam Kotal",
+                  "shirt_number": 20,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/343413-1756578074.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 77,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "416255",
+                  "name": "Sandeep Singh",
+                  "shirt_number": 3,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/416255-1756578074.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1048464",
+                  "name": "Muhammed Saheef",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1048464-1756578074.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 83,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "432962",
+                  "name": "Andrei Alba",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/432962-1756578074.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "644952",
+                  "name": "Ayush Adhikari",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/644952-1756578074.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 83,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1098080",
+                  "name": "Allan Paulista",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1098080-1756578074.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "757906",
+                  "name": "Devendra Murgaokar",
+                  "shirt_number": 29,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/757906-1756578074.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 90,
+                "extra_time": 4,
+                "player_out": {
+                  "player_id": "734346",
+                  "name": "Ramhlunchhunga",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/734346-1756578074.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "929230",
+                  "name": "Sourav K",
+                  "shirt_number": 27,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/929230-1756578074.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4442496",
+            "competition_name": "Indian Super League",
+            "season": "2024",
+            "date": "2024-11-08",
+            "time": "4:00",
+            "venue": "Sree Kanteerava Stadium",
+            "attendance": 13783,
+            "referee": "Pratik Mondal",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4442496",
+            "day_of_week": "Friday"
+          },
+          "home_team": {
+            "team_id": "41030",
+            "name": "Bengaluru FC",
+            "formation": "4-4-2",
+            "manager": "Gerard Zaragoza"
+          },
+          "away_team": {
+            "team_id": "45276",
+            "name": "NorthEast United FC",
+            "formation": "4-2-3-1",
+            "manager": "Juan Pedro Benali"
+          },
+          "score": {
+            "home_final": 2,
+            "away_final": 2,
+            "home_ht": 1,
+            "away_ht": 2
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "173146",
+                "name": "Singh Sandhu",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/173146-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "50377",
+                "name": "Jovanovic",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/50377-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "416247",
+                "name": "Singh",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/416247-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "564833",
+                "name": "Salah",
+                "shirt_number": 12,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/564833-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "559482",
+                "name": "Singh",
+                "shirt_number": 32,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/559482-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "400929",
+                "name": "Bheke",
+                "shirt_number": 2,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/400929-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "468146",
+                "name": "Singh",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/468146-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "185401",
+                "name": "Noguera",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/185401-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "133794",
+                "name": "Méndez",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/133794-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "129660",
+                "name": "Pereyra Díaz",
+                "shirt_number": 30,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/129660-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "759256",
+                "name": "Siva Sakth.",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/759256-1756578085.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "626655",
+                "name": "Singh",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/626655-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "630001",
+                "name": "Singh",
+                "shirt_number": 2,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/630001-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "126872",
+                "name": "Zabaco",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/126872-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "642742",
+                "name": "Samte",
+                "shirt_number": 77,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/642742-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "485322",
+                "name": "Akhtar",
+                "shirt_number": 12,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/485322-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "758876",
+                "name": "Nickson",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/758876-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "642340",
+                "name": "Mayakkanna.",
+                "shirt_number": 13,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/642340-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "193766",
+                "name": "Bemammer",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/193766-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "724898",
+                "name": "Ajaraie",
+                "shirt_number": 14,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/724898-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "142023",
+                "name": "Fernández",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/142023-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "630443",
+                "name": "M.S",
+                "shirt_number": 18,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/630443-1756578085.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "351117",
+                "name": "Lalthuammawia Ralte",
+                "shirt_number": 28,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/351117-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "842699",
+                "name": "Clarence Fernandes",
+                "shirt_number": 15,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/842699-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "856518",
+                "name": "Lalremtluanga F",
+                "shirt_number": 23,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/856518-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "842534",
+                "name": "Harsh Patre",
+                "shirt_number": 6,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/842534-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "131357",
+                "name": "Pedro Capó",
+                "shirt_number": 18,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/131357-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "1013076",
+                "name": "Vinith Venkatesh",
+                "shirt_number": 31,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1013076-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "192239",
+                "name": "Ryan Williams",
+                "shirt_number": 7,
+                "position": "RM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/192239-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "1005031",
+                "name": "Monirul Molla",
+                "shirt_number": 16,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1005031-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "64601",
+                "name": "Sunil Chhetri",
+                "shirt_number": 11,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/64601-1756578085.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "1048695",
+                "name": "Ankith P",
+                "shirt_number": 16,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1048695-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "559427",
+                "name": "Mirshad K. Michu",
+                "shirt_number": 32,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/559427-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "537209",
+                "name": "Hamza Regragui",
+                "shirt_number": 5,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/537209-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "559612",
+                "name": "Tondonba Singh",
+                "shirt_number": 3,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/559612-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "630003",
+                "name": "Phalguni Singh",
+                "shirt_number": 26,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/630003-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "682261",
+                "name": "Bekey Oram",
+                "shirt_number": 23,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/682261-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "760172",
+                "name": "Parthib Gogoi",
+                "shirt_number": 11,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/760172-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "343419",
+                "name": "Redeem Tlang",
+                "shirt_number": 22,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/343419-1756578085.jpg?lm=1"
+              },
+              {
+                "player_id": "257379",
+                "name": "Néstor Albiach",
+                "shirt_number": 10,
+                "position": "SS",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/257379-1756578085.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 8,
+                "extra_time": null,
+                "player": {
+                  "player_id": "724898",
+                  "name": "Alaeddine Ajaraie",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/724898-1756578085.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "630001",
+                  "name": "Dinesh Singh",
+                  "shirt_number": 2,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/630001-1756578085.jpg?lm=1"
+                },
+                "goal_type": "Counter attack goal",
+                "assist_type": "Pass",
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  1
+                ],
+                "season_goal_number": 10,
+                "season_assist_number": 1
+              },
+              {
+                "minute": 11,
+                "extra_time": null,
+                "player": {
+                  "player_id": "185401",
+                  "name": "Alberto Noguera",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/185401-1756578085.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": "Right-footed shot",
+                "assist_type": null,
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  1
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": null
+              },
+              {
+                "minute": 14,
+                "extra_time": null,
+                "player": {
+                  "player_id": "724898",
+                  "name": "Alaeddine Ajaraie",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/724898-1756578085.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "630443",
+                  "name": "Jithin M.S",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/630443-1756578085.jpg?lm=1"
+                },
+                "goal_type": "Left-footed shot",
+                "assist_type": null,
+                "team_side": "away",
+                "score_after": [
+                  1,
+                  2
+                ],
+                "season_goal_number": 11,
+                "season_assist_number": 4
+              },
+              {
+                "minute": 70,
+                "extra_time": null,
+                "player": {
+                  "player_id": "192239",
+                  "name": "Ryan Williams",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/192239-1756578085.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "564833",
+                  "name": "Mohammed Salah",
+                  "shirt_number": 12,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/564833-1756578085.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Cross",
+                "team_side": "home",
+                "score_after": [
+                  2,
+                  2
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 2
+              }
+            ],
+            "cards": [
+              {
+                "minute": 2,
+                "extra_time": null,
+                "player": {
+                  "player_id": "133794",
+                  "name": "Edgar Méndez",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/133794-1756578085.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Diving",
+                "team_side": "home",
+                "season_card_number": 4
+              },
+              {
+                "minute": 42,
+                "extra_time": null,
+                "player": {
+                  "player_id": "564833",
+                  "name": "Mohammed Salah",
+                  "shirt_number": 12,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/564833-1756578085.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 51,
+                "extra_time": null,
+                "player": {
+                  "player_id": "630001",
+                  "name": "Dinesh Singh",
+                  "shirt_number": 2,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/630001-1756578085.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 3
+              },
+              {
+                "minute": 52,
+                "extra_time": null,
+                "player": {
+                  "player_id": "50377",
+                  "name": "Aleksandar Jovanovic",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/50377-1756578085.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 64,
+                "extra_time": null,
+                "player": {
+                  "player_id": "193766",
+                  "name": "Mohammed Ali Bemammer",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/193766-1756578085.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 4
+              },
+              {
+                "minute": 79,
+                "extra_time": null,
+                "player": {
+                  "player_id": "416247",
+                  "name": "Chinglensana Singh",
+                  "shirt_number": 4,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/416247-1756578085.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 2
+              },
+              {
+                "minute": 88,
+                "extra_time": null,
+                "player": {
+                  "player_id": "626655",
+                  "name": "Gurmeet Singh",
+                  "shirt_number": 1,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/626655-1756578085.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Time wasting",
+                "team_side": "away",
+                "season_card_number": 1
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "759256",
+                  "name": "Siva Sakthi N",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/759256-1756578085.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "64601",
+                  "name": "Sunil Chhetri",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/64601-1756578085.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 67,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "142023",
+                  "name": "Guillermo Fernández",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/142023-1756578085.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "257379",
+                  "name": "Néstor Albiach",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/257379-1756578085.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 67,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "758876",
+                  "name": "Macarton Louis Nickson",
+                  "shirt_number": 15,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/758876-1756578085.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "630003",
+                  "name": "Phalguni Singh",
+                  "shirt_number": 26,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/630003-1756578085.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 69,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "133794",
+                  "name": "Edgar Méndez",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/133794-1756578085.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "192239",
+                  "name": "Ryan Williams",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/192239-1756578085.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 74,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "564833",
+                  "name": "Mohammed Salah",
+                  "shirt_number": 12,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/564833-1756578085.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "856518",
+                  "name": "Lalremtluanga F",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/856518-1756578085.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 77,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "630443",
+                  "name": "Jithin M.S",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/630443-1756578085.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "760172",
+                  "name": "Parthib Gogoi",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/760172-1756578085.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 84,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "50377",
+                  "name": "Aleksandar Jovanovic",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/50377-1756578085.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "131357",
+                  "name": "Pedro Capó",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/131357-1756578085.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 90,
+                "extra_time": 5,
+                "player_out": {
+                  "player_id": "724898",
+                  "name": "Alaeddine Ajaraie",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/724898-1756578085.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "537209",
+                  "name": "Hamza Regragui",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/537209-1756578085.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4442497",
+            "competition_name": "Indian Super League",
+            "season": "2024",
+            "date": "2024-11-09",
+            "time": "1:30",
+            "venue": "Jawaharlal Nehru Stadium - Chennai",
+            "attendance": 9473,
+            "referee": "Rahul Gupta",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4442497",
+            "day_of_week": "Saturday"
+          },
+          "home_team": {
+            "team_id": "45299",
+            "name": "Chennaiyin FC",
+            "formation": "4-1-4-1",
+            "manager": "Owen Coyle"
+          },
+          "away_team": {
+            "team_id": "45274",
+            "name": "Mumbai City FC",
+            "formation": "4-3-3 Attacking",
+            "manager": "Petr Kratky"
+          },
+          "score": {
+            "home_final": 1,
+            "away_final": 1,
+            "home_ht": 0,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "468160",
+                "name": "Nawaz",
+                "shirt_number": 13,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/468160-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "173580",
+                "name": "Edwards",
+                "shirt_number": 3,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/173580-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "374342",
+                "name": "Elsinho",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/374342-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "644967",
+                "name": "Laldinpuia",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/644967-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "682254",
+                "name": "Yumnam",
+                "shirt_number": 33,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/682254-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "567419",
+                "name": "Renthlei",
+                "shirt_number": 26,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/567419-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "429249",
+                "name": "Shields",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/429249-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "630387",
+                "name": "Barretto",
+                "shirt_number": 47,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/630387-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "462120",
+                "name": "Choudhary",
+                "shirt_number": 71,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/462120-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "191631",
+                "name": "Jordán Gil",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/191631-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "1059473",
+                "name": "Yadwad",
+                "shirt_number": 19,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059473-1756578097.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "419249",
+                "name": "Lachenpa",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/419249-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "1005291",
+                "name": "Rodrigues",
+                "shirt_number": 27,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1005291-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "485355",
+                "name": "Singh",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/485355-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "246420",
+                "name": "Tiri",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/246420-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "561099",
+                "name": "Valpuia",
+                "shirt_number": 3,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/561099-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "187301",
+                "name": "van Nieff",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/187301-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "229420",
+                "name": "Fernandes",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/229420-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "163743",
+                "name": "Manzorro",
+                "shirt_number": 14,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/163743-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "416250",
+                "name": "Singh",
+                "shirt_number": 29,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/416250-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "425586",
+                "name": "Chhangte",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/425586-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "63487",
+                "name": "Karelis",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/63487-1756578097.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "630616",
+                "name": "Samik Mitra",
+                "shirt_number": 1,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/630616-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "343459",
+                "name": "Mandar Rao Desai",
+                "shirt_number": 17,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/343459-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "727167",
+                "name": "Jiteshwor Singh",
+                "shirt_number": 37,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/727167-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "468144",
+                "name": "Jitendra Singh",
+                "shirt_number": 8,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/468144-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "739349",
+                "name": "Lalrinliana Hnamte",
+                "shirt_number": 22,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/739349-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "572303",
+                "name": "Lukas Brambilla",
+                "shirt_number": 70,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/572303-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "642351",
+                "name": "Gurkirat Singh",
+                "shirt_number": 77,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/642351-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "146561",
+                "name": "Daniel Chima Chukwu",
+                "shirt_number": 27,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/146561-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "750780",
+                "name": "Kiyan Nassiri",
+                "shirt_number": 7,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/750780-1756578097.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "343417",
+                "name": "TP Rehenesh",
+                "shirt_number": 23,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/343417-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "441740",
+                "name": "Thaer Krouma",
+                "shirt_number": 13,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/441740-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "558609",
+                "name": "Sahil Panwar",
+                "shirt_number": 36,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/558609-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "468145",
+                "name": "Sanjeev Stalin",
+                "shirt_number": 15,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/468145-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "645572",
+                "name": "Hardik Bhatt",
+                "shirt_number": 93,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/645572-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "1005292",
+                "name": "Franklin Robin Nazareth",
+                "shirt_number": 16,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1005292-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "342422",
+                "name": "Jayesh Rane",
+                "shirt_number": 20,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/342422-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "760456",
+                "name": "Noufal P.N",
+                "shirt_number": 92,
+                "position": "LM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/760456-1756578097.jpg?lm=1"
+              },
+              {
+                "player_id": "424365",
+                "name": "Daniel Lalhlimpuia",
+                "shirt_number": 19,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/424365-1756578097.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 60,
+                "extra_time": null,
+                "player": {
+                  "player_id": "173580",
+                  "name": "Ryan Edwards",
+                  "shirt_number": 3,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/173580-1756578097.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "429249",
+                  "name": "Connor Shields",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/429249-1756578097.jpg?lm=1"
+                },
+                "goal_type": "Header",
+                "assist_type": "Pass",
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 4
+              },
+              {
+                "minute": 63,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1005291",
+                  "name": "Nathan Asher Rodrigues",
+                  "shirt_number": 27,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1005291-1756578097.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "187301",
+                  "name": "Yoëll van Nieff",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/187301-1756578097.jpg?lm=1"
+                },
+                "goal_type": "Header",
+                "assist_type": "Corner",
+                "team_side": "away",
+                "score_after": [
+                  1,
+                  1
+                ],
+                "season_goal_number": 2,
+                "season_assist_number": 2
+              }
+            ],
+            "cards": [
+              {
+                "minute": 42,
+                "extra_time": null,
+                "player": {
+                  "player_id": "485355",
+                  "name": "Mehtab Singh",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/485355-1756578097.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              },
+              {
+                "minute": 53,
+                "extra_time": null,
+                "player": {
+                  "player_id": "644967",
+                  "name": "PC Laldinpuia",
+                  "shirt_number": 4,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/644967-1756578097.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 4
+              },
+              {
+                "minute": 57,
+                "extra_time": null,
+                "player": {
+                  "player_id": "682254",
+                  "name": "Bikash Yumnam",
+                  "shirt_number": 33,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/682254-1756578097.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 1
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "229420",
+                  "name": "Brandon Fernandes",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/229420-1756578097.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "342422",
+                  "name": "Jayesh Rane",
+                  "shirt_number": 20,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/342422-1756578097.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 65,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "462120",
+                  "name": "Farukh Choudhary",
+                  "shirt_number": 71,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/462120-1756578097.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "739349",
+                  "name": "Lalrinliana Hnamte",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/739349-1756578097.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 66,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "374342",
+                  "name": "Elsinho",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/374342-1756578097.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "572303",
+                  "name": "Lukas Brambilla",
+                  "shirt_number": 70,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/572303-1756578097.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 67,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "416250",
+                  "name": "Bipin Singh",
+                  "shirt_number": 29,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/416250-1756578097.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "760456",
+                  "name": "Noufal P.N",
+                  "shirt_number": 92,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/760456-1756578097.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 68,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "246420",
+                  "name": "Tiri",
+                  "shirt_number": 4,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/246420-1756578097.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "441740",
+                  "name": "Thaer Krouma",
+                  "shirt_number": 13,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/441740-1756578097.jpg?lm=1"
+                },
+                "reason": "Injury",
+                "team_side": "away"
+              },
+              {
+                "minute": 72,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "191631",
+                  "name": "Wilmar Jordán Gil",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/191631-1756578097.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "146561",
+                  "name": "Daniel Chima Chukwu",
+                  "shirt_number": 27,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/146561-1756578097.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 85,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "163743",
+                  "name": "Jérémy Manzorro",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/163743-1756578097.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1005292",
+                  "name": "Franklin Robin Nazareth",
+                  "shirt_number": 16,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1005292-1756578097.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 85,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "630387",
+                  "name": "Vincy Barretto",
+                  "shirt_number": 47,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/630387-1756578097.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "642351",
+                  "name": "Gurkirat Singh",
+                  "shirt_number": 77,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/642351-1756578097.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 85,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1059473",
+                  "name": "Irfan Yadwad",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059473-1756578097.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "750780",
+                  "name": "Kiyan Nassiri",
+                  "shirt_number": 7,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/750780-1756578097.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 90,
+                "extra_time": 4,
+                "player_out": {
+                  "player_id": "63487",
+                  "name": "Nikolaos Karelis",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/63487-1756578097.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "424365",
+                  "name": "Daniel Lalhlimpuia",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/424365-1756578097.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4442498",
+            "competition_name": "Indian Super League",
+            "season": "2024",
+            "date": "2024-11-09",
+            "time": "4:00",
+            "venue": "Vivekanada Yuba Bharati Krirangan",
+            "attendance": 21119,
+            "referee": "Harish Kundu",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4442498",
+            "day_of_week": "Saturday"
+          },
+          "home_team": {
+            "team_id": "14099",
+            "name": "East Bengal FC",
+            "formation": "4-2-3-1",
+            "manager": "Oscar Bruzon"
+          },
+          "away_team": {
+            "team_id": "37893",
+            "name": "Mohammedan SC (Kolkata)",
+            "formation": "4-3-3 Attacking",
+            "manager": "Andrey Chernyshov"
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": 0,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "468159",
+                "name": "Singh Gill",
+                "shirt_number": 13,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/468159-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "543838",
+                "name": "Ali",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/543838-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "727226",
+                "name": "Lalchungnu.",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/727226-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "949858",
+                "name": "Maher",
+                "shirt_number": 19,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/949858-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "468152",
+                "name": "Rakip",
+                "shirt_number": 12,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/468152-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "343410",
+                "name": "Chakrabarti",
+                "shirt_number": 23,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/343410-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "387557",
+                "name": "Crespo",
+                "shirt_number": 21,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/387557-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "518860",
+                "name": "Talal",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/518860-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "489276",
+                "name": "Sekar",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/489276-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "642495",
+                "name": "Singh",
+                "shirt_number": 29,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/642495-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "136641",
+                "name": "Diamantakos",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/136641-1756578110.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "567550",
+                "name": "Roy",
+                "shirt_number": 27,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/567550-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "564407",
+                "name": "Bora",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/564407-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "91473",
+                "name": "Ogier",
+                "shirt_number": 69,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/91473-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "400438",
+                "name": "Ralte",
+                "shirt_number": 14,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/400438-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "644978",
+                "name": "Vanlalzuid.",
+                "shirt_number": 34,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/644978-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "468148",
+                "name": "Singh",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/468148-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "552744",
+                "name": "Kasimov",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/552744-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "750021",
+                "name": "Gómez",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/750021-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "690995",
+                "name": "Singh",
+                "shirt_number": 22,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/690995-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "635466",
+                "name": "França",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/635466-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "642153",
+                "name": "Lalremsanga",
+                "shirt_number": 29,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/642153-1756578110.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "382359",
+                "name": "Debjit Majumder",
+                "shirt_number": 24,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/382359-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "500417",
+                "name": "Gursimrat Singh Gill",
+                "shirt_number": 33,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/500417-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "419520",
+                "name": "Nishu Kumar",
+                "shirt_number": 22,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/419520-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "543342",
+                "name": "Jeakson Singh",
+                "shirt_number": 6,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/543342-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "1128365",
+                "name": "Shyamal Besra",
+                "shirt_number": 66,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1128365-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "1221637",
+                "name": "Sayan Banerjee",
+                "shirt_number": 84,
+                "position": "LM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1221637-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "775510",
+                "name": "Vishnu P V",
+                "shirt_number": 82,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/775510-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "727214",
+                "name": "David Lalhlansanga",
+                "shirt_number": 14,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/727214-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "281827",
+                "name": "Cleiton Silva",
+                "shirt_number": 10,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/281827-1756578110.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "761194",
+                "name": "Subhajit Bhattacharjee",
+                "shirt_number": 71,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/761194-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "416695",
+                "name": "Mohammed Irshad",
+                "shirt_number": 16,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/416695-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "842531",
+                "name": "Sajad Hussain Parray",
+                "shirt_number": 66,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/842531-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "410164",
+                "name": "Samad Mallick",
+                "shirt_number": 25,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/410164-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "642151",
+                "name": "Joe Zoherliana",
+                "shirt_number": 24,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/642151-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "630005",
+                "name": "Wahengbam Angousana Luwang",
+                "shirt_number": 11,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/630005-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "653731",
+                "name": "K Lalrinfela",
+                "shirt_number": 21,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/653731-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "564838",
+                "name": "Makan Winkle Chote",
+                "shirt_number": 19,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/564838-1756578110.jpg?lm=1"
+              },
+              {
+                "player_id": "642650",
+                "name": "César Lobi Manzoki",
+                "shirt_number": 17,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/642650-1756578110.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [],
+            "cards": [
+              {
+                "minute": 7,
+                "extra_time": null,
+                "player": {
+                  "player_id": "642495",
+                  "name": "Naorem Mahesh Singh",
+                  "shirt_number": 29,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/642495-1756578110.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": null
+              },
+              {
+                "minute": 15,
+                "extra_time": null,
+                "player": {
+                  "player_id": "949858",
+                  "name": "Hijazi Maher",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/949858-1756578110.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Handball",
+                "team_side": "home",
+                "season_card_number": 3
+              },
+              {
+                "minute": 28,
+                "extra_time": null,
+                "player": {
+                  "player_id": "468148",
+                  "name": "Amarjit Singh",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/468148-1756578110.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 2
+              },
+              {
+                "minute": 29,
+                "extra_time": null,
+                "player": {
+                  "player_id": "489276",
+                  "name": "Nandha Kumar Sekar",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/489276-1756578110.jpg?lm=1"
+                },
+                "card_type": "red",
+                "reason": null,
+                "team_side": "home",
+                "season_card_number": null
+              },
+              {
+                "minute": 30,
+                "extra_time": null,
+                "player": {
+                  "player_id": "642495",
+                  "name": "Naorem Mahesh Singh",
+                  "shirt_number": 29,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/642495-1756578110.jpg?lm=1"
+                },
+                "card_type": "second_yellow",
+                "reason": null,
+                "team_side": "home",
+                "season_card_number": null
+              },
+              {
+                "minute": 40,
+                "extra_time": null,
+                "player": {
+                  "player_id": "387557",
+                  "name": "Saúl Crespo",
+                  "shirt_number": 21,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/387557-1756578110.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "home",
+                "season_card_number": 2
+              },
+              {
+                "minute": 90,
+                "extra_time": 2,
+                "player": {
+                  "player_id": "642650",
+                  "name": "César Lobi Manzoki",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/642650-1756578110.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 1
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "750021",
+                  "name": "Alexis Gómez",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/750021-1756578110.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "642650",
+                  "name": "César Lobi Manzoki",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/642650-1756578110.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "468148",
+                  "name": "Amarjit Singh",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/468148-1756578110.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "653731",
+                  "name": "K Lalrinfela",
+                  "shirt_number": 21,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/653731-1756578110.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 65,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "642153",
+                  "name": "Lalremsanga",
+                  "shirt_number": 29,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/642153-1756578110.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "564838",
+                  "name": "Makan Winkle Chote",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/564838-1756578110.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 73,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "343410",
+                  "name": "Souvik Chakrabarti",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/343410-1756578110.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "543342",
+                  "name": "Jeakson Singh",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/543342-1756578110.jpg?lm=1"
+                },
+                "reason": "Injury",
+                "team_side": "home"
+              },
+              {
+                "minute": 86,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "518860",
+                  "name": "Madih Talal",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/518860-1756578110.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "281827",
+                  "name": "Cleiton Silva",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/281827-1756578110.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 90,
+                "extra_time": 4,
+                "player_out": {
+                  "player_id": "653731",
+                  "name": "K Lalrinfela",
+                  "shirt_number": 21,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/653731-1756578110.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "416695",
+                  "name": "Mohammed Irshad",
+                  "shirt_number": 16,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/416695-1756578110.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 90,
+                "extra_time": 7,
+                "player_out": {
+                  "player_id": "136641",
+                  "name": "Dimitrios Diamantakos",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/136641-1756578110.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "727214",
+                  "name": "David Lalhlansanga",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/727214-1756578110.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4442499",
+            "competition_name": "Indian Super League",
+            "season": "2024",
+            "date": "2024-11-10",
+            "time": "4:00",
+            "venue": "Kalinga Stadium",
+            "attendance": 10814,
+            "referee": "Crystal John",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4442499",
+            "day_of_week": "Sunday"
+          },
+          "home_team": {
+            "team_id": "45080",
+            "name": "Odisha FC",
+            "formation": "4-2-3-1",
+            "manager": "Sergio Lobera"
+          },
+          "away_team": {
+            "team_id": "83266",
+            "name": "Mohun Bagan Super Giant",
+            "formation": "4-4-1-1",
+            "manager": "José Francisco Molina"
+          },
+          "score": {
+            "home_final": 1,
+            "away_final": 1,
+            "home_ht": 1,
+            "away_ht": 1
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "301053",
+                "name": "Singh",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/301053-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "147271",
+                "name": "Fall",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/147271-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "642424",
+                "name": "Thoiba",
+                "shirt_number": 24,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/642424-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "622310",
+                "name": "Gama",
+                "shirt_number": 28,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/622310-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "280936",
+                "name": "Ranawade",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/280936-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "234953",
+                "name": "Jahouh",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/234953-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "481050",
+                "name": "Puitea",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/481050-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "333680",
+                "name": "Boumous",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/333680-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "642150",
+                "name": "Vanlalruat.",
+                "shirt_number": 19,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/642150-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "543344",
+                "name": "Ali",
+                "shirt_number": 25,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/543344-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "64495",
+                "name": "Krishna",
+                "shirt_number": 21,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/64495-1756578153.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "416245",
+                "name": "Kaith",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/416245-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "95076",
+                "name": "Aldred",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/95076-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "711550",
+                "name": "Rodríguez",
+                "shirt_number": 21,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/711550-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "421051",
+                "name": "Subhasish .",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": true,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/421051-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "564416",
+                "name": "Rai",
+                "shirt_number": 44,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/564416-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "468154",
+                "name": "Apuia",
+                "shirt_number": 45,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/468154-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "280953",
+                "name": "Thapa",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/280953-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "153882",
+                "name": "Petratos",
+                "shirt_number": 9,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/153882-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "552373",
+                "name": "Colaco",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/552373-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "524813",
+                "name": "Singh",
+                "shirt_number": 11,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/524813-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "173591",
+                "name": "Maclaren",
+                "shirt_number": 29,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/173591-1756578153.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "1133195",
+                "name": "Narendra Naik",
+                "shirt_number": 39,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1133195-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "280920",
+                "name": "Anuj Kumar",
+                "shirt_number": 23,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/280920-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "175773",
+                "name": "Carlos Delgado",
+                "shirt_number": 5,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/175773-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "565875",
+                "name": "Narender Gahlot",
+                "shirt_number": 3,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/565875-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "280923",
+                "name": "Jerry Lalrinzuala",
+                "shirt_number": 18,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/280923-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "485323",
+                "name": "Rohit Kumar",
+                "shirt_number": 6,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/485323-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "482067",
+                "name": "Raynier Fernandes",
+                "shirt_number": 11,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/482067-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "442417",
+                "name": "Jerry Mawihmingthanga",
+                "shirt_number": 17,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/442417-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "138141",
+                "name": "Diego Maurício",
+                "shirt_number": 9,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/138141-1756578153.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "280943",
+                "name": "Dheeraj Singh",
+                "shirt_number": 12,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/280943-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "1120367",
+                "name": "Dippendu Biswas",
+                "shirt_number": 32,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1120367-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "856516",
+                "name": "Amandeep",
+                "shirt_number": 36,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/856516-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "559479",
+                "name": "Deepak Tangri",
+                "shirt_number": 22,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/559479-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "645101",
+                "name": "Abhishek Suryavanshi",
+                "shirt_number": 16,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/645101-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "560761",
+                "name": "Sahal Abdul Samad",
+                "shirt_number": 18,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/560761-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "556919",
+                "name": "Ashique Kuruniyan",
+                "shirt_number": 19,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/556919-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "856506",
+                "name": "Suhail Ahmad Bhat",
+                "shirt_number": 72,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/856506-1756578153.jpg?lm=1"
+              },
+              {
+                "player_id": "209583",
+                "name": "Jason Cummings",
+                "shirt_number": 35,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/209583-1756578153.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 4,
+                "extra_time": null,
+                "player": {
+                  "player_id": "333680",
+                  "name": "Hugo Boumous",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/333680-1756578153.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "234953",
+                  "name": "Ahmed Jahouh",
+                  "shirt_number": 10,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/234953-1756578153.jpg?lm=1"
+                },
+                "goal_type": "Right-footed shot",
+                "assist_type": "Pass",
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 2,
+                "season_assist_number": 2
+              },
+              {
+                "minute": 36,
+                "extra_time": null,
+                "player": {
+                  "player_id": "524813",
+                  "name": "Manvir Singh",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/524813-1756578153.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "153882",
+                  "name": "Dimitri Petratos",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/153882-1756578153.jpg?lm=1"
+                },
+                "goal_type": "Header",
+                "assist_type": "Corner",
+                "team_side": "away",
+                "score_after": [
+                  1,
+                  1
+                ],
+                "season_goal_number": 2,
+                "season_assist_number": 2
+              }
+            ],
+            "cards": [
+              {
+                "minute": 90,
+                "extra_time": 3,
+                "player": {
+                  "player_id": "564416",
+                  "name": "Asish Rai",
+                  "shirt_number": 44,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/564416-1756578153.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": "Foul",
+                "team_side": "away",
+                "season_card_number": 2
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 57,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "280953",
+                  "name": "Anirudh Thapa",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/280953-1756578153.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "559479",
+                  "name": "Deepak Tangri",
+                  "shirt_number": 22,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/559479-1756578153.jpg?lm=1"
+                },
+                "reason": "Injury",
+                "team_side": "away"
+              },
+              {
+                "minute": 58,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "543344",
+                  "name": "Rahim Ali",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/543344-1756578153.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "442417",
+                  "name": "Jerry Mawihmingthanga",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/442417-1756578153.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 77,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "173591",
+                  "name": "Jamie Maclaren",
+                  "shirt_number": 29,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/173591-1756578153.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "209583",
+                  "name": "Jason Cummings",
+                  "shirt_number": 35,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/209583-1756578153.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 77,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "524813",
+                  "name": "Manvir Singh",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/524813-1756578153.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "560761",
+                  "name": "Sahal Abdul Samad",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/560761-1756578153.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              },
+              {
+                "minute": 81,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "642150",
+                  "name": "Isak Vanlalruatfela",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/642150-1756578153.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "482067",
+                  "name": "Raynier Fernandes",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/482067-1756578153.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 84,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "622310",
+                  "name": "Saviour Gama",
+                  "shirt_number": 28,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/622310-1756578153.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "280923",
+                  "name": "Jerry Lalrinzuala",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/280923-1756578153.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 85,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "64495",
+                  "name": "Roy Krishna",
+                  "shirt_number": 21,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/64495-1756578153.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "138141",
+                  "name": "Diego Maurício",
+                  "shirt_number": 9,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/138141-1756578153.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 85,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "333680",
+                  "name": "Hugo Boumous",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/333680-1756578153.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "175773",
+                  "name": "Carlos Delgado",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/175773-1756578153.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "home"
+              },
+              {
+                "minute": 88,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "552373",
+                  "name": "Liston Colaco",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/552373-1756578153.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "556919",
+                  "name": "Ashique Kuruniyan",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/556919-1756578153.jpg?lm=1"
+                },
+                "reason": "Tactical",
+                "team_side": "away"
+              }
+            ]
+          }
+        }
+      ],
+      "league_table": {
+        "season": "24/25",
+        "teams": [
+          {
+            "position": 1,
+            "movement": "same",
+            "team_id": "41030",
+            "name": "Bengaluru",
+            "short_name": "Bengaluru FC",
+            "profile_url": "/bengaluru-fc/spielplan/verein/41030/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/41030.png?lm=1662523783",
+            "matches": 8,
+            "goal_difference": "7",
+            "points": 17
+          },
+          {
+            "position": 2,
+            "movement": "same",
+            "team_id": "83266",
+            "name": "Mohun Bagan Super Giant",
+            "short_name": "Mohun Bagan SG",
+            "profile_url": "/atk-mohun-bagan-fc/spielplan/verein/83266/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/83266.png?lm=1688498443",
+            "matches": 7,
+            "goal_difference": "5",
+            "points": 14
+          },
+          {
+            "position": 3,
+            "movement": "up",
+            "team_id": "45299",
+            "name": "Chennaiyin",
+            "short_name": "Chennaiyin FC",
+            "profile_url": "/chennaiyin-fc/spielplan/verein/45299/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/45299.png?lm=1662523878",
+            "matches": 8,
+            "goal_difference": "4",
+            "points": 12
+          },
+          {
+            "position": 4,
+            "movement": "up",
+            "team_id": "45321",
+            "name": "Goa",
+            "short_name": "FC Goa",
+            "profile_url": "/fc-goa/spielplan/verein/45321/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/45321.png?lm=1522337553",
+            "matches": 8,
+            "goal_difference": "3",
+            "points": 12
+          },
+          {
+            "position": 5,
+            "movement": "up",
+            "team_id": "45276",
+            "name": "NorthEast United",
+            "short_name": "NorthEast Utd.",
+            "profile_url": "/northeast-united-fc/spielplan/verein/45276/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/45276.png?lm=1662523673",
+            "matches": 8,
+            "goal_difference": "5",
+            "points": 12
+          },
+          {
+            "position": 6,
+            "movement": "down",
+            "team_id": "85902",
+            "name": "Punjab",
+            "short_name": "Punjab FC",
+            "profile_url": "/roundglass-punjab-fc/spielplan/verein/85902/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/85902.png?lm=1754045088",
+            "matches": 6,
+            "goal_difference": "3",
+            "points": 12
+          },
+          {
+            "position": 7,
+            "movement": "down",
+            "team_id": "60816",
+            "name": "Jamshedpur",
+            "short_name": "Jamshedpur FC",
+            "profile_url": "/jamshedpur-fc/spielplan/verein/60816/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/60816.png?lm=1511026642",
+            "matches": 7,
+            "goal_difference": "-5",
+            "points": 12
+          },
+          {
+            "position": 8,
+            "movement": "down",
+            "team_id": "45274",
+            "name": "Mumbai City",
+            "short_name": "Mumbai City",
+            "profile_url": "/mumbai-city-fc/spielplan/verein/45274/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/45274.png?lm=1689508300",
+            "matches": 7,
+            "goal_difference": "2",
+            "points": 10
+          },
+          {
+            "position": 9,
+            "movement": "same",
+            "team_id": "45080",
+            "name": "Odisha",
+            "short_name": "Odisha FC",
+            "profile_url": "/odisha-fc/spielplan/verein/45080/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/45080.png?lm=1568574006",
+            "matches": 8,
+            "goal_difference": "-1",
+            "points": 9
+          },
+          {
+            "position": 10,
+            "movement": "same",
+            "team_id": "45277",
+            "name": "Kerala Blasters",
+            "short_name": "Kerala Blasters",
+            "profile_url": "/kerala-blasters-fc/spielplan/verein/45277/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/45277.png?lm=1541972060",
+            "matches": 8,
+            "goal_difference": "-4",
+            "points": 8
+          },
+          {
+            "position": 11,
+            "movement": "same",
+            "team_id": "76364",
+            "name": "Hyderabad",
+            "short_name": "Hyderabad FC",
+            "profile_url": "/hyderabad-fc/spielplan/verein/76364/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/76364.png?lm=1598191037",
+            "matches": 7,
+            "goal_difference": "-3",
+            "points": 7
+          },
+          {
+            "position": 12,
+            "movement": "same",
+            "team_id": "37893",
+            "name": "Mohammedan SC (Kolkata)",
+            "short_name": "Mohammedan",
+            "profile_url": "/mohammedan-sc-kolkata-/spielplan/verein/37893/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/37893.png?lm=1414582485",
+            "matches": 7,
+            "goal_difference": "-8",
+            "points": 5
+          },
+          {
+            "position": 13,
+            "movement": "same",
+            "team_id": "14099",
+            "name": "East Bengal",
+            "short_name": "East Bengal FC",
+            "profile_url": "/sc-east-bengal/spielplan/verein/14099/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/14099.png?lm=1664781134",
+            "matches": 7,
+            "goal_difference": "-8",
+            "points": 1
+          }
+        ]
+      },
+      "top_scorers": [
+        {
+          "name": "Alaeddine Ajaraie",
+          "short_name": "A. Ajaraie",
+          "profile_url": "/alaeddine-ajaraie/profil/spieler/724898",
+          "clubs": [
+            {
+              "name": "NorthEast United FC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/45276.png?lm=1662523673"
+            }
+          ],
+          "goals_this_matchday": "2",
+          "total_goals": 23
+        },
+        {
+          "name": "Sunil Chhetri",
+          "short_name": "S. Chhetri",
+          "profile_url": "/sunil-chhetri/profil/spieler/64601",
+          "clubs": [
+            {
+              "name": "Bengaluru FC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/41030.png?lm=1662523783"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 12
+        },
+        {
+          "name": "Jamie Maclaren",
+          "short_name": "J. Maclaren",
+          "profile_url": "/jamie-maclaren/profil/spieler/173591",
+          "clubs": [
+            {
+              "name": "Mohun Bagan Super Giant",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/83266.png?lm=1688498443"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 11
+        },
+        {
+          "name": "Jesús Jiménez",
+          "short_name": "J. Jiménez",
+          "profile_url": "/jesus-jimenez/profil/spieler/510545",
+          "clubs": [
+            {
+              "name": "Kerala Blasters FC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/45277.png?lm=1541972060"
+            }
+          ],
+          "goals_this_matchday": "1",
+          "total_goals": 11
+        },
+        {
+          "name": "Nikolaos Karelis",
+          "short_name": "N. Karelis",
+          "profile_url": "/nikolaos-karelis/profil/spieler/63487",
+          "clubs": [
+            {
+              "name": "Mumbai City FC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/45274.png?lm=1689508300"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 10
+        },
+        {
+          "name": "Wilmar Jordán Gil",
+          "short_name": "W. Jordán Gil",
+          "profile_url": "/wilmar-jordan-gil/profil/spieler/191631",
+          "clubs": [
+            {
+              "name": "Chennaiyin FC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/45299.png?lm=1662523878"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 10
+        },
+        {
+          "name": "Luka Majcen",
+          "short_name": "L. Majcen",
+          "profile_url": "/luka-majcen/profil/spieler/79976",
+          "clubs": [
+            {
+              "name": "Punjab FC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/85902.png?lm=1754045088"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 10
+        },
+        {
+          "name": "Armando Sadiku",
+          "short_name": "A. Sadiku",
+          "profile_url": "/armando-sadiku/profil/spieler/140082",
+          "clubs": [
+            {
+              "name": "FC Goa",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/45321.png?lm=1522337553"
+            }
+          ],
+          "goals_this_matchday": "1",
+          "total_goals": 9
+        },
+        {
+          "name": "Diego Maurício",
+          "short_name": "D. Maurício",
+          "profile_url": "/diego-mauricio/profil/spieler/138141",
+          "clubs": [
+            {
+              "name": "Odisha FC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/45080.png?lm=1568574006"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 9
+        },
+        {
+          "name": "Javi Hernández",
+          "short_name": "J. Hernández",
+          "profile_url": "/javi-hernandez/profil/spieler/62917",
+          "clubs": [
+            {
+              "name": "Jamshedpur FC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/60816.png?lm=1511026642"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 7
+        }
+      ],
+      "summary": {
+        "matches": 6,
+        "goals": 14,
+        "own_goals": 0,
+        "yellow_cards": 22,
+        "second_yellow_cards": "1",
+        "red_cards": 1,
+        "total_attendance": "81426",
+        "average_attendance": "13571",
+        "sold_out_matches": 0
+      },
+      "metadata": {
+        "extraction_time": "2025-08-30T21:20:50.035872",
+        "source": "worker_extraction",
+        "total_matches": 6,
+        "is_recovery_work": false,
+        "recovery_targets": []
+      }
+    }
+  ],
+  "total_matchdays": 1,
+  "total_matches": 6,
+  "execution_time_seconds": 181115.305934,
+  "execution_time_minutes": 3018.59,
+  "execution_time_hours": 50.31,
+  "processing_time_seconds": 114.56689258292317,
+  "processing_time_minutes": 1.91,
+  "processing_time_hours": 0.03,
+  "queue_wait_seconds": 181000.742267,
+  "was_recovery_work": false,
+  "recovery_success": false,
+  "recovered_match_targets": [],
+  "requeue_template": {
+    "work_id": "requeue_match_IND1_2024_md08_1756386238_1",
+    "work_type": "match_data",
+    "version": "3.1",
+    "competition_id": "IND1",
+    "competition_code": "indian-super-league",
+    "competition_name": "Indian Super League",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_IND1_2024_md08_1756386238",
+    "recovery_reason": "retry_failed",
+    "recovery_created_at": "2025-08-30T18:22:33.307335+00:00",
+    "recovery_matchday_number": null,
+    "specific_match_targets": [],
+    "team_count": 13,
+    "expected_matchdays": null,
+    "priority": 600,
+    "processing_hints": {
+      "scope": "single_matchday",
+      "matchday_focused": true,
+      "target_matchday": 8,
+      "expected_completion_time": "15_minutes",
+      "team_count_category": "small",
+      "data_source": "db_sync",
+      "requires_validation": true,
+      "cache_last_analyzed": "2025-08-28T15:29:40.057699",
+      "is_recovery": true,
+      "preserve_existing_data": true,
+      "focus_on_team_data": true,
+      "original_work_id": "match_IND1_2024_md08_1756386238",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-30T18:22:33.307349+00:00",
+    "created_by": "requeue_adapter"
+  }
+}
