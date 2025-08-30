@@ -1,0 +1,4652 @@
+{
+  "work_id": "match_UGL1_2024_md19_1756385027",
+  "work_type": "match_data",
+  "version": "3.1",
+  "competition_id": "UGL1",
+  "competition_code": "uganda-premier-league",
+  "competition_name": "Uganda Premier League",
+  "season_year": "2024",
+  "target_matchday": {
+    "number": 19,
+    "status": "missing",
+    "existing_matches": 0,
+    "completion_reason": "not_discovered",
+    "source_verified": true,
+    "discovery_method": "cache_driven"
+  },
+  "team_count": 16,
+  "existing_matchdays_count": 0,
+  "existing_matches_count": 0,
+  "competition_tier": "First Tier",
+  "competition_status": "empty",
+  "priority": 620,
+  "processing_hints": {
+    "scope": "single_matchday",
+    "matchday_focused": true,
+    "target_matchday": 19,
+    "expected_completion_time": "15_minutes",
+    "team_count_category": "medium",
+    "data_source": "db_sync",
+    "requires_validation": true,
+    "cache_last_analyzed": "2025-08-28T15:29:39.898082"
+  },
+  "created_at": "2025-08-28T15:43:47Z",
+  "created_by": "work_manager",
+  "creation_method": "cache_integrated_system",
+  "status": "completed",
+  "quality_level": "production",
+  "claimed_by": "match_ASEs-MacBook-Pro.local_99920_742534e4",
+  "claimed_at": "2025-08-30T17:01:24.468601",
+  "claim_id": "match_ASEs-MacBook-Pro.local_99920_742534e4_1756562484468_23bcb218",
+  "started_at": "2025-08-30T14:01:29.005245+00:00",
+  "completed_at": "2025-08-30T14:05:09.967730+00:00",
+  "matchdays_data": [
+    {
+      "matchday_info": {
+        "number": 19,
+        "season": "2024",
+        "competition": "Uganda Premier League",
+        "source_url": "https://www.transfermarkt.com/uganda-premier-league/spieltag/wettbewerb/UGL1/saison_id/2024/spieltag/19",
+        "total_matches": 8
+      },
+      "matches": [
+        {
+          "match_info": {
+            "match_id": "4434785",
+            "competition_name": "Uganda Premier League",
+            "season": "2024",
+            "date": "2025-03-06",
+            "time": "2:00",
+            "venue": "Kavumba Recreation Ground",
+            "attendance": null,
+            "referee": "Daniel Moses Outeke Uhuru",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4434785",
+            "day_of_week": "Thursday"
+          },
+          "home_team": {
+            "team_id": "29783",
+            "name": "Police FC",
+            "formation": null,
+            "manager": "Simon Mugerwa"
+          },
+          "away_team": {
+            "team_id": "29757",
+            "name": "Vipers SC",
+            "formation": null,
+            "manager": "Fred Muhumuza"
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 1,
+            "home_ht": 0,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "867275",
+                "name": "Mathias Muwanga",
+                "shirt_number": null,
+                "position": "Goalkeeper",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/867275-1756562544.jpg?lm=1"
+              },
+              {
+                "player_id": "1343708",
+                "name": "Daniel Jakony",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1343708-1756562544.jpg?lm=1"
+              },
+              {
+                "player_id": "867250",
+                "name": "Faruku Katongole",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/867250-1756562544.jpg?lm=1"
+              },
+              {
+                "player_id": "1322733",
+                "name": "Allan Bukenya",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1322733-1756562544.jpg?lm=1"
+              },
+              {
+                "player_id": "1322756",
+                "name": "Tonny Kiwalazi",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1322756-1756562544.jpg?lm=1"
+              },
+              {
+                "player_id": "1325326",
+                "name": "Ibrahim Abubaker Ssengooba",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1325326-1756562544.jpg?lm=1"
+              },
+              {
+                "player_id": "1337250",
+                "name": "Timothy Muwanguzi",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1337250-1756562544.jpg?lm=1"
+              },
+              {
+                "player_id": "1322758",
+                "name": "Emmanuel Mugume",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1322758-1756562544.jpg?lm=1"
+              },
+              {
+                "player_id": "1325325",
+                "name": "Rayn Figo Kizito",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1325325-1756562544.jpg?lm=1"
+              },
+              {
+                "player_id": "1322738",
+                "name": "Dennis Kalanzi",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1322738-1756562544.jpg?lm=1"
+              },
+              {
+                "player_id": "709049",
+                "name": "Umaru Kasumba",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/709049-1756562544.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "1059654",
+                "name": "Alfred Mudekereza",
+                "shirt_number": null,
+                "position": "Goalkeeper",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059654-1756562544.jpg?lm=1"
+              },
+              {
+                "player_id": "723735",
+                "name": "Paul Mbowa",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/723735-1756562544.jpg?lm=1"
+              },
+              {
+                "player_id": "1059656",
+                "name": "Hilary Mukundane",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059656-1756562544.jpg?lm=1"
+              },
+              {
+                "player_id": "1111681",
+                "name": "Rogers Torach",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1111681-1756562544.jpg?lm=1"
+              },
+              {
+                "player_id": "1113054",
+                "name": "Enock Luyima",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1113054-1756562544.jpg?lm=1"
+              },
+              {
+                "player_id": "285063",
+                "name": "Nicholas Wadada",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/285063-1756562544.jpg?lm=1"
+              },
+              {
+                "player_id": "615607",
+                "name": "Moses Waiswa",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/615607-1756562544.jpg?lm=1"
+              },
+              {
+                "player_id": "836030",
+                "name": "Karim Watambala",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/836030-1756562544.jpg?lm=1"
+              },
+              {
+                "player_id": "494268",
+                "name": "Allan Okello",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/494268-1756562544.jpg?lm=1"
+              },
+              {
+                "player_id": "269122",
+                "name": "Asiwome Fumador",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/269122-1756562544.jpg?lm=1"
+              },
+              {
+                "player_id": "312803",
+                "name": "Yunus Sentamu",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/312803-1756562544.jpg?lm=1"
+              }
+            ],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 48,
+                "extra_time": null,
+                "player": {
+                  "player_id": "312803",
+                  "name": "Yunus Sentamu",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/312803-1756562544.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "494268",
+                  "name": "Allan Okello",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/494268-1756562544.jpg?lm=1"
+                },
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  1
+                ],
+                "season_goal_number": 4,
+                "season_assist_number": 2
+              }
+            ],
+            "cards": [
+              {
+                "minute": 29,
+                "extra_time": null,
+                "player": {
+                  "player_id": "836030",
+                  "name": "Karim Watambala",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/836030-1756562544.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "away",
+                "season_card_number": 2
+              },
+              {
+                "minute": 74,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1113054",
+                  "name": "Enock Luyima",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1113054-1756562544.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "away",
+                "season_card_number": 1
+              },
+              {
+                "minute": 81,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1337250",
+                  "name": "Timothy Muwanguzi",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1337250-1756562544.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "home",
+                "season_card_number": 2
+              },
+              {
+                "minute": 83,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1322752",
+                  "name": "Reagan Steven Male",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1322752-1756562544.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "home",
+                "season_card_number": 1
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "615607",
+                  "name": "Moses Waiswa",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/615607-1756562544.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1320824",
+                  "name": "Gusto Wa Ilungo Mulongo",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1320824-1756562544.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1325326",
+                  "name": "Ibrahim Abubaker Ssengooba",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1325326-1756562544.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1322752",
+                  "name": "Reagan Steven Male",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1322752-1756562544.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 68,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1322758",
+                  "name": "Emmanuel Mugume",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1322758-1756562544.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "856847",
+                  "name": "Ben Ocen",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/856847-1756562544.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 68,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1322738",
+                  "name": "Dennis Kalanzi",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1322738-1756562544.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1281469",
+                  "name": "Gerald Ogweti",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1281469-1756562544.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 89,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "844528",
+                  "name": "Siraje Ssentamu",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/844528-1756562544.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1111686",
+                  "name": "Issa Bugembe",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1111686-1756562544.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 90,
+                "extra_time": 2,
+                "player_out": {
+                  "player_id": "494268",
+                  "name": "Allan Okello",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/494268-1756562544.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1111685",
+                  "name": "Frank Katongole",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1111685-1756562544.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4434786",
+            "competition_name": "Uganda Premier League",
+            "season": "2024",
+            "date": "2025-03-06",
+            "time": "2:00",
+            "venue": "Lugazi FC Stadium",
+            "attendance": null,
+            "referee": "Charles Edward Zziwa",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4434786",
+            "day_of_week": "Thursday"
+          },
+          "home_team": {
+            "team_id": "120956",
+            "name": "Lugazi FC",
+            "formation": "4-4-2 double 6",
+            "manager": "Steven Bogere"
+          },
+          "away_team": {
+            "team_id": "9367",
+            "name": "Express FC",
+            "formation": "4-3-3 Defending",
+            "manager": "Badru Kaddu"
+          },
+          "score": {
+            "home_final": 1,
+            "away_final": 0,
+            "home_ht": 1,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "1317314",
+                "name": "Saaka",
+                "shirt_number": 12,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1317314-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1190916",
+                "name": "Mutebi",
+                "shirt_number": 23,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1190916-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1375070",
+                "name": "Othieno",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1375070-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1317326",
+                "name": "Wasswa",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1317326-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1059303",
+                "name": "Ayiko",
+                "shirt_number": 24,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059303-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1059306",
+                "name": "Obua",
+                "shirt_number": 3,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059306-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1317322",
+                "name": "Bayo",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1317322-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1285512",
+                "name": "Adriko",
+                "shirt_number": 20,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1285512-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1317316",
+                "name": "Kalanzi",
+                "shirt_number": 16,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1317316-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1317319",
+                "name": "Mungudit",
+                "shirt_number": 27,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1317319-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1317310",
+                "name": "Ssemugugu",
+                "shirt_number": 19,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1317310-1756562553.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "1359305",
+                "name": "Kisuule",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1359305-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1285469",
+                "name": "Ssenoga",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1285469-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1059310",
+                "name": "Kalyowa",
+                "shirt_number": 1,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059310-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1337249",
+                "name": "Achayi",
+                "shirt_number": 26,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1337249-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "867279",
+                "name": "Lumu",
+                "shirt_number": 23,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/867279-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1337251",
+                "name": "Wandera",
+                "shirt_number": 28,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1337251-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "933768",
+                "name": "Shabene",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/933768-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "221255",
+                "name": "Kyeyune",
+                "shirt_number": 16,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/221255-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1283261",
+                "name": "Asiimwe",
+                "shirt_number": 25,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1283261-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "863084",
+                "name": "Basangwa",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/863084-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "854512",
+                "name": "Ssenyonjo",
+                "shirt_number": 21,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/854512-1756562553.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "1361664",
+                "name": "Juma Ssajjabi",
+                "shirt_number": 26,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1361664-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1375094",
+                "name": "Jumah Junior Lutakome",
+                "shirt_number": 15,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1375094-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1377827",
+                "name": "Shaphiq Avemah",
+                "shirt_number": 13,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1377827-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1317323",
+                "name": "Moses Ojoaza Buga",
+                "shirt_number": 10,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1317323-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1317321",
+                "name": "Emuran Fahad",
+                "shirt_number": 1,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1317321-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1320125",
+                "name": "Muhammed Gift Lubega",
+                "shirt_number": 30,
+                "position": "RB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1320125-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1283264",
+                "name": "Hussein Ssenoga",
+                "shirt_number": 5,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1283264-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1317317",
+                "name": "Ian Amanya",
+                "shirt_number": 18,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1317317-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1317318",
+                "name": "Alvin Twiine Birungi",
+                "shirt_number": 25,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1317318-1756562553.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "1283265",
+                "name": "Eddy Ssebandeke",
+                "shirt_number": 29,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1283265-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1320823",
+                "name": "Micheal Kagiri",
+                "shirt_number": 19,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1320823-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1283269",
+                "name": "Ashraf Mbazira",
+                "shirt_number": 13,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1283269-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1327528",
+                "name": "Joseph Zziwa",
+                "shirt_number": 2,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1327528-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "864568",
+                "name": "Emmanuel Wasswa",
+                "shirt_number": 8,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/864568-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1204812",
+                "name": "Ramz Kawooya",
+                "shirt_number": 14,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1204812-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1320825",
+                "name": "Abdulahi Rashid Kawawa",
+                "shirt_number": 11,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1320825-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1327529",
+                "name": "Geofrey Gagganga",
+                "shirt_number": 10,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1327529-1756562553.jpg?lm=1"
+              },
+              {
+                "player_id": "1320827",
+                "name": "Conrad Ssenjogera",
+                "shirt_number": 9,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1320827-1756562553.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 44,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1317314",
+                  "name": "Sharif Saaka",
+                  "shirt_number": 12,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1317314-1756562553.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": null
+              }
+            ],
+            "cards": [
+              {
+                "minute": 20,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1283261",
+                  "name": "John Asiimwe",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1283261-1756562553.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "away",
+                "season_card_number": 3
+              },
+              {
+                "minute": 61,
+                "extra_time": null,
+                "player": {
+                  "player_id": "864568",
+                  "name": "Emmanuel Wasswa",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/864568-1756562553.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "away",
+                "season_card_number": 4
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 32,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1059310",
+                  "name": "Emmanuel Kalyowa",
+                  "shirt_number": 1,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059310-1756562553.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1320823",
+                  "name": "Micheal Kagiri",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1320823-1756562553.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 35,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1359305",
+                  "name": "Isa Glory Kisuule",
+                  "shirt_number": 15,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1359305-1756562553.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1283269",
+                  "name": "Ashraf Mbazira",
+                  "shirt_number": 13,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1283269-1756562553.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 35,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "867279",
+                  "name": "Isa Muzeeyi Lumu",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/867279-1756562553.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1327528",
+                  "name": "Joseph Zziwa",
+                  "shirt_number": 2,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1327528-1756562553.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "221255",
+                  "name": "Saidi Kyeyune",
+                  "shirt_number": 16,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/221255-1756562553.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "864568",
+                  "name": "Emmanuel Wasswa",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/864568-1756562553.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 50,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1283261",
+                  "name": "John Asiimwe",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1283261-1756562553.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1320825",
+                  "name": "Abdulahi Rashid Kawawa",
+                  "shirt_number": 11,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1320825-1756562553.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 55,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1059306",
+                  "name": "Emmanuel Obua",
+                  "shirt_number": 3,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059306-1756562553.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1317317",
+                  "name": "Ian Amanya",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1317317-1756562553.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 55,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1317310",
+                  "name": "Sam Ssemugugu",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1317310-1756562553.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1317318",
+                  "name": "Alvin Twiine Birungi",
+                  "shirt_number": 25,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1317318-1756562553.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 55,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1317314",
+                  "name": "Sharif Saaka",
+                  "shirt_number": 12,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1317314-1756562553.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1375094",
+                  "name": "Jumah Junior Lutakome",
+                  "shirt_number": 15,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1375094-1756562553.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 55,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1317316",
+                  "name": "Abdul Kalanzi",
+                  "shirt_number": 16,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1317316-1756562553.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1377827",
+                  "name": "Shaphiq Avemah",
+                  "shirt_number": 13,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1377827-1756562553.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 61,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1059303",
+                  "name": "Richard Ayiko",
+                  "shirt_number": 24,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059303-1756562553.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1283264",
+                  "name": "Hussein Ssenoga",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1283264-1756562553.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4434787",
+            "competition_name": "Uganda Premier League",
+            "season": "2024",
+            "date": "2025-03-06",
+            "time": "5:00",
+            "venue": "Nakivubo Stadium",
+            "attendance": null,
+            "referee": "Dick Okello",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4434787",
+            "day_of_week": "Thursday"
+          },
+          "home_team": {
+            "team_id": "57659",
+            "name": "BUL Jinja FC",
+            "formation": null,
+            "manager": "Abbey Kikomeko"
+          },
+          "away_team": {
+            "team_id": "77852",
+            "name": "Kitara FC",
+            "formation": null,
+            "manager": "Wasswa Bbosa"
+          },
+          "score": {
+            "home_final": 1,
+            "away_final": 0,
+            "home_ht": 0,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "856845",
+                "name": "Joel Mutakubwa",
+                "shirt_number": null,
+                "position": "Goalkeeper",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/856845-1756562627.jpg?lm=1"
+              },
+              {
+                "player_id": "1283563",
+                "name": "Bakali Magumda",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1283563-1756562627.jpg?lm=1"
+              },
+              {
+                "player_id": "1059302",
+                "name": "Walter Ochora",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059302-1756562627.jpg?lm=1"
+              },
+              {
+                "player_id": "1234944",
+                "name": "Nicholas Mwere",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1234944-1756562627.jpg?lm=1"
+              },
+              {
+                "player_id": "1059307",
+                "name": "Hillary Onek",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059307-1756562627.jpg?lm=1"
+              },
+              {
+                "player_id": "1343715",
+                "name": "Richard Okello",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1343715-1756562627.jpg?lm=1"
+              },
+              {
+                "player_id": "1325327",
+                "name": "Swabir Mpasa",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1325327-1756562627.jpg?lm=1"
+              },
+              {
+                "player_id": "973460",
+                "name": "George Kasonko",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/973460-1756562627.jpg?lm=1"
+              },
+              {
+                "player_id": "1035198",
+                "name": "Pascal Ngobi",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1035198-1756562627.jpg?lm=1"
+              },
+              {
+                "player_id": "1059312",
+                "name": "Martin Aprem",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059312-1756562627.jpg?lm=1"
+              },
+              {
+                "player_id": "1059308",
+                "name": "Karim Ndugwa",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059308-1756562627.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "867276",
+                "name": "Chrispas Kusiima",
+                "shirt_number": null,
+                "position": "Goalkeeper",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/867276-1756562627.jpg?lm=1"
+              },
+              {
+                "player_id": "867245",
+                "name": "Benjamin Nyakoojo",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/867245-1756562627.jpg?lm=1"
+              },
+              {
+                "player_id": "1272427",
+                "name": "Ronald Otti",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1272427-1756562627.jpg?lm=1"
+              },
+              {
+                "player_id": "1281703",
+                "name": "Maxwell Owachgiu",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1281703-1756562627.jpg?lm=1"
+              },
+              {
+                "player_id": "1281693",
+                "name": "Jasper Aheebwa",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1281693-1756562627.jpg?lm=1"
+              },
+              {
+                "player_id": "1282712",
+                "name": "David Ndihabwe",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282712-1756562627.jpg?lm=1"
+              },
+              {
+                "player_id": "568756",
+                "name": "Solomon Okwalinga",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/568756-1756562627.jpg?lm=1"
+              },
+              {
+                "player_id": "638998",
+                "name": "Frank Tumwesigye",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/638998-1756562627.jpg?lm=1"
+              },
+              {
+                "player_id": "864253",
+                "name": "Living Kabon",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/864253-1756562627.jpg?lm=1"
+              },
+              {
+                "player_id": "867300",
+                "name": "George Senkaaba",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/867300-1756562627.jpg?lm=1"
+              },
+              {
+                "player_id": "1281706",
+                "name": "Jude Ssemugabi",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1281706-1756562627.jpg?lm=1"
+              }
+            ],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 54,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1059314",
+                  "name": "Jeromy Kirya",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059314-1756562627.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 2,
+                "season_assist_number": null
+              }
+            ],
+            "cards": [
+              {
+                "minute": 24,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1035198",
+                  "name": "Pascal Ngobi",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1035198-1756562627.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "home",
+                "season_card_number": 6
+              },
+              {
+                "minute": 43,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1281693",
+                  "name": "Jasper Aheebwa",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1281693-1756562627.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "away",
+                "season_card_number": 2
+              },
+              {
+                "minute": 63,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1059307",
+                  "name": "Hillary Onek",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059307-1756562627.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "home",
+                "season_card_number": 2
+              },
+              {
+                "minute": 64,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1282712",
+                  "name": "David Ndihabwe",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282712-1756562627.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "away",
+                "season_card_number": 2
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 36,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1035198",
+                  "name": "Pascal Ngobi",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1035198-1756562627.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1059314",
+                  "name": "Jeromy Kirya",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059314-1756562627.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 58,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "568756",
+                  "name": "Solomon Okwalinga",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/568756-1756562627.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "666487",
+                  "name": "Rogers Mugisha",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/666487-1756562627.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 58,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "864253",
+                  "name": "Living Kabon",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/864253-1756562627.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1377806",
+                  "name": "John Bosco Byaruhanga",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1377806-1756562627.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 70,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "867300",
+                  "name": "George Senkaaba",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/867300-1756562627.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1202415",
+                  "name": "Fred Amaku",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1202415-1756562627.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 72,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1325327",
+                  "name": "Swabir Mpasa",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1325327-1756562627.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "856836",
+                  "name": "Viane Sekajugo",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/856836-1756562627.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 81,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1281693",
+                  "name": "Jasper Aheebwa",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1281693-1756562627.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "867278",
+                  "name": "Arthur Kiggundu",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/867278-1756562627.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 81,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1281706",
+                  "name": "Jude Ssemugabi",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1281706-1756562627.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1083253",
+                  "name": "Marvin Nyanzi",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1083253-1756562627.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 86,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1343715",
+                  "name": "Richard Okello",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1343715-1756562627.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "844501",
+                  "name": "Ibrahim Orit",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/844501-1756562627.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 86,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1059308",
+                  "name": "Karim Ndugwa",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059308-1756562627.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1193301",
+                  "name": "Lawrence Tezikya",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1193301-1756562627.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 86,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1059312",
+                  "name": "Martin Aprem",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059312-1756562627.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1338209",
+                  "name": "Isaac Musiima",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1338209-1756562627.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4434788",
+            "competition_name": "Uganda Premier League",
+            "season": "2024",
+            "date": "2025-03-07",
+            "time": "2:00",
+            "venue": "Kabaka Kyabaggu Sports Stadium",
+            "attendance": null,
+            "referee": "Mugerwa Innocent",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4434788",
+            "day_of_week": "Friday"
+          },
+          "home_team": {
+            "team_id": "76182",
+            "name": "Wakiso Giants FC",
+            "formation": null,
+            "manager": "Steven Bengo"
+          },
+          "away_team": {
+            "team_id": "112499",
+            "name": "National Enterprise Corporation FC",
+            "formation": null,
+            "manager": "Hussein Mbalangu"
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": 0,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "422670",
+                "name": "James Alitho",
+                "shirt_number": null,
+                "position": "Goalkeeper",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/422670-1756562633.jpg?lm=1"
+              },
+              {
+                "player_id": "1322405",
+                "name": "Abdul Ssemakula",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1322405-1756562633.jpg?lm=1"
+              },
+              {
+                "player_id": "1285464",
+                "name": "Marvin Mukiibi",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1285464-1756562633.jpg?lm=1"
+              },
+              {
+                "player_id": "1322400",
+                "name": "Shaibu Mtita",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1322400-1756562633.jpg?lm=1"
+              },
+              {
+                "player_id": "1322401",
+                "name": "Musa Ssegujja",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1322401-1756562633.jpg?lm=1"
+              },
+              {
+                "player_id": "568754",
+                "name": "Lawrence Bukenya",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/568754-1756562633.jpg?lm=1"
+              },
+              {
+                "player_id": "180718",
+                "name": "Moses Oloya",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/180718-1756562633.jpg?lm=1"
+              },
+              {
+                "player_id": "864256",
+                "name": "Hassan Ssenyonjo",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/864256-1756562633.jpg?lm=1"
+              },
+              {
+                "player_id": "639004",
+                "name": "Rahmat Ssenfuka",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/639004-1756562633.jpg?lm=1"
+              },
+              {
+                "player_id": "1322411",
+                "name": "Hudson Mbalire",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1322411-1756562633.jpg?lm=1"
+              },
+              {
+                "player_id": "222119",
+                "name": "Luwagga William Kizito",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/222119-1756562633.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "292325",
+                "name": "Benjamin Ochan",
+                "shirt_number": null,
+                "position": "Goalkeeper",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/292325-1756562633.jpg?lm=1"
+              },
+              {
+                "player_id": "864261",
+                "name": "Atendele Geriga",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/864261-1756562633.jpg?lm=1"
+              },
+              {
+                "player_id": "1282721",
+                "name": "Jacob Okao",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282721-1756562633.jpg?lm=1"
+              },
+              {
+                "player_id": "1318465",
+                "name": "Kelvin Tah Barni",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1318465-1756562633.jpg?lm=1"
+              },
+              {
+                "player_id": "1282141",
+                "name": "Gideon Odongo",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282141-1756562633.jpg?lm=1"
+              },
+              {
+                "player_id": "1318463",
+                "name": "Shamir Kimwero",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1318463-1756562633.jpg?lm=1"
+              },
+              {
+                "player_id": "1282155",
+                "name": "Allan Mugalu",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282155-1756562633.jpg?lm=1"
+              },
+              {
+                "player_id": "343733",
+                "name": "Muzamiru Mutyaba",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/343733-1756562633.jpg?lm=1"
+              },
+              {
+                "player_id": "666483",
+                "name": "James Jarieko",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/666483-1756562633.jpg?lm=1"
+              },
+              {
+                "player_id": "495994",
+                "name": "Paul Mucureezi",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/495994-1756562633.jpg?lm=1"
+              },
+              {
+                "player_id": "867265",
+                "name": "Cromwel Rwothomio",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/867265-1756562633.jpg?lm=1"
+              }
+            ],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [
+              {
+                "minute": 36,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1285464",
+                  "name": "Marvin Mukiibi",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1285464-1756562633.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "home",
+                "season_card_number": 3
+              },
+              {
+                "minute": 90,
+                "extra_time": 2,
+                "player": {
+                  "player_id": "1322401",
+                  "name": "Musa Ssegujja",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1322401-1756562633.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "home",
+                "season_card_number": 3
+              },
+              {
+                "minute": 63,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1318463",
+                  "name": "Shamir Kimwero",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1318463-1756562633.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "away",
+                "season_card_number": 4
+              },
+              {
+                "minute": 89,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1322411",
+                  "name": "Hudson Mbalire",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1322411-1756562633.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 89,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1282141",
+                  "name": "Gideon Odongo",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282141-1756562633.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "away",
+                "season_card_number": 4
+              },
+              {
+                "minute": 90,
+                "extra_time": 3,
+                "player": {
+                  "player_id": "1318760",
+                  "name": "Emmanuel Ajo",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1318760-1756562633.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "away",
+                "season_card_number": 1
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 62,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "666483",
+                  "name": "James Jarieko",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/666483-1756562633.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1140292",
+                  "name": "Ibrahim Kasinde",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1140292-1756562633.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 62,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "495994",
+                  "name": "Paul Mucureezi",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/495994-1756562633.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1318760",
+                  "name": "Emmanuel Ajo",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1318760-1756562633.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 76,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "343733",
+                  "name": "Muzamiru Mutyaba",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/343733-1756562633.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1247939",
+                  "name": "Gadafi Wahab",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1247939-1756562633.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 76,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "867265",
+                  "name": "Cromwel Rwothomio",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/867265-1756562633.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1318455",
+                  "name": "Marvin Kavuma",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1318455-1756562633.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 85,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "180718",
+                  "name": "Moses Oloya",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/180718-1756562633.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1285456",
+                  "name": "Blanchar Mulamba",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1285456-1756562633.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 85,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "222119",
+                  "name": "Luwagga William Kizito",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/222119-1756562633.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1322402",
+                  "name": "Timothy Oyamo",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1322402-1756562633.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 85,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "864256",
+                  "name": "Hassan Ssenyonjo",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/864256-1756562633.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1325314",
+                  "name": "Fazil Tumwine",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1325314-1756562633.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 90,
+                "extra_time": 3,
+                "player_out": {
+                  "player_id": "639004",
+                  "name": "Rahmat Ssenfuka",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/639004-1756562633.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "315819",
+                  "name": "Tom Masiko",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/315819-1756562633.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4434797",
+            "competition_name": "Uganda Premier League",
+            "season": "2024",
+            "date": "2025-03-07",
+            "time": "5:00",
+            "venue": "Hamz Stadium",
+            "attendance": null,
+            "referee": "Diana Murungi",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4434797",
+            "day_of_week": "Friday"
+          },
+          "home_team": {
+            "team_id": "29771",
+            "name": "Uganda Revenue Authority FC",
+            "formation": null,
+            "manager": "Alex Isabirye"
+          },
+          "away_team": {
+            "team_id": "78475",
+            "name": "Uganda People's Defence Force FC",
+            "formation": null,
+            "manager": "Pius Ngabo"
+          },
+          "score": {
+            "home_final": 2,
+            "away_final": 1,
+            "home_ht": 1,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "638991",
+                "name": "Derrick Ochan",
+                "shirt_number": null,
+                "position": "Goalkeeper",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/638991-1756562647.jpg?lm=1"
+              },
+              {
+                "player_id": "1286735",
+                "name": "Faisal Matovu",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1286735-1756562647.jpg?lm=1"
+              },
+              {
+                "player_id": "867277",
+                "name": "Enock Walusimbi",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/867277-1756562647.jpg?lm=1"
+              },
+              {
+                "player_id": "1282731",
+                "name": "Amisi Bwangani",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282731-1756562647.jpg?lm=1"
+              },
+              {
+                "player_id": "867244",
+                "name": "Hudu Mulikyi",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/867244-1756562647.jpg?lm=1"
+              },
+              {
+                "player_id": "568752",
+                "name": "Ibrahim Wamannah",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/568752-1756562647.jpg?lm=1"
+              },
+              {
+                "player_id": "1282754",
+                "name": "Norman Namanya",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282754-1756562647.jpg?lm=1"
+              },
+              {
+                "player_id": "1177967",
+                "name": "Laban Tibiita",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1177967-1756562647.jpg?lm=1"
+              },
+              {
+                "player_id": "1282122",
+                "name": "Abraham Tusubira",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282122-1756562647.jpg?lm=1"
+              },
+              {
+                "player_id": "1074784",
+                "name": "Moses Aliro",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1074784-1756562647.jpg?lm=1"
+              },
+              {
+                "player_id": "1113592",
+                "name": "Joseph Ssemujju",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1113592-1756562647.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "1147092",
+                "name": "Anyama Luka",
+                "shirt_number": null,
+                "position": "Goalkeeper",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1147092-1756562647.jpg?lm=1"
+              },
+              {
+                "player_id": "1285484",
+                "name": "Bashir Kabuye",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1285484-1756562647.jpg?lm=1"
+              },
+              {
+                "player_id": "1343773",
+                "name": "Denis Ssekitoleko",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1343773-1756562647.jpg?lm=1"
+              },
+              {
+                "player_id": "1285489",
+                "name": "Christopher Tebandeke",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1285489-1756562647.jpg?lm=1"
+              },
+              {
+                "player_id": "1285506",
+                "name": "Rashid Faridi",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1285506-1756562647.jpg?lm=1"
+              },
+              {
+                "player_id": "1320141",
+                "name": "Swaibu Kasujja Kalule",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1320141-1756562647.jpg?lm=1"
+              },
+              {
+                "player_id": "1286737",
+                "name": "Ronald Kayondo",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1286737-1756562647.jpg?lm=1"
+              },
+              {
+                "player_id": "515006",
+                "name": "Bernard Muwanga",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/515006-1756562647.jpg?lm=1"
+              },
+              {
+                "player_id": "1320124",
+                "name": "Frank Gladison Mugisa",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1320124-1756562647.jpg?lm=1"
+              },
+              {
+                "player_id": "1359170",
+                "name": "Daniel Kitara",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1359170-1756562647.jpg?lm=1"
+              },
+              {
+                "player_id": "1285479",
+                "name": "Samson Kigozi",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1285479-1756562647.jpg?lm=1"
+              }
+            ],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 11,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1074784",
+                  "name": "Moses Aliro",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1074784-1756562647.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "1113592",
+                  "name": "Joseph Ssemujju",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1113592-1756562647.jpg?lm=1"
+                },
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 3,
+                "season_assist_number": 2
+              },
+              {
+                "minute": 61,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1285506",
+                  "name": "Rashid Faridi",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1285506-1756562647.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "away",
+                "score_after": [
+                  1,
+                  1
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": null
+              },
+              {
+                "minute": 66,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1282122",
+                  "name": "Abraham Tusubira",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282122-1756562647.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "home",
+                "score_after": [
+                  2,
+                  1
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": null
+              }
+            ],
+            "cards": [
+              {
+                "minute": 23,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1343773",
+                  "name": "Denis Ssekitoleko",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1343773-1756562647.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "away",
+                "season_card_number": 2
+              },
+              {
+                "minute": 73,
+                "extra_time": null,
+                "player": {
+                  "player_id": "867277",
+                  "name": "Enock Walusimbi",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/867277-1756562647.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "home",
+                "season_card_number": 3
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1113592",
+                  "name": "Joseph Ssemujju",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1113592-1756562647.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1282756",
+                  "name": "Ivan Ahimbisibwe",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282756-1756562647.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1282731",
+                  "name": "Amisi Bwangani",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282731-1756562647.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1374609",
+                  "name": "Nyarwa Bitanywaine Olimi",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1374609-1756562647.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 78,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1285506",
+                  "name": "Rashid Faridi",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1285506-1756562647.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "639001",
+                  "name": "Joseph Janjali",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/639001-1756562647.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 78,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1285484",
+                  "name": "Bashir Kabuye",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1285484-1756562647.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "639013",
+                  "name": "Brian Kalumba",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/639013-1756562647.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 78,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1359170",
+                  "name": "Daniel Kitara",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1359170-1756562647.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1285501",
+                  "name": "Hussein Hassan Zzinda",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1285501-1756562647.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 82,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1074784",
+                  "name": "Moses Aliro",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1074784-1756562647.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1244148",
+                  "name": "Bruno Bunyaga",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1244148-1756562647.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 86,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "568752",
+                  "name": "Ibrahim Wamannah",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/568752-1756562647.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "864236",
+                  "name": "Joshua Lubwama",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/864236-1756562647.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4434798",
+            "competition_name": "Uganda Premier League",
+            "season": "2024",
+            "date": "2025-03-08",
+            "time": "2:00",
+            "venue": "Kakyeka Stadium",
+            "attendance": null,
+            "referee": "Joseph Masembe",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4434798",
+            "day_of_week": "Saturday"
+          },
+          "home_team": {
+            "team_id": "74195",
+            "name": "Mbarara City FC",
+            "formation": null,
+            "manager": "Charles Mbabazi"
+          },
+          "away_team": {
+            "team_id": "53180",
+            "name": "Soltilo Bright Stars FC",
+            "formation": null,
+            "manager": "Ian Robert Mutenda"
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 0,
+            "home_ht": 0,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "1380795",
+                "name": "Aaron Icumur",
+                "shirt_number": null,
+                "position": "Goalkeeper",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1380795-1756562687.jpg?lm=1"
+              },
+              {
+                "player_id": "1375713",
+                "name": "Nasur Almahad Sadik",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1375713-1756562687.jpg?lm=1"
+              },
+              {
+                "player_id": "1327393",
+                "name": "Jimmy Ndalambi",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1327393-1756562687.jpg?lm=1"
+              },
+              {
+                "player_id": "1375693",
+                "name": "Martin Owalamu",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1375693-1756562687.jpg?lm=1"
+              },
+              {
+                "player_id": "1330816",
+                "name": "Bernard Ndifuna",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1330816-1756562687.jpg?lm=1"
+              },
+              {
+                "player_id": "1283559",
+                "name": "Edward Namaasa",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1283559-1756562687.jpg?lm=1"
+              },
+              {
+                "player_id": "1281197",
+                "name": "Hamza Mulambuzi",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1281197-1756562687.jpg?lm=1"
+              },
+              {
+                "player_id": "1318785",
+                "name": "Wycliffe Ahumuza",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1318785-1756562687.jpg?lm=1"
+              },
+              {
+                "player_id": "1285445",
+                "name": "Seiri Arigumaho",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1285445-1756562687.jpg?lm=1"
+              },
+              {
+                "player_id": "1281208",
+                "name": "Peter Onzima",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1281208-1756562687.jpg?lm=1"
+              },
+              {
+                "player_id": "1283546",
+                "name": "Henry Kitegenyi",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1283546-1756562687.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "1282745",
+                "name": "Emmanuel Derrick Were",
+                "shirt_number": null,
+                "position": "Goalkeeper",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282745-1756562687.jpg?lm=1"
+              },
+              {
+                "player_id": "1283173",
+                "name": "Warren Buule",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1283173-1756562687.jpg?lm=1"
+              },
+              {
+                "player_id": "1282750",
+                "name": "Andrew Kyambadde",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282750-1756562687.jpg?lm=1"
+              },
+              {
+                "player_id": "1322390",
+                "name": "Paskali Oketcho",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1322390-1756562687.jpg?lm=1"
+              },
+              {
+                "player_id": "1283178",
+                "name": "Jonathan Gift Odongo",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1283178-1756562687.jpg?lm=1"
+              },
+              {
+                "player_id": "1282751",
+                "name": "Alex Mandera",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282751-1756562687.jpg?lm=1"
+              },
+              {
+                "player_id": "1282741",
+                "name": "Innocent Kitamwe Kitimbo",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282741-1756562687.jpg?lm=1"
+              },
+              {
+                "player_id": "1282748",
+                "name": "Cleophus Fiat",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282748-1756562687.jpg?lm=1"
+              },
+              {
+                "player_id": "666482",
+                "name": "John Alou",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/666482-1756562687.jpg?lm=1"
+              },
+              {
+                "player_id": "1282747",
+                "name": "David Kiiza",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282747-1756562687.jpg?lm=1"
+              },
+              {
+                "player_id": "551161",
+                "name": "Nelson Senkatuka",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/551161-1756562687.jpg?lm=1"
+              }
+            ],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [],
+            "cards": [
+              {
+                "minute": 25,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1282748",
+                  "name": "Cleophus Fiat",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282748-1756562687.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "away",
+                "season_card_number": 1
+              },
+              {
+                "minute": 66,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1318782",
+                  "name": "Yusuf Makutum",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1318782-1756562687.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "home",
+                "season_card_number": 2
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 46,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1327393",
+                  "name": "Jimmy Ndalambi",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1327393-1756562687.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1323567",
+                  "name": "Paul Busolo",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1323567-1756562687.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 60,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1281208",
+                  "name": "Peter Onzima",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1281208-1756562687.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1318782",
+                  "name": "Yusuf Makutum",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1318782-1756562687.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 71,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1282747",
+                  "name": "David Kiiza",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282747-1756562687.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1282740",
+                  "name": "Jafari Kaziro",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282740-1756562687.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 71,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1375713",
+                  "name": "Nasur Almahad Sadik",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1375713-1756562687.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1059305",
+                  "name": "Ibrahim Kazindula",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1059305-1756562687.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 87,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1282741",
+                  "name": "Innocent Kitamwe Kitimbo",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282741-1756562687.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1174291",
+                  "name": "Khamis Atari",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1174291-1756562687.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 87,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1283546",
+                  "name": "Henry Kitegenyi",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1283546-1756562687.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1318910",
+                  "name": "Yusuf Mafabi",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1318910-1756562687.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4434800",
+            "competition_name": "Uganda Premier League",
+            "season": "2024",
+            "date": "2025-03-08",
+            "time": "5:00",
+            "venue": "MTN Omondi Stadium",
+            "attendance": null,
+            "referee": "Ashiraf Kateregga",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4434800",
+            "day_of_week": "Saturday"
+          },
+          "home_team": {
+            "team_id": "18777",
+            "name": "Kampala Capital City Authority FC",
+            "formation": null,
+            "manager": "Abdallah Mubiru"
+          },
+          "away_team": {
+            "team_id": "81897",
+            "name": "Mbale Heroes FC",
+            "formation": null,
+            "manager": "Baker Mbowa"
+          },
+          "score": {
+            "home_final": 5,
+            "away_final": 0,
+            "home_ht": 3,
+            "away_ht": 0
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "1317062",
+                "name": "Mutwalibi Mugolofa",
+                "shirt_number": null,
+                "position": "Goalkeeper",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1317062-1756562699.jpg?lm=1"
+              },
+              {
+                "player_id": "666475",
+                "name": "Gavin Kizito",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/666475-1756562699.jpg?lm=1"
+              },
+              {
+                "player_id": "568751",
+                "name": "Fillbert Obenchan",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/568751-1756562699.jpg?lm=1"
+              },
+              {
+                "player_id": "1190914",
+                "name": "James Mubezi",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1190914-1756562699.jpg?lm=1"
+              },
+              {
+                "player_id": "1111692",
+                "name": "Haruna Lukwago",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1111692-1756562699.jpg?lm=1"
+              },
+              {
+                "player_id": "1111683",
+                "name": "Saidi Mayanja",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1111683-1756562699.jpg?lm=1"
+              },
+              {
+                "player_id": "723732",
+                "name": "Bright Anukani",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/723732-1756562699.jpg?lm=1"
+              },
+              {
+                "player_id": "1193302",
+                "name": "Arafati Usama",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1193302-1756562699.jpg?lm=1"
+              },
+              {
+                "player_id": "1322381",
+                "name": "Brian Jjara",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1322381-1756562699.jpg?lm=1"
+              },
+              {
+                "player_id": "1281481",
+                "name": "Shafik Nana Kwikiriza",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1281481-1756562699.jpg?lm=1"
+              },
+              {
+                "player_id": "709011",
+                "name": "Sadat Anaku",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/709011-1756562699.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "1285515",
+                "name": "Simon Mabuya",
+                "shirt_number": null,
+                "position": "Goalkeeper",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1285515-1756562699.jpg?lm=1"
+              },
+              {
+                "player_id": "1337244",
+                "name": "Adrian Sserugo",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1337244-1756562699.jpg?lm=1"
+              },
+              {
+                "player_id": "666474",
+                "name": "Samson Kasozi",
+                "shirt_number": null,
+                "position": "Defenders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/666474-1756562699.jpg?lm=1"
+              },
+              {
+                "player_id": "1282718",
+                "name": "Hilary Adima",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282718-1756562699.jpg?lm=1"
+              },
+              {
+                "player_id": "1283172",
+                "name": "Abbel Sajjabi Muwanguzi",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1283172-1756562699.jpg?lm=1"
+              },
+              {
+                "player_id": "1318778",
+                "name": "Musa Ssali",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1318778-1756562699.jpg?lm=1"
+              },
+              {
+                "player_id": "1323246",
+                "name": "Cosia Waiswa",
+                "shirt_number": null,
+                "position": "Midfielders",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1323246-1756562699.jpg?lm=1"
+              },
+              {
+                "player_id": "1285462",
+                "name": "Mark Nsubuga",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1285462-1756562699.jpg?lm=1"
+              },
+              {
+                "player_id": "1285477",
+                "name": "Peter Ssenkungu",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1285477-1756562699.jpg?lm=1"
+              },
+              {
+                "player_id": "494269",
+                "name": "Paul Musamali",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/494269-1756562699.jpg?lm=1"
+              },
+              {
+                "player_id": "1318770",
+                "name": "Jeremy Matata",
+                "shirt_number": null,
+                "position": "Forwards",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1318770-1756562699.jpg?lm=1"
+              }
+            ],
+            "home_subs": [],
+            "away_subs": []
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 21,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1193302",
+                  "name": "Arafati Usama",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1193302-1756562699.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "1111683",
+                  "name": "Saidi Mayanja",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1111683-1756562699.jpg?lm=1"
+                },
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "home",
+                "score_after": [
+                  1,
+                  0
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 3
+              },
+              {
+                "minute": 26,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1281481",
+                  "name": "Shafik Nana Kwikiriza",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1281481-1756562699.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "home",
+                "score_after": [
+                  2,
+                  0
+                ],
+                "season_goal_number": 2,
+                "season_assist_number": null
+              },
+              {
+                "minute": 40,
+                "extra_time": null,
+                "player": {
+                  "player_id": "709011",
+                  "name": "Sadat Anaku",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/709011-1756562699.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "home",
+                "score_after": [
+                  3,
+                  0
+                ],
+                "season_goal_number": 4,
+                "season_assist_number": null
+              },
+              {
+                "minute": 72,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1361663",
+                  "name": "Yian Gatbel",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1361663-1756562699.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "1281481",
+                  "name": "Shafik Nana Kwikiriza",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1281481-1756562699.jpg?lm=1"
+                },
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "home",
+                "score_after": [
+                  4,
+                  0
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 2
+              },
+              {
+                "minute": 75,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1306782",
+                  "name": "Sharifu Ssengendo",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1306782-1756562699.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "home",
+                "score_after": [
+                  5,
+                  0
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": null
+              }
+            ],
+            "cards": [
+              {
+                "minute": 33,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1281481",
+                  "name": "Shafik Nana Kwikiriza",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1281481-1756562699.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "home",
+                "season_card_number": 2
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 58,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1111683",
+                  "name": "Saidi Mayanja",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1111683-1756562699.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1190913",
+                  "name": "Joel Sserunjogi",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1190913-1756562699.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 58,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "723732",
+                  "name": "Bright Anukani",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/723732-1756562699.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1306782",
+                  "name": "Sharifu Ssengendo",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1306782-1756562699.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 68,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1193302",
+                  "name": "Arafati Usama",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1193302-1756562699.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "917777",
+                  "name": "João Gabriel",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/917777-1756562699.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 68,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "709011",
+                  "name": "Sadat Anaku",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/709011-1756562699.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1361663",
+                  "name": "Yian Gatbel",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1361663-1756562699.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 79,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1283172",
+                  "name": "Abbel Sajjabi Muwanguzi",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1283172-1756562699.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1337245",
+                  "name": "Ceasar Sahni Olega",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1337245-1756562699.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 87,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1281481",
+                  "name": "Shafik Nana Kwikiriza",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1281481-1756562699.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "568847",
+                  "name": "Julius Poloto",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/568847-1756562699.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 87,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1285462",
+                  "name": "Mark Nsubuga",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1285462-1756562699.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "666490",
+                  "name": "Andrew Kawooya",
+                  "shirt_number": null,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/666490-1756562699.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              }
+            ]
+          }
+        },
+        {
+          "match_info": {
+            "match_id": "4434799",
+            "competition_name": "Uganda Premier League",
+            "season": "2024",
+            "date": "2025-03-09",
+            "time": "1:00",
+            "venue": "Muteesa II Stadium",
+            "attendance": null,
+            "referee": "Brianson Musisi",
+            "match_report_url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4434799",
+            "day_of_week": "Sunday"
+          },
+          "home_team": {
+            "team_id": "18778",
+            "name": "Sports Club Villa",
+            "formation": "3-4-3",
+            "manager": "Morley Byekwaso"
+          },
+          "away_team": {
+            "team_id": "76835",
+            "name": "Maroons FC",
+            "formation": "4-3-3 Defending",
+            "manager": "Muhammed Senfuma"
+          },
+          "score": {
+            "home_final": 0,
+            "away_final": 2,
+            "home_ht": 0,
+            "away_ht": 1
+          },
+          "lineups": {
+            "home_starting": [
+              {
+                "player_id": "1339632",
+                "name": "Kene",
+                "shirt_number": 4,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1339632-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "864563",
+                "name": "Kibirige",
+                "shirt_number": 23,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/864563-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1281195",
+                "name": "Kibande",
+                "shirt_number": 16,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1281195-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1323248",
+                "name": "Ssemayange",
+                "shirt_number": 6,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1323248-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "864575",
+                "name": "Ssekiganda",
+                "shirt_number": 13,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/864575-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "836788",
+                "name": "Owori",
+                "shirt_number": 15,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/836788-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1193303",
+                "name": "Ngonde",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1193303-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1302330",
+                "name": "Atukunda",
+                "shirt_number": 18,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1302330-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1111688",
+                "name": "Kakande",
+                "shirt_number": 10,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1111688-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "160291",
+                "name": "Matovu",
+                "shirt_number": 39,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/160291-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1318780",
+                "name": "Mpande",
+                "shirt_number": 5,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1318780-1756562709.jpg?lm=1"
+              }
+            ],
+            "away_starting": [
+              {
+                "player_id": "1375095",
+                "name": "Walugembe",
+                "shirt_number": 17,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1375095-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1322398",
+                "name": "Basoga",
+                "shirt_number": 23,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1322398-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1178754",
+                "name": "Tamale",
+                "shirt_number": 24,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1178754-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1282713",
+                "name": "Kabona",
+                "shirt_number": 2,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282713-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1282715",
+                "name": "Kigozi",
+                "shirt_number": 3,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282715-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "753846",
+                "name": "Rukundo",
+                "shirt_number": 22,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/753846-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "867281",
+                "name": "Eturude",
+                "shirt_number": 20,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/867281-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1282726",
+                "name": "Orombi",
+                "shirt_number": 8,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282726-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "639003",
+                "name": "Nkuubi",
+                "shirt_number": 19,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/639003-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1281204",
+                "name": "Kiwanuka",
+                "shirt_number": 16,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1281204-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1282722",
+                "name": "Ogama",
+                "shirt_number": 7,
+                "position": null,
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282722-1756562709.jpg?lm=1"
+              }
+            ],
+            "home_subs": [
+              {
+                "player_id": "1384025",
+                "name": "Hamidu Nsubuga",
+                "shirt_number": null,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1384025-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1282749",
+                "name": "Ashiraf Mulindi",
+                "shirt_number": 7,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282749-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1318575",
+                "name": "Frank Mulimi",
+                "shirt_number": 3,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1318575-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1374580",
+                "name": "Raymond Barasa Mangoli",
+                "shirt_number": 35,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1374580-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1267963",
+                "name": "Jeans Wokorach",
+                "shirt_number": 24,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1267963-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1245122",
+                "name": "Denis Kaka Omony",
+                "shirt_number": 20,
+                "position": "LB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1245122-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1281205",
+                "name": "Missi Semugera",
+                "shirt_number": 19,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1281205-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1187510",
+                "name": "Hassan Mubiru",
+                "shirt_number": 26,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1187510-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1302332",
+                "name": "Johnson Ssenyonga",
+                "shirt_number": 17,
+                "position": "RW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1302332-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1282720",
+                "name": "Isaac Mpagi Kajubi",
+                "shirt_number": 12,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282720-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "854511",
+                "name": "Charles Lwanga",
+                "shirt_number": 14,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/854511-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "666485",
+                "name": "Najib Yiga",
+                "shirt_number": 32,
+                "position": "CF",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/666485-1756562709.jpg?lm=1"
+              }
+            ],
+            "away_subs": [
+              {
+                "player_id": "1318788",
+                "name": "Brian Junior Omirambe",
+                "shirt_number": 28,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1318788-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1339631",
+                "name": "Godlin Andrew Nzali Birungi",
+                "shirt_number": 30,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1339631-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1282723",
+                "name": "Norman Odipio",
+                "shirt_number": 5,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282723-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1282716",
+                "name": "Godwin Daniel Kitagenda",
+                "shirt_number": 21,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282716-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "739095",
+                "name": "Muwadda Mawejje",
+                "shirt_number": 14,
+                "position": "",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/739095-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "726370",
+                "name": "Matovu Muyomba",
+                "shirt_number": 18,
+                "position": "GK",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/726370-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1325312",
+                "name": "Borris Onegi",
+                "shirt_number": 15,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1325312-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1083194",
+                "name": "Apollo Kagogwe",
+                "shirt_number": 4,
+                "position": "CB",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1083194-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "1282714",
+                "name": "Felix Okot",
+                "shirt_number": 6,
+                "position": "DM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282714-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "568753",
+                "name": "Jackson Nunda",
+                "shirt_number": 12,
+                "position": "CM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/568753-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "933769",
+                "name": "Ivan Mayanja",
+                "shirt_number": 10,
+                "position": "AM",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/933769-1756562709.jpg?lm=1"
+              },
+              {
+                "player_id": "666484",
+                "name": "Ivan Asaba",
+                "shirt_number": 25,
+                "position": "LW",
+                "is_captain": false,
+                "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/666484-1756562709.jpg?lm=1"
+              }
+            ]
+          },
+          "events": {
+            "goals": [
+              {
+                "minute": 10,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1375095",
+                  "name": "Raymond Walugembe",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1375095-1756562709.jpg?lm=1"
+                },
+                "assist_player": null,
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  1
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": null
+              },
+              {
+                "minute": 80,
+                "extra_time": null,
+                "player": {
+                  "player_id": "867281",
+                  "name": "Abel Eturude",
+                  "shirt_number": 20,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/867281-1756562709.jpg?lm=1"
+                },
+                "assist_player": {
+                  "player_id": "568753",
+                  "name": "Jackson Nunda",
+                  "shirt_number": 12,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/568753-1756562709.jpg?lm=1"
+                },
+                "goal_type": null,
+                "assist_type": null,
+                "team_side": "away",
+                "score_after": [
+                  0,
+                  2
+                ],
+                "season_goal_number": 1,
+                "season_assist_number": 1
+              }
+            ],
+            "cards": [
+              {
+                "minute": 26,
+                "extra_time": null,
+                "player": {
+                  "player_id": "639003",
+                  "name": "Brian Nkuubi",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/639003-1756562709.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "away",
+                "season_card_number": 2
+              },
+              {
+                "minute": 26,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1282726",
+                  "name": "Ronald Orombi",
+                  "shirt_number": 8,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282726-1756562709.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "away",
+                "season_card_number": 5
+              },
+              {
+                "minute": 67,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1322398",
+                  "name": "Derrick Basoga",
+                  "shirt_number": 23,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1322398-1756562709.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "away",
+                "season_card_number": 2
+              },
+              {
+                "minute": 72,
+                "extra_time": null,
+                "player": {
+                  "player_id": "1302332",
+                  "name": "Johnson Ssenyonga",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1302332-1756562709.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "home",
+                "season_card_number": 1
+              },
+              {
+                "minute": 76,
+                "extra_time": null,
+                "player": {
+                  "player_id": "836788",
+                  "name": "David Owori",
+                  "shirt_number": 15,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/836788-1756562709.jpg?lm=1"
+                },
+                "card_type": "yellow",
+                "reason": null,
+                "team_side": "home",
+                "season_card_number": 3
+              }
+            ],
+            "substitutions": [
+              {
+                "minute": 59,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1318780",
+                  "name": "Reagan Mpande",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1318780-1756562709.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "854511",
+                  "name": "Charles Lwanga",
+                  "shirt_number": 14,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/854511-1756562709.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 59,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "864575",
+                  "name": "Ronald Ssekiganda",
+                  "shirt_number": 13,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/864575-1756562709.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1282720",
+                  "name": "Isaac Mpagi Kajubi",
+                  "shirt_number": 12,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282720-1756562709.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 59,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1302330",
+                  "name": "Tonny Atukunda",
+                  "shirt_number": 18,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1302330-1756562709.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1302332",
+                  "name": "Johnson Ssenyonga",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1302332-1756562709.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 71,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1375095",
+                  "name": "Raymond Walugembe",
+                  "shirt_number": 17,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1375095-1756562709.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "568753",
+                  "name": "Jackson Nunda",
+                  "shirt_number": 12,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/568753-1756562709.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              },
+              {
+                "minute": 74,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "1323248",
+                  "name": "Simon Ssemayange",
+                  "shirt_number": 6,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1323248-1756562709.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "666485",
+                  "name": "Najib Yiga",
+                  "shirt_number": 32,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/666485-1756562709.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 81,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "160291",
+                  "name": "Sula Matovu",
+                  "shirt_number": 39,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/160291-1756562709.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1187510",
+                  "name": "Hassan Mubiru",
+                  "shirt_number": 26,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1187510-1756562709.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "home"
+              },
+              {
+                "minute": 86,
+                "extra_time": null,
+                "player_out": {
+                  "player_id": "639003",
+                  "name": "Brian Nkuubi",
+                  "shirt_number": 19,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/639003-1756562709.jpg?lm=1"
+                },
+                "player_in": {
+                  "player_id": "1282723",
+                  "name": "Norman Odipio",
+                  "shirt_number": 5,
+                  "position": null,
+                  "is_captain": false,
+                  "portrait_url": "https://img.a.transfermarkt.technology/portrait/small/1282723-1756562709.jpg?lm=1"
+                },
+                "reason": null,
+                "team_side": "away"
+              }
+            ]
+          }
+        }
+      ],
+      "league_table": {
+        "season": "24/25",
+        "teams": [
+          {
+            "position": 1,
+            "movement": "same",
+            "team_id": "29757",
+            "name": "Vipers SC",
+            "short_name": "Vipers",
+            "profile_url": "/vipers-sc/spielplan/verein/29757/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/29757.png?lm=1494168701",
+            "matches": 19,
+            "goal_difference": "22",
+            "points": 46
+          },
+          {
+            "position": 2,
+            "movement": "same",
+            "team_id": "112499",
+            "name": "National Enterprise Corporation",
+            "short_name": "NEC FC",
+            "profile_url": "/nec-fc/spielplan/verein/112499/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/112499.png?lm=1713528470",
+            "matches": 19,
+            "goal_difference": "13",
+            "points": 41
+          },
+          {
+            "position": 3,
+            "movement": "same",
+            "team_id": "57659",
+            "name": "BUL Jinja ",
+            "short_name": "BUL FC",
+            "profile_url": "/bidco-bul-fc/spielplan/verein/57659/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/57659.png?lm=1674508588",
+            "matches": 19,
+            "goal_difference": "8",
+            "points": 32
+          },
+          {
+            "position": 4,
+            "movement": "up",
+            "team_id": "29771",
+            "name": "Uganda Revenue Authority ",
+            "short_name": "URA FC",
+            "profile_url": "/ura-kampala/spielplan/verein/29771/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/29771.png?lm=1674508603",
+            "matches": 19,
+            "goal_difference": "6",
+            "points": 30
+          },
+          {
+            "position": 5,
+            "movement": "down",
+            "team_id": "77852",
+            "name": "Kitara",
+            "short_name": "Kitara",
+            "profile_url": "/kitara-airtel-fc/spielplan/verein/77852/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/77852.png?lm=1702090201",
+            "matches": 19,
+            "goal_difference": "18",
+            "points": 28
+          },
+          {
+            "position": 6,
+            "movement": "up",
+            "team_id": "18777",
+            "name": "Kampala Capital City Authority",
+            "short_name": "KCCA FC",
+            "profile_url": "/kampala-city-council/spielplan/verein/18777/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/18777.png?lm=1492842253",
+            "matches": 19,
+            "goal_difference": "8",
+            "points": 28
+          },
+          {
+            "position": 7,
+            "movement": "down",
+            "team_id": "9367",
+            "name": "Express",
+            "short_name": "Express",
+            "profile_url": "/express-fc/spielplan/verein/9367/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/9367.png?lm=1492842658",
+            "matches": 19,
+            "goal_difference": "-4",
+            "points": 28
+          },
+          {
+            "position": 8,
+            "movement": "up",
+            "team_id": "76835",
+            "name": "Maroons",
+            "short_name": "Maroons FC",
+            "profile_url": "/maroons-fc/spielplan/verein/76835/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/76835.png?lm=1569704258",
+            "matches": 19,
+            "goal_difference": "-3",
+            "points": 27
+          },
+          {
+            "position": 9,
+            "movement": "down",
+            "team_id": "18778",
+            "name": "Sports Club Villa",
+            "short_name": "SC Villa",
+            "profile_url": "/sc-villa-kampala/spielplan/verein/18778/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/18778.png?lm=1677065699",
+            "matches": 19,
+            "goal_difference": "6",
+            "points": 24
+          },
+          {
+            "position": 10,
+            "movement": "same",
+            "team_id": "78475",
+            "name": "Uganda People's Defence Force",
+            "short_name": "UPDF FC",
+            "profile_url": "/uganda-peoples-defence-force-fc/spielplan/verein/78475/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/78475.png?lm=1674508871",
+            "matches": 19,
+            "goal_difference": "-7",
+            "points": 24
+          },
+          {
+            "position": 11,
+            "movement": "up",
+            "team_id": "120956",
+            "name": "Lugazi",
+            "short_name": "Lugazi",
+            "profile_url": "/lugazi-fc/spielplan/verein/120956/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/120956.png?lm=1721656967",
+            "matches": 19,
+            "goal_difference": "-4",
+            "points": 23
+          },
+          {
+            "position": 12,
+            "movement": "same",
+            "team_id": "74195",
+            "name": "Mbarara City",
+            "short_name": "Mbarara City",
+            "profile_url": "/mbarara-city-fc/spielplan/verein/74195/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/74195.png?lm=1562578700",
+            "matches": 19,
+            "goal_difference": "-5",
+            "points": 21
+          },
+          {
+            "position": 13,
+            "movement": "down",
+            "team_id": "29783",
+            "name": "Police",
+            "short_name": "Police",
+            "profile_url": "/uganda-police-fc/spielplan/verein/29783/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/29783.png?lm=1720716849",
+            "matches": 19,
+            "goal_difference": "-2",
+            "points": 20
+          },
+          {
+            "position": 14,
+            "movement": "same",
+            "team_id": "76182",
+            "name": "Wakiso Giants",
+            "short_name": "Wakiso Giants",
+            "profile_url": "/wakiso-giants-fc/spielplan/verein/76182/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/76182.png?lm=1674508648",
+            "matches": 19,
+            "goal_difference": "-17",
+            "points": 14
+          },
+          {
+            "position": 15,
+            "movement": "same",
+            "team_id": "53180",
+            "name": "Soltilo Bright Stars",
+            "short_name": "Bright Stars FC",
+            "profile_url": "/bright-stars-fc/spielplan/verein/53180/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/53180.png?lm=1674508968",
+            "matches": 19,
+            "goal_difference": "-11",
+            "points": 12
+          },
+          {
+            "position": 16,
+            "movement": "same",
+            "team_id": "81897",
+            "name": "Mbale Heroes",
+            "short_name": "Mbale Heroes",
+            "profile_url": "/mbale-heroes-fc/spielplan/verein/81897/saison_id/2024",
+            "logo_url": "https://tmssl.akamaized.net//images/wappen/tiny/81897.png?lm=1745434117",
+            "matches": 19,
+            "goal_difference": "-28",
+            "points": 10
+          }
+        ]
+      },
+      "top_scorers": [
+        {
+          "name": "Allan Okello",
+          "short_name": "A. Okello",
+          "profile_url": "/allan-okello/profil/spieler/494268",
+          "clubs": [
+            {
+              "name": "Vipers SC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/29757.png?lm=1494168701"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 19
+        },
+        {
+          "name": "Ivan Ahimbisibwe",
+          "short_name": "I. Ahimbisibwe",
+          "profile_url": "/ivan-ahimbisibwe/profil/spieler/1282756",
+          "clubs": [
+            {
+              "name": "Uganda Revenue Authority FC ",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/29771.png?lm=1674508603"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 16
+        },
+        {
+          "name": "Samuel Ssekamatte",
+          "short_name": "S. Ssekamatte",
+          "profile_url": "/samuel-ssekamatte/profil/spieler/1281482",
+          "clubs": [
+            {
+              "name": "Uganda People's Defence Force FC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/78475.png?lm=1674508871"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 13
+        },
+        {
+          "name": "Samuel Ssenyonjo",
+          "short_name": "S. Ssenyonjo",
+          "profile_url": "/samuel-ssenyonjo/profil/spieler/854512",
+          "clubs": [
+            {
+              "name": "Express FC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/9367.png?lm=1492842658"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 12
+        },
+        {
+          "name": "Charles Lwanga",
+          "short_name": "C. Lwanga",
+          "profile_url": "/charles-lwanga/profil/spieler/854511",
+          "clubs": [
+            {
+              "name": "Sports Club Villa",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/18778.png?lm=1677065699"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 11
+        },
+        {
+          "name": "Jude Ssemugabi",
+          "short_name": "J. Ssemugabi",
+          "profile_url": "/jude-ssemugabi/profil/spieler/1281706",
+          "clubs": [
+            {
+              "name": "Kitara FC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/77852.png?lm=1702090201"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 10
+        },
+        {
+          "name": "Milton Karisa",
+          "short_name": "M. Karisa",
+          "profile_url": "/milton-karisa/profil/spieler/515008",
+          "clubs": [
+            {
+              "name": "Vipers SC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/29757.png?lm=1494168701"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 10
+        },
+        {
+          "name": "Paul Mucureezi",
+          "short_name": "P. Mucureezi",
+          "profile_url": "/paul-mucureezi/profil/spieler/495994",
+          "clubs": [
+            {
+              "name": "National Enterprise Corporation FC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/112499.png?lm=1713528470"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 9
+        },
+        {
+          "name": "Cromwel Rwothomio",
+          "short_name": "C. Rwothomio",
+          "profile_url": "/cromwel-rwothomio/profil/spieler/867265",
+          "clubs": [
+            {
+              "name": "National Enterprise Corporation FC",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/112499.png?lm=1713528470"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 9
+        },
+        {
+          "name": "Patrick Kakande",
+          "short_name": "P. Kakande",
+          "profile_url": "/patrick-kakande/profil/spieler/1111688",
+          "clubs": [
+            {
+              "name": "Sports Club Villa",
+              "logo_url": "https://tmssl.akamaized.net//images/wappen/verysmall/18778.png?lm=1677065699"
+            }
+          ],
+          "goals_this_matchday": 0,
+          "total_goals": 8
+        }
+      ],
+      "summary": {},
+      "metadata": {
+        "extraction_time": "2025-08-30T17:02:11.286461",
+        "source": "worker_extraction",
+        "total_matches": 8,
+        "is_recovery_work": false,
+        "recovery_targets": []
+      }
+    }
+  ],
+  "total_matchdays": 1,
+  "total_matches": 8,
+  "execution_time_seconds": 166882.966244,
+  "execution_time_minutes": 2781.38,
+  "execution_time_hours": 46.36,
+  "processing_time_seconds": 220.9647977501154,
+  "processing_time_minutes": 3.68,
+  "processing_time_hours": 0.06,
+  "queue_wait_seconds": 166662.005245,
+  "was_recovery_work": false,
+  "recovery_success": false,
+  "recovered_match_targets": [],
+  "requeue_template": {
+    "work_id": "requeue_match_UGL1_2024_md19_1756385027_1",
+    "work_type": "match_data",
+    "version": "3.1",
+    "competition_id": "UGL1",
+    "competition_code": "uganda-premier-league",
+    "competition_name": "Uganda Premier League",
+    "season_year": "2024",
+    "is_recovery_work": true,
+    "original_work_id": "match_UGL1_2024_md19_1756385027",
+    "recovery_reason": "retry_failed",
+    "recovery_created_at": "2025-08-30T14:05:09.967753+00:00",
+    "recovery_matchday_number": null,
+    "specific_match_targets": [],
+    "team_count": 16,
+    "expected_matchdays": null,
+    "priority": 610,
+    "processing_hints": {
+      "scope": "single_matchday",
+      "matchday_focused": true,
+      "target_matchday": 19,
+      "expected_completion_time": "15_minutes",
+      "team_count_category": "medium",
+      "data_source": "db_sync",
+      "requires_validation": true,
+      "cache_last_analyzed": "2025-08-28T15:29:39.898082",
+      "is_recovery": true,
+      "preserve_existing_data": true,
+      "focus_on_team_data": true,
+      "original_work_id": "match_UGL1_2024_md19_1756385027",
+      "attempt": 1,
+      "backoff_seconds": 900
+    },
+    "matchdays_data": [],
+    "status": "available",
+    "created_at": "2025-08-30T14:05:09.967764+00:00",
+    "created_by": "requeue_adapter"
+  }
+}
